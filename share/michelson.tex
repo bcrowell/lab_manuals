@@ -2,16 +2,21 @@
 
 \apparatus
 \equipn{Michelson interferometer}{1/group}
-\equipn{Na and H gas discharge tubes}{1/group}
+\equipn{Na discharge tube}{1/group}
 \equipn{tools inside drawer}{1 set/group}
 \equipn{$2\times4$ piece of wood}{3/group}
-\equip{colored filters (Cambosco and others)}
+\equipn{helium-neon laser}{3}
+\equip{various diverging leses}
 
 \begin{goals}
 
-\item[] Determine the wavelength of a line of the emission spectrum of sodium or hydrogen.
+\item[] Observe the basic operation of a Michelson interferometer.
+
+\item[] Investigate the feasibility of doing other measurements with the instrument.
 
 \end{goals}
+
+\introduction
 
 The Michelson interferometer is a device for measuring the wavelength of
 light, used most famously in the Michelson-Morley experiment of 1887,
@@ -35,17 +40,30 @@ Thus if the mirror is moved by a distance $d$, and you see the light go through
 $n$ complete cycles of appearance and disappearance, you can conclude that the
 wavelength of the light was $\lambda=2d/n$.
 
+\apparatus
+
 To make small and accurate adjustments
 of the mirror easier to do, the micrometer is connected to it through a lever that
-reduces the amount of movement by a factor $k$, approximately equal to 5.23; the micrometer reads the
+reduces the amount of movement by a factor $k$, which is supposed to be exactly equal to 5; the micrometer reads the
 bigger distance $D=kd$ that it actually travels itself, so the wavelength is
 $\lambda=2D/kn$.
 
-Another trick to make the apparatus easier to use is that the mirrors A and B are
-slightly curved. This means that instead of seeing a field of light that varies
-uniformly between dark and bright as you turn the knob, instead you see a set of
-concentric rings (called fringes), which expand or contract depending on which
-direction you turn the knob.
+When you look through the device, you see a certain field of view. Within that
+field of view are mirror A and the image $\zu{B}'$ of mirror B, which is nearly superimposed on A.
+The path-length difference between the two waves can be thought of as the distance between
+A and $\zu{B}'$.
+The field of view covers a certain small but finite range of angles, forming
+a narrow cone with its vertex at your eye. For rays forming a small angle
+$\alpha$ relative to the axis, the effect is to multiply the path-length distance
+by a factor of $\cos\alpha$. If the two arms of the interferometer are exactly
+equal, then the path-length distance between them is zero, and multiplying it
+by $\cos\alpha$ has no effect. But when the arms are unequal, the condition for
+constructive or destructive interference becomes dependent on $\alpha$, and the
+result is that you see a bull's-eye pattern of concentric circular fringes.
+When you turn the knob, these fringes expand or contract, appearing from or disappearing
+into the center. The more equal the two arms, the smaller the number of fringes.
+
+\setup
 
 Turn on the sodium discharge tube, and let it warm up until it's yellow.
 
@@ -73,6 +91,14 @@ fringes, centered on a point outside of the field of view. The final, fine
 adjustment is obtained by bringing the center of this pattern to the center of the
 field of view.
 
+\labpart{Basic Operation}
+
+To get an idea of the basic operation of the instrument, you'll perform a rough
+measurement of the wavelength of the yellow line emitted by the sodium discharge tube.
+This is not really a task for which the spectrometer is well suited for giving high-precision
+results, but you should be able to approximately verify the known wavelength of
+about 589 nm.
+
 The micrometer has a millimeter scale running from 0 to 25 mm, with half-millimeter
 divisions on the bottom. To take a reading on it, first read the number of
 millimeters and half-millimeters based on where the edge of the cylindrical
@@ -84,22 +110,100 @@ a millimeter (tenth of a vernier division).
 While looking at the interference fringes, turn the knob on the micrometer.
 You will see them either expand like smoke rings, or contract and disappear
 into the center, depending on which way you turn the knob. Rotate the knob
-while counting about 50 to 100 fringes, and record the two micrometer readings before and
+while counting at least about 20 fringes (optimally 50 or 100), and record the two micrometer readings before and
 after. The difference between these is $D$. It helps if you prop your head on the table, and move the micrometer knob
 smoothly and continuously. Moving your head disturbs the pattern, and halting the
 micrometer knob tends to cause backlash that confuses the count of fringes by
 plus or minus one. 
 
-It has been an ongoing project to get these spectrometers back in operation and fully calibrated for the first time in many years.
-In spring 2006, my students in physics 223 gave them a thorough test drive. 
-In spring 2007, we started taking data to determine $k$ accurately for each spectrometer, using
-the known wavelength of the sodium emission line at 589 nm. Their data are on sheets inside each
-spectrometer's box. That class also experimented with using the apparatus to measure the wavelengths
-of some lines in the spectrum of hydrogen, which is of some fundamental interest because it is the
-simplest of all atoms. Since hydrogen's spectrum, unlike sodium's, includes several different
-visible lines of similar intensity, this required using colored filters to select the desired line.
-They found that filter \#2 from the Cambosco box worked well for the red line, and \#8 for the blue-green line.
-Lines with short wavelengths were more difficult to do.
-For the next class that does the lab, my goal is to accumulate more calibration data, so we can start to
-detect whether certain data points are off because of $\pm 1$ errors in counting the number of fringes.
-I would also like to make more progress in measuring lines of the hydrogen spectrum accurately.
+Check that you get approximately the right wavelength for the yellow sodium line.
+
+\section*{Exploring Other Possibilities with the instrument}
+
+Up until fall 2012, I was having my students work on improving the technique
+used in part A to get high-precision data. This was time-consuming and fatiguing,
+and we never had much luck getting great results, since it was difficult to
+turn the micrometer knob smoothly enough to be sure whether we were miscounting
+the number of fringes due to hand twitches or backlash in the gears. Then, in
+a long-forgotten corner of the physics stockroom, guarded by jewel-eyed statues
+of demons and curses written in Egyptian hieroglyphics, I came across a lab manual
+from 1971 that discussed a variety of other things that could be done with these
+interferometers that might be more interesting and successful. My goal for spring
+2013 is to have each lab group try out one of the following possibilities and see
+how it goes.
+
+Groups 1, 4, and 7 should do part B, groups 2 and 5 part C, and groups 3 and 6 part D.
+
+\labpart{Use of laser light}
+
+It is supposed to be possible to use a laser as a source of light and project the fringes onto a screen
+or the wall. This would be much more physically comfortable than hunching over and staring into the 
+interferometer, and in fact for safety you should never look into the interferometer while doing
+the laser version the experiment. I think the idea is to use the laser to produce a nearly
+pointlike source of light that is much brighter than what can be provided by a discharge tube,
+making the light bright enough to see when projected. By shining the laser beam onto a
+diverging lens, you can produce a spreading cone of monochromatic, coherent light.
+Adjust the cone so that it is about the right size to light up the whole diagonal mirror.
+If this works, you could try to measure the wavelength of the laser light.
+
+\labpart{Spacing of the sodium doublet}
+
+Essentially the only way scientists have of getting detailed, high-precision information
+about the structure of atoms and nuclei is by measuring the set of wavelengths of light
+they emit. As you'll see later in the course, these wavelengths can be related to the sizes
+of the ``quantum jumps'' between different energy levels of the atom. Each of these wavelengths
+is referred to as a ``line,'' because in some types of spectrometers that's what they look like,
+and the whole set of lines is called the spectrum of that atom.
+An unfortunate fact of life for the spectroscopist is that the spectrum often contains ``doublets,''
+meaning lines that are very close together and hard to distinguish, and in fact the yellow line
+in the sodium spectrum that you measured in part A is really a doublet whose members differ
+in wavelength by a fraction of a nanometer.
+
+The Michelson interferometer
+is particularly well adapted to a certain sneaky trick for measuring the difference in wavelength
+between two lines in a doublet, even when the difference is extremely small, as it is for
+sodium. The idea is that if the lines are roughly equal in intensity, then the bull's-eye pattern
+you see is actually two bull's-eye patterns superimposed on top of one another. If you move
+the micrometer to a random position, then it's a matter of chance how well these two patterns
+agree. They could happen to agree perfectly, in which case the bull's eye would look just as distinct
+as if there were only one line, but they could also disagree perfectly, so that there would no
+contrast at all between light and dark. The ancient lab manual says: 
+            ``Loosen the carriage lock screw and move the carriage by hand. Note that the fringes
+            pass alternately from a condition of high contrast to one of almost complete
+            disappearance. With the micrometer screw set near one of its extreme limits
+            and the carriage at one of the conditions of almost complete disappearance,
+            tighten the carriage lock screw." 
+Then you're supposed to move to another condition of minimum
+            contrast and take another micrometer reading.
+
+The analysis then works like this. Let the wavelengths constituting the doublet be
+be $\lambda_1$ and $\lambda_2$, differing by $\Delta \lambda = \lambda_2-\lambda_1$.
+Let $d_1$ and $d_2$ be two successive path-length differences at which there is maximum
+          contrast. Traveling a distance $\Delta d$
+          between these two values of $d$, we pass through $N+1$ cycles worth of the shorter
+          $\lambda_1$ and $N$ cycles  for the longer $\lambda_2$, so
+          $2 \Delta d = (N+1) \lambda_1=N \lambda_2$. Algebra gives
+          $\Delta \lambda=\lambda_1 \lambda_2/2 \Delta d$.
+    The fractional precision with which we can measure $\Delta d$ equals the fractional
+           precision with which you can measure $\Delta \lambda$, which is a huge win,
+           because $\Delta \lambda$ is very small.
+
+Attempt to measure $\Delta \lambda$ for the yellow sodium doublet.
+
+\labpart{Unknown index of refraction}
+
+The Michelson interferometer is unusual in its ability to work with white light.
+This is because it's possible to get into the position where the lengths of the
+two arms are equal, so that constructive interference occurs at the center of
+the bull's eye for all wavelengths. At any other position, we get
+a random mixture of constructive and destructive interference for all the different
+wavelengths that are present. In fact, this allows the equal-arm condition
+to be determined extremely accurately. It's hard to think of any other technique
+that allows two large distances to be made equal to within micrometers or nanometers!
+
+Using this technique, one can accurately determine the unknown index of refraction of an
+thin piece of some material such as a glass microscope slide. The idea is to equalize
+the arms, then insert the unknown and readjust the interferometer in order to
+restore the interference pattern. In the new condition, it's not the lengths of the
+two arms that are equal but their \emph{optical} lengths, i.e., the time it takes
+light to travel along them.
