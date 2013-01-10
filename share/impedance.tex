@@ -1,0 +1,110 @@
+
+\lab{Impedance}\label{lab:impedance}
+
+ 
+\begin{itemize}
+\item[] Observe how the impedances of capacitors and inductors
+change with frequency.
+
+\item[] Observe how impedances combine according to the arithmetic of complex numbers.
+\end{itemize}
+
+\setup
+
+We'll start by observing the impedance of a capacitor.
+Ideally, what we want is this:
+
+\fig{em-imp-simplified}
+
+However, we want to know not just the amplitude of the
+voltage and current sine-waves but the phase relationship
+between them as well, which we can't get from a regular
+meter. We need to use an oscilloscope, and oscilloscopes only
+measure voltage, not current. This leads us to something
+like the following setup:
+
+\fig{em-imp-groundloop}
+
+Here ch. 2 tells us the voltage across the resistor, which
+is related to the current in the resistor according to Ohm's
+law. By the junction rule, the current in the resistor is
+the same as the current through the capacitor.
+
+But even now, we're not out of the woods. In this setup, the
+ground of ch. 2 is connected to the same wire as the active
+(+) connection to ch. 1, which would cause ch. 1 to read
+zero, and would short across the capacitor as well.
+Instead, we need this:
+
+\fig{em-imp-actual}
+
+Now both GND connections are going to the same point in the
+circuit. Because we've swapped the connections to ch. 1, its
+trace will be upside-down, and inconsistent with ch. 2.
+There is a special control on the scope for inverting  ch.
+2, which makes the two channels consistent again.
+
+\observations
+
+\labpart{ Impedance of the capacitor}
+
+Hook up the circuit as shown, using a 1 $k\Omega $
+resistance and a  0.2 $\mu F$ capacitance. The HP signal
+generator has a ground strap connecting one of its output
+terminals to ground. Disconnect this ground strap, since
+grounding either side of the signal generator would mean
+that either the resistor or the capacitor would be connected
+to ground on both sides. Try a frequency of 100 Hz.
+
+Observe the phase relationship between $V_C$, on ch. 1, and
+the signal on ch. 2, which essentially tells us the current
+$I_C$ except for a factor of 1/R. Sketch this phase
+relationship in your raw data. Because $V_C=q/C$ and
+$I=dq/dt$, the current through the capacitor should be
+proportional to dV/dt. Based on the phase relationship you
+observed, does this seem to be true?
+
+Measure the phase angle numerically from the oscilloscope.
+Is it what you expect?
+
+Determine the magnitude of the capacitor's impedance.
+
+Suppose you represent the signal that is ahead in phase
+using a point that is more counterclockwise in the complex
+plane. Sketch the locations of the voltage and current in
+the complex plane. (You can arbitrarily choose one of them
+to be along the real axis if you like.) Where would the
+impedance then lie in the plane?
+
+Now change the frequency to 1000 Hz, and see what changes.
+Sketch your new impedance in the complex plane. Do you find
+the expected relationship between impedance and frequency?
+
+\labpart{ Inductance of the Heath coil}
+
+Make the measurements you need in order to calculate the
+theoretical inductance of the inductor, using the equation
+derived in the prelab. The approximation may be off by as
+much as a factor of two, since the solenoid isn't long and
+skinny, but it's useful so you have some idea of what to expect.
+
+\labpart{ Impedance of the inductor}
+
+Now repeat all the above steps using the Heath coil as an inductor. 
+
+\labpart{ Impedances in series}
+
+Put the capacitor and inductor in series, and collect the
+data you'll need in order to determine their combined
+impedance at several frequencies ranging from 100 to 1000 Hz. 
+
+\analysis
+
+Use your data from part C to determine an experimental
+value of the coil's inductance, and compare with the
+theoretical result based on your measurements in part B.
+
+Graph the theoretical and experimental impedance of the
+series combination in part D, overlaying them on the same
+graph. Show theory as a curve and experiment as discrete
+data-points. Do the same kind of graph for the parallel combination.

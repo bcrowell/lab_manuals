@@ -1,0 +1,188 @@
+\lab{Acceleration In Two Dimensions}\label{lab:acceltwod}
+
+\apparatus
+\equip{air track (small)}
+\equip{cart}
+\equip{LabPro-compatible photogates (in lab benches in 415)}
+\equip{computer}
+\equip{air blowers (in cupboards under lab benches)}
+\equip{power strips for switching blowers on and off}
+\equip{vernier calipers (for measuring wood blocks)}
+\equipn{wood blocks}{2-3/group}
+\equip{angle brackets}
+
+\goal{Test whether the acceleration of gravity acts like a vector.}
+
+\introduction
+
+Vectors rule the universe.  Entomologists say that God must
+have had an inordinate fondness for beetles, because there
+are so many species of them.  Well, God must also have had a
+special place in her heart for vectors, because practically
+every natural phenomenon she invented is a vector:
+gravitational acceleration, electric fields, nuclear forces,
+magnetic fields, all the things that tie our universe
+together are vectors.
+
+\fig{me-inc-setup}
+
+\setup
+
+The idea of the lab is that if acceleration really acts like
+a vector, then the cart's acceleration should equal the
+component of the earth's gravitational acceleration vector
+that is parallel to the track, because the cart is only free
+to accelerate in the direction along the track.  There is
+almost no friction, since the cart rides on a cushion of air
+coming through holes in the track.
+
+The speed of the cart at any given point can be measured as
+follows.  The photogate consists of a light and a sensor on
+opposite sides of the track.  When the cart passes by, the
+cylindrical vane on top blocks the light momentarily, keeping
+light from getting to the sensor.  The computer detects the
+electrical signal from the sensor, and records the amount of
+time, $t_b$, for which the photogate was blocked.  Given
+$t_b$, you can determine the approximate speed that cart had
+when it passed through the photogate.  The computer software
+for measuring the time is on the Linux computers in 415.
+Plug the photogate into the DG1 plug
+on the interface box, and connect the interface box to the computer
+using the USB cable.
+Double-click on the icon that says ``photogate.''
+
+
+\observations
+
+The basic idea is to release the cart at a distance $x$ away
+from the photogate.  The cart accelerates, and you can
+determine its approximate speed, $v$, when it passes through
+the photogate.  (See prelab question P1.)
+
+
+From $v$ and $x$, you can find the
+acceleration.  You will take data with the track tilted at
+several different angles, to see whether the cart's
+acceleration always equals the component of  $g$ parallel to the track.
+
+You can level the track to start with by adjusting the
+screws until the cart will sit on the track without
+accelerating in either direction.
+
+The distance $x$ can be measured from the starting position
+of the cart to half-way between the point where it first
+blocks the photogate and the point where it unblocks the
+photogate.  You can determine where these positions are by
+sliding the cart into the photogate and watching the red LED
+on the top of the photogate, which lights up when it is blocked.
+
+Hints:
+
+\begin{itemize}
+\item[] Keep in mind that if the cart rebounds at the bottom of
+the track and comes back up through the gate, you will get a
+second, bogus time reading.
+
+\item[] Note that you have no way to measure accurately to the
+total amount of time over which the cart picked up speed
+(which would be several seconds) --- what you measure is the
+very short time required for the cart to pass through the photogate.
+
+\item[] If you're using one of the gray air pumps, which has a knob
+to adjust the flow, make sure it's on the highest speed, or the
+cart will drag on the track, giving bogus data. It's easy to mess up
+this adjustment, so get the knob set correctly for once and for all,
+and then never touch it again. To turn the pump
+on and off, plug the blower in to its own power strip, and
+use the switch on the power strip.
+
+\item[] Release the cart by hand after starting up the air pump.
+If you leave the cart on the track and then turn on the pump, there
+will be a period of time when the pump is first starting up, and
+the cart will drag.
+
+\item[] The variable $x$ actually changes a little when you change $\theta$,
+so don't just assume it's always the same.
+
+\item[] Once you have data at your first angle, check whether theory and experiment
+agree reasonably well.
+\end{itemize}
+
+You'll use the photogates again in lab 10, so make sure you understand
+the technique thoroughly, and take notes on it so you'll remember how it's
+done.
+
+The accurate measurement of the width of the vane, $w$, is critical
+to the whole experiment. Each person in your group should measure
+it independently using vernier calipers, and then you should average
+these results. Your instructor will show you how to use the vernier
+scale, which is a tricky device that allows you to measure distances
+to a precision of about a tenth of a millimeter --- about ten times better than
+eyeball precision with a ruler.
+
+Ideally we would like to simply close the vernier calipers snugly on the
+cylindrical vane and take a reading of its diameter. This is the way the
+calipers are intended to be used. However, the beam of the photogate
+has a finite width, and the electronics in the photogate are only roughly
+calibrated to turn on and off when the edge of the vane intersects the
+center of the beam, blocking half its light. Therefore, I had one of my classes in 2011 use
+an arrangement like the one below to determine the effective width of the
+vane when it is used with your own photogate. The idea is to use the moving jaw of the calipers
+to push the cart from the point where it enters your photogate to the point
+where it exits, as determined by the LED on top. I have found that the
+photogates differ from one another by about a millimeter, so that if you
+don't do this calibration with your own photogate, your velocities will be
+off by as much as 5\%. The results were as follows:
+
+\noindent \begin{tabular}{ll}
+1A & 2.13 cm \\
+2A & 2.11 cm \\
+3A & 2.10 cm \\
+4A & 2.23 cm \\
+5A & 2.15 cm \\
+6A & 2.11 cm \\
+7A & 2.15 cm
+\end{tabular}
+
+\noindent You have three photogates in your lab bench, one of which is the one
+shown in the table.
+
+\fig{me-inc-vernier}
+
+\selfcheck
+
+Find the theoretical and experimental accelerations for one
+of your angles, and see if they are roughly consistent.
+
+\prelab
+
+\prelabquestion   \emph{Skip this question if the corresponding homework problem
+has already been assigned.} (a) If $w$ is the width of the vane, and $t_b$ is defined
+as suggested above, what is the speed of the cart when it
+passes through the photogate? 
+(b) Based on $v$ and $x$, how can you find $a$?
+
+\prelabquestion  It is not possible to measure $\theta $ accurately with
+a protractor.  How can $\theta $ be determined based on the
+distance between the feet of the air track and the
+height of the wood block?
+
+\prelabquestion  Explain why the following method for finding the cart's
+acceleration is incorrect.  ``The time I got off the
+computer was 0.0237 s.  My vane was 2.2 cm wide, so
+$v=2.2\ \zu{cm}/.0237\ \sunit=93\ \zu{cm}/\sunit$.  That means the acceleration
+was $a=\Delta v/\Delta t=(v_f-v_i)/\Delta t=(v_f-0)/\Delta t=v_f/\Delta t$, or
+93 cm/s divided by .0237 s, which gives $3900\ \zu{cm}/\sunit^2$.''
+
+\analysis
+
+Extract the acceleration for each angle at which you took
+data.  Make a graph with $\theta $ on the $x$ axis and
+acceleration on the $y$ axis.  Show your measured accelerations
+as points, and the theoretically expected dependence of $a$
+on $\theta $ as a smooth curve.
+
+Error analysis is not required for this lab, because the
+random errors are small compared to systematic errors such
+as the imperfect leveling of the track, friction,
+warping of the track, and the measurement of $w$.

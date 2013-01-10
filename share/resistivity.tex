@@ -1,0 +1,156 @@
+\lab{Resistivity}\label{lab:resistivity}
+
+\apparatus
+\equipn{power supply (Thornton), in lab benches}{1/group}
+\equipn{multimeter (PRO-100), in lab benches}{1/group}
+\equipn{digital multimeters (FlukeHP)}{1/group}
+\equip{resistors of various values}
+\equip{alligator clips}
+\equip{spare fuses for multimeters --- Let students replace fuses themselves.}
+\equip{Play-Doh (Crayloa super soft dough, \$10/3 lb at school supply store on Commonwealth)}
+\equip{1 g aluminum slotted weights for use as electrical contacts}
+
+\begin{goals}
+
+\item[] Measure how the electrical resistance of a cylinder depends on its dimensions.
+
+\item[] Invent a constant of proportionality incorporated into this relationship, giving a measure of the intrinstic electrical properties of a material
+called its resistivity.
+\end{goals}
+
+\introduction
+
+Your nervous system depends on electrical currents, and
+every day you use many devices based on electrical currents
+without even thinking about it. Despite its ordinariness,
+the phenomenon of electric currents passing through liquids
+(e.g., cellular fluids) and solids (e.g., copper wires) is a
+subtle one. For example, we now know that atoms are composed
+of smaller, subatomic particles called electrons and nuclei,
+and that the electrons and nuclei are electrically charged,
+i.e., matter is electrical. Thus, we now have a picture of
+these electrically charged particles sitting around in
+matter, ready to create an electric current by moving in
+response to an externally applied voltage. Electricity had
+been used for practical purposes for a hundred years,
+however, before the electrical nature of matter was proved
+at the turn of the 20th century.
+
+We observe that some materials, such as metals, conduct electricity
+more easily than others, such as wood. This suggests that measurements
+of the resistance of an object made out of a certain substance can be
+used to learn things about the atomic-level structure of the substance
+(e.g., how many free charge carriers it has per unit volume), or
+as a test to identify an unknown substance.
+
+\fig{em-ohm-colorcodetable}
+\fig{em-ohm-colorcodeeg}
+
+\observations
+
+\labpart{A known resistor}
+
+In lab \ref{lab:electricity}, you found the resistance of a lightbulb.
+To keep things simple, that setup used only a single multimeter, but
+that required rearranging how everything was hooked up every time you
+wanted to switch between measuring voltage and measuring current.
+In today's lab, you will use a similar setup, but with two meters simultaneously connected, one for each purpose.
+Build your setup, and test it by measuring data on a known resistor.
+To avoid creating large currents or making the resistor so hot that it
+will burn your fingers, use one with a fairly high value, at least in
+the kiloohm range.
+
+Resistors are usually too small to make it convenient to
+print numerical resistance values on them, so they are
+labeled with a color code, as shown in the table and example above.
+
+
+As a test of whether your resistor is actually ohmic, take data
+at two different voltages and determine whether the current varies
+in proportion.
+
+\labpart{Dependence of resistance on dimensions}
+
+For a fixed substance such as sand or plywood, the resistance is not
+a fixed number of ohms. The resistance of a sample depends on its size,
+its shape, and the way in which the electrical contacts are made to it.
+In this part of the lab you will take measurements with cylindrical samples of play-doh,
+with the electrical contacts made using the thin disk-shaped 1 g aluminum weights.
+
+Two different numbers are required in order to define the dimensions of a cylinder.
+(There are various ways to define these; you can make your own choice.)
+Measure the resistance for different values of these two variables.
+Practice control of variables by keeping one constant while varying the other.
+You will learn the most by taking extreme values of the variables.
+
+Leaving the power supply on for a long time causes corrosion to the knives
+and chemical changes in the play-doh, so don't do that.
+
+To get good results:
+\begin{itemize}
+\item[] Quite a bit of the resistance comes from the surface of contact between the aluminum disk
+and the play-dough. What seems to
+matter the most is that you need a very smooth surface, because on a rough surface, most of the
+metal isn't even making contact.
+\item[] It seems to help if you cut into the play-dough and then press the play-dough against the
+contact with your fingers to make better contact.
+\item[] I got better results by subtracting the resistance found by placing the two contacts
+very close, where the resistance was almost entirely due to the contacts.
+\end{itemize}
+
+
+\analysis
+
+For each variable in part B,
+use the graphing technique given in appendix \ref{appendix:powerlaws} to see if you can
+find a power law that relates the resistance to that variable. If the results are at least
+approximately consistent with power laws, then you can combine them to create a relationship
+of the form $R=\rho(\ldots)^p(\ldots)^q$, where $(\ldots)$ represents the two variables,
+$p$ and $q$ are constants found from your graph, and the constant of proportionality $\rho$
+(Greek letter rho) is a property of the substance, called its resistivity. If you find that
+$p$ and $q$ have values that are close to nice simple numbers, carry out your analysis under
+the assumption that those simple numbers are right. What units does $\rho$ have?
+Find the resistivity of play-doh.
+
+\vfill
+
+\prelab
+
+\prelabquestion  Check that you understand the interpretations of the
+following color-coded resistor labels:
+
+\begin{tabular}{ll}
+   blue   gray   orange   silver    &= 68 k$\Omega$  $\pm$ 10\%  \\
+   blue   gray   orange   gold    &= 68 k$\Omega$  $\pm$ 5\%  \\
+   blue   gray   red   silver    &= 6.8 k$\Omega$  $\pm$ 10\%  \\
+   black   brown   blue   silver    &= 1 M$\Omega$  $\pm$ 10\%  
+\end{tabular}
+
+Now interpret the following color code:
+
+\begin{tabular}{ll}
+   green   orange   yellow   silver    &=    ?  
+\end{tabular}
+
+\prelabquestion  Fit a line to the following sample data and use the
+slope to extract the resistance (see Appendix \ref{appendix:graphing}).
+
+\fig{em-ohm-samplegraph}
+
+Your result should be consistent with a resistor color code
+of green-violet-yellow.
+
+\hfill\emph{Turn the page.}
+
+\pagebreak
+
+\prelabquestion  Plan how you will measure $I$ versus $\Delta V$ for both
+positive and negative values of $\Delta V$ , since the power
+supply only supplies positive voltages.
+
+
+\prelabquestion  Would data like those shown in the graph below indicate a negative resistance, or
+did the experimenter just hook something up wrong? If the
+latter, explain how to fix it.
+
+\fig{em-ohm-negative}

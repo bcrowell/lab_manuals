@@ -1,0 +1,312 @@
+\lab{The Moment of Inertia}\label{lab:moment-of-inertia}
+
+\apparatus
+\equipn{meter stick with hardware attached}{1/group}
+\equipn{nail}{1/group}
+\equipn{fulcrum}{1/group}
+\equip{200 g slotted masses (old, gray ones)}
+\equip{hooked masses  (in lab benches in 415)}
+\equip{duct tape}
+\equipn{computer with LabPro interface}{1/group}
+\equipn{LabPro-compatible photogate}{1/group}
+\equipn{stand and right-angle clamp for photogate}{1/group}
+\equip{Vernier calipers}
+\equip{stopwatches}
+
+\goal{Test the equation $\tau_{total}=I\alpha $, which relates an
+object's angular acceleration to its own moment of inertia
+and to the total torque applied to it.}
+
+\introduction
+
+Newton's first law, which states that motion in a straight
+line goes on forever in the absence of a force, was
+especially difficult for scientists to work out because
+long-lasting circular motion seemed much more prevalent in
+the universe than long-lasting linear motion.  The sun, moon
+and stars appeared to move in never-ending circular paths
+around the sky.  A spinning top could continue its motion
+for a much longer time than a book sliding across a table. 
+Ren\'{e} Descartes (b. 1596) came close to stating a law of
+inertia like Newton's, but he thought that matter was made
+out of tiny spinning vortices, like whirlwinds of dust. 
+Galileo, who among Newton's predecessors came closest to
+stating a law of inertia, was also confused by the issue of
+circular versus linear inertia.  An advocate of the
+Copernican system, in which the apparent rotation of the
+sun, stars and moon was due to the Earth's rotation, he knew
+that the apparently motionless ground, trees, and mountains
+around him must be moving in circles as the Earth turned. 
+Was this because inertia naturally caused things to move in circles?
+
+Newton, like other giants of science, saw how to focus on
+the simple rather than the complex.  His law of inertia was
+completely linear.  In his view, all the common examples of
+circular motion really involved a force, which kept things
+from going straight.  In the case of a spinning top, for
+instance, Newton (a confirmed atomist) would have visualized
+an atoms in the top as being acted on by some kind of sticky
+force from the other atoms, which would keep it from flying
+off straight.  Linear motion was the simplest type, needing
+no forces to keep it going.  Circular motion was more
+complex, requiring a force to bend the atoms' trajectories into circles.
+
+Even though circular motion is inherently more complicated
+than linear motion, some very close analogies can be made
+between the two in the case where an object is spinning
+rigidly.  (An examples of nonrigid rotation would be a
+hurricane, in which the inner parts complete a rotation more
+rapidly than the outer parts.)  In analogy to Newton's first
+law, $F_{total}=ma$, we have
+\begin{equation*}
+	\tau_{total}=I\alpha    \qquad   ,
+\end{equation*}
+where the angular acceleration $\alpha $ replaces the linear
+acceleration $a$, the total torque plays the role given to
+the total force, and the moment of inertia $I$ is used
+instead of the mass. In this lab, you are going to release
+an unbalanced rotating system --- a meter stick on an axle
+with weights attached to it --- and measure its angular
+acceleration in response to the nonzero gravitational torque on it.
+
+   Every equation you learned for constant acceleration can
+also be adapted to the case of rotation with constant
+angular acceleration, simply by translating all the
+variables.  For instance, the equation $v_f^2=2ax$
+for an object accelerating from rest can be translated into
+the valid rotational formula $\omega_f^2=2\alpha\theta$.
+
+The moment of inertia is defined as $I=\sum mr^2$,  where
+$m$ can be thought of as the mass of an individual atom
+comprising the rotating body, and $r$ is the distance of
+that atom from the axis of rotation.
+
+The word ``moment'' in ``moment of inertia'' does not refer
+to a moment in time, but is used instead in a more
+old-fashioned sense of ``importance'' or ``weight,'' as in
+``matters of great moment.''  The idea is that the factor of
+$r^2$ gives more importance to the an atom that is far from
+the axis of rotation.  Because the symbol $I$ is used, there
+is a tendency for students to refer to it as ``inertia,''
+but inertia is a different and nonquantitative concept,
+referring to the tendency of objects to stay at rest or stay in motion.
+
+In practice, it is not practical to carry out a sum over all
+the atoms.  The object whose rotation you will study in this
+lab will consist of a meter stick pivoting at its center,
+with various weights hanging from it in various places. 
+Both the hanging weights and the meter stick itself will
+contribute to the moment of inertia.  To a good approximation,
+each hanging weight can be treated as if all its atoms were
+concentrated at its center.  Calculus can also be used to
+derive formulae for the moments of inertia of objects of
+various shapes, such as a sphere, a cylinder rotating along
+its axis, etc.  One such formula is $I=(1/12)ML^2$ for the moment of
+inertia of a rigid rod rotating about an axis passing
+perpendicularly through its center.  You can use this
+as a good approximation for the meter stick's
+contribution to the moment of inertia, with $L=1$ m.
+
+\fig{me-moi-balancing}
+
+\mysubsubsection{Preliminaries}
+
+The meter stick is supported on the fulcrum via a nail
+through the hole in its center. You want to start by
+producing a balanced arrangement of weights attached to the
+meter stick, as in figure (a) above. The idea is that if you
+first balance this configuration carefully, then you know
+that the net gravitational torque on it is zero. If you then
+hang another weight from the previously empty hanger, as in
+(b), then you know that the total torque simply equals the
+torque produced by the earth's gravitational force
+on the added weight.
+
+\fig{me-moi-stability}
+
+To balance your initial configuration, you need to attach the
+slotted weight to the meter stick and then have a way to slide
+it around. Wrap a tight sleeve of duct
+tape, sticky side out, so that it can slide back and forth.
+Then stick the slotted weight to it. As described below, you will
+adjust the center of mass both vertically and horizontally to coincide
+with the nail. To get reasonably close vertically, make sure to put the
+slotted weight near the center of the stick vertically; otherwise you
+won't have enough range of adjustment available later.
+
+Once have the slotted weight close to the right horizontal position,
+use tape to lock the weight securely in place, and finish up by
+doing a final adjustment using the sliding bracket.
+
+The left-right adjustments should not take more than about 15 minutes.
+If they take longer than that, you're doing something wrong. It's not
+even important to get them more than approximately right, because
+at the end you'll be determining the moment of inertia from the graph
+of $\tau$ versus $\alpha$, and any maladjustment will only have an effect on the y-intercept of
+this graph, not its slope.
+
+In addition to the left-right adjustments, what is less obvious that it
+makes a difference how high the weights are placed. That is,
+the center of mass of the whole balanced setup must coincide
+both vertically and horizontally with the nail. This is the reason
+for using bolts as two of the weights; they can be easily moved up and down.
+
+The concept
+is shown in the figure above using a rectangle in place of
+the actual apparatus.
+In (d), there will always be a
+clockwise torque on the rectangle, because the center of
+mass is to the right of the nail.
+In (e), there is zero torque if the rectangle is initially
+released from this horizontal position, but the equilibrium
+is unstable, because the center of mass is above the axis of
+rotation. Our experiment depends on the cancellation of the
+gravitational torques on everything but the extra weight,
+but in a case like (e), this assumption would only be valid
+when the apparatus was initially released from horizontal.
+Lat\-er in the motion, there would be an undesired and unknown
+extra torque. Although it is visually obvious in this figure
+that the rectangle's center of mass is too high, you can't
+tell visually with the actual apparatus. The way to tell if
+the center of mass is too high is that if you tilt the meter
+stick a little bit to the right, it immediately accelerates
+clockwise, whereas if you tilt it a little to the left, it
+accelerates counterclockwise.
+
+In (f), we have a stable equilibrium. Again, there is an
+unknown, undesired torque unless the rectangle just happens
+to be horizontal. You can tell if you have this situation
+because the apparatus can swing back and forth about its
+stable equilibrium position.
+
+You want a \emph{neutral} equilibrium, i.e., no matter what
+angle you release it from, the meter stick just stays there.
+A good way to home in on a neutral equilibrium is to first obtain
+a stable equilibrium, and use a stopwatch to time the oscillations
+around equilibrium. If you then raise one of the bolts, getting
+closer to a neutral equilibrium, the period of the oscillations
+will increase. Theoretically this period becomes infinite at neutral
+equilibrium, but in reality what happens is that if you're close
+to neutral equilibrium, static friction will keep the stick still,
+no matter what angle you release it at.
+
+Some of the hardware is permanently attached, so you can't take it
+off and weigh it separately. The mass of each meter stick is written
+on its back. The other masses are as follows:\\
+\begin{tabular}{ll}
+3/4-inch bolt       & 204.4 g \\
+3/4-inch nut        &  49.7 g \\
+small hose clamp (around ruler) & 17.2 g \\
+medium hose clamp & 19.4 g \\
+large hose clamp & 20.1 g\\
+sliding bracket and hook & 15.7 g \\
+\end{tabular}\\
+To tell whether the hose clamp wrapped around the 3/4-inch nut
+is medium or large, look for the X marked on the tightening machines
+of the large ones. (The large ones also have about an inch and a half of
+extra steel band sticking out.)
+
+\observations
+
+Now add the extra weight so that the meter stick is slightly
+unbalanced.  The idea of this lab is to release the meter
+stick and use the photogate to find how quickly it is moving
+once it has rotated through some angle, using the photogate
+to find the amount of time required for the tip of the meter
+stick to pass through the photogate.  From your measurement
+of $\Delta t$ using the photogate, you can find $\omega=\Delta \theta/\Delta t$, 
+which is an approximation to the meter
+stick's final angular velocity.
+
+Once you know the meter stick's final value of $\omega $,
+you can extract experimental moment of inertia.
+
+This lab is subject to systematic errors due to friction and to
+imperfect left-right adjustment of the center of mass.
+Both of these cause a constant to be added to the torque.
+To eliminate this error, you should take data with multiple
+values of the extra hanging weight, and extract the experimental
+moment of inertia from the slope of a graph of $\tau$ as a function
+of $\alpha$. Any constant added onto the torques merely changes
+the y-intercept of this graph, without changing its slope.
+
+Tips:
+
+\begin{itemize}
+\item[] You may want to put something under the fulcrum base to
+raise everything up higher.
+
+\item[] Although the balanced configuration, with $\tau_{total}=0$,
+still has $\tau_{total}=0$ no matter what angle it is at,
+the torque exerted by the extra weight does depend a little
+on what angle the meter stick is at.  This is because of the
+factor of $\sin\theta_{rF} $ in the definition $\tau=rF\sin\theta_{rF} $. 
+(Note that $\theta_{rF}$ is not the same as the angle $\theta$
+shown in the figure below.)
+Since the torque is not constant, the
+angular acceleration is not constant, leading to complications.
+ You can avoid this problem by confining all your measurements
+to a fairly small range of positions near horizontal.  As
+long as $\theta_{rF} $ is fairly close to $90\degunit$, $\sin\theta_{rF} $ 
+is extremely close to 1, and it is a good enough
+approximation to assume a constant torque $rF$
+producing a constant angular acceleration. For instance, as
+long as $\theta_{rF} $ is within $20\degunit$ above or below
+horizontal, $\sin\theta_{rF} $ changes by no more than 0.06.
+
+\item[] Although you want to work only with nearly horizontal
+positions of the meter stick so that the torque is
+approximately constant, you also need to make sure that the
+total angle traversed by the meter stick is still reasonably
+large compared to the angle traversed while the meter stick
+is blocking the photogate.  Otherwise your measurement of
+$\omega =\Delta \theta/\Delta t$ will not be a good approximation to
+the final instantaneous angular velocity.
+
+\item[] As you will find in your prelab, the angular acceleration
+depends on the square of the angle $\Delta\theta$. Measuring this angle
+accurately is therefore vital in order to get a good result.
+\emph{A protractor cannot measure an angle this small with
+sufficient accuracy.} Use trigonometry to determine this angle.
+
+\item[] It's easiest if you use radian measure throughout.  The
+equation $\tau_{total}=I\alpha $ is only true if $\alpha$ is
+measured in $\zu{radians}/\sunit^2$.
+
+\end{itemize}
+
+\prelab
+
+\prelabquestion  The figures below show the angles that you will measure
+directly. In addition you will measure the time for which the photogate
+is blocked. Derive an equation for the experimental value of the
+final angular velocity, expressed in terms of quantities you
+will actually measure directly. Note that this
+lab is exactly analogous to lab \ref{lab:acceltwod}.
+
+\fig{me-moi-angles}
+
+\prelabquestion  Why would it not be meaningful to try to discuss the
+meter stick's velocity, rather than its angular velocity?
+
+\prelabquestion Find the meter stick's experimental angular acceleration
+$\alpha_{exp}$ in terms of $\theta$ and $\omega_f$, and then substitute
+in your answer from P1 to get $\alpha$ in terms of quantities that
+you can measure directly.
+
+\analysis
+
+Use the slope of the graph of $\tau$ versus $\alpha$ to find the
+experimental moment of inertia. See appendix \ref{appendix:graphing}
+on p.~\pageref{appendix:graphing} for how to do this.
+
+Compare with the theoretical
+moment of inertia calculated by knowing how the mass is distributed.
+
+For extra credit,
+correct for the fact that the bolts have a certain length,
+so they contribute more to the moment of inertia than a pointlike mass.
+For this correction, you can use the parallel axis theorem, which is
+stated in section 15.10 of \emph{Mechanics}. The size of
+the resulting correction to the moment of inertia is on the order of a few
+percent.

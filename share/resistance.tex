@@ -1,0 +1,246 @@
+\lab{Electrical Resistance}\label{lab:resistance}
+
+\apparatus
+\equipn{DC power supply (Thornton)}{1/group}
+\equipn{digital multimeters (Fluke and HP)}{2/group}
+\equip{resistors, various values}
+\equip{unknown electrical components}
+\equip{alligator clips}
+\equip{spare fuses for multimeters --- Let students replace fuses themselves.}
+
+\begin{goals}
+
+\item[] Measure curves of voltage versus current for three
+objects: your body and two unknown electrical components.
+
+\item[] Determine whether they are ohmic, and if so, determine their resistances.
+\end{goals}
+
+\introduction
+
+Your nervous system depends on electrical currents, and
+every day you use many devices based on electrical currents
+without even thinking about it. Despite its ordinariness,
+the phenomenon of electric currents passing through liquids
+(e.g., cellular fluids) and solids (e.g., copper wires) is a
+subtle one. For example, we now know that atoms are composed
+of smaller, subatomic particles called electrons and nuclei,
+and that the electrons and nuclei are electrically charged,
+i.e., matter is electrical. Thus, we now have a picture of
+these electrically charged particles sitting around in
+matter, ready to create an electric current by moving in
+response to an externally applied voltage. Electricity had
+been used for practical purposes for a hundred years,
+however, before the electrical nature of matter was proven
+at the turn of the 20th century.
+
+Another subtle issue involves Ohm's law,
+\begin{equation*}
+       I = \frac{\Delta V}{R} \qquad ,
+\end{equation*}
+where $\Delta V$ is the voltage difference applied across an
+object (e.g., a wire), and $I$ is the current that flows in
+response. A piece of copper wire, for instance, has a
+constant value of $R$  over a wide range of voltages. Such
+materials are called ohmic. Materials with non-constant  are
+called non-ohmic. The interesting question is why so many
+materials are ohmic. Since we know that electrons and nuclei
+are bound together to form atoms, it would be more
+reasonable to expect that small voltages, creating small
+electric fields, would be unable to break the electrons and
+nuclei away from each other, and no current would flow at
+all --- only with fairly large voltages should the atoms be
+split up, allowing current to flow. Thus we would expect $R$
+to be infinite for small voltages, and small for large
+voltages, which would not be ohmic behavior. It is only
+within the last 50 years that a good explanation has been
+achieved for the strange observation that nearly all solids
+and liquids are ohmic.
+
+\section*{Terminology, Schematics, and Resistor Color Codes}
+
+The word ``resistor'' usually implies a specific type of
+electrical component, which is a piece of ohmic material
+with its shape and composition chosen to give a desired
+value of $R$. Any piece of an ohmic substance, however, has
+a constant value of $R$, and therefore in some sense
+constitutes a ``resistor.'' The wires in a circuit have
+electrical resistance, but the resistance is usually
+negligible (a small fraction of an Ohm for several
+centimeters of wire). 
+
+The usual symbol for a resistor in an electrical schematic
+is this \figinsidetext{em-ohm-resistor}, but some recent schematics 
+use this \figinsidetext{em-ohm-modresistor}. The symbol \figinsidetext{em-ohm-battery}
+represents a fixed source of voltage such as a battery,
+while   \figinsidetext{em-ohm-varvoltage} represents an adjustable voltage source, such as
+the power supply you will use in this lab.
+
+In a schematic, the lengths and shapes of the lines
+representing wires are completely irrelevant, and are
+usually unrelated to the physical lengths and shapes of the
+wires. The physical behavior of the circuit does not depend
+on the lengths of the wires (unless the length is so great
+that the resistance of the wire becomes non-negligible), and
+the schematic is not meant to give any information other
+than that needed to understand the circuit's behavior. All
+that really matters is what is connected to what.
+
+\fig{em-ohm-seriesandparallel}
+
+For instance, the schematics (a) and (b) above are
+completely equivalent, but (c) is different. In the first
+two circuits, current heading out from the battery can
+``choose'' which resistor to enter. Later on, the two
+currents join back up. Such an arrangement is called a
+parallel circuit. In the bottom circuit, a series circuit,
+the current has no ``choice'' --- it must first flow through
+one resistor and then the other.
+
+Resistors are usually too small to make it convenient to
+print numerical resistance values on them, so they are
+labeled with a color code, as shown in the table and example below.
+
+\fig{em-ohm-colorcodetable}
+\fig{em-ohm-colorcodeeg}
+
+\setup
+
+Obtain your two unknowns from your instructor. Group 1 will
+use unknowns 1A and $1B$, group 2 will use 2A and $2B$, and so on.
+
+Here is a simplified version of the basic circuit you will
+use for your measurements of $I$ as a function of $\Delta
+V$. Although I've used the symbol for a resistor, the
+objects you are using are not necessarily resistors, or even ohmic.  
+
+\fig{em-ohm-simple}
+
+Here is the actual circuit, with the meters included. In
+addition to the unknown resistance $R_U$, a known resistor
+$R_K$ ($\sim 1\zu{k}\Omega $ is fine) is included to limit the
+possible current that will flow and keep from blowing fuses
+or burning out the unknown resistance with too much current.
+This type of current-limiting application is one of the
+main uses of resistors.
+
+\fig{em-ohm-complicated}
+
+
+
+\observations
+
+\labpart{ Unknown component A}
+
+Set up the circuit shown above with unknown component A.
+Most of your equipment accepts the banana plugs that your
+cables have on each end, but to connect to $R_U$ and $R_K$
+you need to stick alligator clips on the banana plugs. See
+Appendix \ref{appendix:meter} for information about how to set up and use the
+two multimeters. Do not use the pointy probes that come with
+the multimeters, because there is no convenient way to
+attach them to the circuit --- just use the banana plug
+cables. Note when you need three wires to come together at
+one point, you can plug a banana plug into the back of
+another banana plug.
+
+Measure $I$ as a function of $\Delta V$. Make sure to take
+measurements for both positive and negative voltages.
+
+Often when we do this lab, it's the first time in several months
+that the meters have been used. The small hand-held meters have
+a battery, which may be dead. Check the battery icon on the LCD screen.
+
+\labpart{ Unknown component B}
+
+Repeat for unknown component B.
+
+\prelab
+
+\prelabquestion  Check that you understand the interpretations of the
+following color-coded resistor labels:
+
+\begin{tabular}{ll}
+   blue   gray   orange   silver    &= 68 k$\Omega$  $\pm$ 10\%  \\
+   blue   gray   orange   gold    &= 68 k$\Omega$  $\pm$ 5\%  \\
+   blue   gray   red   silver    &= 6.8 k$\Omega$  $\pm$ 10\%  \\
+   black   brown   blue   silver    &= 1 M$\Omega$  $\pm$ 10\%  
+\end{tabular}
+
+Now interpret the following color code:
+
+\begin{tabular}{ll}
+   green   orange   yellow   silver    &=    ?  
+\end{tabular}
+
+\prelabquestion  Fit a line to the following sample data and use the
+slope to extract the resistance (see Appendix \ref{appendix:graphing}).
+
+\fig{em-ohm-samplegraph}
+
+Your result should be consistent with a resistor color code
+of green-violet-yellow.
+
+\prelabquestion  Plan how you will measure $I$ versus $\Delta V$ for both
+positive and negative values of $\Delta V$ , since the power
+supply only supplies positive voltages.
+
+\prelabquestion  Would data like these indicate a negative resistance, or
+did the experimenter just hook something up wrong? If the
+latter, explain how to fix it.
+
+\fig{em-ohm-negative}
+
+\prelabquestion  Explain why the following statement about the resistor
+$R_K$ is incorrect:
+``You have to make $R_K$ small compared to $R_U$, so it
+won't affect things too much.''
+
+
+\analysis
+
+Graph $I$ versus $\Delta V$  for all three unknowns. Decide
+which ones are ohmic and which are non-ohmic. For the ones
+that are ohmic, extract a value for the resistance (see
+appendix \ref{appendix:graphing}). Don't
+bother with analysis of random errors, because the main
+source of error in this lab is the systematic error in the
+calibration of the multimeters (and in part C the
+systematic error from the subject's fidgeting).
+
+\section*{Programmed Introduction to Practical Electrical Circuits}
+
+Physics courses in general are compromises between the
+fundamental and the practical, between exploring the basic
+principles of the physical universe and developing certain
+useful technical skills. Although the electricity and
+magnetism labs in this manual are structured around the
+sequence of abstract theoretical concepts that make up the
+backbone of the lecture course, it's important that you
+develop certain practical skills as you go along. Not only
+will they come in handy in real life, but the later parts of
+this lab manual are written with the assumption that you
+will have developed them.
+
+As you progress in the lab course, you will find that the
+instructions on how to construct and use circuits become
+less and less explicit. The goal is not to make you into an
+electronics technician, but neither should you emerge from
+this course able only to flip the switches and push the
+buttons on prepackaged consumer electronics. To use a
+mechanical analogy, the level of electrical sophistication
+you're intended to reach is not like the ability to rebuild
+a car engine but more like being able to check your own oil.
+
+In addition to the physics-based goals stated at the
+beginning of this section, you should also be developing the
+following skills in lab this week:
+
+(1) Be able to translate back and forth between schematics
+and actual circuits.
+
+(2) Use a multimeter (discussed in Appendix \ref{appendix:meter}), 
+given an explicit schematic showing how to
+connect it to a circuit.
+
+Further practical skills will be developed in the following lab.

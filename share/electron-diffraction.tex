@@ -1,0 +1,286 @@
+\lab{Electron Diffraction}\label{lab:electron-diffraction}
+
+\apparatus
+
+\equip{cathode ray tube (Leybold 555 626)}
+\equip{high-voltage power supply (new Leybold)}
+\equip{100-k$\Omega$ resistor with banana-plug connectors}
+\equip{Vernier calipers}
+
+
+\begin{goals}
+
+\item[] Observe wave interference patterns (diffraction patterns)
+of electrons, demonstrating that electrons exhibit wave
+behavior as well as particle behavior.
+
+\item[] Learn what it is that determines the wavelength of an electron.
+\end{goals}
+
+\introduction
+
+
+The most momentous discovery of 20th-century physics has
+been that light and matter are not simply made of waves or
+particles --- the basic building blocks of light and matter
+are strange entities which display both wave and particle
+properties at the same time. In our course, we have already
+learned about the experimental evidence from the photoelectric
+effect showing that light is made of units called photons,
+which are both particles and waves. That probably disturbed
+you less than it might have, since you most likely had no
+preconceived ideas about whether light was a particle or a
+wave. In this lab, however, you will see direct evidence
+that electrons, which you had been completely convinced were
+particles, also display the wave-like property of interference.
+Your schooling had probably ingrained the particle
+interpretation of electrons in you so strongly that you used
+particle concepts without realizing it. When you wrote
+symbols for chemical ions such as $\zu{Cl}^{-}$ and $\zu{Ca}^{2+}$, you
+understood them to mean a chlorine atom with one excess
+electron and a calcium atom with two electrons stripped off.
+By teaching you to count electrons, your teachers were
+luring you into the assumption that electrons were
+particles. If this lab's evidence for the wave properties of
+electrons disturbs you, then you are on your way to a deeper
+understanding of what an electron really is --- both a
+particle and a wave.
+
+\figcaption{mo-edf-tube}{The electron diffraction tube. The distance
+labeled as 13.5 cm in the figure actually varies from about 12.8 cm to
+13.8 cm, even for tubes that otherwise appear identical. This doesn't
+affect your results, since you're only searching for a proportionality.}
+
+\section*{Method}
+
+What you are working with is basically the same kind of
+vacuum tube as the picture tube in your television. As in a
+TV, electrons are accelerated through a voltage and shot in
+a beam to the front (big end) of the tube, where they hit a
+phosphorescent coating and produce a glow. You cannot see
+the electron beam itself. There is a very thin carbon foil
+(it looks like a tiny piece of soap bubble) near where the
+neck joins the spherical part of the tube, and the electrons
+must pass through the foil before crossing over to the
+phosphorescent screen.
+
+The purpose of the carbon foil is to provide an ultra-fine
+diffraction grating --- the ``grating'' consists of the
+crystal lattice of the carbon atoms themselves! As you will
+see in this lab, the wavelengths of the electrons are very
+short (a fraction of a nanometer), which makes a conventional
+ruled diffraction grating useless --- the closest spacing
+that can be achieved on a conventional grating is on the
+order of one micrometer. The carbon atoms in graphite are
+arranged in sheets, each of which consists of a hexagonal
+pattern of atoms like chicken wire. That means they are not
+lined up in straight rows, so the diffraction pattern is
+slightly different from the pattern produced by a ruled grating.
+
+Also, the carbon foil consists of many tiny graphite
+crystals, each with a random orientation of its crystal
+lattice. The net result is that you will see a bright spot
+surrounded by two faint circles. The two circles represent
+cones of electrons that intersect the phosphor. Each cone
+makes an angle $\theta $ with respect to the central axis of
+the tube, and just as with a ruled grating, the angle is given by
+\begin{equation*}
+         \sin\theta   =  \lambda /d  
+\end{equation*}
+
+where $\lambda $ is the wavelength of the wave. For a ruled
+grating, $d$ would be the spacing between the lines. In this
+case, we will have two different cones with two different
+$\theta $'s, $\theta_1$ and $\theta_2$, corresponding to two
+different $d's$, $d_1$ and $d_2$. Their geometrical
+meaning is shown below.
+
+\figcaption{mo-edf-graphite}{The carbon atoms in the graphite crystal are
+arranged hexagonally.}
+
+\mysubsubsection{Safety}
+
+This lab involves the use of voltages of up to 6000 V. 
+Do not be afraid of the equipment, however;
+there is a fuse in the high-voltage supply that limits the
+amount of current that it can produce, so it is not
+particularly dangerous.  Read the safety checklist on high
+voltage in Appendix \ref{appendix:hvsafety}. Before beginning the lab, make sure
+you understand the safety rules, initial them, and show your
+safety checklist to your instructor. If you don't understand
+something, ask your instructor for clarification.
+
+In addition to the high-voltage safety precautions, please
+observe the following rules to avoid damaging the apparatus:
+
+\_\_\_\_\_\_ The tubes cost \$1000. Please treat them with
+respect! Don't drop them! Dropping them would also be a safety
+hazard, since they're vacuum tubes, so they'll implode violently
+if they break.
+
+\_\_\_\_\_\_ Do not turn on anything until your instructor
+has checked your circuit.
+
+\_\_\_\_\_\_ Don't operate the tube continuously at the highest
+voltage values (5000-6000 V). It produces x-rays when used at these
+voltages, and the strong beam also decreases the life of the tube.
+You can use the circuit on the right side of
+the HV supply's panel, which limits its own voltage to 5000 V.
+Don't leave the tube's heater on when you're not actually taking
+data, because it will decrease the life of the tube.
+
+\setup
+
+You setup will consist
+of two circuits, a heater circuit and the high-voltage circuit. 
+
+The heater circuit is to heat the cathode, increasing the
+velocity with which the electrons move in the metal and
+making it easier for some of them to escape from the
+cathode. This will produce the friendly and nostalgia-producing
+yellow glow which is characteristic of all vacuum-tube
+equipment. The heater is simply a thin piece of wire, which
+acts as a resistor when a small voltage is placed across it,
+producing heat.
+Connect the heater connections, labeled F1 and F2, to the
+6-V AC outlet at the back of the HV supply. 
+
+The high-voltage circuit's job is to accelerate the electrons
+up to the desired speed. An electron that happens to jump out
+of the cathode will head ``downhill'' to the anode. (The anode
+is at a \emph{higher} voltage than the cathode, which would make
+it seem like it would be uphill from the cathode to the anode.
+However, electrons have negative charge, so they're like
+negative-mass water that flows uphill.) The high voltage
+power supply is actually two different power supplies in one
+housing, with a left-hand panel for one and a right-hand panel
+for the other.
+Connect the
+anode (A) and cathode (C) to the right-hand panel of the
+HV supply, and switch the switch on the HV supply to the
+right, so it knows you're using the right-hand panel.
+
+The following connections are specified in the documentation,
+although I don't entirely understand what they're for.
+First, connect the electrode X to the same plug as the
+cathode.\footnote{If you look inside the tube, you can see
+that X is an extra electrode sandwiched in between the anode
+and the cathode. I think it's meant to help produce a focused
+beam.}
+Also, connect F1 to C with the wire that has the 100-k$\Omega$
+resistor spliced into it. The circuit diagram on page \pageref{fig:mo-edf-circuit} summarizes
+all this.
+
+Check your circuit with your instructor before turning it on!
+
+\widefigcaption{mo-edf-circuit}{The circuit for the new setup.\label{fig:mo-edf-circuit}}
+
+\observations
+
+You are now ready to see for yourself the evidence of the
+wave nature of electrons, observe the diffraction pattern
+for various values of the high voltage, and figure out what
+determines the wavelength of the electrons. You will need to
+do your measurements in the dark.
+
+You will measure the $\theta $'s, and thus determine the
+wavelength, $\lambda $, for several different voltages. Each
+voltage will produce electrons with a different velocity,
+momentum, and energy.  
+
+Hints:
+
+\begin{itemize}
+\item[] While measuring the diffraction pattern, don't touch the
+vacuum tube --- the static electric fields of one's body
+seem to be able to perturb the pattern.
+
+\item[] It is easiest to take measurements at the highest
+voltages, where the electrons pack a wallop and make nice
+bright rings on the phosphor. Start with the highest
+voltages and take data at lower and lower voltages until you
+can't see the rings well enough to take precise data. To get
+unambiguous results, you'll need to take data with the
+widest possible range of voltages.
+
+\item[] In order to reach a definite conclusion about what
+$\lambda $ is proportional to, you will need accurate data.
+Do your best to get good measurements. Pay attention to
+possible problems incurred by viewing the diffraction
+patterns from different angles on different occasions. Try
+repeating a measurement more than once, and seeing how big
+your random errors are.
+
+\item[] You need to get data down to about 2 or 3 kV in order to
+get conclusive results from this experiment. The tubes are not
+quite identical, and were not designed to operate at such low
+voltages, so they haven't been tested under those conditions.
+Experience has shown that some of the tubes work at lower voltages
+than others. The group that has the tube that works the best at
+low voltages can share their low-voltage data with the other groups.
+\end{itemize}
+
+\analysis
+
+Once you have your data, you can try plotting $\lambda $ as
+a function of, say, the kinetic energy, $KE$, of the
+electrons, and see if it makes something simple like a
+straight line. Make sure your graph includes the origin (see
+below). You could also try plotting $\lambda $ as a function
+of the electrons' momentum, $p$, or as a function of other
+quantities such as $1/KE$, $1/p$, etc. You can simplify your
+analysis by leaving out constant factors.
+
+What does $\lambda $ seem to be proportional to? Your data
+may cover a small enough range of voltage that more than one
+graph may look linear. However, only one will be consistent
+with a line that passes \emph{through the origin}, as
+it must for a proportionality. This is why it
+is important to have your graph include the origin.
+
+\prelab
+
+The week before you are to do the lab, briefly familiarize
+yourself visually with the apparatus.
+
+Read the high voltage safety checklist.
+
+\prelabquestion  
+The figure  shows the vacuum tube as having
+a particular shape, which is a sphere with the foil and phosphor
+at opposite ends of a diamater. In reality, the tubes we're using now are not quite that
+shape. To me, they look like they may have been shaped so that the phosphor
+surface is a piece of a sphere centered on the foil. Therefore the arc lengths across
+the phosphor can be connected to diffraction angles very simply via the
+definition of radian measure. Plan how you will do this.
+
+\prelabquestion  If the voltage difference across which the electrons are
+accelerated is $V$, and the known mass and charge of the
+electron are $m$ and $e$, what are the electrons' kinetic
+energy and momentum, in terms of $V,m$, and $e?$ (As a
+numerical check on your results, you should find that
+$V=5700$ V gives $KE=9.1\times10^{-16}$ J and
+$p=4.1\times10^{-23}\ \kgunit\unitdot\munit/\sunit$.)
+
+\prelabquestion All you're trying to do based on your graphs is judge which
+one could be a graph of a proportionality, i.e., a line passing through the
+origin. Because of this, you can omit any constant factors from the equations
+you found in P2. When you do this, what do your expressions turn out to be?
+
+\prelabquestion  Why is it not logically possible for the wavelength to
+be proportional to both $p$ and $KE$? To both
+$1/p$ and $1/KE$?
+
+\prelabquestion  I have suggested plotting $\lambda $ as a function of
+$p$, $KE$, $1/p$ and $1/KE$ to see if $\lambda $
+is directly proportional to any of them. Once you have your
+raw data, how can you immediately rule out two of these four
+possibilities and avoid drawing the graphs?
+
+\prelabquestion  On each graph, you will have two data-points for each
+voltage, corresponding to two different measurements of the
+same wavelength. The two wavelengths will be almost the
+same, but not exactly the same because of random errors in
+measuring the rings. Should you get the wavelengths by
+combining the smaller angle with $d_1$ and the larger angle
+with $d_2$, or vice versa?

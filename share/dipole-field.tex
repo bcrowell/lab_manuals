@@ -1,0 +1,179 @@
+\lab{The Dipole Field}\label{dipolefieldlab}\label{lab:dipole-field}
+
+\widefigcaption{em-dip-fieldvsdistance}{Measuring the variation of the
+bar magnet's field with respect to distance.}\label{fig:dipbofr}
+
+\apparatus
+\equip{bar magnet}
+\equip{compass}
+\equip{graph paper, with 1 cm squares}
+\equip{Hall effect magnetic field probes}
+\equip{LabPro interfaces, DC power supplies, and USB cables}
+
+\goal{Find how the magnetic field of a bar magnet changes with
+distance along one of the magnet's lines of symmetry.}
+
+\introduction
+
+This lab is designed to be used along with section 10.3 of Simple
+Nature, which is about the superposition (i.e., addition) of fields. That section
+is about electric fields, and the basic principle is that if we have
+two sets of sources (charges) that would individually create
+fields $\zb{E}_1$ and $\zb{E}_2$, then their combined field is
+the vector sum $\zb{E}_1+\zb{E}_2$. Static electric fields, however,
+are difficult to control and measure. Magnetic fields are much easier
+to work with, and the same vector addition principle applies to them.
+In this lab, you'll expose a magnetic compass to the superposed magnetic
+fields of the earth and a bar magnet. 
+
+\labpart{Qualitative Mapping of the Dipole's Field}
+You can use a compass to map out part of the magnetic
+field of a bar magnet. It turns out that the bar magnet is the
+magnetic equivalent of an electric dipole. The compass is affected by
+both the earth's field and the bar magnet's field, and
+points in the direction of their vector sum, but if you put the
+compass within a few cm of the bar magnet, you're seeing mostly
+its field, not the earth's. Investigate the bar magnet's field,
+and sketch it in your lab notebook. You should see that it looks like
+the field a dipole.
+
+\labpart{Variation of Field With Distance: Deflection of a Magnetic Compass}\label{dipole-compass}
+Magnetic fields are actually measured in units of Tesla (T), but
+for the purposes of this part of the lab, we'll just measure the fields
+in units of the earth's magnetic field. That is, we define the
+earth's magnetic field to have a strength of exactly 1.0 in
+Fullerton.\footnote{Actually we're defining its horizontal component
+to be one unit --- the compass can't respond to vertical fields.
+The dip angle of the magnetic field in Fullerton is fairly steep.}
+You can infer the strength of the bar magnet's field at a
+given point by putting the compass there and seeing how
+much it is deflected. The standard notation for magnetic field is
+$B$, so we can notate the fields of the earth and the magnet as
+$B_e$ and $B_m$. 
+
+The task can be simplified quite a bit if you restrict
+yourself to measuring the magnetic field at points along one
+of the magnet's two lines of symmetry, shown in the figure. 
+
+\fig{em-dip-symmetry}
+
+If the magnet is flipped across the vertical axis, the north
+and south poles remain just where they were, and the field
+is unchanged. That means the entire magnetic field is also
+unchanged, and the field at a point such as point b, along
+the line of symmetry, must therefore point straight up.
+
+If the magnet is flipped across the horizontal axis, then
+the north and south poles are swapped, and the field
+everywhere has to reverse its direction. Thus, the field at
+points along this axis, e.g., point a, must point straight up or down.
+
+Line up your magnet so it is pointing east-west. Choose one
+of the two symmetry axes of your magnet, and measure the
+deflection of the compass at two points along that axis,
+as shown in the second figure, at the end of the lab.
+As part of your prelab, you will use vector addition to find an equation
+for $B_m/B_e$, the magnet's field in units of the Earth's, in terms
+of the deflection angle $\theta$. For your first point, find the
+distance $r$ at which the deflection is 70 degrees; this angle is choses because
+it's about as big as it can be without giving very poor relative precision 
+in the determination of the magnetic field. For your second data-point,
+use twice that distance. By what factor does the field decrease
+when you double $r$?
+
+Note that the measurements are very sensitive to the
+relative position and orientation of the bar magnet and
+compass. You can position them accurately by laying them
+both on top of a piece of graph paper, but before you set all that up,
+get a preliminary estimate of the distances you'll be using, because otherwise
+you can end up wasting your time.
+
+Based on your two data-points, form a hypothesis about the variation
+of the dipole's field with distance according to a power law $B\propto r^p$.
+(If you've done homework problems 11 and 16 in chapter 10 of Simple Nature,
+then you know what $p$ should be for an \emph{electric} dipole, based on 
+vector addition of the electric fields of two charges.)
+
+\labpart{Variation of Field With Distance: Hall Effect Magnetometer}
+
+In this part of the lab, you will test your hypothesis about the power
+law relationship $B\propto r^p$; you will find out whether the field really
+does obey such a law, and if it does, you will determine $p$ accurately.
+
+This part of the lab uses a device called a Hall effect magnetometer for
+measuring magnetic fields. You don't know enough about magnetism yet to 
+understand the theory behind the operation of the device, so you can
+just think of it as a mysterious little probe, like a wand, that you can place at some point
+in space and measure the magnetic field. The probe only measures the component of the
+magnetic field vector that is parallel to its own axis. Plug the probe into the
+LabPro interface, connect the interface to the computer's USB port, and
+plug the interface's DC power supply in to it. Start up version 3 of Logger Pro, and
+it will automatically recognize the probe and start displaying magnetic fields
+on the screen, in units of mT (millitesla). The probe has two ranges, one that can
+read fields up to 0.3 mT, and one that goes up to 6.4 mT. You can select either one using the
+switch on the probe. To test your hypothesis with good precision, you need to obtain
+data over the widest possible range of fields. Always use the more sensitive 0.3 mT scale
+whenever possible, because it will give better precision for low fields. Be careful,
+however, because if you expose the probe to a field that's beyond its maximum range, it
+will give incorrect readings. Although you have an expectation about the direction of the
+field (based both on symmetry arguments and on your qualitative results from part A),
+it's a good idea to try orienting the probe along different axes to see what happens.
+In general, if you want to use the probe to measure a field whose direction and magnitude
+are both unknown, you need to orient the probe along two different axes, and determine the
+two components separately.
+
+Two extra complications are that the Earth's field is adding on to the magnet's field, and the
+absolute calibration of the probe is very poor by default.  
+You can make the computer take care of both of these issues automatically, by zeroing the
+sensor (Experiment$>$Zero) when it is exposed only to the Earth's field, and aligned perpendicular to it. This causes the
+computer to impose a calibration such that the Earth's field is considered to be exactly zero. You may need
+to redo the calibration each time you switch scales. If you then carry out the whole measurement with the
+probe and the magnet's field both aligned east-west, the Earth's field has no effect.
+
+\labpart{Variation of Field With Angle: Hall Effect Magnetometer}
+
+Homework problems 11 and 16 in chapter 10 of Simple Nature, predict that for
+an \emph{electric} dipole, the field in the midplane is exactly half as strong
+as the on-axis field, at the same distance. Test this prediction.
+
+Also, find the magnitude of the field at an angle of 45 degrees between the midplane
+and the axis. Since you don't know the direction of the field at this location based on
+symmetry arguments (and you only know it very roughly based on mapping with a compass in
+part A), you'll need to measure both of the field's components at this location.
+
+As you plan your observations in this part, you'll need to think about what is the
+best distance at which to place the probe. If the distance is too large, you may find that
+the field is too weak to measure with good precision. If the distance is too small, then the
+physical size of the probe becomes an issue, since the exact location at which the probe
+measures the field is ill-defined. (The probe measures a voltage created by the field in
+a sample of some material, and that sample has a finite size.)
+
+In part C, all the fields were along a single line, and there were no angles involved.
+That made it simple to get rid of the effect the Earth's field. That doesn't work in this part,
+however. One way of handling the difficulty is to flip the magnet by 180 degrees, and find
+the difference between the readings for the two opposite orientations of the magnet, which should
+equal twice the magnet's field. The Earth's field cancels out. This means that you need a total
+of four different measurements at each point in space, covering all four possible combinations of
+the orientation of the probe along x or y with both orientations of the magnet.
+
+\prelab
+
+\prelabquestion  Suppose that
+when the compass is 11.0 cm from the magnet, it is
+45 degrees away from north. What is
+the strength of the bar magnet's field at this location in space,
+in units of the Earth's field?
+
+\prelabquestion Find $B_m/B_e$ in terms of the deflection angle $\theta$. As a special
+case, you should be able to recover your answer to P1.
+
+\analysis
+
+Determine the magnetic
+field of the bar magnet as a function of distance. No error analysis is required. 
+Look for a power-law relationship using the log-log graphing technique described in 
+appendix \ref{appendix:powerlaws}. Does the power law hold for
+all the distances you investigated, or only at large distances?
+Compare this power law result with the result
+for the variation of an \emph{electric} dipole's field with
+distance.

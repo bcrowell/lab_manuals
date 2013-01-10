@@ -1,0 +1,232 @@
+\lab{RC Circuits}\label{lab:rc}
+
+\apparatus
+\equipn{oscilloscope}{1/group}
+\equip{Pasco PI-9587C function generator}{1/group}
+\equipn{unknown capacitor}{1/group}
+\equipn{known capacitors, 0.05 $\mu$F }{1/group}
+\equip{resistors of various values}
+
+\begin{goals}
+
+\item[] Observe the exponential curve of a discharging capacitor.
+
+\item[] Determine the capacitance of an unknown capacitor.
+\end{goals}
+
+\introduction
+
+God bless the struggling high school math teacher, but some
+of them seem to have a talent for making interesting and
+useful ideas seem dull and useless. On certain topics such
+as the exponential function, ex, the percentage of students
+who figure out from their teacher's explanation what it
+really means and why they should care approaches zero.
+That's a shame, because there are so many cases where it's
+useful. The graphs show just a few of the important
+situations in which this function shows up.
+
+\fig{em-rcc-exponentials}
+
+The credit card example is of the form
+\begin{equation*}
+    y=ae^{t/k}   \qquad   ,
+\end{equation*}
+while the Chernobyl graph is like
+\begin{equation*}
+    y=ae^{-t/k}    \qquad   ,
+\end{equation*}
+In both cases, $e$ is the constant $2.718\ldots$, and $k$ is a
+positive constant with units of time, referred to as the
+time constant. The first type of equation is referred to as
+exponential growth, and the second as exponential decay. The
+significance of $k$ is that it tells you how long it takes
+for $y$ to change by a factor of $e$. For instance, an 18\%
+interest rate on your credit card converts to $k=6.0$ years.
+That means that if your credit card balance is \$1000 in
+1996, by 2002 it will be \$2718, assuming you never really
+start paying down the principal.
+
+An important fact about the exponential function is that it
+never actually becomes zero --- it only gets closer and
+closer to zero. For instance, the radioactivity near
+Chernobyl will never ever become exactly zero. After a while
+it will just get too small to pose any health risk, and at
+some later time it will get too small to measure with
+practical measuring devices.
+
+Why is the exponential function so ubiquitous? Because it
+occurs whenever a variable's rate of change is proportional
+to the variable itself. In the credit card and Chernobyl examples,
+\begin{gather*}
+    (\text{rate of increase of credit card debt}) \\
+    \qquad	\propto(\text{present credit card debt})    \\
+    (\text{rate of decrease of the number of radioactive atoms}) \\
+    \qquad	\propto(\text{present number of radioactive atoms})    
+\end{gather*}
+
+For the credit card, the proportionality occurs because your
+interest payment is proportional to how much you currently
+owe. In the case of radioactive decay, there is a proportionality
+because fewer remaining atoms means fewer atoms available to
+decay and release radioactive particles. This line of thought
+leads to an explanation of what's so special about the
+constant $e$. If the rate of increase of a variable $y$ is
+proportional to $y$, then the time constant $k$ equals one
+over the proportionality constant, and this is true only if
+the base of the exponential is $e$, not 10 or some other number.
+
+Exponential growth or decay can occur in circuits containing
+resistors and capacitors. Resistors and capacitors are the
+most common, inexpensive, and simple electrical components.
+If you open up a cell phone or a stereo, the vast majority
+of the parts you see inside are resistors and capacitors.
+Indeed, many useful circuits, known as RC circuits, can be
+built out of nothing but resistors and capacitors. In this
+lab, you will study the exponential decay of the simplest
+possible RC circuit, shown below, consisting of one resistor
+and one capacitor in series.
+
+\fig{em-rcc-simplified}
+
+Suppose we initially charge up the capacitor, making an
+excess of positive charge on one plate and an excess of
+negative on the other. Since a capacitor behaves like
+$V=Q/C$, this creates a voltage difference across the
+capacitor, and by Kirchoff's loop rule there must be a
+voltage drop of equal magnitude across the resistor. By
+Ohm's law, a current $I=V/R=Q/RC$ will flow through
+the resistor, and we have therefore established a proportionality,
+\begin{gather*}
+    (\text{rate of decrease of charge on capacitor}) \\
+    \qquad	\propto(\text{present charge on capacitor})  \qquad .  \\
+\end{gather*}
+
+It follows that the charge on the capacitor will decay
+exponentially. Furthermore, since the proportionality
+constant is $1/RC$, we find that the time constant of the
+decay equals the product of $R$ and $C$. (It may not be
+immediately obvious that Ohms times Farads equals seconds, but it does.)
+
+Note that even if we put the charge on the capacitor very
+suddenly, the discharging process still occurs at the same
+rate, characterized by $RC$. Thus RC circuits can be used to
+filter out rapidly varying electrical signals while
+accepting more slowly varying ones. A classic example occurs
+in stereo speakers. If you pull the front panel off of the
+wooden box that we refer to as ``a speaker,'' you will find
+that there are actually \emph{two} speakers inside, a small
+one for reproducing high frequencies and a large one for the
+low notes. The small one, called the tweeter, not only
+cannot produce low frequencies but would actually be damaged
+by attempting to accept them. It therefore has a capacitor
+wired in series with its own resistance, forming an RC
+circuit that filters out the low frequencies while
+permitting the highs to go through. This is known as a
+high-pass filter. A slightly different arrangement of
+resistors and inductors is used to make a low-pass filter
+to protect the other speaker, the woofer, from high frequencies. 
+
+\observations
+
+
+In typical filtering applications, the RC time constant is
+of the same order of magnitude as the period of a sound
+vibration, say $\sim1$ ms. It is therefore necessary to
+observe the changing voltages with an oscilloscope rather
+than a multimeter. The oscilloscope needs a repetitive
+signal, and it is not possible for you to insert and remove
+a battery in the circuit hundreds of times a second, so you
+will use a function generator to produce a voltage that
+becomes positive and negative in a repetitive pattern. Such
+a wave pattern is known as a square wave. The mathematical
+discussion above referred to the exponential decay of the
+charge on the capacitor, but an oscilloscope actually
+measures voltage, not charge. As shown in the graphs below,
+the resulting voltage patterns simply look like a chain of
+exponential curves strung together.
+
+\fig{em-rcc-actualcircuit}
+
+\fig{em-rcc-rcgraphs}
+
+Make sure that the yellow or red ``VAR'' knob, on the front of the
+knob that selects the time scale, is clicked into place, not
+in the range where it moves freely --- otherwise the times
+on the scope are not calibrated.
+
+\labpart{ Preliminary observations}
+
+Pick a resistor and capacitor with a combined RC time
+constant of $\sim1$ ms. Make sure the resistor is at least
+$\sim10\zu{k}\Omega $, so that the internal resistance of the
+function generator is negligible compared to the resistance you supply.
+
+Note that the capacitance values printed on the sides of
+capacitors often violate the normal SI conventions about
+prefixes. If just a number is given on the capacitor with no
+units, the implied units are microfarads, mF. Units of nF
+are avoided by the manufacturers in favor of fractional
+microfarads, e.g., instead of 1 nF, they would use ``0.001,''
+meaning 0.001 $\mu $F. For picofarads, a capital P is
+used, ``PF,'' instead of the standard SI ``pF.''
+
+ Use the oscilloscope to observe what happens to the
+voltages across the resistor and capacitor as the function
+generator's voltage flips back and forth. Note that the
+oscilloscope is simply a fancy voltmeter, so you connect it
+to the circuit the same way you would a voltmeter, in
+parallel with the component you're interested in. Make sure the
+scope is set on DC, not AC, by doing CH 1$>$Coupling$>$DC. A
+complication is added by the fact that the scope and the
+function generator are fussy about having the grounded sides
+of their circuits connected to each other. The banana-to-BNC
+converter that goes on the input of the scope has a small
+tab on one side marked ``GND.'' This side of the scope's
+circuit must be connected to the ``LO'' terminal of the
+function generator. This means that when you want to switch
+from measuring the capacitor's voltage to measuring the
+resistor's, you will need to rearrange the circuit a little.
+
+If the trace on the oscilloscope does not look like the one
+shown above, it may be because the function generator is
+flip-flopping too rapidly or too slowly. The function
+generator's frequency has no effect on the RC time constant,
+which is just a property of the resistor and the capacitor. 
+
+If you think you have a working setup, observe the effect of
+temporarily placing a second capacitor in parallel with the
+first capacitor. If your setup is working, the exponential
+decay on the scope should become more gradual because you
+have increased RC. If you don't see any effect, it probably
+means you're measuring behavior coming from the internal $R$
+and $C$ of the function generator and the scope.
+
+Use the scope to determine the RC time constant, and
+check that it is correct.
+Rather than reading times and voltages by eye from the scope's x-y grid, you can make
+the scope give you a measuring cursor. Do Cursor$>$Type$>$Time, and Source$>$CH 1 . Use the top
+left knob to move the cursor to different times.
+
+
+\labpart{ Unknown capacitor}
+
+Build a similar circuit using your unknown capacitor plus a
+known resistor. Use the unknown capacitor with the same
+number as your group number. Take the data you will need in
+order to determine the RC time constant, and thus the
+unknown capacitance.
+
+As a check on your result, obtain a known capacitor with a
+value similar to the one you have determined for your
+unknown, and see if you get nearly the same curve on the
+scope if you replace the unknown capacitor with the new one.
+
+\prelab
+
+\prelabquestion  Plan how you will determine the capacitance and what
+data you will need to take.
+
+\analysis
+
+Determine the capacitance, with error analysis (appendices 2 and 3).

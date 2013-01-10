@@ -1,0 +1,259 @@
+\lab{The Photoelectric Effect}\label{lab:photoelectric-effect}
+
+\apparatus
+\equip{Hg gas discharge tube}
+\equip{light aperture assembly}
+\equip{lens/grating assembly}
+\equip{photodiode module, support base, and coupling rod}
+\equip{pieces of plywood}
+\equip{green and yellow filters}
+
+\begin{goals}
+
+\item[] Observe evidence that light has particle properties as
+well as wave properties.
+
+\item[] Measure Planck's constant.
+\end{goals}
+
+\introduction
+
+The photoelectric effect, a phenomenon in which light shakes
+an electron loose from an object, provided the first
+evidence for wave-particle duality: the idea that the basic
+building blocks of light and matter show a strange mixture
+of particle and wave behaviors. At the turn of the twentieth
+century, physicists assumed that particle and wave phenomena
+were completely distinct. Young had shown that light could
+undergo interference effects such as diffraction, so it had
+to be a wave. Since light was a wave composed of oscillating
+electric and magnetic fields, it made sense that when light
+encountered matter, it would tend to shake the electrons. It
+was only to be expected that something like the photoelectric
+effect could happen, with the light shaking the electrons
+vigorously enough to knock them out of the atom. The best
+theoretical estimates, however, were that light of ordinary
+intensity would take millions of years to do the trick ---
+it would take that long for the electron slowly to absorb
+enough energy to escape.
+
+The actual experimental observation of the photoelectric
+effect was therefore an embarrassment. It started up
+immediately, not after a million years. Albert Einstein,
+better known today for the theory of relativity, was the
+first to come up with the radical, and correct, explanation.
+Einstein simply suggested that in the photoelectric effect,
+light was behaving as a particle, now called a photon. The
+beam of light could be visualized as a stream of machine-gun
+bullets. The electrons would be small targets, but when a
+``light bullet'' did score a hit, it packed enough of an
+individual wallop to knock the electron out immediately.
+Based on other experiments involving the spectrum of light
+emitted by hot, glowing objects, Einstein also proposed that
+each photon had an energy given by
+\begin{equation*}
+         E  =  hf  ,  
+\end{equation*}
+where $f$ is the frequency of the light and $h$ is Planck's constant.
+
+In this lab, you will perform the classic experiment used to
+test Einstein's theory. You should refer to the description
+of the experiment in your textbook. Briefly, you will expose
+the metal cathode of a vacuum tube to light of various
+frequencies, and determine the voltage applied between the
+cathode and anode that just barely suffices to cut off the
+photoelectric current completely. This is known as the
+stopping voltage, $V_s$. According to Einstein's theory, the
+stopping voltage should obey the equation
+\begin{equation*}
+         e V_s  =  hf - E_s   ,  
+\end{equation*}
+where $E_s$ is the amount of energy
+required by an electron to penetrate the surface of
+the cathode and escape.
+
+\figcaption{mo-pho-optics}{Optical setup.}
+
+\setup
+
+You can use the Hg gas discharge tube to produce monochromatic
+light with the following wavelengths:\label{hg-wavelengths}
+
+\begin{tabular}{ll}
+color   &wavelength (nm)\\
+ultraviolet &  365\\
+violet   &405\\
+blue   &436\\
+green  & 546\\
+yellow  & 578
+\end{tabular}
+
+The diffraction grating splits up the light into these
+lines, so you can make one line at a time enter the
+photodiode. Slit 1 slides into the slot in the front of the
+discharge tube. The lens serves to create focused images of slit 1 at
+the photodiode.  The lens and diffraction grating are housed
+in a single unit, which is attached to a pair of rods (not
+shown) projecting from slit 1. Do not drop the lens and
+diffraction grating --- I have already damaged one by
+dropping it, and they cost \$200 to replace. For measurements
+with the green and yellow lines, green and yellow filters
+are used to help eliminate stray light of other colors ---
+they stick magnetically on the front of the collimator tube.
+Slit 2 and the collimator tube keep stray light from getting in.
+
+The photodiode module is held on top of a post on a rotating
+arm.  The ultraviolet line is invisible, but the front of
+slit 2 is coated with a material that fluoresces in UV
+light, so you can see where the line is.
+
+\figcaption{mo-pho-circuit}{Circuit.}
+
+\mysubsubsection{Circuit}
+
+The circuit in fig. (a) above is the one shown in textbooks
+for this type of experiment. Light comes in and knocks
+electrons out of the curved cathode. If the voltage is
+turned off, there is no electric field, so the electrons
+travel in straight lines; some will hit the anode, creating
+a current referred to as the photocurrent. If the voltage is
+turned on, the electric field repels the electrons from the
+wire electrode, and the current is reduced or eliminated.
+The stopping voltage would be measured by increasing the
+voltage until no more current was flowing. We used to use a
+setup very similar to this in this course, but it was
+difficult to get good data because it was hard to judge
+accurately when the current had reached zero.
+
+The circuit we now use, shown in fig. (b), uses a cute trick
+to determine the stopping voltage. The photocurrent
+transports electrons from the cathode to the anode, so a net
+positive charge builds up on the cathode, and a negative
+charge on the anode.  As the charge and the
+voltage increase, the photocurrent is reduced, until finally
+the voltage reaches the stopping voltage, and no more
+current can flow. You then read the voltage off of the
+voltmeter. When you have the next color of light shining on
+the cathode, you momentarily close the switch, discharging
+the photodiode, and then take your next measurement. The
+only disadvantage of this setup is that you cannot adjust
+the voltage yourself and see how the photocurrent varies with voltage.
+
+\setup
+
+Move the housing containing the grating and lens until you
+get a good focus at the front of the photodiode box. The
+square side needs to be facing away from the discharge tube.
+
+Diffraction patterns are supposed to be symmetric, i.e., the $m=1$
+and $m=-1$ maxima should be identical. In reality, there is something
+strange about this setup that can cause the shorter wavelength lines
+(especially the UV line) to be extremely dim on one side. Check which
+one is brighter on your apparatus.
+
+Just because the light gets in through slit 2 does not mean
+it is getting in to the photodiode. The original design of
+the apparatus allowed the photodiode module to twist around
+on its post, and it had to be adjusted carefully by trial and
+error. Because students were getting frustrated with this, I
+epoxied the photodiode modules onto their posts in the right
+orientation. This makes it impossible to disassemble the
+apparatus and put it in its storage box, but should get rid
+of the hassles with orienting it. However, you should still
+check that it's oriented correctly, because it's possible
+that your setup was a little different from mine,
+the epoxy can be cracked by rough handling, and the screw
+at the base of the post can also get loose. There
+are three things you should check to make sure the orientation
+is right: (1) Sighting along the tube like a gun, you should
+see that it looks like it's lined up with the center of the
+grating. (2) The tube can be lifted out on a hinge so that
+you can see the glass photodiode tube inside the box; check that light
+is actually falling on the opening on the side of the tube.
+(3) Take data using the UV line. If
+you don't get a bigger voltage for this line than for the
+others, then the light is not making it in to the photodiode.
+
+\observations
+
+You can now determine the stopping voltages corresponding to
+the five different colors of light.
+
+Hints:
+
+\begin{itemize}
+\item[] The biggest possible source of difficulty is stray light.
+The room should be dark when you do your measurements.
+
+\item[] The shortest wavelengths of light (highest frequencies),
+for which the energy of the photons is the highest, readily
+produce photoelectrons. The photocurrent is much weaker for
+the longer wavelengths. Start with the short-wavelength
+line and graduate to the more difficult, lower frequencies.
+Don't forget the filters for the yellow and green lines!
+
+\item[] If the button to zero the voltage doesn't work, it is
+because the batteries are dead.
+
+\item[] When you hit the button to zero the voltage, it may actually
+pop up high and then come back down. This is normal. (It's acting
+like an RC circuit with a long RC time constant).
+
+\item[] Check the batteries in your photodiode module before
+you start, using the two banana plugs designed for this purpose.
+If your batteries are dead, you need to replace them. I've also
+seen cases where the batteries are on the borderline at the beginning
+of the lab, and then die completely during the lab; in this
+situation, you'll notice that the stopping voltages you're
+measuring change over the course of the lab, and don't make
+sense. It won't hurt to check the batteries at the end of the
+lab as well as at the beginning.
+
+\item[] Where the lines hit the white front of slit 2, they should
+be sharp, and should not overlap. You can adjust the focus
+by moving the lens and grating in or out. If you can't get a
+good focus, check and make sure that the square side of the
+unit is away from the Hg tube.
+
+\item[] The photodiode module can be rotated on its post so that
+the light goes straight down the tube. If you don't line it
+up correctly, you'll be able to tell because the voltage
+will creep up slowly, rather than shooting up to a certain
+value and stopping. There is a screw that is supposed to
+allow you to lock the photodiode into position at the
+correct angle. Make sure to loosen the screw before trying
+to aim the photodiode, and lock it once it's aimed
+correctly. If your photodiode won't lock in place, you need
+to tighten the aluminum post that forms the base of the box.
+\end{itemize}
+
+\prelab
+
+The week before you are to do the lab, briefly familiarize
+yourself visually with the apparatus.
+
+\prelabquestion  In the equation $eV_s= hf - E_s $, verify that
+all three terms have the same units.
+
+\prelabquestion  Plan how you will analyze your data to determine 
+Planck's constant. Note that you don't know $E_s$, so you can't
+just write down an equation solved for $h$, with $E_s$ in it.
+
+\analysis
+
+Extract Planck's constant 
+from your data, with error bars (see appendix \ref{appendix:graphing}).
+Excel has a bug that makes it impossible to graph the data from this
+lab (apparently because it involves very big and very small numbers),
+so use LibreOffice, not Excel. As with pretty much all computer software,
+the right way to enter scientific notation is, for example, 3.4e-12 for $3.4\times10^{-12}$.
+
+Is your result for Planck's constant consistent
+with the previously measured value?
+
+Every electron that absorbs a photon acquires a kinetic
+energy equal to $hf$. Thus it would seem that if the
+voltage is less than the stopping voltage, every electron
+should have enough energy to reach the other electrode. Give
+two reasons why many electrons do not reach the other
+electrode even when the voltage is less than the stopping voltage.

@@ -1,0 +1,206 @@
+\lab{Resonance (short version for physics 222)}
+
+This is a simplified version of lab \ref{resonancelab}, meant to introduce
+some concepts related to mechanical resonance, without any
+detailed data-taking. The idea is to reinforce the relevant concepts
+from physics 221 so that they can be used as a metaphor for electrical
+resonances in 222.
+
+\apparatus
+\equipn{vibrator}{1/group}
+\equipn{Thornton power supply}{1/group}
+\equipn{stopwatch}{1/group}
+\equipn{multimeter}{1/group}
+\equip{banana plug cables}
+
+\begin{goals}
+
+\item[] Observe the phenomenon of resonance.
+
+\item[] Learn how to visualize phases and amplitudes in a plane.
+\end{goals}
+
+\introduction
+
+To break a wine glass, an opera singer has to sing the right
+note. To hear a radio signal, you have to be tuned to the
+right frequency. These are examples of the phenomenon of
+resonance: a vibrating system will respond most strongly to
+a force that varies with a particular frequency.
+
+\figcaption{vw-res-mechanical}{Simplified mechanical drawing of the
+vibrator, front view.}
+\figcaption{vw-res-electrical}{Electrical setup, top view.}
+
+\apparatus
+In this lab you will investigate the phenomenon of resonance
+using the apparatus shown in the figure. If the motor is
+stopped so that the arms are locked in place, the metal disk
+can still swing clockwise and counterclockwise because it is
+attached to the upright rod with a flexible spiral spring. A
+push on the disk will result in vibrations that persist for
+quite a while before the internal friction in the spring
+reduces their amplitude to an imperceptible level. This
+would be an example of a free vibration, in which energy is
+steadily lost in the form of heat, but no external force
+\equip{pumps in energy to replace it.}
+Suppose instead that you initially stop the disk, but then
+turn on the electric motor. There is no rigid mechanical
+link to the disk, since the motor and disk are only
+connected through the very flexible spiral spring. But the
+motor will gently tighten and loosen the spring, resulting
+in the gradual building up of a vibration in the disk.
+
+\observations
+
+\labpart{ Period of Free Vibrations}
+
+Start without any of the electrical stuff hooked up. Twist
+the disk to one side, release it, and use the stopwatch to
+determine its natural period of vibration. (Both here and at
+points later in the lab, you can improve your accuracy by
+timing ten periods and dividing the result by ten.) 
+
+\labpart{ Damping}
+
+Note the coils of wire at the bottom of the disk. These are
+electromagnets. Their purpose is not to attract the disk
+magnetically (in fact the disk is made of a nonmagnetic
+metal) but rather to increase the amount of damping in the
+system. Whenever a metal is moved through a magnetic field,
+the electrons in the metal are made to swirl around. As they
+eddy like this, they undergo random collisions with atoms,
+causing the atoms to vibrate. Vibration of atoms is heat, so
+where did this heat energy come from ultimately? In our
+system, the only source of energy is the energy of the
+vibrating disk. The net effect is thus to suck energy out of
+the vibration and convert it into heat. Although this
+magnetic and electrical effect is entirely different from
+mechanical friction, the result is the same. Creating
+damping in this manner has the advantage that it can be made
+stronger or weaker simply by increasing or decreasing the
+strength of the magnetic field.
+
+Turn off all the electrical equipment and leave it
+unplugged. Connect the circuit shown in the top left of the
+electrical diagram, consisting of a power supply to run the
+electromagnet plus a meter . You do not yet need the power
+supply for driving the motor. The meter will tell you how
+much electrical current is flowing through the electromagnet,
+which will give you a numerical measure of how strong your
+damping is. It reads out in units of amperes (A), the metric
+unit of electrical current. Although this does not directly
+tell you the amount of damping force in units of newtons
+(the force depends on velocity), the force is proportional to the current.
+
+Once you have everything hooked up, check with your
+instructor before plugging things in and turning them on. If
+you do the setup wrong, you could blow a fuse, which is no
+big deal, but a more serious goof would be to put too much
+current through the electromagnet, which could burn it up,
+permanently ruining it. Once your instructor has checked
+this part of the electrical setup she/he will show you how
+to monitor the current on the meter to make sure that you
+never have too much.
+
+The $Q$ of an oscillator is defined as the number of
+oscillations required for damping to reduce the energy of
+the vibrations by a factor of 535 (a definition originating
+from the quantity $e^{2\pi}$). As planned in your prelab,
+measure the $Q$ of the system with the electromagnet turned
+off, then with a current of 0.25 A through the electromagnet,
+and then 0.50 A. You will be using these two current
+values throughout the lab.
+
+\labpart{ Frequency of Driven Vibration}
+
+Now connect the lab's DC power supply to the terminals on the
+motor labeled ``motorpanschlu$\beta $.'' 
+The coarse and fine adjustments to the speed of the
+motor are marked ``gro$\beta $'' (gross) and ``fein'' (fine).
+
+Set the damping current to the higher of the two values.
+Turn on the motor and drive the system at a frequency very
+different from its natural frequency. You will notice that
+it takes a certain amount of time, perhaps a minute or two,
+for the system to settle into a steady pattern of vibration.
+This is called the steady-state response to the driving force of the motor.
+
+Does the system respond by vibrating at its natural
+frequency, at the same frequency as the motor, or at some
+frequency in between?
+
+\labpart{ Resonance}
+
+With your damping current still set to the higher value, try
+different motor frequencies, and observe how strong the
+steady-state response is. At what motor frequency do you
+obtain the strongest response?
+
+\labpart{ Resonance Strength}
+
+Set the motor to the resonant frequency, i.e., the frequency
+at which you have found you obtain the strongest response.
+Now measure the amplitude of the vibrations you obtain with
+each of the two damping currents. How does the strength of
+the resonance depend on damping?
+
+\labpart{ Phase Response}
+
+If the disk and the vertical arm were connected rigidly,
+rather than through a spring, then they would always be in
+phase. For instance, the disk would reach its most extreme
+clockwise angle at the same moment when the vertical arm was
+also all the way clockwise. But since the connection is
+\emph{not} rigid, this need not be the case. Find a
+frequency significantly below the resonant frequency, at
+which the amplitude of the steady-state response is perhaps
+one tenth of the value it would have at resonance. What do
+you observe about the relative phase of the disk and the
+vertical arm? Are they in phase or out of phase? You can
+describe the phase by assigning positive phase angles to
+oscillations in which the disk is ahead of the arm, and
+negative phases when the disk is behind. These phase angles
+can range from -180\degunit to 180\degunit. Actually
++180\degunit and -180\degunit would represent the same
+thing: the oscillations have phases that are exactly the
+opposite. Try to estimate roughly what the phase angle is.
+You don't have any way to measure it accurately, but you
+should be able to estimate it to the nearest multiple of
+45\degunit. Measure the amplitude of the steady-state response as well.
+
+Now measure the phase and amplitude of the response when the
+driving force is at the resonant frequency.
+
+Finally, do the same measurements when the driving force is
+significantly above resonance.
+
+\analysis
+
+The point of this is to connect the mechanical analog to what
+you know about the phase response of a resonant LRC circuit.
+You're measuring the phase between $F$ and $x$, which is
+analogous to the phase between $V$ and $q$ in electrical
+terms. However, most people think of AC circuits in terms of
+$V$ and $I$, not $V$ and $q$. The phase relationships you're
+expecting, therefore, are those that would hold between
+$F$ and $v=dx/dt$, which differ by 90 degrees from the
+$F-x$ phases you actually measured as raw data.
+
+To complete the electrical analogy, we would really prefer to
+discuss the mechanical analog of impedance. The (constant) driving force from
+the motor plays the role of the voltage, while the frequency-dependent
+amplitude of the vibration plays the role of the current. Dividing these
+two quantities gives us something analogous to impedance, and since
+the driving force is always  the same, we can say that the inverse of
+the amplitude is essentially a measure of the impedance.
+
+To summarize, you have a complex impedance whose amplitude and
+phase angle you can determine from your data. Plot the impedances
+at the various frequencies in the complex plane.
+
+\prelab
+
+\prelabquestion  Plan how you will determine the $Q$ of your oscillator
+in part B. [Hint: Note that the energy of a vibration is
+proportional to the square of the amplitude.]

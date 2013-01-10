@@ -1,0 +1,129 @@
+\lab{Energy in Fields}\label{lab:energy-in-fields}
+
+\apparatus
+\equipn{Heath coils}{1/group}
+\equipn{0.01 $\mu\zu{F}$ capacitors}{1/group}
+\equipn{Daedalon function generator}{1/group}
+\equipn{PASCO PI-9587C sine-wave generator}{1/group}
+\equipn{oscilloscope}{1/group}
+
+\goal{Observe how the energy content of a field relates
+to the field strength.}
+
+\introduction
+
+\figcaption{em-ene-supersimplified}{A simplified version of the circuit.}
+The basic idea of this lab is to observe a circuit like the one shown in
+the figure above, consisting of a capacitor and a coil of wire (inductor).
+Imagine that we first deposit positive and negative
+charges on the plates of the capacitor. If we imagined that the universe was
+purely mechanical, obeying Newton's laws of motion,
+we would expect that the attractive force between these charges
+would cause them to come back together and reestablish a stable equilibrium
+in which there was zero net charge everywhere in the circuit.
+
+However, the capacitor in its initial, charged, state has an electric 
+field between its plates, and this field possesses energy. This energy
+can't just go away, because energy is conserved. What really happens is
+that as charge starts to flow off of the capacitor plates, a current is
+established in the coil. This current creates a magnetic field in the space
+inside and around the coil. The electric energy doesn't just evaporate;
+it turns into magnetic energy. We end up with an oscillation in which the
+capacitor and the coil trade energy back and forth. Your goal is to
+monitor this energy exchange, and to use it to deduce a power-law
+relationship between each field and its energy.
+
+\figcaption{em-ene-simplified}{The actual circuit.}
+The practical realization of the circuit involves some further
+complications, as shown in the second figure. 
+
+The wires are not superconductors, so the circuit
+has some nonzero resistance, and the oscillations would therefore
+gradually die out, as the electric and magnetic energies were
+converted to heat. The sine wave generator serves both to
+initiate the oscillations and to maintain them, replacing, in each cycle, the
+energy that was lost to heat. 
+
+Furthermore, the circuit has a resonant frequency at it
+prefers to oscillate, and when the resistance is very small,
+the width of the resonance is very narrow. To make the
+resonance wider and less finicky, we intentionally insert
+a 10 $\zu{k}\Omega$ resistor. The inductance of the coil is about 1 H, which
+gives a resonant frequency of about 1.5 kHz.
+
+The actual circuit consists of the 1 H
+Heath coil, a 0.01 $\mu F$ capacitance supplied by the
+decade capacitor box, a 10 $\zu{k}\Omega$ resistor, and the PASCO sine
+wave generator (using the GND and LO $\Omega$ terminals).
+
+\observations
+Let $E$ be the magnitude of the electric field between the capacitor plates, and
+ let $\tilde{E}$ be the maximum value of this quantity. It is then
+ convenient to define
+ $x=E/\tilde{E}$, a unitless quantity ranging from $-1$ to 1.
+ Similarly, let $y=B/\tilde{B}$ for the corresponding magnetic quantities.
+ The electric field is proportional to the voltage difference across
+ the capacitor plates, which is something we can measure directly using
+ the oscilloscope:
+ \begin{equation*}
+ 	x = \frac{E}{\tilde{E}} = \frac{V_C}{\tilde{V_C}} 
+ \end{equation*}
+
+ Magnetic fields are created by moving charges, i.e., by currents.
+ Unfortunately, an oscilloscope doesn't measure current, so there's
+ no equally direct way to get a handle on the magnetic field. However,
+ all the current that goes through the coil must also go through the
+ resistor, and Ohm's law relates the current through the resistor to
+ the voltage drop across it. This voltage drop is something we can
+ measure with the oscilloscope, so we have
+ \begin{equation*}
+ 	y = \frac{B}{\tilde{B}} = \frac{I}{\tilde{I}}= \frac{V_R}{\tilde{V_R}} 
+ \end{equation*}
+ 
+ To measure $x$ and $y$, you need to connect channels 1 and 2 of the
+ oscilloscope across the resistor and the capacitor. Since both channels
+ of the scope are grounded on one side (the side with the ground tab
+ on the banana-to-bnc connector), you need to make sure that their
+ grounded sides both go to the piece of wire between the resistor and
+ the capacitor. Furthermore, one output of the sine wave generator is
+ normally grounded, which would mess everything up: two different points
+ in the circuit would be grounded, which would mean that there would be
+ a short across some of the circuit elements. To avoid this, loosen the
+ banana plug connectors on the sine wave generator, and swing away the
+ piece of metal that normally connects one of the output plugs to the
+ ground.
+ 
+ Tune the sine wave generator's frequency to resonance, and take the
+ data you'll need in order to determine $x$ and $y$ at a whole
+ bunch of different places over one cycle.
+
+Some of the features of the digital oscilloscopes can make the measurements
+a lot easier. Doing Acquire$>$Average tells the scope to average together
+a series of up to 128 measurements in order to reduce the amount of noise.
+Doing CH 1 MENU$>$Volts/Div$>$Fine allows you to scale the display arbitrarily.
+Rather than reading voltages by eye from the scope's x-y grid, you can make
+the scope give you a measuring cursor. Do Cursor$>$Type$>$Time. Use the top
+left knob to move the cursor to different times. Doing Source$>$CH 1 and
+Source$>$CH 2 gives you the voltage measurement for each channel. (Always use
+Cursor 1, never Cursor 2.)
+
+The quality of the results can depend a lot on the quality of the connections.
+If the display on the scope changes noticeably when you wiggle the wires,
+you have a problem.
+ 
+ \analysis
+ Plot $y$ versus $x$ on a piece of graph paper. Let's assume that
+ the energy in a field depends on the field's strength raised to
+ some power $p$. Conservation of energy then gives
+ \begin{equation*}
+ 	|x|^p+|y|^p = 1 \qquad .
+ \end{equation*}
+ Use your graph to determine $p$, and interpret your result.
+ 
+ \prelab
+ 
+ \prelabquestion
+ Sketch what your graph would look like for $p=0.1$, $p=1$, $p=2$, and $p=10$.
+ (You should be able to do $p=1$ and $p=2$ without any computations. For
+ $p=0.1$ and $p=10$, you can either run some numbers on your calculator or
+ use your mathematical knowledge to sketch what they would turn out like.)

@@ -1,0 +1,144 @@
+\myappendix{errpropagation}{Propagation of Errors}
+
+
+\section*{Propagation of the error from a single variable}
+In the previous appendix we looked at techniques for
+estimating the random errors of raw data, but now we need to
+know how to evaluate the effects of those random errors on a
+final result calculated from the raw data. For instance,
+suppose you are given a cube made of some unknown material,
+and you are asked to determine its density.
+Density is defined as $\rho =m/v$ ($\rho$ is the Greek letter
+``rho''), and the volume of a cube with edges of length $b$
+is $v=b^3$, so the formula 
+\begin{equation*}
+		\rho  = m/b^3  
+\end{equation*}
+
+will give you the density if you measure the cube's mass and
+the length of its sides. Suppose you measure the mass very
+accurately as $m=1.658\pm0.003$ g, but you know $b=0.85\pm 0.06$
+ cm with only two digits of precision. Your best value
+for $\rho $ is $1.658\ \zu{g} / (0.85\ \zu{cm})^3= 2.7\ \zu{g}/\zu{cm}^3$.
+
+How can you figure out how precise this value for $\rho$ is?
+We've already made sure not to keep more than twosignificant
+figures for $\rho$, since the less accurate piece of raw data
+had only two significant figures. We expect the last
+significant figure to be somewhat uncertain, but we don't
+yet know how uncertain. A simple method for this type of
+situation is simply to change the raw data by one sigma,
+recalculate the result, and see how much of a change
+occurred. In this example, we add 0.06 cm to $b$ for comparison.
+
+\begin{tabular}{lll}
+	$b=0.85$ cm &	\text{gave}		&   $\rho  = 2.7\ \zu{g}/\zu{cm}^3$  \\
+	$b=0.91$ cm &	\text{gives}	&	$\rho  = 2.0\ \zu{g}/\zu{cm}^3$  
+\end{tabular}
+
+The resulting change in the density was $0.7 \ \zu{g}/\zu{cm}^3$, so
+that is our estimate for how much it could have been off by:
+\begin{equation*}
+			\rho  = 2.7\pm0.7\ \zu{g}/\zu{cm}^3   \qquad   .  
+\end{equation*}
+
+\section*{Propagation of the error from several variables}
+
+What about the more general case in which no one piece of
+raw data is clearly the main source of error? For instance,
+suppose we get a more accurate measurement of the edge of
+the cube, $b=0.851\pm0.001$ cm. In percentage terms, the
+accuracies of $m$ and $b$ are roughly comparable, so both
+can cause significant errors in the density. The following
+more general method can be applied in such cases:
+
+(1) Change one of the raw measurements, say $m$, by one
+standard deviation, and see by how much the final result,
+$\rho $, changes. Use the symbol $Q_m$ for the absolute
+value of that change. 
+
+\begin{tabular}{lll}
+	$m=1.658$ g &	\text{gave}		&   $\rho  = 2.690\ \zu{g}/\zu{cm}^3$  \\
+	$m=1.661$ g &	\text{gives}	&	$\rho  = 2.695\ \zu{g}/\zu{cm}^3$  
+\end{tabular}
+
+	 $Q_m=$ change in $\rho= 0.005\ \zu{g}/\zu{cm}^3$
+
+(2) Repeat step (1) for the other raw measurements.
+
+\begin{tabular}{lll}
+	$b=0.851$ cm &	\text{gave}		&   $\rho  = 2.690\ \zu{g}/\zu{cm}^3$  \\
+	$b=0.852$ cm &	\text{gives}	&	$\rho  = 2.681\ \zu{g}/\zu{cm}^3$  
+\end{tabular}
+
+	 $Q_b=$ change in $\rho=0.009\ \zu{g}/\zu{cm}^3$
+
+(3) The error bars on $\rho $ are given by the formula
+\begin{equation*}
+	  	 \sigma_\rho = \sqrt{Q_m^2+Q_b^2}  \qquad   ,
+\end{equation*}
+yielding $\sigma_\rho=0.01\ \zu{g}/\zu{cm}^3$.
+Intuitively, the idea here is that if our result could be off by 
+an amount $Q_m$ because of an error in $m$, and by $Q_b$ because
+of $b$, then if the two errors were in the same direction, we might
+by off by roughly $|Q_m|+|Q_b|$. However, it's equally likely that
+the two errors would be in opposite directions, and at least
+partially cancel. The expression $\sqrt{Q_m^2+Q_b^2}$ gives
+an answer that's smaller than $Q_m+Q_b$, representing the fact that
+the cancellation might happen.
+
+The final result is $\rho =2.69 \pm 0.01\ \zu{g}/\zu{cm}^3$.
+
+\begin{eg}{An average}\label{eg:average}
+On page \pageref{precision-of-average} I claimed that averaging a bunch of measurements 
+reduces the error bars by the square root of the number of measurements. We can now see that
+this is a special case of propagation of errors.
+
+For example, suppose Alice measures the circumference $c$ of a guinea pig's waist to be 10 cm,
+Using the guess method, she estimates that her error
+bars are about $\pm 1$ cm (worse than the normal normal $\sim 1$ mm error bars for a tape measure, because the guinea
+pig was squirming). 
+Bob then measures the same thing, and gets 12 cm. The average is computed as
+\begin{equation*}
+  c = \frac{A+B}{2} \qquad ,
+\end{equation*}
+where $A$ is Alice's measurement, and $B$ is Bob's, giving 11 cm. If Alice had been off by one
+standard deviation (1 cm), it would have changed the average by 0.5 cm, so we have $Q_A=0.5$ cm, and
+likewise $Q_B=0.5$ cm. Combining these, we find $\sigma_c=\sqrt{Q_A^2+Q_B^2}=0.7$ cm, which is
+simply $(1.0\ \zu{cm})/\sqrt{2}$. The final result is $c=(11.0\pm0.7)$ cm. (This violates the usual
+rule for significant figures, which is that the final result should have no more sig figs than the
+least precise piece of data that went into the calculation. That's okay, because the sig fig rules
+are just a quick and dirty way of doing propagation of errors. We've done real propagation of errors
+in this example, and it turns out that the error is in the first decimal place,
+so the 0 in that place is entitled to hold its head high as a real sig fig, albeit a relatively
+imprecise one with an uncertainty of $\pm7$.)
+\end{eg}
+
+\begin{eg}{The difference between two measurements}\label{eg:difference-between-measurements}
+In the example on page \pageref{eg:fine-structure}, we saw that two groups of scientists measured the
+same thing, and the results were $W=5.7\pm1.0$ for Webb et al.~and  $C=0.6\pm 0.6$ for Chand et al.
+It's of interest to know whether the difference between their two results is small enough to be
+explained by random errors, or so big that it couldn't possibly have happened by chance, indicating
+that someone messed up. The figure shows each group's results, with error bars, on the number line.
+We see that the two sets of error bars don't overlap with one another, but error bars are not absolute
+limits, so it's perfectly possible to
+have non-overlapping error bars by chance, but the gap between the error bars is very large compared
+to the error bars themselves, so it looks implausible that the results could be statistically
+consistent with one another. I've tried to suggest this visually with the shading underneath the
+data-points.
+
+\fig{statistical-difference}
+
+To get a sharper statistical test, we can calculate the difference $d$ between the two results,
+\begin{equation*}
+  d = W-C \qquad ,
+\end{equation*}
+which is $5.1$. Since the operation is simply the subtraction of the two numbers, an error in
+either input just causes an error in the output that is of the same size. Therefore we have
+$Q_W=1.0$ and $Q_C=0.6$, resulting in $\sigma_d=\sqrt{Q_W^2+Q_C^2}=1.2$. We find that the difference
+between the two results is $d=5.1\pm 1.2$, which differs from zero by $5.1/1.2\approx 4$ standard
+deviations. Looking at the table on page \pageref{probability-of-deviations}, we see that the
+chances that $d$ would be this big by chance are extremely small, less than about one in ten
+thousand. We can conclude to a high level of statistical confidence that the two groups' measurements
+are inconsistent with one another, and that one group is simply wrong.
+\end{eg}

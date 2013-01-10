@@ -1,0 +1,193 @@
+\lab{The Earth's Magnetic Field (Physics 222)}\label{earth-field-precision}
+
+\apparatus
+\equip{digital multimeter}
+\equip{neodymium magnet (6 discs stuck together)}
+\equip{magnetic compass}
+\equip{resistors}
+\equip{decade resistor boxes}
+\equip{rulers}
+\equip{thread}
+\equip{1-m aluminum rod}
+\equip{stopwatch}
+\equip{photogate}
+\equip{laser}
+\equip{aluminum rods, and clamps}
+\equipn{D cell batteries and holders}{2/group}
+\equip{Helmholtz coils (e/m apparatus)}
+\equip{high-precision Helmholtz coil (one set)}
+\equip{Hall effect magnetic field probes}
+\equip{LabPro interfaces, DC power supplies, and USB cables}
+
+\goal{Determine the horizontal  component
+of the Earth's magnetic field in Fullerton, to high precision.}
+
+\observations
+
+Since you've already used the Hall effect magnetic field probes in
+lab \ref{dipolefieldlab},
+you might think that it would be relatively trivial to measure the Earth's magnetic field
+precisely. However, the calibration of those probes is quite poor, so it's not possible
+to get results with error bars smaller than about 10-20\%.
+
+\figcaption{em-ear-helmholtz-coil}{The geometry of a Helmholtz coil.}
+
+The basic idea of the more precise technique used in this lab is to hang a permanent magnet
+from a thread, and observe the period of its oscillations
+in the Earth's magnetic field. The idea is that if the Earth's
+field is stronger, there is a stronger torque trying to align the magnet north-south,
+and the frequency of the oscillations will therefore be higher. By measuring the
+frequency of the oscillations, we can work backward and infer the strength of the
+horizontal component of the Earth's field.
+
+\figcaption{em-ear-helmholtz-contours}{A contour map of the field of a Helmholtz coil (top view
+of the horizontal plane cutting through the center).}
+
+One reason the technique isn't quite that simple is that the frequency of
+the oscillations also depends on other quantities,
+including the magnet's dipole moment and moment of
+inertia, that are very difficult
+to measure with better than about 10\% precision. A trick for
+getting around this problem is to superimpose a known southward magnetic field
+on the Earth's northward one, and adjust the known field so as to cancel the Earth's.
+Reducing the field increases the period of the oscillations, and
+if we could exactly cancel the horizontal component of the Earth's field,
+then the period would be infinite. The known field is supplied by a type
+of electromagnet called a Helmholtz coil, shown in the first figure. It consists of
+two circular coils of wire, with their axes coinciding. In the classic design
+(which is what's really properly called a Helmholtz coil), the separation $h$
+between the planes of the two coils is equal to their radius, $b$. Having $h=b$
+turns out to produce the most uniform possible field near the center of the whole
+arrangement, in the sense that all the field's derivatives up to the fourth
+derivative equal zero. The second figure (from the Wikipedia article, copyleft
+licensed by Wikipedia) is a contour map showing how little
+the field actually varies over a fairly large volume in the center. The ``octopus'' in
+the middle is the region in which the field is between 99\% and 101\% of its value at the
+center.
+
+Even this version of the experiment turns out to need some further tweaking. It is difficult
+to align the axis of the coils with the Earth's field, so we typically end up with a misalignment,
+$\phi$, which is a few degrees. Therefore, the fields do not really cancel, and as the current through the coils
+is tuned through the optimal value, the horizontal field becomes small, but not zero, and
+swings around gradually from north to south. It becomes difficult to pick off the current that produces the
+maximum period, partly because the period of the oscillations is not quite independent of
+amplitude, and it becomes difficult to control the amplitude of the oscillations properly
+when the equilibrium orientation is constantly changing. Even if we could precisely recognize
+the current that gave the maximum period, that would be the current that canceled out the
+component of the Earth's field along the coils' axis, i.e., we would be taking the vector $(B_x,B_y)$,
+and changing it to $(B_x,0)$, where y is the axis of the coils. Thus we would really be measuring,
+$B_y=B\cos\phi$, rather than $|\vc{B}|$. To get around this problem, you can use the following iterative
+method: (1) Align the coils' axis approximately with the earth's field by eyeballing the alignment against
+a magnetic compass. (2) Tune the current in the coil to the point where the magnet's equilibrium orientation
+is perpendicular to the earth's field. This is pretty close to the current that would have canceled the
+earth's field, if the alignment had been perfect. In this state, the magnet will point either to the east
+or to the west, depending on the direction of the error in alignment. (3) Carefully, slowly rotate
+the apparatus until the magnet's equilibrium orientation shifts to the north-south line. This is a state
+in which the coil's field is exaclty on the same line as the Earth's, but their magnitudes are slightly
+different. (4) Tune the current again to maximize the period.
+In this final step, it becomes important to control the amplitude of the oscillations.
+As shown in the figure, the error in the period is less than 0.1\% for amplitudes of less than about
+10 degrees.
+
+\figcaption{em-ear-period-amplitude}{The dependence of the period on amplitude. For angles less than
+20 degrees, the motion is nearly simple harmonic,
+and the period is independent of amplitude to within about 1\%. Higher amplitudes can be used, but it becomes
+much more important to control the initial amplitude.}
+% maxima:
+% f(x) := (2/%pi)*elliptic_kc(sin(x/2)^2);
+% plot2d(f(x*%pi/180)-1,[x,0.001,179.999],[y,.0001,100],[gnuplot_term,svg],[gnuplot_out_file,"foo.svg"],[xlabel,"amplitude (degrees)"],[ylabel,"correction to period"],[gnuplot_preamble,"set size square 0.5,0.5"],[logy]);
+% inkscape won't accept svg output; see unix notes on how to fix this in an editor
+
+The problem now boils down to the accurate determination of the field at the center of the Helmholtz coils
+for a given amount of current, i.e., the ratio $B/I$. You'll derive the relevant expression as one of your prelab questions.
+It depends on the accurate measurement of the dimensions $b$ and $h$. In general it's fairly difficult to
+construct magnet coils so that their dimensions are accurately determinable, and the coils you'll use are no
+exception. They consist of somewhat irregular bundles of wire tied together with cable ties, and they
+aren't even circular; their vertical diameter is significantly different from their horizontal diameter.
+As closely as I've been able to determine, they have $h=14.7\pm0.3$ cm, and an average $b$ of about $15.1\pm0.3$ cm,
+but these error bars are uncomfortably large. They have $N=130$ turns of wire on each coil, i.e., 260 turns
+on each complete set of Helmholtz coils.
+
+Because of these problems, I've constructed a Helm\-holtz coil that has a much more precisely
+measurable geometry. You can calculate $B/I$ for the precise coils, whose dimensions are
+carefully constructed and easy to measure: $h=b=11.15\pm.05\ \zu{cm}$. They have $N=5$ turns of wire
+in each coil.
+Although there is only one copy of the precise Helmholtz coil, and it wouldn't
+be convenient to use for this lab anyway (they produce weak fields, and their interior is not very
+accessible), we can calibrate your coils against them. I'm planning to do this as a student lab for
+the first time in spring 2009, and we'll use the data from that semester as a calibration for the coils,
+by comparing $B_{earth}/I$ for them with  $B_{earth}/I$ for the precise coils.
+
+The Helmholtz coils we're using are actually meant for lab \ref{charge-to-mass}, and they have a big,
+extremely expensive vacuum tube stuck inside them for that purpose. With your instructor's help,
+very carefully detach the base from the tube. Then unscrew the yokes that hold the tube in place, and
+put the tube out of the way in the stockroom, with cusioning to make sure it doesn't get broken.
+
+You need precisely controlled, steady currents for this lab, and DC power supplies aren't stable enough,
+so you'll use batteries instead. To control the current precisely, you'll use the decade resistor
+boxes, which are variable resistors that let you dial up any decimal number of ohms that you want.
+
+We want to keep all magnetic materials far away from the magnet.
+Clamp the 1-m aluminum rod to the vertical steel post, and hang the magnet from it, far from the post.
+
+There are several possible methods for measuring the period of the oscillations, and one of my goals for
+spring 2009 is to have my students test drive them. One is to use
+a stopwatch to time, say, 20 oscillations.  A second method would be to use the magnetic field probe and graph the field as a function
+of time.
+A third method would be to use a photogate, in pendulum mode as described in appendix \ref{appendix:photogate}.
+The photogates have steel screws in them, so you can't use them in the ordinary way, with the magnet swinging
+through the infrared beam that goes across the center of the gate. Instead, you can open the shutter on
+the inside of the photogate to change it into a mode where it senses light from the beam of an external
+laser. The photogate can then be physically far away from the magnet so that the screws don't affect
+the measurement. A possible problem with the photogate method is that it requires the amplitude of the oscillations to
+be big enough so that the magnet blocks and unblocks the photogate, but with oscillations that big, the
+dependence of the period on amplitude could be a significant source of error unless the amplitude was very
+accurately controlled. This problem could possibly be solved by attaching a cardboard vane to the magnet, and
+that would also get rid of the safety problem caused by reflecting the laser beam from the shiny magnet.
+Of these methods, it's possible that one might be the most convenient for rough initial measurements, while
+another would work best for the final, accurate measurement.
+
+When you're done with all this, what you've actually measured is the magnetic field inside the
+building. Many buildings have magnetic building materials, so the fields inside them are different
+from the Earth's field. To correct for this, measure the period of the magnet's oscillation inside
+and outside. If they are significantly different, correct according to $B_1/B_2=(T_2/T_1)^2$; this
+follows from adapting the equation $\omega=\sqrt{k/m}$ for simple harmonic motion to the case of
+rotation, with the torque $\btau=\vc{m}\times\vc{B}$ playing the role of the restoring force.
+
+(Note to myself: Some of my own further notes about the lab are embedded in comments in the LaTeX source code
+for the lab manual.)
+
+\prelab
+
+\prelabquestion  For an electromagnet consisting of a single circular
+loop of wire of radius $b$, the field at a point on its
+axis, at a distance $z$ from the plane of the loop, is given by
+\begin{equation*}
+      B = \frac{2\pi kIb^2}{ c^2( b^2+ z^2)^{3/2}} \qquad .
+\end{equation*}
+Starting from this equation, derive an equation for the
+magnetic field at the center of a pair of Helmholtz coils, in terms of $h$, $b$, and $N$.
+Find $B/I$ for both the high-precision coils and the low-precision ones, based on the
+given values of $h$, $b$, and $N$. (The $B/I$ for the low-precision ones is useful as a check,
+but has poor precision, which is why you'll calibrate against the high-precision ones.)
+
+\prelabquestion Estimate the current that will be required in the low-precision coils in order
+to cancel the Earth's field, about $2\times10^{-5}\ \zu{T}$.
+
+\analysis
+
+Find the earth's magnetic field, with error bars.
+
+
+% One possible way to calibrate coils would be to find someone local who has an earth's field
+% NMR setup such as the teachspin.com one, and get them to let me calibrate against that.
+% A problem in all this is the absolute calibration of the ammeter. The calibration of the
+% coils can never be better than the calibration of the ammeter I use during the calibration.
+% It would be cool to be able to measure the periods quickly and accurately using the Hall
+% probes. Called Vernier tech support, and the possibilities we came up with were (a) saving
+% to a csv file, or (b) writing my own software. They only support linux interfacing via
+% com (serial) port (ttys0(?)), not usb; there are code examples on their site. 
+% Simplest thing to do would be to take a 5-second rolling time window, and do an fft,
+% picking off the peak, and then keep on updating that peak's frequency as the time window
+% rolls forward. There may be strong harmonics because the field is a strongly nonlinear
+% function of the orientation of the magnet.

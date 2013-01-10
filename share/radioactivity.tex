@@ -1,0 +1,316 @@
+\lab{Radioactivity}\label{lab:radioactivity}
+
+Note to the lab technician: The isotope generator kits came with 250 mL bottles
+of eluting solution (0.9\% NaCl in 0.04M HCl, made with deionized water). If we
+ever run out of the solution, we can make more from materials in the chem
+stockroom.  The GM counters have 9 V batteries, which should be checked before
+lab.
+
+\apparatus
+\equip{isotope generator kit}
+\equip{Geiger-M\"{u}ller (GM) counter}
+\equip{computer with Logger Pro software and LabPro interface}
+\equip{``grabber'' clamp and stand}
+\equip{wood blocks, 25 mm thick}
+\equip{pieces of steel, 17 mm thick}
+
+\goal{Determine the properties of an unknown radioactive source.}
+
+\introduction
+
+You're a science major, but even if you weren't, it would be
+important for you as a citizen and a voter to understand
+the properties of radiation. As an example of an important social
+issue, many environmentalists
+who had previously opposed nuclear power now believe that its
+benefits, due to reduction of global warming, outweigh its
+problems, such as disposal of waste. To understand such
+issues, you need to learn to reason about radioactivity
+quantitatively.
+
+A radioactive substance contains atoms whose nuclei spontaneously
+decay into nuclei of a different type. Nobody has ever succeeded
+in finding a physical law that would predict when a particular
+nucleus will ``choose'' to decay. The process is random, but we
+can make quantitative statements about how quickly the process tends
+to happen.
+A radioactive substance has a certain \emph{half-life}, defined
+as the time required before (on the average) 50\%
+of its nuclei will have decayed.
+
+%  calc -e "e=1.6 10^-19 C; t=(3)(3600 s); f=.1; m=50 kg; P=(10 10^-6)(3.7 10^10 s-1)(.66 GV)(e); E=Ptf; Gy=E/m; rad=100Gy; Q=1; N=.1; muSv=(Gy)(QN)(10^6)"
+%  result is 80 microSv=8 mrem
+%  for numerical data on hormesis, http://www.radpro.com/641luckey.pdf
+%  pregnancy: http://www.acog.org/from_home/publications/green_journal/2004/v103n6p1326.pdf
+%  See meki lab notes for more detailed info, with lots of references. I have some relevant papers in ~/Papers.
+
+\section*{Safety}
+
+\newcommand{\mus}{$\mu$Sv}
+
+The radioactive source used in this lab is very
+weak. It is so weak that it is exempt from government
+regulation, it can be sent in the mail, and if the college bought new equipment, it would
+be legal to throw out the old sources in the trash.
+The following table compares some radiation doses, including an estimate of the typical dose
+you might receive in this lab. These are in units of microSieverts (\mus, 10 \mus=1 millirem).
+
+
+\begin{tabular}{p{50mm}r}
+  CT scan                                    & $\sim$ 10,000 \mus \\
+  natural background per year                & 2,000-7,000 \mus \\
+  health guidelines for exposure to a fetus  & 1,000 \mus \\
+  flying from New York to Tokyo              & 150 \mus \\
+  this lab                                   & $\sim$ 80 \mus \\
+  chest x-ray                                & 50 \mus
+\end{tabular}
+
+A variety of experiments show cases in which
+low levels of radiation activate cellular damage control mechanisms, increasing
+the health of the organism. For example, there is evidence exposure to radiation up to a certain level makes mice grow
+faster; makes guinea pigs' immune systems function better against diphtheria; increases fertility in female humans, trout, and mice;
+improves fetal mice's resistance to disease; reduces genetic abnormalities in humans;
+increases the life-spans of flour beetles and mice; and reduces mortality from cancer in mice and humans.
+This type of effect is called radiation
+hormesis. Nobody knows for sure, but it's possible that you will receive a very tiny improvement in your health from the radiation exposure
+you experience in lab today.
+
+Although low doses of radiation may be beneficial, 
+governments, employers, and schools generally practice a philosophy called
+ALARA, which means to make radiation doses As Low As Reasonably Achievable.
+You should adhere to this approach in this lab.
+In general, internal exposure to radiation produces more of an effect than external
+exposure, so you should not eat or drink during this lab, and
+you should avoid getting any of the radioactive substances in an
+open cut. You should also reduce your exposure by not spending an unnecessarily large amount of time
+with your body very close to the source, e.g., you should not hold it in the palm of your hand
+for the entire lab period.
+
+\section*{The source and the GM counter}
+
+You are supplied with a radioactive source packaged inside
+a small plastic disk about the size of the spindle that
+fits inside a roll of scotch tape.
+
+Our radiation detector for this lab is called a Geiger-M\"{u}ller (GM) counter.
+It is is a cylinder full of gas, with the outside
+of the cylinder at a certain voltage and a wire running down
+its axis at another voltage. The voltage difference creates
+a strong electric field. When ionizing radiation enters
+the cylinder, it can ionize the gas, separating negatively
+charged ions (electrons) and positively charged ones
+(atoms lacking some electrons). The electric field accelerates
+the ions, making them hit other air molecules, and causing
+a cascade of ions strong enough to be measured as an electric
+current.
+
+If you look at the top side of the GM counter (behind the top of the front panel),
+you'll see a small window. Non-penetrating radiation can only get in through
+this thin layer of mica. (Gammas can go right in through the plastic housing.)
+
+\observations
+
+\labpart{Background}
+
+
+Use the GM counter to observe the background radiation in the room. This radiation is
+probably a combination of gamma rays from naturally occurring minerals
+in the ground plus betas and gammas from building materials such 
+as concrete. If you like, you can walk around the room and see if you can detect
+any variations in the intensity of the background.
+
+Estimate the rate at which the GM detector counts when it is exposed
+only to background. Starting at this point, it is more convenient to
+interface the GM counter to the computer. Plug the cable into
+into DIG/SONIC 1 on the LabPro interface. Start LoggerPro 3 on the
+computer, and open the file Probes and Sensors : Radiation monitor : Counts versus time.
+The interface is not able to automatically identify this particular sensor, so
+the software will ask you to confirm that you really do have this type of sensor
+hooked up; confirm this by clicking on Connect.
+
+Now when you hit the Collect button, the sensor will start graphing the number of counts
+it receives during successive 5-second intervals. The y axis of the graph is counts
+per 5 seconds, and the x axis is time.
+
+Once you've made some preliminary observations, try to get a good measurement of
+the background, counting for several minutes so as to reduce the statistical errors.
+It is important to get a good measurement of the background rate, because in later
+parts of the lab you'll need to subtract it from all the other count rates you measure.
+For longer runs like this, it is convenient to let the software collect data for about a minute
+at a time, rather than 5 seconds. To get it to do this, do Experiment : Data collection : 60 seconds/sample.
+
+\labpart{Type of radiation}
+
+Your first task in the lab is to figure out whether the source emits
+alpha, beta, or gamma radiation --- or perhaps some mixture of these.
+It is up to you to decide how to do this, but essentially you want to
+use the fact that they are absorbed differently in matter; referring
+to your textbook, you'll see that the historical labels $\alpha$, $\beta$, and $\gamma$ were assigned
+purely on the basis of the differences in absorption, before anyone even knew what they
+really were. Note that the fact that you were able to detect the radiation
+at all in part A implies that the radiation was able to penetrate the thin
+plastic walls of the source. Also keep in mind that the descriptions of absorption
+in a textbook are generalizations that do not take into account the energy of the
+particles. For example, low-energy betas could be absorbed by a kleenex, whereas
+high-energy betas could penetrate cardboard.
+
+There are six things you could try to prove through your measurements:
+\begin{enumerate}
+\item The source inside the plastic container emits alphas.
+\item The source does not emit alphas.
+\item The source emits betas.
+\item The source does not emit betas.
+\item The source emits gammas.
+\item The source does not emit gammas.
+\end{enumerate}
+
+Try to figure out which of these six statements you can either definitively prove or
+definitively disprove. Because you are not allowed to extract the source from the packaging,
+there will be some cases in which you cannot draw any definitive conclusion one way or the other.
+You may find it convenient to switch back to a shorter time per sample, such as 10 seconds/sample.
+
+\labpart{Distance dependence}
+
+Measure the count rate at several different distances from the source.
+The goal is to find the mathematical form of this function (see Analysis, below).
+Distances of less than about 10 cm do not work well, because the size of the GM tube
+is comparable to 10 cm.
+
+\labpart{Absorption}
+
+Only odd-numbered lab groups should do part D.
+
+Measure the reduction in count rate when a 25 mm thick wood block is 
+interposed between the source and the detector, and likewise for 17 mm of steel.
+Keep the distance from the source to the detector constant throughout.
+Let the counter run for at least five minutes each time.
+Based on these observations, predict the count rate you would
+get with two 17-mm thicknesses of steel instead of one. Test your prediction.
+
+\labpart{Scattering}
+
+Only even-numbered lab groups should do part E.
+
+\fig{mo-rad-scattering}
+
+In addition to being absorbed, radioactivity can be \emph{scattered}, i.e., turned off
+course without being stopped completely. The figure shows a possible way of detecting
+scattering. The steel is not between the source and the detector, so absorption will
+have no effect. But if scattering occurs, it is possible that the count rate in the
+detector will \emph{increase} when the steel is inserted, because some particles that
+would have missed the detector will be scattered into it by the steel. Try to detect
+whether there is any measurable scattering. To get the best chance of detecting it,
+you want the whole setup to squeezed into as tight a space as possible. You will need
+to count for a fairly long time, probably five minutes or more.
+
+\labpart{Decay curve}
+
+\newcommand{\ces}{$^{NNN}\zu{Cs}$}
+
+The source consists of a particular isotope of cesium; we'll refer to it as \ces, since the main
+goal of this lab is to determine what the unknown isotope actually is. It decays to an isotope
+of barium, and rather than decaying to the ground state of the barium nucleus, it nearly always
+decays to an excited state, which then emits the radiation you characterized in part B.
+Although the half-life of the parent cesium isotope is many years, the half-life of the
+excited isotope in the barium daughter is short enough that it can be observed during the lab
+period. However, if the cesium and barium are not separated, then no time variation will
+be observed, because the supply of barium nuclei is being continuously replenished by
+decay of the parent cesium.
+
+\fig{mo-rad-levels}
+
+To get around this, the source is packaged so that when a weak acid solution is forced through
+it, a small amount of barium is washed out. Note that the yellow tape around the circumference
+of the source has an arrow on it. This arrow points in the direction that you're supposed
+to make the solution flow. The isotope generator kit has coin-sized steel trays on which to
+collect a few drops of the radioactive solution.
+
+Use the syringe to draw 1 mL of the acid solution from the 250-mL bottle (labeled ``eluting solution'').
+Take one of the tiny coin-sized steel trays out of the isotope generator kit and lay it on the lab bench.
+Remove the little plugs from the top and bottom of the radioactive source. Stick the syringe in the
+in-flow hole, and use the plunger to force seven drops of liquid out onto the tray. Note that
+the amount of liquid that flows from the syringe into the source is quite a bit more than the
+amount that comes out into the tray. If you have solution left in the syringe at the end of lab,
+squeeze it back out into the 250-mL bottle.
+
+Use the computer to collect data on the rate of decay as a function of time. About 5 or 10 seconds
+per sample works well.
+
+When you're done, make sure to shut off the GM counter so that its battery doesn't get drained.
+
+\section*{Waste disposal}
+
+To get an idea of what a non-issue  radioactive waste disposal is in this lab,
+recall that it would be legal to throw the \emph{entire} source in the trash --- although we won't
+actually do that.
+The amount of radioactive material that you wash out in part E is a tiny fraction of this.
+Furthermore, essentially all the radioactivity is
+gone by the end of lab. It is therefore not a problem to dump your seven drops of material
+down the drain at the end of class.
+
+There is also no chemical disposal issue with this tiny amount of solution.
+It's a few drops of very dilute acid, equivalent to a little spritz of lemon juice.
+
+\analysis
+
+In part C, you should first subtract the background
+rate from each datum. Then make a log-log plot as described in appendix \ref{appendix:powerlaws},
+and see if you can successfully describe the data using a power law.
+Note that, just like a human, the GM counter cannot count faster than a certain rate.
+This is because every time it gets a count it completely discharges its voltage, and
+then it has to recharge itself again. For this reason, it is possible that your data
+from very small distances will not agree with the behavior of the data at larger distances.
+The documentation for these GM counters says that they can count at up to about
+3500 counts per second; this is only a very rough guide, but it gives you some idea what
+count rates should be expected to start diverging from ideal behavior.
+
+Estimate the half-lives of any isotopes present in the data. If you find that only one
+half-life is present, you can simply determine the 
+amount of time required for the count rate to fall off by a factor of two.
+If the natural background count rate measured in part A is significant, you will need to subtract it from the raw data.
+If more than one half-life is present, try plotting the logarithm of the count rate
+as a function of time, and seeing if there are linear sections on the graph.
+Note that this is all referring to the half-lives of any decay chain that occurs
+\emph{after} the cesium decays to barium. The half-life of the cesium parent
+nucleus is much longer, and is not measured in this experiment.
+
+Consult the Wikipedia article ``Isotopes of cesium.'' It has an extremely lengthy
+table of all the known isotopes from very light ones (with far too few neutrons to
+be stable) to very heavy ones (with far too many). Since the source was shipped to us
+through the mail, and sits on the shelf in the physics stockroom for semester after
+semester, you can tell that the half-life of the cesium isotope must be fairly long ---
+at least on the order years, not months. From this information, you should be able
+to narrow down the range of possibilities. (Half-lives in units of years are listed with
+``a,'' for ``annum,'' as the unit of time. The notations m1 and m2 mean energy states
+that are above the lowest-energy state.) The radioactive isotopes from this remaining
+list of possibilities all have their own Wikipedia articles, and these articles give
+the properties of the daughter nuclei (isotopes of barium and xenon), including the half-lives
+of any gamma-emitting states. Look for one that has a half-life that seems to match
+the one you measured in lab. Having tentatively identified the unknown isotope as
+this isotope of cesium, check against the results of part B, where you determined
+the type of radiation emitted.
+
+\prelab
+
+\prelabquestion
+Suppose that in part C you obtain the following data:
+
+\begin{tabular}{ll}
+r (cm) & count rate (counts/2 min) \\
+10      & 707 \\
+20     & 207 \\
+30     & 95
+\end{tabular}
+
+Suppose that the background rate you measure in part A
+is 30 counts per 2 min. Use the technique
+described in appendix \ref{appendix:powerlaws} to see if the data can be described
+by a power law, and if so, determine the exponent.
+
+\prelabquestion
+If a source emits gamma or beta radiation, then the radiation spreads out in all
+directions, like an expanding sphere. Based on the scaling of a sphere's surface
+area with increasing radius, how would you theoretically expect the
+intensity of the radiation to fall off with distance? Would it be a power law?
+If so, what power? Why would you \emph{not} expect the same behavior for a source
+emitting alpha particles into air?

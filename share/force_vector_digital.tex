@@ -1,0 +1,232 @@
+\lab{Vector Addition of Forces}\label{lab:force_vector_digital}
+
+\apparatus
+\equip{circular table with angle scales}
+\equip{spirit level}
+\equipn{force sensors}{4/group}
+\equipn{clamps for mounting sensors on table}{4/group}
+\equip{LabPro interface}
+\equip{string}
+\equip{small ring}
+\equip{500 g hooked weight  (in lab benches in 415)}
+\equip{right-angle clamp}
+\equip{30-cm steel rod}
+
+\goal{Test whether the vector sum of the forces acting on an}
+object at rest is equal to zero.
+
+\introduction
+
+Modern physics claims that when a bridge, an earthquake
+fault, or an oak tree doesn't move, it is because the forces
+acting on it, which combine according to vector addition,
+add up to zero.  Although this may seem like a reasonable
+statement, it was far from obvious to premodern scientists. 
+Aristotle, for instance, said that it was the nature of each
+of the four elements, earth, fire, water and air, to return
+to its natural location.  Rain would fall from the sky
+because it was trying to return to its natural location in
+the lakes and oceans, and once it got to its natural
+location it would stop moving because that was its nature.
+
+When a modern scientist considers a book resting on a table,
+she says that it holds still because the force of gravity
+pulling the book down is exactly canceled by the normal
+force of the table pushing up on the book.  Aristotle would
+have denied that this was possible, because he believed that
+at any one moment an object could have only one of two
+mutually exclusive types of motion: natural motion (the
+tendency of the book to fall to the ground, and resume its
+natural place), and forced motion (the ability of another
+object, such as the table, to move the book).  According to
+his theory, there could be nothing like the addition of
+forces, because the object being acted on was only capable
+of ``following orders''  from one source at a time.  The
+incorrect Aristotelian point of view has great intuitive
+appeal, and beginning physics students tend to make
+Aristotelian statements such as, ``The table's force
+overcomes the force of gravity,'' as if the forces were
+having a contest, in which the victor annihilated the loser.
+
+\fig{me-vec-sensors}
+
+\observations
+
+The apparatus consists of a small, lightweight metal ring
+held taut by four strings, each pulling in a different direction
+in the horizontal plane. Each string is connected to a force sensor
+that can be read out on a computer, giving the magnitude of the
+force vector.
+
+
+Set the force sensors on their 10 N scales using the switch on each
+sensor.
+Plug the sensors into channels 1 through 4 on the LabPro interface.
+When you start up the Logger Pro 3 software, it will automatically detect
+the four sensors and start displaying their readings. 
+
+
+Possible computer hassles:
+\begin{itemize}
+\item[] Normally the computer automatically detects the sensor and sets itself up
+properly. If this doesn't happen, you need to do the setup manually under
+Experiment:Set up sensors:Show all interfaces.
+\item[] If the readings are displayed in a small font, you can make them bigger
+by clicking on the surrounding box and using the little black tabs to resize it.
+\end{itemize}
+
+Push and pull on the sensors, and verify that they can measure forces.
+What do you notice about the signs of the forces?
+You will notice that when you don't apply any force to a sensor, its reading
+is small, but not exactly zero.
+With the sensors placed horizontally, use the software to zero them all, so that
+this systematic error is eliminated. If you now rotate a sensor so that its hook
+is pointing down, you should see that the force reading changes by a certain amount,
+which is the weight of the hook, about $0.21$ N.
+
+Try pushing gently sideways on the force sensor. You will see that it doesn't
+sense the force.
+Each sensor can only measure the component of the force along its
+own axis.
+
+After taking data with the circular table, you'll do a complete calibration of the
+sensors. They drift over time, so a calibration done right now wouldn't be useful.
+However, sometimes we have sensors that are off by a very large
+amount such as 50\%, and in that case it's better to find out about that now, because
+it will make it look like your data don't even make sense. As a quick check, try
+pairs of sensors hooked together and pulling against each other, and make sure that
+they seem to at least approximately obey Newton's third law.
+
+Level the table with the spirit level. The clamps are for mounting the sensors around
+the circumference of the table, but our clamps and our sensors are slightly incompatible;
+they position the ring and the strings so that they touch the table. To get around this, put
+nuts between the table and the top of the clamp. Also, flip the ring so that its
+cross-bar is on top.
+
+\fig{me-vec-align}
+
+Avoid a symmetric arrangement of
+the strings (e.g., don't space them all 90 degrees apart), and
+don't make any forces collinear with each other. 
+The ring is an extended object, so in order to treat it
+mathematically as a pointlike object you should make sure
+that all the strings are lined up with the center of the
+ring, as shown in the figure.
+
+The angles are a large source of error, so reduce it by positioning every string so it is exactly 
+on one of the lines of the angle scale.
+
+Getting the ring in equilibrium in the center is like pitching a tent; at the end, you need
+to make small adjustments to the tension. There are three techniques you can use for
+adjustment:
+
+\begin{enumerate}
+\item Tie the strings to approximately the right length.
+\item Tighten or loosen the screws that hold the force sensors in the clamps.
+\item Move the clamp.
+\end{enumerate}
+
+First get an approximate
+equilibrium in which all four forces are roughly 3-7 N. (Since the angles are the main source
+of random error, you may as well position the strings directly over the marks on the angle scale,
+e.g., at 37.0\degunit, rather than at some angle like 37.4\degunit where you have to estimate the tenths.)
+Then use one of the other methods to
+perform a final fine adjustment to get a real equilibrium,
+without exceeding the maximum force.
+Although the sensors are labeled ``10 N,'' some of them actually max out at 9 or 9.5 N.
+The sensors will not give any
+error or warning if this limit is exceeded. They will simply max out at some
+reading, and this reading will be incorrect. When increasing the tension in a string, keep an eye
+on the reading on the screen; if it stops increasing, you've exceeded that sensor's limit.
+Once you think you have a good equilibrium, check that when you tug gently on each string, the
+reading actually goes up.
+
+Take all the data you will need in order to carry out the vector addition of the four forces.
+To decrease the random errors in the force measurements, you can tell the software to average
+the data over a period of time. Highlight part of the graph, then go to Analyze:Statistics.
+
+As a cross-check in case confusion arises later about how your angles were defined, which
+force was which, etc., slide a piece of paper underneath the strings and trace them onto it.
+
+After this, you will do some calibrations to eliminate systematic errors. These calibrations
+unfortunately require cutting the strings and removing the sensors from the clamps,
+which means that if something is wrong with your
+data, you can't easily put the setup back together. Therefore you should do a graphical
+addition of your forces \emph{before} cutting the strings, using the uncorrected data,
+and make sure that this comes out fairly well. Don't use this graphical addition in forming
+your final conclusions for the lab, since it's uncalibrated.
+
+Also, before taking the sensors out of the clamps,
+mark the clamps 1, 2, 3, and 4 with masking tape. Leave the clamps in position when you remove the
+sensors.
+
+Your readings will include two sources of systematic error, which you need
+to get rid of: (1) We have found that putting the
+sensors under strain for a while causes their readings to drift, and (2)
+I've also found that the sensors differ from each other quite a bit in their
+calibration, with four freshly zeroed sensors giving readings
+that covered a range of about 5\% when used to measure a 500 g weight.
+To eliminate error 1, unhook the strings and immediately record the readings (which
+will no longer be zero if the sensors have drifted), and subtract these
+numbers from your observed weights. To eliminate error 2, set up the 30-cm steel bar
+horizontally and mount all four sensors on it vertically, with their hooks pointing down.
+Zero the sensors by clicking on the blue zero icon, so that error 1 is eliminated and the weights of the hooks are tared out.
+Hang the 500 g weight from each sensor, and use these readings to
+rescale each sensor's reading from the circular table setup by the proper amount.
+
+
+\prelab
+
+m4_ifdef([:__sn:],[:%
+%%%%%%%%%% 221
+\prelabquestion For use in the analysis of this lab, write a python function \verb@x_comp(magnitude,angle)@ that
+takes the magnitude and direction of a vector as its inputs and calculates the vector's $x$ component.
+(You will also need a \verb@y_comp@ function for the actual analysis.)
+Turn in a printout showing both your program and the results of a few tests demonstrating correct results
+using simple inputs for which you know the answer.
+To get the trig functions to work, (1) remember to put \verb@import math@ at the top, (2) remember to do \verb@math.sin@
+and \verb@math.cos@ rather than just \verb@sin@ and \verb@cos@, and (3) include a conversion from degrees to radians, since
+your raw data will all be in degrees, but the python functions are defined in radians.
+:],[:%
+%%%%%%%%%%%% 205
+\prelabquestion  Describe a typical scale that you might use for drawing
+force vectors on a piece of paper, e.g., how long might you
+choose to make a 1-N force?  Assume that your forces are
+from 5 to 10 newtons, and pick a scale that results in a drawing that
+is as big as it can be (for maximum precision) while still fitting on
+a piece of paper.
+
+\prelabquestion Thinking ahead to your analytic addition of the forces,
+which of the following would be the most convenient form in which to have
+your angle measurements? --- (1) the angles of the four ``pie slices,''
+(2) the angle of each string measured clockwise around the table,
+or (3) the angle of each string measured counterclockwise around the table.
+:])
+
+\analysis
+
+m4_ifdef([:__sn:],[:%
+%%%%%%%%%% 221
+Calculate the magnitude of the vector sum of the forces on the
+ring. Automate this procedure by writing the analysis as a Python program.
+The reason for doing it as a Python program is that otherwise the propagation of errors
+is extremely tedious, because you have to redo the vector addition by hand eight times,
+once for each of the eight pieces of raw data (four angles and four sensor readings).
+Turn in a copy of your python code and its output with your writeup. 
+:],[:%
+%%%%%%%%%% 205
+Calculate the magnitude of vector sum of the forces on the
+ring analytically, using the corrected data.
+
+Propagation of error for this lab could in principle be very time-consuming,
+since you would have to redo the vector addition eight times for the eight
+pieces of raw data (four angles and four magnitudes). 
+To avoid this, take the following shortcuts: (1) Whichever is larger,
+$F_{total,x}$ or $F_{total,y}$, just do error analysis on that component.
+(2) The random errors in the result are dominated by the errors in the angles,
+so don't bother propagating the error from the magnitudes.
+:])
+
+Are your results consistent with theory, taking into account
+the random errors involved? Perform a statistical test like the
+one in the example on p.~\pageref{eg:fine-structure} (``How significant?'').

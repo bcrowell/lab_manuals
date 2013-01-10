@@ -1,0 +1,278 @@
+\lab{Resonances of Sound}\label{lab:resonances-of-sound}
+
+\apparatus
+\equipn{wave generator (PASCO PI-9587C)}{1/group}
+\equipn{speaker (Thornton)}{1/group}
+\equipn{100 mL graduated cylinder}{1/group}
+\equip{Linux computers with digital oscilloscope software installed (in room 415)}
+\equipn{flexible whistling tube}{1}
+\equipn{tuning fork marked with frequency, mounted on a wooden box}{1}
+\equipn{aluminum rod, 3/4-inch dia, about 1 m long}{2/group}
+\equip{wood block}{1/group}
+
+\begin{goals}
+
+\item[] Find the resonant frequencies of the air inside a
+cylinder by two methods.
+
+\item[] Measure the speeds of sound in air and in aluminum.
+\end{goals}
+
+\introduction
+
+In the womb, your first sensory experiences were of your
+mother's voice, and soon after birth you learned to
+distinguish the particular sounds of your parents' voices
+from those of strangers.  The human ear-brain system is
+amazingly sophisticated in its ability to classify vowels
+and consonants, recognize people's voices, and analyze
+musical sound.  Until the 19th-century investigations of
+Helmholtz, the whole process was completely mysterious.  How
+could we so easily tell a cello from a violin playing the
+same note?  A radio station in Chicago has a weekly contest
+in which jazz fanatics are asked to identify instrumentalists
+simply by their distinctly individual timbres --- how is this possible?
+
+Helmholtz found (using incredibly primitive nonelectronic
+equipment) that part of the answer lay in the relative
+strengths of the overtones.  The psychological sensation of
+pitch is related to frequency, e.g., 440 Hz is the note
+``A.''  But a saxophonist playing the note ``A'' is actually
+producing a rich spectrum of frequencies, including 440 Hz,
+880 Hz, 1320 Hz, and many other multiples of the lowest
+frequency, known as the fundamental.  The ear-brain system
+perceives all these overtones as a single sound because they
+are all multiples of the fundamental frequency.  (The
+Javanese orchestra called the gamelan sounds strange to
+westerners partly because the various gongs and cymbals have
+overtones that are not integer multiples of the fundamental.)
+
+One of the things that would make ``A'' on a clarinet sound
+different from ``A'' on a saxophone is that the 880 Hz
+overtone would be quite strong for the saxophone, but almost
+entirely missing for the clarinet.  Although Helmholtz
+thought the relative strengths of the overtones was the
+whole story when it came to musical timbre, actually it is
+more complex than that, which is why electronic synthesizers
+still do not sound as good as acoustic instruments.  The
+timbre depends not just on the general strength of the
+overtones but on the details of how they first build up (the
+attack) and how the various overtones fade in and out
+slightly as the note continues.
+
+Why do different instruments have different sound spectra,
+and why, for instance, does a saxophone have an overtone
+that the clarinet lacks?  Many musical instruments can be
+analyzed physically as tubes that have either two open ends,
+two closed ends, or one open end and one closed end.  The
+overtones correspond to specific resonances of the air
+column inside the tube.  A complete treatment of the subject
+is given in your textbook, but the basic principle is that
+the resonant standing waves in the tube must have an
+antinode (point of maximum vibration) 
+at any closed end of the tube, and a node (point of zero
+vibration) at any open end.
+
+\mysubsubsection{Using the Wave Generator}
+
+The wave generator works like the amplifier of your stereo,
+but instead of playing a CD, it produces a sine wave whose
+frequency and amplitude you can control.  By connecting it
+to a speaker, you can convert its electrical currents to
+sound waves, making a pure tone.  The frequency of the sine
+wave corresponds to musical pitch, and the amplitude
+corresponds to loudness.
+
+\setup
+
+Plug the speaker into the wave generator.  The banana plugs
+go in the two holes on the right marked GND and LO $\Omega$. The side of
+the banana plug converter with the tiny tab marked GND should be the one that
+goes into the GND output.  Set the frequency to
+something audible.  Turn the amplitude knob up until you hear a sound.
+
+The wave generator and the speaker are not really designed
+to work together, so if you leave the volume up very high
+for a long time, it is possible to blow the speaker or
+damage the wave generator.  Also, the sine waves are
+annoying when played continuously at loud volumes!
+
+\section{Preliminary Observations}
+
+\observations
+
+This lab has three parts, A, B, and C.  It is not really
+possible for more than one group to do part A in the same
+room, both because their sounds interfere with one another
+and because the noise becomes annoying for everyone.  Your
+instructor will probably have three groups working on part A
+at one time, one group in the main room, one in the small
+side room, and one in the physics stockroom.  Meanwhile, the
+other groups will be doing parts B and C.
+
+\labpart{ Direct Measurement of Resonances by Listening}
+
+Set up the graduated cylinder so its mouth is covering the
+center of the speaker.  Find as many frequencies as possible
+at which the cylinder resonates.  When you sweep through those frequencies, the
+sound becomes louder.  To make sure you're really hearing
+a resonance of the cylinder, make sure to repeat each
+observation with the cylinder removed, and make sure the
+resonance goes away.
+  For each resonance, take
+several measurements of its frequency --- if you are
+careful, you can pin it down to within $\pm 10$ Hz or so.  You
+can probably speed up your search significantly by
+calculating approximately where you expect the resonances to
+be, then looking for them.
+
+\labpart{ Electronic Measurement of Resonances of an Air Column}
+
+The resonances of the air column in a cylinder can also be
+excited by a stream of air flowing over an opening, as with
+a flute.  In this part of the lab, you will excite
+resonances of a long, flexible plastic tube by grabbing it
+at one end and swinging it in a circle.  The frequency of
+the sound will be determined electronically. Note that your
+analysis for these resonances will be somewhat different,
+since the tube is open at both ends, and it therefore has
+different patterns of resonances from the graduated
+cylinder, which was only open at one end.
+
+To measure the frequency, you will use a computer to analyze
+the sound. The Linux computers are the ones with the right hardware and software.
+As a warmup before attempting the actual
+measurements with the whistling tube, try the following. 
+First, start up the program if nobody else has already done
+so.  It is called ``scope,'' and you can run it by double-clicking
+on its icon on the desktop. 
+In real time, the program will monitor the sound coming into the
+microphone, and display a graph of loudness versus frequency.
+Try whistling. The frequency at which you whistled should show
+up as a prominent peak. 
+
+Next you need to verify that you can actually measure a known frequency and reproduce its value.
+Besides letting you practice using the software,
+this is important because I've seen some cheap computer sound input chips that produce frequencies that are off by large amounts, like 10\%.
+Put the microphone inside the wooden box that the tuning fork is mounted on and hit the tuning fork gently with the rubber mallet.
+To get an accurate frequency measurement, you need to zoom in on the peak.
+To do this, click on the peak to get an extreme close-up. To zoom back out, click on the graph again.
+(The Zoom In button doesn't let you get close enough, so don't use it for this purpose.)
+When you get
+the graph you want to see, you can freeze it by clicking on the
+Freeze/Go button.
+
+Once you have done these warmups, you are ready to analyze
+the sound from the whistling tube. You only need
+to analyze data from one frequency, although if you're not sure
+which mode you produced, it may be helpful to observe the
+pattern of the frequencies. (If you guess wrong about which
+mode it was, you'll find out, because the value you extract for
+the speed of sound will be way off.)
+
+\labpart{ The Speed of Sound in Aluminum}
+
+The speed of sound in a solid is much faster than its
+speed in air.  In this part of the lab, you will extract the
+speed of sound in aluminum from a measurement of the lowest
+resonant frequency of a solid aluminum rod.  You will use
+the computer for an electronic measurement of the frequency, as in part B.
+
+Grab the rod with two fingers exactly in the middle, hold it vertically, and
+tap it on the lab bench.  You will hear two different notes
+sounding simultaneously. A quick look at their frequencies shows that they are
+not in a 2:1 ratio as we would expect based on our experiences with symmetric
+wave patterns. This is because these two frequencies in the rod are actually
+two different types of waves.
+ The higher note is produced by longitudinal compression waves,
+which means that an individual atom of aluminum is moving up
+and down the length of the rod.  This type of wave is
+analogous to sound waves in air, which are also longitudinal
+compression waves.  The lower note comes from transverse
+vibrations, like a vibrating guitar string.  In the
+transverse vibrations, atoms are moving from side to side,
+and the rod as a whole is bending.
+
+If you listen carefully, you can tell that the transverse
+vibration (the lower note) dies out quickly, but the
+longitudinal mode keeps going for a long time.  That gives
+you an easy way to isolate the longitudinal mode, which is
+the one we're interested in; just wait for the transverse
+wave to die out before you freeze the graph on the computer.
+
+\mysubsubsection{Identifying the mode of vibration}
+The rod is symmetric, so we expect its longitudinal wave patterns
+to be symmetric, like those of the whistling tube. The rod is different,
+however, because whereas we can excite a variety of wave patterns in the
+tube by spinning it at different speeds, we find we only ever get one
+frequency from the rod by tapping it at its end: it appears that there is
+only one logitudinal wave pattern that can be excited strongly in the
+rod by this method. The problem is that we then need to infer what the
+pattern is.
+
+Since you hold the rod at its center, friction should very
+rapidly damp out any mode of vibration that has any motion at the center.
+Therefore there must be a node at the center. We also know that at the ends,
+the rod has nothing to interact with but the air, and therefore there is
+essentially no way for any significant amount of wave energy to leak out;
+we therefore expect that waves reaching the ends have 100\% of their energy
+reflected. Since energy is proportional to the square of amplitude, this means
+that a wave with unit amplitude can be reflected from the ends with an amplitude
+of either $R=+1$ (100\% uninverted reflection) or $-1$ (100\% inverted). In the $R=-1$
+case, the reflected wave would cancel out the incident wave at the end of the rod, and
+we would have a node at the end, as in lab \ref{lab:standing-waves}. In the $R=+1$ case,
+there would be an antinode. But when you tap the end of the rod on the floor, you are
+evidently exciting wave motion by moving the end, and it would not be possible to excite
+vibrations by this method if the vibrations had no motion at the end. We therefore conclude
+that the rod's pattern of vibration must have a node at the center, and antinode at the ends.
+
+There is an infinite number of possible wave patterns of this kind, but we will assume
+that the pattern that is excited strongly is the one with the longest wavelength, i.e.,
+the only node is at the center, and the only antinodes are those at the ends.
+
+If you feel like it, there are a couple of possible tests you can try do to check whether this
+is the right interpretation. One is to see if you can detect any other frequencies of longitudinal
+vibration that are
+excited weakly. Another is to predict where the other nodes would be, if there were more than one,
+and then see if the vibration is killed by touching the rod there with your other hand; if there is
+a node there, touching it should have no effect.
+
+\prelab
+
+\prelabquestion   Find an equation to predict the frequencies of the
+resonances in parts A and B. Note that they will not be
+the same equations, since one tube is symmetric and the
+other is asymmetric.
+
+\selfcheck
+
+Extract the speed of sound from either part A or part B,
+without error analysis, and make sure you get something
+close to the accepted value.
+
+\analysis
+
+Make a graph of wavelength versus period for the resonances
+of the graduated cylinder, check whether it looks like it
+theoretically should, and if so, find the speed of sound
+from its slope, with error bars, as discussed in appendix
+\ref{appendix:graphing}.
+
+Analyze part B either by using the same technique (if you
+took data for multiple frequencies) or just by solving algebraically for
+the speed of sound.
+
+The effective length of the cylinder in part A should be
+increased by 0.4 times its diameter to account for the small
+amount of air beyond the end that also vibrates.  For part
+B, where the whistling tube is open at both ends, you
+should add 0.8 times its diameter.
+
+When estimating error bars from part B, you may be tempted
+to say that it must be perfectly accurate, since it's being
+done by a computer.  Not so!  You will see that the peak is
+a little ragged, and that means you cannot find the
+frequency with perfect accuracy.
+
+Extract the speed of sound in aluminum from your data in
+part C, including error bars.

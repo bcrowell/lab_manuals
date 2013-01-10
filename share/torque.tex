@@ -1,0 +1,111 @@
+\lab{Torque}\label{lab:torque}
+
+\apparatus
+\equipn{meter stick with holes drilled in it}{1/group}
+\equip{spring scales, calibrated in newtons}
+\equip{slotted weights  (in lab benches in 415)}
+\equip{holder for slotted weights}
+\equip{string}
+\equip{protractors}
+\equip{Ohaus balances}
+
+\goal{Test whether the total force and torque on an object at
+rest both equal zero.}
+
+\introduction
+
+It is not enough for a boat not to sink.  It also must not
+capsize.  This is an example of a general fact about
+physics, which is also well known to people who overindulge
+in alcohol: if an object is to be in a stable equilibrium at
+rest, it must not only have zero net force on it, to keep
+from picking up momentum, but also zero net torque, to keep
+from acquiring angular momentum.
+
+\fig{me-tor-setup}
+
+\observations
+
+Weigh your meter stick before you do anything else; they don't all
+weigh the same amount.
+
+Construct a setup like the one shown above.  Avoid any
+symmetry in your arrangement.  There are four forces
+acting on the meter stick:
+\begin{align*}
+       \vc{F}_H &=    \text{the weight hanging underneath}  \\
+       \vc{F}_M &=    \text{Earth's gravity on the meter stick itself}  \\
+       \vc{F}_L &=    \text{tension in the string on the left}  \\
+       \vc{F}_R &=    \text{tension in the string on the right} 
+\end{align*}
+
+Each of these forces also produces a torque.
+
+In order to determine whether the total force is zero, you
+will need enough raw data so that for each torque you can
+extract (1) the magnitude of the force vector, and (2) the
+direction of the force vector.  In order to add up all the
+torques, you will have to choose an axis of rotation, and
+collect enough raw data to be able to determine for each
+force (3) the distance from the axis to the point at which
+the force is applied to the ruler, and (4) the angle between
+the force vector and the line connecting the axis with the
+point where the force is applied.  Note that the meter
+stick's own weight can be thought of as being applied
+at its center of mass.
+
+The meter stick has holes drilled in it that you can use to
+attach the strings. You can make your analysis simpler by
+tying the knots as shown below, so that all the forces act
+at points along the center-line of the stick.
+
+\fig{me-tor-knot}
+
+You have a selection of spring scales, so use the
+right one for the job --- don't use a 20 N scale to
+measure 0.8 newtons, because it will not be possible to read it accurately.
+Optimize your precision by choosing conditions that come as close as possible
+to maxing out the scales.
+For each spring scale, hang a known weight from it, and adjust the
+calibration tab so that the scale gives the correct result.
+If you need to swap in a new spring scale, don't forget to calibrate it.
+
+\prelab
+
+\prelabquestion  You have complete freedom in defining what point is to be considered the axis of
+rotation ---  if one choice of axis causes the total torque
+to be zero, then any other choice of axis will also cause
+the total torque to be zero.  It is possible to simplify the
+analysis by choosing the axis so that one of the four
+torques is zero.  Plan how you will do this.
+
+\prelabquestion  All the torques will be tending to cause rotation in the
+same plane.  You can therefore use plus and minus signs to
+represent clockwise and counterclockwise torques.  Choose
+which one you'll call positive.  Using your choice of axis,
+which of the four torques, $\tau_H,\tau_M,\tau_L$, and
+$\tau_R$, will be negative, which will be positive,
+and which will be zero?
+
+\analysis
+
+Determine the total force and total torque on the meter
+stick.  For the forces, I think a graphical calculation will
+be easier than an analytic one.
+
+Finally, repeat your calculation of the total torque using a
+different point as your axis. Although you're normally expected to
+do your analysis completely independently, for this lab it's okay
+if you find the total torque for one choice of axis, and your lab
+partners do the calculation for their own choices. Present both
+results in your own abstract.
+
+m4_ifdef([:__sn:],[:%
+Do error analysis for the total torque computed using one choice of axis.
+Since this is a moderately complex calculation, you should set up all the number-crunching in
+a python program, so that it becomes trivial to change
+one of the inputs and recompute the output.
+:],[:%
+Error analysis is not required. For extra credit, you can do
+error analysis for your total torque.
+:])

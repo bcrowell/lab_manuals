@@ -1,0 +1,190 @@
+%-------------------------------------------------------------
+\lab{The Local Gravitational Field}\label{lab:g}
+
+\emph{Note to the lab technician: The computers to use are the ones
+with labels on their sides saying Dug, Tock, and Mudge.}
+
+\apparatus
+\equip{(two stations):}
+\equip{vertical plank with electromagnets}
+\equip{steel balls (2/station)}
+\equip{Linux computers with Audacity installed (in 416T)}
+\equip{spirit levels}
+\equip{256 Hz tuning fork with box}
+
+\goal{Make a high-precision measurement of the strength of the Earth's
+gravitational field, $g$, in Fullerton.}
+
+\introduction
+When objects fall, and all forces other than gravity are negligible,
+we observe that the acceleration is the same, regardless of the object's
+mass, shape, density, or other properties. However, the acceleration does
+depend a little bit where on the earth we do the experiment, and even bigger
+variations in acceleration can be observed by, e.g., going to the moon.
+Thus, this acceleration can be considered as a property of space itself,
+and we can refer to it as the gravitational field in that region of space.
+Just as you would use a magnetic compass to find out about the magnetic field
+in the classroom, you can use dropping masses to find out about the gravitational
+field. In this experiment, you'll measure the gravitational field, $g$, in the
+classroom to sufficiently high precision that, if everybody does a good job and
+we pool and average everyone's data to reduce random errors, we should be able to
+get a value that is measurably different from the generic world-average value you
+would find in a textbook.
+
+\section*{Measuring $g$ precisely}
+You will measure $g$, the
+acceleration of an object in free fall, using electronic
+timing techniques. The idea of the method is that you'll
+have two steel balls hanging underneath electromagnets at
+different heights. You'll simultaneously turn off the two
+magnets using the same switch, causing the balls to drop at
+the same moment. The ball dropped from the lower height
+$(h_1)$ takes a smaller time $(\Delta t_1)$ to reach the floor, and
+the ball released from the greater height $(h_2)$ takes a
+longer time $(\Delta t_2)$. The time intervals involved are short
+enough that due to the limitations of your reflexes it is
+impossible to make good enough measurements with stopwatch. 
+Instead, you will record the sounds of the two balls'
+impacts on the floor using the computer.  The computer
+shows a graph in which the $x$ axis is time and the $y$ axis
+shows the vibration of the sound wave hitting the microphone.
+You can measure the time between the two visible ``blips''
+on the screen.  You will measure three things: $h_1$, $h_2$,
+and the time interval $\Delta t_2-\Delta t_1$ between the impact of the
+second ball and the first.  From these data, with a little
+algebra, you can find $g$.
+
+The experiment would have been easier to analyze if we could
+simply drop a single ball and measure the time from when it
+was released to when it hit the floor.  But since our timing
+technique is based on sound, and no sound is produced when
+the balls are released, we need to have two balls.  If
+$h_1$, the height of the lower ball, could be made very
+small, then it would hit the floor at essentially the same
+moment the two balls were released ($\Delta t_1$ would equal 0),
+and $\Delta t_2-\Delta t_1$ would be essentially the same as $\Delta t_2$.  But
+we can't make $h_1$ too small or the sound would not be loud
+enough to detect on the computer.
+
+When measuring $h_1$ and $h_2$, use the spirit level to get the
+two-meter stick accurately vertical.
+
+\section*{Using the computer software}
+
+As practice, let's see how to record two hand claps, one second apart.
+Start up the sound recording program, called Audacity.
+Set the record level on high, using the control marked $-\ldots +$ next to
+the microphone icon. Record your sound by clicking on the red ``record'' button.
+
+\figcaption{me-fre-sound}{Two thumps, as recorded on the
+computer through the microphone.}
+
+To measure the time interval between the hand claps, you can measure the time at which
+each clap occurs, and then subtract. To measure a time, 
+use the "I-beam" cursor and click on the feature you're interested in.
+Then click on the magnifying glass icon with the plus sign in it to zoom in.
+If you zoom in several times like this, you'll start to see that your positioning
+of the cursor was a little off. Correct this by clicking closer to the right place,
+and then zoom in some more. Continue this process of zooming in and correcting
+until you have measured the time as well as possible.
+Read the time from the scale at the top of the window.
+
+Troubleshooting:
+\begin{itemize}
+\item[] You may get this error message: ``Error while opening sound device. Please check the input device settings and the project sample rate.''
+Quit the program and restart it.
+
+\item[] Some of the computers have very low gain on their microphones, so it may be difficult to see the thumps. To work around
+this, do the following after you've recorded a sound: type control-A to select the whole recording,
+and then do Effect$>$Amplify; the default is to amplify the sound by the maximum amount, which is what you want.
+
+\item[] If sound input isn't working, it may be because the wrong sound input device is selected. Right-click on the volume icon
+in the menu bar. Under Edit:Preferences, check Mic select, and under Options do Mic Select:Mic 1.
+\end{itemize}
+
+You should make a series of measurements, and
+make sure they agree at the level of a few times $10^{-4}$ s; if they
+don't, there's something wrong with your technique. Also, you
+should check that your result for $g$ makes sense.
+
+Here are some common problems that cause inconsistent or wrong results:
+\begin{itemize}
+\item[] The balls are brushing against the electrical wires as they fall.
+\item[] You're misidentifying the thumps.
+\item[] The surface the balls are dropping onto has dents in it. 
+\item[] You're not positioning the balls on the same spot on the magnets every time.
+\item[] To drop the balls, you should break the circuit by pulling one of the banana-plug connectors out of the plug on the front
+panel of the power supply. Don't use the switch; if you use the switch, it takes some time for the magnetic field to decay, and the balls stick for a while before dropping. 
+\item[] Audacity will let you keep on making new recordings, stacking the graphs
+vertically. However, if you do this you will introduce significant timing
+errors. The reason is probably that Audacity is designed for use in multitrack recording
+of music, so it tries to play back the previously recorded tracks while recording the
+new one, and on cheap sound hardware this causes little timing glitches.
+\end{itemize}
+
+\analysis
+
+Extract a value of $g$ from your data.
+
+The consumer-grade sound cards in the computers we use for this lab do not always have a good absolute calibration.
+I have used a tuning fork to find a calibration for the three machines that we're currently using:
+
+\begin{tabular}{ll}
+computer & Multiply $t$ by \ldots \\
+\hline
+Mudge II & 1.0050 \\
+Dug II  & 1.0050 \\
+Tock II  & 1.0050
+\end{tabular}
+
+Because these three sound cards all match to five significant figures, I think they're actually right, and
+the 1.0050 is actually the factor by which the tuning fork is off. Therefore we shouldn't apply the
+calibration.
+
+m4_ifdef([:__sn:],[:%
+If you're turning in a formal writeup,
+apply the correction for air resistance found in homework problem 4-13, running the program with the actual mass and radius of
+the balls used in this lab. Incorporate your results into your lab writeup, not your homework.
+This correction is derived based on various approximations, which may or
+may not be valid, about things like the smoothness of the ball and
+the pattern formed by the air flowing over it. You should add in the
+correction, but you shouldn't necessarily believe in the correction
+as being perfectly correct. I'm interested in pinning down the correction
+better, and I'll give you extra credit if you want to try an independent
+project to work on this. Some possible ways of attacking this:
+\begin{itemize}
+\item[] Do the experiment with foam balls or balls of different sizes, and see if the
+         uncorrected results really are inconsistent, and the corrected
+         ones consistent. I've already tried this with small (9-mm diameter)
+         balls, but found that I was unable to get good data at all. It might
+         work better if we could find some larger balls.
+\item[] Vary the heights, and see if the effect on the (uncorrected) results
+         for $g$ is consistent with the calculation.
+\end{itemize}
+:])
+
+Derive error bars on your result, using the techniques in appendices \ref{appendix:basicerranal}
+and \ref{appendix:errpropagation}.
+
+\selfcheck
+
+Extract the value of $g$, with error bars.
+Read Appendix \ref{appendix:errpropagation} for information on how to do error analysis
+with propagation of errors; get help from your instructor if necessary.
+
+\prelab
+
+\prelabquestion  \emph{If your instructor has assigned homework problem 
+m4_ifdef([:__sn:],[:%
+26 from ch. 3 of Mechanics,%
+:])%
+m4_ifdef([:__lm:],[:%
+27 from ch. 3 of Newtonian Physics,%
+:])%
+ don't bother turning in another copy of your work for this prelab
+question.} Derive an equation for $g$ in terms of the
+quantities you'll measure, which are $h_1$,
+$h_2$, and the time interval $\Delta t_2-\Delta t_1$. The point of the lab
+is to measure $g$, so don't just say ``well of course $g$ is
+9.8 $\munit/\sunit^2$.'' (You should check your equation by using the answer
+checker for the homework problem.)

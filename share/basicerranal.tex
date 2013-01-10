@@ -1,0 +1,390 @@
+\myappendix{basicerranal}{Basic Error Analysis}
+
+\section*{No measurement is perfectly exact.}
+
+One of the most common misconceptions about science is that
+science is ``exact.'' It is always a struggle to get
+beginning science students to believe that no measurement is
+perfectly correct. They tend to think that if a measurement
+is a little off from the ``true'' result, it must be because
+of a mistake --- if a pro had done it, it would have been
+right on the mark. Not true!
+
+What scientists can do is to estimate just how far off they
+might be. This type of estimate is called an error bar, and
+is expressed with the $\pm$ symbol, read ``plus or minus.'' For
+instance, if I measure my dog's weight to be $52\pm2$ pounds,
+I am saying that my best estimate of the weight is 52
+pounds, and I think I could be off by roughly 2 pounds
+either way. The term ``error bar'' comes from the conventional
+way of representing this range of uncertainty of a
+measurement on a graph, but the term is also used when
+no graph is involved.
+
+Some very good scientific work results in measurements that
+nevertheless have large error bars. For instance, the best
+measurement of the age of the universe is now $15\pm5$ billion
+years. That may not seem like wonderful precision, but the
+people who did the measurement knew what they were doing.
+It's just that the only available techniques for determining
+the age of the universe are inherently poor.
+
+Even when the techniques for measurement are very precise,
+there are still error bars. For instance, electrons act like
+little magnets, and the strength of a very weak magnet such
+as an individual electron is customarily measured in units
+called Bohr magnetons. Even though the magnetic strength of
+an electron is one of the most precisely measured quantities
+ever, the best experimental value still has error bars:
+$1.0011596524\pm0.0000000002$ Bohr magnetons.
+
+There are several reasons why it is important in scientific
+work to come up with a numerical estimate of your error
+bars. If the point of your experiment is to test whether the
+result comes out as predicted by a theory, you know there
+will always be some disagreement, even if the theory is
+absolutely right. You need to know whether the measurement
+is reasonably consistent with the theory, or whether the
+discrepancy is too great to be explained by the limitations
+of the measuring devices.
+
+Another important reason for stating results with error bars
+is that other people may use your measurement for purposes
+you could not have anticipated. If they are to use your
+result intelligently, they need to have some idea of
+how accurate it was.
+
+\section*{Error bars are not absolute limits.}
+
+	Error bars are not absolute limits. The true value may lie
+outside the error bars. If I got a better scale I might find
+that the dog's weight is $51.3\pm0.1$ pounds, inside my
+original error bars, but it's also possible that the better
+result would be $48.7\pm0.1$ pounds. Since there's always some
+chance of being off by a somewhat more than your error bars,
+or even a lot more than your error bars, there is no point
+in being extremely conservative in an effort to make
+absolutely sure the true value lies within your stated
+range. When a scientist states a measurement with error
+bars, she is not saying ``If the true value is outside this
+range, I deserve to be drummed out of the profession.'' If
+that was the case, then every scientist would give
+ridiculously inflated error bars to avoid having her career
+ended by one fluke out of hundreds of published results.
+What scientists are communicating to each other with error
+bars is a typical amount by which they might be off, not an upper limit.
+
+	The important thing is therefore to define error bars in a
+standard way, so that different people's statements can be
+compared on the same footing. By convention, it is usually
+assumed that people estimate their error bars so that about
+two times out of three, their range will include the true
+value (or the results of a later, more accurate measurement
+with an improved technique).
+
+\section*{Random and systematic errors.}
+
+	Suppose you measure the length of a sofa with a tape
+measure as well as you can, reading it off to the nearest
+millimeter. If you repeat the measurement again, you will
+get a different answer. (This is assuming that you don't
+allow yourself to be psychologically biased to repeat your
+previous answer, and that 1 mm is about the limit of how
+well you can see.) If you kept on repeating the measurement,
+you might get a list of values that looked like this:
+
+\begin{tabular}{lllll}
+	203.1\ \zu{cm}	&203.4	&202.8	&203.3	&203.2\\
+	203.4		&203.1	&202.9	&202.9	&203.1\\
+\end{tabular}
+
+Variations of this type are called random errors, because
+the result is different every time you do the measurement.
+
+The effects of random errors can be minimized by averaging
+together many measurements. Some of the measurements
+included in the average are too high, and some are too low,
+so the average tends to be better than any individual
+measurement. The more measurements you average in, the more
+precise the average is. The average of the above measurements
+is 203.1 cm. Averaging together many measurements cannot
+completely eliminate the random errors, but it can reduce them.
+
+On the other hand, what if the tape measure was a little bit
+stretched out, so that your measurements always tended to
+come out too low by 0.3 cm? That would be an example of a
+systematic error. Since the systematic error is the same
+every time, averaging didn't help us to get rid of it. You
+probably had no easy way of finding out exactly the amount
+of stretching, so you just had to suspect that there might a
+systematic error due to stretching of the tape measure.
+
+\fig{targets}
+
+Some scientific writers make a distinction between the terms
+``accuracy'' and ``precision.'' A precise measurement is one
+with small random errors, while an accurate measurement is
+one that is actually close to the true result, having both
+small random errors and small systematic errors. Personally,
+I find the distinction is made more clearly with the more
+memorable terms ``random error'' and ``systematic error.''
+
+The $\pm$ sign used with error bars normally implies that random
+errors are being referred to, since random errors could be
+either positive or negative, whereas systematic errors would
+always be in the same direction.
+
+\section*{The goal of error analysis}
+
+	Very seldom does the final result of an experiment come
+directly off of a clock, ruler, gauge or meter. It is much
+more common to have raw data consisting of direct measurements,
+and then calculations based on the raw data that lead to a
+final result. As an example, if you want to measure your
+car's gas mileage, your raw data would be the number of
+gallons of gas consumed and the number of miles you went.
+You would then do a calculation, dividing miles by gallons,
+to get your final result. When you communicate your result
+to someone else, they are completely uninterested in how
+accurately you measured the number of miles and how
+accurately you measured the gallons. They simply want to
+know how accurate your final result was. Was it $22\pm2$ mi/gal,
+or $22.137\pm0.002$ mi/gal?
+
+	Of course the accuracy of the final result is ultimately
+based on and limited by the accuracy of your raw data. If
+you are off by 0.2 gallons in your measurement of the amount
+of gasoline, then that amount of error will have an effect
+on your final result. We say that the errors in the raw data
+``propagate'' through the calculations. When you are
+requested to do ``error analysis'' in a lab writeup, that
+means that you are to use the techniques explained below to
+determine the error bars on your final result. There are two
+sets of techniques you'll need to learn:
+
+\begin{itemize}
+\item[] techniques for finding the accuracy of your raw data
+
+\item[] techniques for using the error bars on your raw data to
+infer error bars on your final result
+\end{itemize}
+
+\section*{Estimating random errors in raw data}
+
+	We now examine three possible techniques for estimating
+random errors in your original measurements, illustrating
+them with the measurement of the length of the sofa.
+
+\subsection*{Method \#1: Guess}
+
+	If you're measuring the length of the sofa with a metric
+tape measure, then you can probably make a reasonable guess
+as to the precision of your measurements. Since the smallest
+division on the tape measure is one millimeter, and one
+millimeter is also near the limit of your ability to see,
+you know you won't be doing better than $\pm$ 1 mm, or 0.1 cm.
+Making allowances for errors in getting tape measure
+straight and so on, we might estimate our random errors to
+be a couple of millimeters.
+
+	Guessing is fine sometimes, but there are at least two ways
+that it can get you in trouble. One is that students
+sometimes have too much faith in a measuring device just
+because it looks fancy. They think that a digital balance
+must be perfectly accurate, since unlike a low-tech balance
+with sliding weights on it, it comes up with its result
+without any involvement by the user. That is incorrect. No
+measurement is perfectly accurate, and if the digital
+balance only displays an answer that goes down to tenths of
+a gram, then there is no way the random errors are any
+smaller than about a tenth of a gram.
+
+	Another way to mess up is to try to guess the error bars on
+a piece of raw data when you really don't have enough
+information to make an intelligent estimate. For instance,
+if you are measuring the range of a rifle, you might shoot
+it and measure how far the bullet went to the nearest
+centimeter, concluding that your random errors were only $\pm$1
+cm. In reality, however, its range might vary randomly by
+fifty meters, depending on all kinds of random factors you
+don't know about. In this type of situation, you're better
+off using some other method of estimating your random errors.
+
+\subsection*{Method \#2: Repeated Measurements and the Two-Thirds Rule}
+
+	If you take repeated measurements of the same thing, then
+the amount of variation among the numbers can tell you how
+big the random errors were. This approach has an advantage
+over guessing your random errors, since it automatically
+takes into account all the sources of random error, even
+ones you didn't know were present. 
+
+	Roughly speaking, the measurements of the length of the
+sofa were mostly within a few mm of the average, so that's
+about how big the random errors were. But let's make sure we
+are stating our error bars according to the convention that
+the true result will fall within our range of errors about
+two times out of three. Of course we don't know the ``true''
+result, but if we sort out our list of measurements in
+order, we can get a pretty reasonable estimate of our error
+bars by taking half the range covered by the middle two
+thirds of the list. Sorting out our list of ten measurements
+of the sofa, we have
+
+\begin{tabular}{lllll}
+	202.8\ \zu{cm} &	202.9&	202.9&	203.1&	203.1\\
+	203.1	&203.2 &	203.3&	203.4	&203.4\\
+\end{tabular}
+
+Two thirds of ten is about 6, and the range covered by the
+middle six measurements is 203.3 cm - 202.9 cm, or 0.4 cm.
+Half that is 0.2 cm, so we'd estimate our error bars as $\pm$0.2
+cm. The average of the measurements is 203.1 cm, so your
+result would be stated as $203.1\pm0.2$ cm.
+
+	One common mistake when estimating random errors by
+repeated measurements is to round off all your measurements
+so that they all come out the same, and then conclude that
+the error bars were zero. For instance, if we'd done some
+overenthusiastic rounding of our measurements on the sofa,
+rounding them all off to the nearest cm, every single number
+on the list would have been 203 cm. That wouldn't mean that
+our random errors were zero! The same can happen with
+digital instruments that automatically round off for you. A
+digital balance might give results rounded off to the
+nearest tenth of a gram, and you may find that by putting
+the same object on the balance again and again, you always
+get the same answer. That doesn't mean it's perfectly
+precise. Its precision is no better than about $\pm0.1$ g.
+
+\subsection*{Method \#3: Repeated Measurements and the Standard Deviation}
+
+	The most widely accepted method for measuring error bars is
+called the standard deviation. Here's how the method works,
+using the sofa example again.
+
+(1) Take the average of the measurements.
+\begin{equation*}
+			\text{average}  =  203.1\ \zu{cm}  
+\end{equation*}
+(2) Find the difference, or ``deviation,'' of each
+measurement from the average.
+
+\begin{tabular}{lllll}
+	$-0.3$ cm &	$-0.2$	& $-0.2$	&0.0	&0.0\\
+	0.0	&0.1	&0.1	&0.3	&0.3
+\end{tabular}
+
+(3) Take the square of each deviation.
+
+\begin{tabular}{lllll}
+	0.09 $\zu{cm}^2$&	0.04	&0.04	&0.00	&0.00\\
+	0.00&	0.01&	0.01& 0.09	&0.09
+\end{tabular}
+
+(4) Average together all the squared deviations.
+\begin{equation*}
+			\text{average}  =  0.04\ \zu{cm}^2  
+\end{equation*}
+
+(5) Take the square root. This is the standard deviation.
+\begin{equation*}
+			\text{standard deviation}  =  0.2\ \zu{cm}  
+\end{equation*}
+If we're using the symbol $x$ for the length of the couch,
+then the result for the length of the couch would be stated
+as $x= 203.1 \pm 0.2$ cm, or $x=203.1$ cm and $\sigma_x=0$.2
+cm. Since the Greek letter sigma $(\sigma)$ is used as a
+symbol for the standard deviation, a standard deviation is
+often referred to as ``a sigma.''
+
+	Step (3) may seem somewhat mysterious. Why not just skip
+it? Well, if you just went straight from step (2) to step
+(4), taking a plain old average of the deviations, you would
+find that the average is zero! The positive and negative
+deviations always cancel out exactly. Of course, you could
+just take absolute values instead of squaring the deviations.
+The main advantage of doing it the way I've outlined above
+are that it is a standard method, so people will know how
+you got the answer. (Another advantage is that the standard
+deviation as I've described it has certain nice mathematical properties.)
+
+	A common mistake when using the standard deviation
+technique is to take too few measurements. For instance,
+someone might take only two measurements of the length of
+the sofa, and get 203.4 cm and 203.4 cm. They would then
+infer a standard deviation of zero, which would be
+unrealistically small because the two measurements happened
+to come out the same.
+
+	In the following material, I'll use the term ``standard
+deviation'' as a synonym for ``error bar,'' but that does
+not imply that you must always use the standard deviation
+method rather than the guessing method or the 2/3 rule.
+
+There is a utility on the class's web page for calculating
+standard deviations.
+
+\section*{Probability of deviations}\label{probability-of-deviations}
+	You can see that although 0.2 cm is a good figure for the
+typical size of the deviations of the measurements of the
+length of the sofa from the average, some of the deviations
+are bigger and some are smaller. Experience has shown that
+the following probability estimates tend to hold true for
+how frequently deviations of various sizes occur:
+\begin{itemize}
+	\item[] $<1$ standard deviation	about 2 times out of 3
+
+	\item[] 1-2 standard deviations	about 1 time out of 4
+
+	\item[] 2-3 standard deviations	about 1 time out of 20
+
+	\item[] 3-4 standard deviations	about 1 in 500
+
+	\item[] 4-5 standard deviations	about 1 in 16,000
+
+	\item[] $>5$ standard deviations about 1 in 1,700,000
+\end{itemize}
+
+\figcaption{bell-curve}{The probability of various sizes of deviations, shown graphically. Areas under the bell curve correspond to
+probabilities. For example, the probability that the measurement will deviate from the truth by less than one standard deviation ($\pm 1\sigma$) is
+about $34\times 2=68\%$, or about 2 out of 3. (J. Kemp, P. Strandmark, Wikipedia.)}
+
+\begin{eg}{How significant?}\label{eg:fine-structure}
+In 1999, astronomers Webb et al.~claimed to have found evidence that the strength of electrical forces in the ancient universe,
+soon after the big bang, was slightly weaker than it is today. If correct, this would be the first example ever discovered in which
+the laws of physics changed over time. The difference was very small, $5.7\pm1.0$ parts per million, but still highly statistically
+significant. Dividing, we get $(5.7-0)/1.0=5.7$ for the number of standard deviations by which their measurement was different from the
+expected result of zero. Looking at the table above, we see that if the true value really was zero, the chances of this happening would
+be less than one in a million. In general, five standard deviations (``five sigma'') is considered the gold standard for statistical
+significance.
+
+However, there is a twist to this story that shows how statistics always have to be taken with a grain of salt.
+In 2004, Chand et al.~redid the measurement by a more precise technique, and found that the change was $0.6\pm 0.6$ parts per million.
+This is only one standard deviation away from the expected value of 0, which should be interpreted as being statistically consistent
+with zero. If you measure something, and you think you know what the result is supposed to be theoretically, then one standard
+deviation is the amount you typically \emph{expect} to be off by --- that's why it's called the ``standard'' deviation. Moreover,
+the Chand result is wildly statistically inconsistent with the Webb result (see the example on page \pageref{eg:difference-between-measurements}),
+which means that one experiment or the other is
+a mistake. Most likely Webb at al.~underestimated their random errors, or perhaps there were systematic errors in their experiment
+that they didn't realize were there.
+\end{eg}
+
+\section*{Precision of an average}\label{precision-of-average}
+	We decided that the standard deviation of our measurements
+of the length of the couch was 0.2 cm, i.e., the precision of
+each individual measurement was about 0.2 cm. But I told you
+that the average, 203.1 cm, was more precise than any
+individual measurement. How precise is the average? The answer is
+that the standard deviation of the average equals
+\begin{equation*}
+	\frac{\text{standard deviation of one measurement}}{\sqrt{\text{number of measurements}}}
+		\qquad .
+\end{equation*}
+(An example on page \pageref{eg:average} gives the reasoning that leads to the square root.)
+That means that you can theoretically measure anything to
+any desired precision, simply by averaging together enough
+measurements. In reality, no matter how small you make your
+random error, you can't get rid of systematic errors by
+averaging, so after a while it becomes pointless to take
+any more measurements.

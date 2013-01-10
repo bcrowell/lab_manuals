@@ -1,0 +1,102 @@
+\myappendix{powerlaws}{Finding Power Laws from Data}
+For many people, it is hard to imagine how scientists
+originally came up with all the equations that can now be
+found in textbooks.  This appendix explains one method for
+finding equations to describe data from an experiment.
+
+\section*{Linear and nonlinear relationships}
+When two variables $x$ and $y$ are related by an equation of the form
+\begin{equation*}
+		y  =  cx   \qquad   ,  
+\end{equation*}
+where $c$ is a constant (does not depend on $x$ or $y)$, we
+say that a linear relationship exists between $x$ and $y$. 
+As an example, a harp has many strings of different lengths
+which are all of the same thickness and made of the same
+material.  If the mass of a string is $m$ and its length is
+$L$, then the equation
+\begin{equation*}
+		m  =  cL  
+\end{equation*}
+will hold, where $c$ is the mass per unit length, with units of kg/m.
+Many quantities in the physical world are instead related in
+a nonlinear fashion, i.e., the relationship does not fit the
+above definition of linearity.  For instance, the mass of a
+steel ball bearing is related to its diameter by an
+equation of the form
+\begin{equation*}
+		m  =  cd^3   \qquad   ,  
+\end{equation*}
+where $c$ is the mass per unit volume, or density, of steel.
+ Doubling the diameter does not double the mass, it
+increases it by a factor of eight.
+
+\section*{Power laws}
+Both examples above are of the general mathematical form
+\begin{equation*}
+		y  =  cx^p   \qquad   ,  
+\end{equation*}
+which is known as a power law.  In the case of a linear
+relationship, $p=1$.  Consider the (made-up) experimental
+data shown in the table.
+
+\begin{tabular}{lp{30mm}p{30mm}}
+			& $h$=height of rodent at the shoulder (cm) & $f$=food eaten per day (g) \\
+\hline
+	shrew	&	1	& 3\\
+	rat		&	10	& 300\\
+	capybara	& 100	& 30,000
+\end{tabular}
+
+It's fairly easy to figure out what's going on just by
+staring at the numbers a little. Every time you increase the
+height of the animal by a factor of 10, its food consumption
+goes up by a factor of 100. This implies that $f$ must be
+proportional to the square of $h$, or, displaying the
+proportionality constant $k=3$ explicitly,
+\begin{equation*}
+	f=3h^2   \qquad   .
+\end{equation*}
+
+\section*{Use of logarithms}
+Now we have found $c=3$ and $p=2$ by inspection, but that
+would be much more difficult to do if these weren't all
+round numbers. A more generally applicable method to use
+when you suspect a power-law relationship is to take
+logarithms of both variables. It doesn't matter at all what
+base you use, as long as you use the same base for both
+variables. Since the data above were increasing by powers of
+10, we'll use logarithms to the base 10, but personally I
+usually just use natural logs for this kind of thing.
+
+\begin{tabular}{lp{30mm}p{30mm}}
+			& $\log_{10} h$ & $\log_{10} f$ \\
+\hline
+	shrew	&	0	& 0.48\\
+	rat		&	1	& 2.48\\
+	capybara	& 2	& 4.48
+\end{tabular}
+
+
+This is a big improvement, because differences are so much
+simpler to work mentally with than ratios. The difference
+between each successive value of $h$ is 1, while $f$ increases
+by 2 units each time. The fact that the logs of the $f's$
+increase twice as quickly is the same as saying that $f$ is
+proportional to the square of $h$.
+
+\section*{Log-log plots}
+
+Even better, the logarithms can be interpreted visually
+using a graph, as shown on the next page. The slope of this type of
+log-log graph gives the power $p$. Although it is also
+possible to extract the proportionality constant, $c$, from
+such a graph, the proportionality constant is usually much
+less interesting than $p$. For instance, we would suspect
+that if $p=2$ for rodents, then it might also equal 2 for
+frogs or ants. Also, $p$ would be the same regardless of
+what units we used to measure the variables. The constant
+$c$, however, would be different if we used different units,
+and would also probably be different for other types of animals.
+
+\fig{rodents}

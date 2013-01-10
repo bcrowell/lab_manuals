@@ -1,0 +1,276 @@
+\lab{The Oscilloscope}\label{lab:oscilloscope}
+
+\apparatus
+\equipn{oscilloscope (Tektronix TDS 1001B)}{1/group}
+\equipn{microphone (RS 33-1067)}{for 6 groups}
+\equipn{microphone (Shure C606)}{for 1 group}
+\equipn{PI-9587C sine wave generator}{1/group}
+\equip{various tuning forks, mounted on wooden boxes}
+
+If there's an equipment conflict with respect to the sine wave
+generators, the HP200CD sine wave generators can be used instead.
+
+\begin{goals}
+
+\item[] Learn to use an oscilloscope.
+
+\item[] Observe sound waves on an oscilloscope.
+\end{goals}
+
+\introduction
+
+One of the main differences you will notice between your
+second semester of physics and the first is that many of the
+phenomena you will learn about are not directly accessible
+to your senses. For example, electric fields, the flow of
+electrons in wires, and the inner workings of the atom are
+all invisible.  The oscilloscope is a versatile laboratory
+instrument that can indirectly help you to see what's going on. 
+
+\mysubsubsection{The Oscilloscope}
+
+An oscilloscope graphs an electrical signal that varies as
+a function of time.
+The graph is drawn from left to right across the screen,
+being painted in real time as the input signal varies.
+In this lab, you
+will be using the signal from a microphone as an input,
+allowing you to see sound waves. 
+
+The input signal is
+supplied in the form of a voltage.
+You are already familiar with the term ``voltage'' from
+common speech, but you may not have learned the formal
+definition yet in the lecture course. Voltage, measured in
+metric units of volts (V), is defined as the electrical
+potential energy per unit charge. For instance if 2 nC of
+charge flows from one terminal of a 9-volt battery to the
+other terminal, the potential energy consumed equals 18 nJ.
+To use a mechanical analogy, when you blow air out between
+your lips, the flowing air is like an electrical current,
+and the difference in pressure between your mouth and the
+room is like the difference in voltage. For the purposes of
+this lab, it is not really necessary for you to work with
+the fundamental definition of voltage.
+
+The input connector on the front of the oscilloscope
+accepts a type of cable
+known as a BNC cable.
+A BNC cable is a specific example of coaxial cable
+(``coax''), which is also used in cable TV, radio, and
+computer networks. The electric current flows in one direction
+through the central conductor, and returns in the opposite
+direction through the outside conductor, completing the
+circuit. The outside conductor is normally kept at ground,
+and also serves as shielding against radio interference. 
+The advantage of coaxial cable is that it is capable of
+transmitting rapidly varying signals without distortion.
+
+\fig{em-osc-coax}
+
+Most of the voltages we wish to measure are not big enough
+to use directly for the vertical deflection voltage, so the
+oscilloscope actually amplifies the input voltage, i.e., the
+small input voltage is used to control a much large voltage
+generated internally. The amount of amplification is
+controlled with a knob on the front of the scope. For
+instance, setting the knob on 1 mV selects an amplification
+such that 1 mV at the input deflects the electron beam by
+one square of the 1-cm grid. Each 1-cm division is referred
+to as a ``division.''
+
+\fig{em-osc-waveform} % \label{fig:em-osc-waveform} is much lower down, to force ref to be on the page where the fig actually lands
+
+\mysubsubsection{The Time Base and Triggering}
+
+Since the $X$ axis represents time, there also has to be a way
+to control the time scale, i.e., how fast the imaginary
+``penpoint'' sweeps across the screen. For instance, setting
+the knob on 10 ms causes it to sweep across one square
+in 10 ms. This is known as the time base.
+
+In the figure, suppose the time base is 10 ms.
+The scope has 10
+divisions, so the total time required for the beam to sweep
+from left to right would be 100 ms. This is far too short a
+time to allow the user to examine the graph.
+The oscilloscope has a built-in method of overcoming this
+problem, which works well for periodic (repeating)
+signals. The amount of
+time required for a periodic signal to perform its pattern
+once is called the period. With a periodic signal, all you
+really care about seeing what one period or a few periods in
+a row look like --- once you've seen one, you've seen them
+all. The scope displays one screenful of the
+signal, and then keeps on overlaying more and more copies of
+the wave on top of the original one. Each
+trace is erased when the next one starts, but is being overwritten
+continually by later, identical copies of the wave form. You
+simply see one persistent trace.\label{fig:em-osc-waveform} % label is much lower down than fig, to force ref to be on the page where the fig actually lands
+
+How does the scope know when to start a new trace? If the
+time for one sweep across the screen just happened to be
+exactly equal to, say, four periods of the signal, there
+would be no problem. But this is unlikely to happen in real
+life --- normally the second trace would start from a
+different point in the waveform, producing an offset copy of
+the wave. Thousands of traces per second would be superimposed
+on the screen, each shifted horizontally by a different
+amount, and you would only see a blurry band of light.
+
+To make sure that each trace starts from the same point in
+the waveform, the scope has a triggering circuit. You use a
+knob to set a certain voltage level, the trigger level, at
+which you want to start each trace. The scope waits for the
+input to move across the trigger level, and then begins a
+trace. Once that trace is complete, it pauses until the
+input crosses the trigger level again. To make extra sure
+that it is really starting over again from the same point in
+the waveform, you can also specify whether you want to start
+on an increasing voltage or a decreasing voltage ---
+otherwise there would always be at least two points in a
+period where the voltage crossed your trigger level.
+
+\section*{Setup}
+
+
+To start with, we'll use a sine wave generator, which makes
+a voltage that varies sinusoidally with time. This gives you
+a convenient signal to work with while you get the scope working.
+Use the black and white outputs on the PI-9587C.
+
+The figure on the last page is a simplified
+drawing of the front panel of a digital oscilloscope, showing
+only the most important controls you'll need for this lab.
+When you turn on the oscilloscope, it will take a while to start
+up.
+
+\mysubsubsection{Preliminaries:}
+
+\begin{itemize}
+\item[] Press DEFAULT SETUP.
+
+\item[] Use the SEC/DIV knob to
+put the time base on something reasonable compared to the
+period of the signal you're looking at. The time base is
+displayed on the screen, e.g., 10 ms/div, or 1 s/div.
+
+\item[] Use the VOLTS/DIV knob to
+put the voltage scale (Y axis) on a reasonable scale
+compared to the amplitude of the signal you're looking at.
+
+\item[] The scope has two channels, i.e., it can accept input
+through two BNC connectors and display both or either. You'll
+only be using channel 1, which is the only one represented in
+the simplified drawing. By default, the oscilloscope draws
+graphs of both channels' inputs; to get rid of ch. 2, hold
+down the CH 2 MENU button (not shown in the diagram) for a couple
+of seconds. You also want to make sure that the scope is triggering
+on CH 1, rather than CH 2. To do that, press the TRIG MENU
+button, and use an option button to select CH 1 as the source.
+Set the triggering mode to normal, which is the mode in which
+the triggering works as I've described above.
+If the trigger level is set to a level that the signal never
+actually reaches, you can play with the knob that sets the trigger
+level until you get something. A quick and easy way to do this
+without trial and error is to use the SET TO 50\%
+button, which
+automatically sets the trigger level to midway between the top
+and bottom peaks of the signal.
+
+\item[] You want to select AC, not DC or GND, on the channel you're using. You
+are looking at a voltage that is alternating, creating an
+alternating current, ``AC.'' The ``DC'' setting is only
+necessary when dealing with constant or very slowly varying
+voltages. The ``GND'' simply draws a graph using $y=0$,
+which is only useful in certain situations, such as when you
+can't find the trace. To select AC, press the CH 1 MENU
+button, and select AC coupling.
+
+\end{itemize}
+
+Observe the effect of changing the voltage scale and time
+base on the scope. Try changing the frequency and amplitude
+on the sine wave generator.
+
+You can freeze the display by pressing RUN/STOP, and then
+unfreeze it by pressing the button again.
+
+\section{Preliminary Observations}
+
+Now try observing signals from the microphone.
+
+Notes for the group that uses the Shure mic: As with the Radio Shack
+mics, polarity matters. The tip of the phono plug connector is the
+live connection, and the part farther back from the tip is the
+grounded part. You can connect onto the phono plug with alligator
+clips.
+
+Once you have your setup working, try measuring the period
+and frequency of the sound from a tuning fork, and make sure
+your result for the frequency is the same as what's
+written on the tuning fork.
+
+\observations
+
+\labpart{ Periodic and nonperiodic speech sounds}
+
+Try making various speech sounds that you can sustain
+continuously: vowels or certain consonants such as ``sh,''
+``r,'' ``f'' and so on. Which are periodic and which are not?
+
+Note that the names we give to the letters of the alphabet
+in English are not the same as the speech sounds represented
+by the letter. For instance, the English name for ``f'' is
+``ef,'' which contains a vowel, ``e,'' and a consonant,
+``f.'' We are interested in the basic speech sounds, not the
+names of the letters. Also, a single letter is often used in
+the English writing system to represent two sounds. For
+example, the word ``I'' really has two vowels in it,
+``aaah'' plus ``eee.''
+
+\labpart{ Loud and soft}
+
+What differentiates a loud ``aaah'' sound from a soft one?
+
+\labpart{ High and low pitch}
+
+Try singing a vowel, and then singing a higher note with the
+same vowel. What changes?
+
+\labpart{ Differences among vowel sounds}
+
+What differentiates the different vowel sounds?
+
+\labpart{ Lowest and highest notes you can sing}
+
+What is the lowest frequency you can sing, and what is the highest?
+
+\prelab
+
+\prelabquestion  In the sample oscilloscope trace shown on
+page \pageref{fig:em-osc-waveform}, what is
+the period of the waveform? What is its frequency? The time base is
+10 ms.
+
+\prelabquestion  In the same example, again assume the time base is 10
+ms/division. The voltage scale is 2 mV/div\-ision. Assume
+the zero voltage level is at the middle of the vertical
+scale. (The whole graph can actually be shifted up and down
+using a knob called ``position.'')  What is the trigger
+level currently set to? If the trigger level was changed to
+2 mV, what would happen to the trace?
+
+\prelabquestion  Referring to the chapter of your textbook on sound,
+which of the following would be a reasonable time base to
+use for an audio-frequency signal? 10 ns, 1$\mu$ s, 1 ms, 1 s
+
+\prelabquestion  Does the oscilloscope show you the signal's period,
+or its wavelength? Explain.
+
+\analysis
+
+The format of the lab writeup can be informal. Just describe
+clearly what you observed and concluded.
+
+\widefigcaption{em-osc-panel}{A simplified diagram of the controls on a digital oscilloscope.}

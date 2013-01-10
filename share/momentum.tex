@@ -1,0 +1,154 @@
+\lab{Conservation of Momentum}\label{lab:momentum}
+
+\apparatus
+\equip{computer with Logger Pro software}
+\equip{track}
+\equip{2 carts with magnets and mounting brackets for force sensors}
+\equip{1-kg weight}
+\equip{500 g slotted weight  (in lab benches in 415)}
+\equip{masking tape}
+\equip{2 force sensors with rubber corks}
+
+The format of this lab is informal. You can write your answers in the blanks in the lab
+manual for parts A-G, and you don't need to write up anything at the end. I'll just discuss
+the physics verbally with your group as a whole.
+
+\section*{Qualitative Observations}
+Level the track.
+
+First you're going to observe some collisions between two carts and see how
+ conservation of momentum plays out. If you really wanted to take numerical data, it
+ would be a hassle, because momentum depends on mass and velocity, and there would be
+ four different velocity numbers you'd have to measure: cart 1 before the collision, cart 1
+ after the collision, cart 2 before, and cart 2 after. To avoid all this complication, the
+ first part of the lab will use only visual observations.
+
+Try gently pressing the two carts together on the track. As they come close to each
+ other, you'll feel them repelling each other! That's because they have magnets built
+ into the ends. The magnets act like perfect springs. For instance, if you hold one
+ cart firmly in place and let the other one roll at it, the incoming cart will bounce back
+ at almost exactly the same speed. It's like a perfect superball. 
+
+\labpart{Equal masses, target at rest, elastic collision}
+Roll one cart toward the other. The target cart is initially at rest. Don't hold the target cart in place. Conservation of momentum reads like this,
+
+\newcommand{\momentumeqn}[2]{%
+        #1 $\times$ \_\_\_\_\_\_\_\_ + #2 $\times$ \_\_\_\_\_\_\_\_ \\
+        \hfill =?
+        #1 $\times$ \_\_\_\_\_\_\_\_ + #2 $\times$ \_\_\_\_\_\_\_\_
+ \qquad ,}
+
+\momentumeqn{$M$}{$M$}
+
+where the two blanks on the left stand for the two carts' velocities before the collision, and the two
+ blanks on the right are for their velocities after the collision. All conservation laws work like this: the
+ total amount of something remains the same. You don't have any real numbers, but just from eyeballing the
+ collision, what seems to have happened? Let's just arbitrarily say that the mass of a cart is one unit, so
+ that wherever it says ``M x'' in the equation, you're just multiplying by one. You also don't have any numerical values
+ for the velocities, but suppose we say that the initial velocity of the incoming cart is one unit. Does it
+ look like conservation of momentum was satisfied?
+
+\labpart{Mirror symmetry}
+Now reenact the collision from part A, but do everything as a mirror image. The roles of the target cart
+ and incoming cart are reversed, and the direction of motion is also reversed.
+
+\momentumeqn{$M$}{$M$}
+
+What happens now? Note that mathematically, we use positive and negative signs to indicate the direction
+ of a velocity in one dimension.
+
+\labpart{ An explosion}
+Now start with the carts held together, with their magnets repelling. As soon as you release them, they'll break
+ contact and fly apart due to the repulsion of the magnets.
+
+\momentumeqn{$M$}{$M$}
+
+Does momentum appear to have been conserved?
+
+\labpart{Head-on collision}
+Now try a collision in which the two carts head towards each other at equal speeds (meaning that one cart's
+ initial velocity is positive, while the other's is negative).
+
+\momentumeqn{$M$}{$M$}
+
+\labpart{Sticking}
+Arrange a collision in which the carts will stick together rather than rebounding. You can do this by
+ letting the velcro ends hit each other instead of the magnet ends. Make a collision in which the target
+ is initially stationary.
+
+\momentumeqn{$M$}{$M$}
+
+The collision is no longer perfectly springy. Did it seem to matter, or was conservation of momentum still valid?
+
+\labpart{Hitting the end of the track}
+One end of the track has magnets in it. Take one cart off the track entirely, and let the other cart roll
+ all the way to the end of the track, where it will experience a repulsion from the fixed magnets built into the
+ track. Was momentum conserved? Discuss this with your instructor.
+
+\labpart{Unequal masses}
+Now put a one kilogram mass on one of the carts, but leave the other cart the way it was. Attach the mass to
+ it securely using masking tape. A bare cart has a mass of half a kilogram, so you've now tripled the mass of
+ one cart. In terms of our silly (but convenient) mass units, we now have masses of one unit and three units for
+ the two carts. Make the triple-mass cart hit the initially stationary one-mass-unit cart.
+
+\momentumeqn{$3M$}{$M$}
+
+These velocities are harder to estimate by eye, but if you estimate numbers roughly, does it seem possible
+ that momentum was conserved?
+
+\section*{Quantitative Observations}
+Now we're going to explore the reasons why momentum always seems to be conserved. Parts H and I will be
+demonstrated by the instructor for the whole class at once.
+
+Attach the force sensors to the carts, and put on the rubber stoppers. Make sure that the rubber stoppers are
+ positioned sufficiently far out from the body of the cart so that they will not rub against the
+ edge of the cart. Put the switch on the sensor in the +10 N position. Plug the sensors into the CH1 and CH2
+ ports on the interface box, and plug the interface box into the Windows computer. Start up the Logger Pro software (version 3), and do
+File$>$Open$>$Probes and Sensors$>$Force Sensors$>$Dual Range Forrce$>$2-10 N Dual Range.
+Go to Experiment$>$Data Collection, and set Sampling rate to 250 samples/s.
+
+Tell the computer to zero the sensors.
+Try collecting data and pushing and pulling on the rubber stopper. You should get a graph showing
+ how the force went up and down over time. The sensor uses negative numbers (bottom half of the graph)
+ for forces that squish the sensor, and positive numbers (top half) for forces that stretch it. Try
+ both sensors, and make sure you understand what the red and blue traces on the graph are showing you.
+
+
+{\textbf H.} Put the extra 1-kilogram weight on one of the carts. Put it on the track by itself,
+ without the other cart. Try accelerating it from rest with a gentle, steady force from your finger. You'll want to set the collection
+time to a longer period than the default. Position the track so that you can walk all the way along its
+length (not diagonally across the bench). 
+
+What does the graph on the computer look like?
+
+{\textbf I.} Now repeat H, but use a more rapid acceleration to bring the cart up to the same momentum. Sketch a comparison of
+ the graphs from parts H and I.
+
+Discuss with your instructor how this relates to momentum.
+
+{\textbf J.} You are now going to reenact collision A, but don't do it yet! You'll let the carts' rubber corks bump
+ into each other, and record the forces on the sensors. The carts will have equal mass, and both forces will
+ be recorded simultaneously. Before you do it, predict what you think the graphs will look like, and show
+ your sketch to your instructor.
+
+Switch both sensors to the +50 N position, and open the corresponding file on the computer.
+
+Zero the sensors, then check the calibration by balancing a 500 g slotted weight on top, taking data,
+zooming in, and putting the mouse cursor on the graph. You will probably find that the absolute calibration
+of the sensor is very poor when it's used on the 50 N scale; keep this in mind when interpreting your results
+from the collision.
+
+Now try it. To zoom in on the relevant part of the graph, use the mouse to draw a box, and then click on the
+magnifying glass icon. You will notice by eye that the motion after the collision is a tiny bit different than it was
+ with the magnets, but it's still pretty similar. Looking at the graphs, how do you explain the fact
+ that one cart lost exactly as much momentum as the other one gained? Discuss this with your instructor before going on.
+
+{\textbf K.} Now imagine -- but don't do it yet -- that you are going to reenact part G, where
+you used unequal masses. Sketch your
+ prediction for the two graphs, and show your sketch to your instructor before you go on.
+
+
+
+
+
+Now try it, and discuss the results with your instructor.

@@ -1,0 +1,255 @@
+\lab{Resonance}\label{resonancelab}\label{lab:resonance}
+
+\apparatus
+\equipn{vibrator}{1/group}
+\equipn{stopwatch}{1/group}
+\equipn{multimeter}{1/group}
+\equip{banana plug cables}
+\equip{Leybold 521 545 17-volt DC power supplies}
+\equip{24 V AC power supplies}
+\equip{spray lubricant}
+
+\begin{goals}
+
+\item[] Observe the phenomenon of resonance.
+
+\item[] Investigate how the width of a resonance depends on
+the amount of damping.
+\end{goals}
+
+\introduction
+
+To break a wine glass, an opera singer has to sing the right
+note. To hear a radio signal, you have to be tuned to the
+right frequency. These are examples of the phenomenon of
+resonance: a vibrating system will respond most strongly to
+a force that varies with a particular frequency.
+
+\figcaption{vw-res-mechanical}{Simplified mechanical drawing of the
+vibrator, front view.}
+\figcaption{vw-res-electrical}{Electrical setup, top view.}
+
+\apparatus
+In this lab you will investigate the phenomenon of resonance
+using the apparatus shown in the figure. If the motor is
+stopped so that the arms are locked in place, the metal disk
+can still swing clockwise and counterclockwise because it is
+attached to the upright rod with a flexible spiral spring. A
+push on the disk will result in vibrations that persist for
+quite a while before the internal friction in the spring
+reduces their amplitude to an imperceptible level. This
+would be an example of a free vibration, in which energy is
+steadily lost in the form of heat, but no external force
+\equip{pumps in energy to replace it.}
+Suppose instead that you initially stop the disk, but then
+turn on the electric motor. There is no rigid mechanical
+link to the disk, since the motor and disk are only
+connected through the very flexible spiral spring. But the
+motor will gently tighten and loosen the spring, resulting
+in the gradual building up of a vibration in the disk.
+
+\observations
+
+\labpart{ Period of Free Vibrations}
+
+Start without any of the electrical stuff hooked up. Twist
+the disk to one side, release it, and determine its period
+of vibration. (Both here and at points later in the lab, you
+can improve your accuracy by timing ten periods and dividing
+the result by ten.) This is the \emph{natural} period of the
+vibrations, i.e., the period with which they occur in the
+absence of any driving force.
+
+\labpart{ Damping}
+
+Note the coils of wire at the bottom of the disk. These are
+electromagnets. Their purpose is not to attract the disk
+magnetically (in fact the disk is made of a nonmagnetic
+metal) but rather to increase the amount of damping in the
+system. Whenever a metal is moved through a magnetic field,
+the electrons in the metal are made to swirl around. As they
+eddy like this, they undergo random collisions with atoms,
+causing the atoms to vibrate. Vibration of atoms is heat, so
+where did this heat energy come from ultimately? In our
+system, the only source of energy is the energy of the
+vibrating disk. The net effect is thus to suck energy out of
+the vibration and convert it into heat. Although this
+magnetic and electrical effect is entirely different from
+mechanical friction, the result is the same. Creating
+damping in this manner has the advantage that it can be made
+stronger or weaker simply by increasing or decreasing the
+strength of the magnetic field.
+
+Turn off all the electrical equipment and leave it
+unplugged from the wall. Connect the circuit shown in the top left of the
+electrical diagram, consisting of a power supply to run the
+electromagnet. You do not yet need the power
+supply for driving the motor. The power supply has a built-in meter labeled ``A,'' for ``Amperes,''
+the metric
+unit of electrical current.
+This will tell you how
+much electrical current is flowing through the electromagnet,
+giving you a numerical measure of how strong your
+damping is. Although this does not directly
+tell you the amount of damping force in units of newtons
+(the force depends on velocity), the force is proportional to the current.
+
+For this part of the lab, you do not yet need any of the electrical setup
+for the motor (right-hand side of the figure).
+
+Once you have everything hooked up, check with your
+instructor before plugging things in and turning them on. If
+you do the setup wrong, you could blow a fuse, which is no
+big deal, but a more serious goof would be to put too much
+current through the electromagnet, which could burn it up,
+permanently ruining it.
+
+The $Q$ of an oscillator is defined as the number of
+oscillations required for damping to reduce the energy of
+the vibrations by a factor of 535 (a definition originating
+from the quantity $e^{2\pi}$). As planned in your prelab,
+measure the $Q$ of the system with the electromagnet turned
+off, then with a low current through the electromagnet,
+and then a higher current. There are differences among the oscillators.
+To compensate for this,
+the currents you should use should be based on which oscillator you have. 
+These are designed to give $Q$ values of about 8 and 15; if your actual
+$Q$'s are much lower, use the spray lubricant to lubricate the bearing.
+
+\begin{tabular}{llll}
+      &              & low current & high current \\
+group & oscillator   & (high $Q$)  &    (low $Q$)\\
+1     &      1       &   140  mA   &    350 mA \\
+2     &      2       &   150       &    490  \\
+3     &      3B      &   360       &    530 \\
+4     &      4       &   280       &    500  \\
+5     &      5B      &   400       &    560 \\
+6     &      6B      &   430       &    610  \\
+7     &      7B      &   420       &    610  
+\end{tabular}
+
+You will be using these two current
+values throughout the lab.
+The Leybold power supply has separate knobs that set both a maximum electrical
+current and a maximum voltage. The easiest way to get the desired current is to
+\emph{first} turn the voltage knob to zero, then set the current (``A'') knob
+to 100\%, and then turn up the voltage. The two currents listed are intended
+to give $Q$ values of about 15 and 8. If you find that your $Q$'s are much
+lower than this, ask your instructor for help lubricating the bearing.
+
+For parts B and C, you do not yet need the multimeter used for measuring the speed of the motor.
+
+\labpart{ Frequency of Driven Vibration}
+
+Now connect the 24 V AC power supply to the motor.
+The motor has coarse (0 to 100) and fine (-6 to +6) adjustment knobs.
+These knobs are not
+calibrated in Hz, and their readings don't even correlate linearly with
+frequency, so to measure the frequency of the motor you need to use the stopwatch.
+
+Set the damping current to the higher of the two values.
+Turn on the motor and drive the system at a frequency very
+different from the oscillator's natural frequency. You will notice that
+it takes a certain amount of time, perhaps a minute or two,
+for the system to settle into a steady pattern of vibration.
+This is called the \emph{steady-state response}
+ to the driving force of the motor.
+
+Does the system respond by vibrating at its natural
+frequency, at the same frequency as the motor, or at some
+frequency in between?
+
+\labpart{ Resonance}
+
+For parts D and E, you will observe the response of the oscillator
+as a function of driving frequency and construct a graph 
+with the square of the
+amplitude on the $y$ axis and the frequency on the $x$ axis.
+The reason for using the square of the amplitude is that part E
+is about the full width at half maximum (FWHM), and the
+FWHM is
+measured between the two points where the \emph{energy} of
+the steady-state vibration equals half its maximum value.
+Energy is proportional to the square of the amplitude.
+
+The purpose of part D is to determine at what frequency you
+obtain the strongest response.
+
+We want to see how the results of parts D and E depend on damping,
+so we want graphs for both $Q$ values.
+To make this part less time-consuming, you will only do the low-$Q$
+graph. A high-$Q$ graph is given below.
+
+\figcaption{vw-res-high-q-graph}{High-Q graph, taken by B. Crowell with oscillator \#3,
+natural frequency=$0.645$ Hz.}
+
+
+
+When changing from one frequency to another, you have to allow time
+for the vibrator to reach its steady state. To make it easier to
+tell when the steady state is happening, it helps if you stop the vibration
+by hand after changing the frequency; otherwise you can get complicated
+patterns of motion in which the exponentially decaying motion left over
+from the old frequency happens on top of the new driven motion.
+
+In order to see what's going on, you should make the graph as
+you go along, and let the spreadsheet program plot each point
+as you type it in (see appendix \ref{appendix:graphing}).  You need to make the software
+understand that you intend it to graph every row that you ever
+enter into the spreadsheet, not just the ones that already exist when you first
+make the graph. To do this, use the mouse to select the first hundred rows of the
+two columns you're graphing, including the many blank cells below the actual data.
+Then make the graph. Although normally you're expected to do your analysis in this
+class totally independently, in this lab it's OK if you just print out multiple
+copies of the graph for your group.
+
+As you're making your graph, you will see that you have certain specific
+places where you need to fill in data. It can be difficult to ``tune in''
+the desired motor frequency based on the markings on the knobs.
+For this reason, the motor has an electrical output labeled ``Ux,''
+which gives a numerical indication of the frequency of the motor. Hook the multimeter up
+to it now, and set the rotary knob to a DC voltage scale as suggested in the figure,
+selecting the most precise scale that doesn't overload the meter. Although the readout
+is not calibrated in Hz, it is highly reproducible. As you take each data point,
+write down the reading on the meter. Then if, for example, you decide that you need
+to go back and get a data-point at a frequency that lies between two frequencies
+that you already have, you can dial in a reading on the meter that lies between the
+two previous readings.
+
+\labpart{ Width of the Resonance}
+
+The goal of this part of the lab is to determine 
+the FWHM m4_ifdef([:__sn:],[:, $\Delta f$, :])  of the resonance.
+Once you've located the peak of the curve in part D, the parts of the
+graph you need to fill in for part E are the sides.
+
+\labpart{ Resonance Strength}
+
+Set the motor to the resonant frequency, i.e., the frequency
+at which you have found you obtain the strongest response.
+Now measure the amplitude of the vibrations you obtain with
+each of the two damping currents. How does the strength of
+the resonance depend on damping?
+
+m4_ifdef([:__sn:],[:%
+\labpart{Phase (optional)}
+
+Observe the phase response, $\delta$, by comparing the
+motion of the disk with the motion of the pointer attached to
+the driving arm. Does $\delta$ have the expected behavior
+at $\omega \gg \omega_\zu{o}$ and for $\omega \ll \omega_\zu{o}$?
+:])
+
+\prelab
+
+\prelabquestion  Plan how you will determine the $Q$ of your oscillator
+in part B. [Hint: Note that the energy of a vibration is
+proportional to the square of the amplitude.]
+
+\analysis
+
+Parts C, D, E, and F are all quantitative comparisons with theory.
+In each case, if your abstract doesn't give a theoretical number and
+an experimental number, you're doing something wrong.
+In parts D and E, you should analyze both your own graph for the low $Q$ and
+the one supplied in the lab manual for the high $Q$.

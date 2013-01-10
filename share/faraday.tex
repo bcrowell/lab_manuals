@@ -1,0 +1,188 @@
+\lab{Faraday's Law}\label{lab:faraday}
+
+\apparatus
+\equipn{function generator}{1/group}
+\equip{solenoid (Heath)   1/group plus a few more}
+\equipn{oscilloscope}{1/group}
+\equipn{10-ohm power resistor}{1/group}
+\equipn{4-meter wire}{1/group}
+\equip{palm-sized pieces of iron or steel}
+\equip{masking tape}
+\equip{rulers}
+
+\begin{goals}
+
+\item[] Observe electric fields induced by changing magnetic fields.
+
+\item[] Test Faraday's law.
+\end{goals}
+
+\introduction
+
+Physicists hate complication, and when physicist Mi\-ch\-a\-el
+Faraday was first learning physics in the early 19th
+century, an embarrassingly complex aspect of the science was
+the multiplicity of types of forces. Friction, normal
+forces, gravity, electric forces, magnetic forces, surface
+tension --- the list went on and on. Today, 200 years later,
+ask a physicist to enumerate the fundamental forces of
+nature and the most likely response will be ``four: gravity,
+electromagnetism, the strong nuclear force and the weak
+nuclear force.'' Part of the simplification came from the
+study of matter at the atomic level, which showed that
+apparently unrelated forces such as friction, normal forces,
+and surface tension were all manifestations of electrical
+forces among atoms. The other big simplification came from
+Faraday's experimental work showing that electric and
+magnetic forces were intimately related in previously
+unexpected ways, so intimately related in fact that we now
+refer to the two sets of force-phenomena under a single
+term, ``electromagnetism.''
+
+Even before Faraday, Oersted had shown that there was at
+least some relationship between electric and magnetic
+forces. An electrical current creates a magnetic field, and
+magnetic fields exert forces on an electrical current. In
+other words, electric forces are forces of charges acting on
+charges, and magnetic forces are forces of moving charges on
+moving charges. (Even the magnetic field of a bar magnet is
+due to currents, the currents created by the orbiting
+electrons in its atoms.)
+
+Faraday took Oersted's work a step further, and showed that
+the relationship between electricity and magnetism was even
+deeper. He showed that a changing electric field produces a
+magnetic field, and a changing magnetic field produces an
+electric field. Faraday's law,
+\begin{equation*}
+      \Gamma_E  =  -\der\Phi_B/\der t  
+\end{equation*}
+relates the circulation of the electric field around a
+closed loop to the rate of change of the magnetic flux
+through the loop. It forms the basis for such technologies
+as the transformer, the electric guitar, the amplifier, and
+generator, and the electric motor.
+
+\observations
+
+\labpart{ Qualitative Observations}
+
+To observe Faraday's law in action you will first need to
+produce a varying magnetic field. You can do this by using a
+function generator to produce a current in a solenoid that
+that varies like a sine wave as a function of time. The
+solenoid's magnetic field will thus also vary sinusoidally.
+
+The emf  in Faraday's law can be observed around a loop of
+wire positioned inside or close to the solenoid. To make the
+emf larger and easier to see on an oscilloscope, you will
+use 5-10 loops, which multiplies the flux by that number of
+loops.
+
+The only remaining complication is that the rate of change
+of the magnetic flux, $\der \Phi_B/\der t$,
+is determined by the rate of change
+of the magnetic field, which relates to the rate of change
+of the current through the solenoid, $\der I/\der t$. The oscilloscope,
+however, measures voltage, not current. You might think that
+you could simply observe the voltage being supplied to the
+solenoid and divide by the solenoid's 62-ohm resistance to
+find the current through the solenoid. This will not work,
+however, because Faraday's law produces not only an emf in
+the loops of wire but also an emf in the solenoid that
+produced the magnetic field in the first place. The current
+in the solenoid is being driven not just by the emf from the
+function generator but also by this ``self-induced'' emf.
+Even though the solenoid is just a long piece of wire, it
+does not obey Ohm's law under these conditions. To get
+around this difficulty, you can insert the 10-ohm
+power resistor in the circuit in series with the function
+generator and the solenoid. (A power resistor is simply a
+resistor that can dissipate a large amount of power without
+burning up.) The power resistor does obey Ohm's law, so by
+using the scope to observe the voltage drop across it you
+can infer the current flowing through it, which is the same
+as the current flowing through the solenoid.
+
+Create the solenoid circuit, and hook up one channel of the
+scope to observe the voltage drop across the power resistor.
+A sine wave with a frequency on the order of 1 kHz will work.
+
+Wind the 2-m wire into circular loops small enough to fit
+inside the solenoid, and hook it up to the other channel of the scope.
+
+\fig{em-far-position}
+
+As always, you need to watch out for ground loops. The output
+of the function generator has one of its terminals grounded,
+so that ground and the grounded side of the scope's input have
+to be at the same place in the circuit.
+
+The signals tend to be fairly noise. You can clean them up
+a little by having the scope average over a series of traces.
+To turn on averaging, do\\
+ Acquire$>$Average$>$128. To turn it back
+off, press Sample.
+
+First try putting the loops at the mouth of the solenoid,
+and observe the emf induced in them. Observe what happens
+when you flip the loops over. You will observe that the two
+sine waves on the scope are out of phase with each other.
+Sketch the phase relationship in your notebook, and make
+sure you understand in terms of Faraday's law why it is the
+way it is, i.e., why the induced emf has the greatest value
+at a certain point, why it is zero at a certain point, etc.
+
+Observe the induced emf at with the loops at several other
+positions such as those shown in the figure. Make sure you
+understand in the resulting variations of the strength of
+the emf in terms of Faraday's law.
+
+\labpart{ A Metal Detector}
+
+Obtain one of the spare solenoids so that you have two of
+them. Substitute it for the loops of wire, so that you can
+observe the emf induced in the second solenoid by the first
+solenoid. If you put the two solenoids close together with
+their mouths a few cm apart and then insert a piece of iron
+or steel between them, you should be able to see a small
+increase in the induced emf. The iron distorts the magnetic
+field pattern produced by the first solenoid, channeling
+more of the field lines through the second solenoid.
+
+\labpart{ Quantitative Observations}
+
+This part of the lab is a quantitative test of Faraday's
+law. Going back to the setup for part A, measure the
+amplitude (peak-to-peak height) of the voltage across the
+power resistor. Choose a position for the loops of wire that
+you think will make it as easy as possible to calculate $\der \Phi_B/\der t$
+accurately based on knowledge of the variation of the
+current in the solenoid as a function of time. Put the loops
+in that position, and measure the amplitude of the induced
+emf. Repeat these measurements with a frequency that
+is different by a factor of two.
+
+\selfcheck
+
+Before leaving, analyze your results from part C and make
+sure you get reasonable agreement with Faraday's law.
+
+\analysis
+
+Describe your observations in parts A and B and interpret
+them in terms of Faraday's law.
+
+Compare your observations in part C quantitatively with Faraday's law.
+The solenoid isn't very long, so the approximate expression for the
+interior field of a long solenoid isn't very accurate here. To correct
+for that, multiply the expression for the field by $(\cos\beta+\cos\gamma)/2$,
+which you derived in homework problem 11-30 in Simple Nature, where
+$\beta$ and $\gamma$ are angles between the axis and the lines connecting
+the point of interest to the edges of the solenoid's mouths.
+
+\prelab
+
+\prelabquestion  Plan what raw data you'll need to collect for part C,
+and figure out the equation you'll use to test whether your
+observations are consistent with Faraday's law.

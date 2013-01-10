@@ -1,0 +1,63 @@
+% This code was written by Donald Arseneau, and modified a little, probably
+% in bad ways, by Ben Crowell. DA hasn't released the code yet, so it's
+% not his fault if anything is wrong with this preliminary version.
+% Apparently the only bug he knows of is that it has the side-effect
+% of eliminating spaces between words when you use non-math italic text inside
+% sans serif.
+
+\DeclareMathAlphabet{\mathsfs}{OT1}{cmss}{m}{sl}
+\DeclareOldFontCommand{\sfs}{\normalfont\sffamily\slshape}{\mathsfs}
+
+\DeclareMathVersion{sans}
+\SetMathAlphabet{\mathrm}{sans}{OT1}{cmss}{m}{n}
+\SetMathAlphabet{\mathsfs}{sans}{OT1}{cmss}{m}{sl}
+\SetSymbolFont{operators}{sans}{OT1}{cmss}{m}{n}
+\SetSymbolFont{letters}{sans}{OML}{cmm}{m}{it}
+\SetSymbolFont{symbols}{sans}{OMS}{cmsy}{b}{n}
+
+
+\DeclareMathSymbol{0}{\mathord}{operators}{`0}
+\DeclareMathSymbol{1}{\mathord}{operators}{`1}
+\DeclareMathSymbol{2}{\mathord}{operators}{`2}
+\DeclareMathSymbol{3}{\mathord}{operators}{`3}
+\DeclareMathSymbol{4}{\mathord}{operators}{`4}
+\DeclareMathSymbol{5}{\mathord}{operators}{`5}
+\DeclareMathSymbol{6}{\mathord}{operators}{`6}
+\DeclareMathSymbol{7}{\mathord}{operators}{`7}
+\DeclareMathSymbol{8}{\mathord}{operators}{`8}
+\DeclareMathSymbol{9}{\mathord}{operators}{`9}
+\DeclareMathSymbol{!}{\mathclose}{operators}{"21}
+\DeclareMathSymbol{+}{\mathbin}{operators}{"2B}
+\DeclareMathSymbol{,}{\mathpunct}{operators}{`\,}
+\DeclareMathSymbol{.}{\mathord}{operators}{`\.}
+\DeclareMathSymbol{:}{\mathrel}{operators}{`\:}
+\DeclareMathSymbol{;}{\mathpunct}{operators}{`\;}
+\DeclareMathSymbol{=}{\mathrel}{operators}{`\=}
+\DeclareMathSymbol{?}{\mathclose}{operators}{`\?}
+
+
+
+\def\sfMathSwitch{\sfs
+     \fontdimen2\textfont\fam=0pt
+     \fontdimen2\scriptfont\fam=0pt
+     \fontdimen2\scriptscriptfont\fam=0pt \relax}
+
+\def\sansmath{\mathversion{sans}%
+  \everymath{\sfMathSwitch}%
+  \everydisplay{\sfMathSwitch}%
+}
+
+% My bug fix -- reported but not acted on
+\makeatletter
+\def \@fontswitch #1#2{%
+  \ifmmode
+     \let \math@bgroup \relax
+     \def \math@egroup ##1{%
+       \let \math@bgroup \@@math@bgroup
+       \let \math@egroup \@@math@egroup
+       ##1}%
+     #2\relax
+  \else
+     #1%
+  \fi
+}

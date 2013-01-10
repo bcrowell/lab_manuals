@@ -1,0 +1,150 @@
+\lab{Relativity}\label{lab:relativity}
+
+\apparatus
+\equipn{magnetic balance}{1/group}
+\equipn{meter stick}{1/group}
+\equipn{multimeter (BK, not HP)}{1/group}
+\equipn{laser}{1/group}
+\equipn{vernier calipers}{1/group}
+\equip{staples}
+\equip{DC power supply (Mastek, 30 A)}
+\equip{digital balance}
+\equip{box of special cables}
+
+\goal{Measure the speed of light.}
+
+\introduction
+
+Oersted discovered that magnetism is an interaction of moving
+charges with moving charges, but it wasn't until almost a hundred
+years later that Einstein showed why such an interaction must
+exist: magnetism occurs as a direct result of his theory of
+relativity. Since magnetism is a purely relativistic effect,
+and relativistic effects depend on the speed of light, any
+measurement of a magnetic effect can be used to determine the
+speed of light.
+
+\setup
+
+The idea is to set up opposite currents in two wires, A and B, one under
+the other, and use the repulsion between the currents to create an upward force on
+the top wire, A. The top wire is on the arm of a balance, which has
+a stable equilibrium because of the weight C hanging below it. 
+You initially set up the balance with no current through the wires,
+adjusting the counterweight D so that the distance between the wires
+is as small as possible. What we care about is
+really the center-to-center distance (which we'll call $R$),
+so even if the wires are almost touching, there's still
+a millimeter or two worth of distance between them. By shining a laser at
+the mirror, E, and observing the spot it makes on the wall, you can very
+accurately determine this particular position of the balance, and tell later
+on when you've reproduced it.
+
+\fig{mo-rel-apparatus}
+
+If you put a current through the wires, it will raise wire A. The
+torque made by the magnetic repulsion is now canceling the torque made
+by gravity directly on all the hardware, such as the masses C and D.
+This gravitational torque was zero before, but now you don't know what it
+is. The trick is to put a tiny weight (a staple) on top of wire A, and
+adjust the current so that the balance returns to the position it originally
+had, as determined by the laser dot on the wall. You now know that the
+gravitational torque acting on the original apparatus (everything except
+for the staple) is back to zero, so the only torques acting are the torque
+of gravity on the staple and the magnetic torque. Since both these torques
+are applied at the same distance from the axis, the forces creating these
+torques must be equal as well. By weighing a block of staples, you can
+determine the weight of one staple, and infer the magnetic force that was
+acting.
+
+It's very important to get the wires A and B perfectly parallel. You also
+need to minimize the resistance of the apparatus, or else you won't be
+able to get enough current through it to cancel the weight of the staple.
+Most of the resistance is at the polished metal knife-edges that the
+moving part of the balance rests on. It may be necessary to clean the
+surfaces, or even to freshen them a little with a file to remove any layer
+of oxidation. Use the separate BK meter to measure the current --- not the
+meter built into the power supply.
+
+The power supply has some strange behavior that makes it not work unless
+you power it up in exactly the right way. It has four knobs, going from
+left to right: (1) current regulation, (2) over-voltage protection, (3)
+fine voltage control, (4) coarse voltage control. Before turning the power
+supply on, turn knobs 1 and 2 all the way up, and knobs 3 and 4 all the way
+down. Turn the power supply on. Now use knobs 3 and 4 to control how much
+current flows.
+
+\pagebreak
+
+\analysis
+
+The first figure below shows a model that explains the repulsion felt by
+one of the charges in wire A due to all the charges in wire B. This
+is represented in the frame of the lab. For convenience of analysis,
+we give the model some unrealistic features: rather than having positively
+charged nuclei at rest and negatively charged electrons moving, we pretend
+that both are moving, in opposite directions. Since wire B has zero net
+density of charge everywhere, it creates no electric fields. (If you like,
+you can verify this during lab by putting tiny pieces of paper near the
+wires and verifying that they do not feel any static-electrical attraction.)
+Since there is no electric field, the force on
+the charge in wire A must be purely magnetic.
+
+\fig{mo-rel-lab-frame}
+
+The second figure shows the same scene from the point of view of the
+charge in wire A. This charge considers itself to be at rest, and it
+also sees the light-colored charges in B as being at rest. In this
+frame the dark-colored charges in B are the only ones moving, and they
+move with twice the
+speed they had in the lab frame. In this frame, the particle in A
+is at rest, so it can't feel any magnetic force. The force is now
+considered to be purely electric. This electric force exists because
+the dark charges are relativistically contracted, which makes them more dense than their
+light-colored neighbors, causing a nonzero net density of charge in
+wire B. 
+
+\fig{mo-rel-charges-frame}
+
+We've considered the force acting on a single charge in wire A. The
+actual force we observe in the experiment is the sum of all the forces
+acting on all such charges (of both signs).
+As in the slightly different example analyzed in 
+m4_ifdef([:__lm:],[:section 23.2 of \emph{Light and Matter}:],[:section 11.1.1 of \emph{Simple Nature}:])%
+, this effect is proportional to the product
+of the speeds of the charges in the two wires, divided by $c^2$.
+Therefore the effect must
+be proportional to the product of the currents over $c^2$. In this experiment, the
+same current flows through wire A and then comes back through B in the opposite
+direction, so we conclude that the force must be proportional to $I^2/c^2$.
+
+In the second frame, the force is purely electrical, and 
+m4_ifdef([:__lm:],[:as shown in example 4 in section 22.3 of \emph{Light and Matter}:],[:as can easily be shown by Gauss's law:])%
+, the electric field of a charged
+wire falls off in proportion to $1/R$, where $R$ is the distance from the
+wire. Electrical forces are also proportional to the Coulomb constant $k$.
+
+The longer the wires, the more charges interact, so we must also have a
+proportionality to the length $\ell$.
+
+Putting all these factors together, we find that the force
+is proportional to $kI^2\ell/c^2R$. We can easily verify that the units of this expression
+are newtons, so the only possible missing factor is something unitless. This
+unitless factor turns out to be 2 
+m4_ifdef([:__lm:],[:--- essentially the same 2 found in example 14 in section 22.7:],[:by Gauss's law:])%
+.
+The result for the repulsive force between the two wires is
+\begin{equation*}
+  F = \frac{k}{c^2} \cdot \frac{2I^2\ell}{R} \qquad .
+\end{equation*}
+
+By solving this equation you can find $c$.
+Your final result is the speed of light, with error bars.
+
+\prelab
+
+\lasersafety
+
+\prelabquestion Show that  $kI^2\ell/c^2R$ has units of newtons.
+
+\prelabquestion Do the algebra to solve for $c$ in terms of the measured quantities.

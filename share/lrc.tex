@@ -1,0 +1,251 @@
+\lab{LRC Circuits}\label{lab:lrc}
+
+\apparatus
+\equipn{Heath coils}{1/group}
+\equipn{0.05 $\mu\zu{F}$ capacitor}{2/group}
+\equipn{Pasco PI-9587C generator (under lab benches in 416)}{1/group}
+\equipn{oscilloscope}{1/group}
+
+\begin{goals}
+
+\item[] Observe the resonant behavior of an LRC circuit.
+
+\item[] Observe how the properties of the resonance curve change
+when the $L$, $R$, and $C$ values are changed.
+\end{goals}
+
+\introduction
+
+Radio, TV, cellular phones --- it's mind-boggling to imagine
+the maelstrom of electromagnetic waves that are constantly
+pass through us and our surroundings. Perhaps equally
+surprising is the fact that a radio can pick up a wave with
+one particular frequency while rejecting all the others
+nearly perfectly. No seasoned cocktail-party veteran could
+ever be so successful at tuning out the signals that are not
+of interest. What makes radio technology possible is the
+phenomenon of resonance, the property of an electrical or
+mechanical system that makes it respond far more strongly to
+a driving force that varies at the same frequency as that at
+which the device naturally vibrates. Just as an opera singer
+can only break a wineglass by singing the right note, a
+radio can be tuned to respond strongly to electrical forces
+that oscillate at a particular frequency.
+
+\figcaption{em-lrc-simplified}{A simplified version of the circuit.}
+
+\mysubsubsection{Circuit}
+
+As shown in the figure, the circuit consists of the
+Heath coil, a 0.05 $\mu F$ capacitor,
+a 47-ohm resistor, and the sine
+wave generator to supply a driving voltage. You will study
+the way the circuit resonates, i.e., responds most strongly
+to a certain frequency.
+
+Some added complications come from the fact that the function
+generator, coil, and oscilloscope do not behave quite like their
+idealized versions. The coil doesn't act like a pure inductor; it also
+has a certain amount of DC resistance, simply because the wire has finite
+resistance. So in addition to the 47-ohm resistor, you will have 62
+ohms of resistance coming from the resistance of the wire in
+the coil. There is also some internal resistance
+from the function generator itself, amounting to 600 ohms when
+you use the outputs marked ``high $\Omega$.'' The ``$R$'' of the
+circuit is really the sum of these three series resistances.
+
+You will also want to put the oscilloscope in AC coupling mode, which
+filters out any DC component (additive constant) on the signal.
+The scope accomplishes this filtering by adding in a very small
+(20 pF) capacitor, which appears in parallel in the circuit because
+an oscilloscope, being a voltmeter, is always used in parallel.
+In reality, this tiny parallel capacitance is so small compared to
+capacitance of the 0.05 $\mu F$ capacitor that the resulting correction
+is negligible (and that's a good thing, because if it wasn't negligible,
+the circuit wouldn't be a simple series LRC circuit, and its behavior
+would be much more complicated).
+
+\observations
+
+\labpart{ Observation of Resonance}
+
+By connecting the oscilloscope to measure the voltage across
+the resistor, you can determine the amount of power,
+$P=V^2/R$, being taken from the sine wavegenerator by the
+circuit and then dissipated as heat in the resistor. Make
+sure that your circuit is hooked up with the resistor
+connected to the grounded output of the amplifier, and hook
+up the oscilloscope so its grounded connection is on the
+grounded side of the resistor. As you change the frequency
+of the function generator, you should notice a very strong
+response in the circuit centered around one particular
+frequency, the resonant frequency $f_o$. (You could measure
+the voltage drop across the capacitor or the inductor
+instead, but all the pictures of resonance curves in your
+textbook are graphs of the behavior of the resistor. The
+response curve of a capacitor or inductor still has a peak
+at the resonant frequency, but looks very different off to the sides.)
+
+The inductance of your solenoid is roughly 1 H based on the approximation
+that it's a long, skinny solenoid (which is not a great approximation here).
+ Based on this,
+estimate the resonant frequency of your circuit,
+\begin{equation*}
+	\omega_\zu{o}=\frac{1}{\sqrt{LC}}  \qquad   .
+\end{equation*}
+Locate  $\omega_\zu{o}$ accurately, and use it to determine the
+inductance of the Heath coil accurately.
+
+\labpart{ Effect of Changing C}
+
+Change the capacitance value by putting two capacitors in parallel, and determine the new resonant
+frequency. Check whether the resonant frequency changes as
+predicted by theory. This is like tuning your radio to a
+different frequency. For the rest of the lab, go back to
+your original value of $C$.
+
+\labpart{ The Width of the Resonance}
+
+The width of a resonance is customarily expressed as the
+full width at half maximum, $\Delta f$, defined as the difference
+in frequency between the two points where the power
+dissipation is half of its maximum value. Determine the FWHM
+of your resonance. You are measuring voltage directly, not
+power, so you need to find the points where the amplitude of
+the voltage across the resistor drops below its peak
+value by a factor of $\sqrt{2}$.
+
+\fig{em-lrc-response}
+
+\labpart{ Effect of Changing R}
+
+Replace the resistor with a 2200-ohm resistor, and remeasure
+the FWHM. You should find that the FWHM has increased in
+proportion to the resistance. (Remember that your resistance
+always includes the resistance of the coil and the output
+side of the amplifier.)
+
+\labpart{ Ringing}\label{ringing}
+
+An LRC circuit will continue oscillating even when there is
+no oscillating driving force present. This unforced behavior
+is known as ``ringing.''Drive your circuit with a square wave.
+You can
+think of this as if you are giving the circuit repeated
+``kicks,'' so that it will ring after each kick.
+
+Choose a frequency many many times lower than the resonant
+frequency, so that the circuit will have time to oscillate
+many times in between ``kicks.'' You should observe an
+exponentially decaying sine wave.
+
+The rapidity of the exponential decay depends on how much
+resistance is in the circuit, since the resistor is the only
+component that gets rid of energy permanently. The rapidity
+of the decay is customarily measured with the quantity $Q$
+(for ``quality''), defined as the number of oscillations
+required for the potential energy in the circuit to drop by
+a factor of 535 (the obscure numerical factor being 
+$e^{2\pi}$). For our purposes, it will be more convenient to extract
+$Q$ from the equation
+\begin{equation*}
+	V_{peak,i} = V_{peak,0}\cdot\exp\left[-\frac{\pi t}{QT}\right]
+\end{equation*}
+where $T$ is the period of the sine wave, $V_{peak,0}$ is the
+voltage across the resistor at the peak that we use to
+define $t=0$, and $V_{peak,i}$ is the voltage of a later peak,
+occurring at time $t$.
+
+Collect the data you will need in order to determine the $Q$
+of the circuit, and then do the same for the other resistance value.
+
+\labpart{ The Resonance Curve}
+
+Going back to your low-resistance setup, collect voltage
+data over a wide range of frequencies, covering at least a factor
+of 10 above and below the resonant frequency. You will want to take closely spaced
+data near the resonance peak, where the voltage is changing
+rapidly, and less closely spaced points elsewhere. Far above
+and far below the resonance, it will be convenient just to
+take data at frequencies that change by successive factors of two.
+
+(At very high frequencies, above $10^4$  Hz or so, you may
+find that rather than continuing to drop off, the response
+curve comes back up again. I believe that this effect arises
+from nonideal behavior of the coil at high frequencies: there is
+stray capacitance between one loop and the next, and this
+capacitance acts like it is in parallel with the coil.) 
+
+In engineering work, it is useful to create a graph of the
+resonance curve in which the $y$ axis is in decibels,
+
+\begin{align*}
+     \text{db}      &= 10\log_{10}\left(\frac{P}{P_{max}}\right)  \\
+     			&= 20\log_{10}\left(\frac{V}{V_{max}}\right)  \qquad   ,  
+\end{align*}
+and the $x$ axis is a logarithmic frequency scale. (On this
+graph, the FWHM is the width of the curve at 3 db below the
+peak.) You will construct such a graph from your data.
+
+\analysis
+
+Check whether the resonant frequency changed by the correct
+factor when you changed the capacitance.
+
+For both versions of the circuit, compare the FWHM of the
+resonance and the circuit's $Q$ to the theoretical equations
+\begin{align*}
+	\Delta \omega	&= \frac{R}{L} \\
+\intertext{and}
+	Q	&= \frac{\omega_\zu{o}}{\Delta\omega} \qquad   .
+\end{align*}
+Note that there are a total of three resistances in series:
+the 62-ohm resistance of the coil, the 47-ohm resistor, and
+the $\sim 50$-ohm resistance of the sine-wave generator's output.
+No error analysis is required, since the main errors are
+systematic ones introduced by the nonideal behavior of the
+coil and the difficulty of determining an exact, fixed value
+for the internal resistance of the output of the amplifier.
+
+Graph the resonance curve  --- you can probably save
+yourself a great deal of time by using a computer to do the
+calculations and graphing. To do the calculations, you
+can go to my web page, www.lightandmatter.com \quad .
+Go to the lab manual's web page, and then click on ``data-analysis tool for the LRC
+circuits lab''. Once your data are ready to graph, I suggest
+using computer software to make
+your graph (see Appendix \ref{appendix:graphing}). 
+
+On the high-frequency end, the impedance is dominated by the
+impedance of the inductor, which is proportional to
+frequency. Doubling the frequency doubles the impedance,
+thereby cutting the current by a factor of two and the power
+dissipated in the resistor by a factor of 4, which is 6.02
+db. Since a factor of 2 in frequency corresponds in musical
+terms to one octave, this is referred to as a 6 db/octave
+roll-off. Check this prediction against your data. You
+should also find a 6 db/octave slope in the limit of low
+frequencies --- here the impedance is dominated by the
+capacitor, but the idea is similar. (More complex filtering
+circuits can achieve roll-offs more drastic than 6 db/octave.)  
+
+\prelab
+
+\prelabquestion Using the rough value of $L$ given in the lab manual, compute
+a preliminary estimate of the angular frequency $\omega_\zu{o}$, and find the corresponding
+frequency $f_\zu{o}$.
+
+\prelabquestion Express $Q$ in terms of $L$, $R$, and $C$. 
+
+\prelabquestion Show that your answer to P2 has the right units.
+
+\prelabquestion Using the
+rough value of $L$ given in the lab manual, plug numbers into your answer to P2,
+and make a preliminary estimate of the $Q$ that you expect when using the lower
+of the two resistance values. Your result should come out to be 6 (to one sig fig
+of precision).
+
+\prelabquestion In part \ref{ringing}, you could measure $t$ and $T$
+using the time scale on the scope. However, all we care about is their ratio $t/T$;
+think of a technique for determining $t/T$ that is both more precise and easier
+to carry out.

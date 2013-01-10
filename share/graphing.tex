@@ -1,0 +1,96 @@
+\myappendix{graphing}{Graphing}
+
+\section*{Review of Graphing}
+Many of your analyses will involve making graphs. A graph
+can be an efficient way of presenting data visually,
+assuming you include all the information needed by the
+reader to interpret it. That means labeling the axes and
+indicating the units in parentheses, as in the example. A
+title is also helpful. Make sure that distances along the
+axes correctly represent the differences in the quantity
+being plotted. In the example, it would not have been
+correct to space the points evenly in the horizontal
+direction, because they were not actually measured at
+equally spaced points in time. 
+
+\fig{graph}
+
+
+\section*{Graphing on a Computer}
+Making graphs by hand in your lab notebook is fine, but in
+some cases you may find it saves you time to do graphs on a
+computer. For computer graphing, I recommend LibreOffice, which
+is free, open-source software. It's installed on the computers
+in rooms 416 and 418. Because LibreOffice is free, you can download
+it and put it on your own computer at home without paying money.
+If you already know Excel, it's very similar --- you almost can't
+tell it's a different program.
+
+Here's a brief rundown on using LibreOffice:
+\begin{itemize}
+  \item[] On Windows, go to the Start menu and choose All Programs, LibreOffice, and LibreOffice Calc.
+          On Linux, do Applications, Office, OpenOffice, Spreadsheet.
+  \item[] Type in your x values in the first column, and your
+  	y values in the second column. For scientific notation, do, e.g., 5.2e-7
+        to represent $5.2\times10^{-7}$.
+  \item[] Select those two columns using the mouse.
+  \item[] From the Insert menu, do Chart.
+  \item[] When it offers you various styles of graphs to choose from, choose
+          the icon that shows a scatter plot, with dots on it  (XY Chart).
+  \item[] Adjust the scales so the actual data on the plot is as big as possible,
+          eliminating wasted space. To do this, double-click on the graph\footnote{On Windows, single-click.} so that it's
+          surrounded by a gray border. Then do Format, Axis, X Axis or Y Axis, Scale.
+\end{itemize}
+If you want error bars on your graph you can either draw them in by hand or put them in a
+separate column of your spreadsheet and doing Insert, Y Error Bars, Cell Range.
+
+\section*{Fitting a Straight Line to a Graph by Hand}
+
+Often in this course you will end up graphing some data
+points, fitting a straight line through them with a ruler,
+and extracting the slope.
+
+\fig{linearfit}
+
+In this example, panel (a) shows the data, with error bars
+on each data point. Panel (b) shows a best fit, drawn by eye
+with a ruler. The slope of this best fit line is 100 cm/s.
+Note that the slope should be extracted from the line
+itself, not from two data points. The line is more reliable
+than any pair of individual data points.
+
+In panel (c), a ``worst believable fit'' line has been
+drawn, which is as different in slope as possible from the
+best fit, while still pretty much staying consistent the
+data (going through or close to most of the error bars). Its
+slope is 60 cm/s. We can therefore estimate that the
+precision of our slope is +40 cm/s.
+
+There is a tendency when drawing a ``worst believable fit''
+line to draw instead an ``unbelievably crazy fit'' line, as
+in panel (d). The line in panel (d), with a very small
+slope, is just not believable compared to the data --- it is
+several standard deviations away from most of the data points.
+
+\section*{Fitting a Straight Line to a Graph on a Computer}
+It's also possible to fit a straight line to a graph using computer
+software such as LibreOffice. 
+
+To do this, double-click on your graph\footnote{On Windows, single-click.} so that it's outlined in gray.
+Go to the Insert menu, choose
+Trend Lines,\footnote{``Trend line'' is scientifically illiterate terminology
+that originates from Microsoft Office, which LibreOffice slavishly copies. If you
+don't want to come off as an ignoramus, call it a ``fit'' or ``line of best fit.''
+} choose Linear, and check the box for Show equation.
+
+How accurate is your slope? A method for getting error bars on the slope
+is to artificially change one of your data
+points to reflect your estimate of how much it could have been off,
+and then redo the fit and find the new slope. The change in the slope
+tells you the error in the slope that results from the error in this
+data-point. You can then repeat this for the other points and
+proceed as in appendix \ref{appendix:errpropagation}. In some cases, such as the absolute zero
+lab and the photoelectric effect lab, it's very hard to tell how accurate
+your raw data are \emph{a priori}; in these labs, you can use the typical
+amount of deviation of the points from the line as an estimate of their
+accuracy.

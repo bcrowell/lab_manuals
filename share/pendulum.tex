@@ -1,0 +1,182 @@
+\lab{The Pendulum}\label{lab:pendulum}
+
+\apparatus
+\equip{string}
+\equip{cylindrical pendulum bobs}
+\equip{hooked masses}
+\equip{protractor}
+\equip{stopwatch}
+\equip{computer with photogate and Vernier Timer software}
+\equip{clamps (not hooks) for holding the string}
+\equip{tape measures}
+\equip{meter sticks}
+
+\goal{Find out how the period of a pendulum depends on its length
+and mass, and on the amplitude of its swing.}
+
+\introduction
+
+Until the industrial revolution, the interest of the world's
+cultures in the measurement of time was almost entirely
+concentrated on the construction of calendars, so that
+agricultural cycles could be anticipated.  Although the
+Egyptians were the first to divide the day and night into 12
+hours, there was no technology for measuring time units
+smaller than a day with great accuracy until four thousand years later.
+
+Galileo was the first to realize that a pendulum could be
+used to measure time accurately --- previously, he had been
+using his own pulse to measure the time required for objects
+to roll down inclined planes.  The legend is that the idea
+came to him while he watched a chandelier swinging during a
+church service.  Sentenced to house arrest for suspicion of
+heresy, he spent the last years of his life trying to build
+a more practical pendulum clock that would run for long
+periods of time without tending.  This technical feat was
+only achieved later by Christian Huygens.  Along with the
+Chinese invention of the compass, accurate clocks were vital
+for European exploration by sea, because longitude can only
+be determined by astronomical observations combined with
+accurate measurements of time. 
+
+\section*{Notation and Terminology}
+
+When a moving thing, such as a wave, an orbiting planet, a
+wheel, or a pendulum, goes through a repetitive cycle of
+motion, the time required for one complete cycle is called
+the period, $T$.  Note that a pendulum visits any given
+point once while traveling in one direction and once while
+traveling in the opposite direction.  The period is defined
+as how long it takes to come back to the same point,
+traveling in the same direction.
+
+\figcaption{vw-pen-period}{From a to g is one full period of the pendulum.
+From a to e is not a full period.  Even though
+the pendulum has returned at e to its original
+position in a, it is moving in the opposite direction,
+and has not performed every type of motion it
+will ever perform.}
+\fig{vw-pen-definitions}
+
+The amplitude of a repetitive motion is a way of describing
+the amount of motion.  We can define the amplitude, $A$, of
+the pendulum's motion as the maximum angle to which it
+rises, i.e., half the total angle swept out.  Let us denote
+the mass of the bob, or weight at the end of the pendulum,
+by $m$, and the length of the pendulum, from the pivot to
+the middle of the weight, as $L$.
+
+\observations
+
+Make observations to determine how the period, $T$, depends
+on $A,L$, and $m$.  You will want to use the technique of
+isolation of variables.  That means that rather than trying
+many random combinations of $A,L$, and $m$, you should keep
+two of them constant while measuring $T$ for various values
+of the third variable.  Then you should shift your attention
+to the next variable, changing it while keeping the other
+two constant, and so on.  Be sure to try quite a few values
+of the variable you are changing, so you can see in detail
+how $T$ depends on each variable.
+
+The period can be measured using the photogate.  See
+appendix \ref{appendix:photogate} for how to use the computer software; you want
+the mode that's meant specifically for measuring the period
+of a pendulum.  Note that the bob is what is blocking the
+photogate, so if your bob is irregularly shaped, your
+measurements could be messed up if it changed orientation
+between one pass through the photogate and the next.  The
+easiest way to make sure this problem doesn't occur is to
+use a bob with a circular cross-section, so it has the same
+width no matter which way the photogate cuts through it.
+
+One of the notable differences between the way students and
+professional scientists approach experiments is that
+students tend to be timid about exploring extreme conditions.
+ In this experiment, there is a big advantage to taking
+measurements over wide ranges of each of the three
+parameters, because it may be impossible to ascertain how
+the period depends on a parameter if you only explore a
+small range. When changing $L$, you can go up to four meters
+if you hang the pendulum from the balcony; however, you should avoid lengths so short
+that they are comparable to the size of the bob itself,
+since such short lengths would have anomalous behavior.
+
+For large values of $L$, it's not practical to use the computer, so
+use a stopwatch instead. Don't just time one oscillation, because then
+the precision of your timing will be horrible. Measure the time required
+for some large number of oscillations.
+
+Warning: Since $L$ is measured to the middle of the weight,
+you must change the length of the string if you want to vary
+$m$ while keeping $L$ constant, compensating for the
+different physical size of the new weight.
+
+\prelab
+
+\prelabquestion  What is the maximum possible amplitude for a pendulum of
+the type you'll use, whose bob hangs from a string?  If you
+were using a pendulum with a stiff rod instead of a string,
+you could release it from straight up.  What would its
+period be if you could release it from exactly straight up?
+
+\prelabquestion  Referring to appendix 5, how will you
+tell from your log-log plot whether the
+data follow a power law, i.e., whether it is even appropriate
+to try to extract $p$? (If you've already done lab \ref{lab:air-friction},
+it's exactly the same technique.)
+
+\selfcheck
+
+Figure out which variable $T$ depends on most strongly, and
+extract $p$ (see below).
+
+\analysis
+
+Graph your data and state your conclusions about whether $T$
+depends on $A$, $L$ and $m$.  Remember that on a graph of
+experimental data, the horizontal axis should always be the
+quantity you controlled directly, and the vertical axis
+should be the quantity you measured but did not directly
+select. The photogate is so accurate that there is not much
+point in putting error bars on your graph --- they would be
+too small to see. Remember, however, that there are some
+fairly significant systematic errors, e.g., it is hard to
+accurately keep $L$ the same when switching masses.
+
+It may happen that when you change one of the variables,
+there are only small, insignificant changes in the period,
+but depending on how you graph the data, it may look like
+these are real changes in the period. Most computer graphing
+software has a default which is to make the $y$ axis stretch
+only across the range of actual $y$ data. e.g., if your
+periods were all between 0.567 and 0.574 s, then the
+software makes an extremely magnified graph, with the $y$
+axis running only over the short range from 0.567 to 0.574
+s. On such a scale, it may seem at first glance that there
+are some major changes in the period. To help yourself
+interpret your graphs, you should make them all with the
+same $y$ scale, going from zero all the way up to the
+highest period you ever measured. Then you'll be comparing
+all three graphs on the same footing.
+
+Of the three variables, find the one on which the period
+depends the most strongly, and use the techniques outlined
+in appendix \ref{appendix:powerlaws} to see if you can find an equation
+describing the relationship between the period and that
+variable.  Assume that the equation is of the form
+
+\begin{equation*}
+      T  =  cx^p   \qquad   ,  
+\end{equation*}
+
+where $x$ would actually be $A,L$ or $m$, and $c$ and $p$
+are constants.  The constant $p$ is important, and is
+expected to be the same for all pendula.  For instance, if
+you find that the mass is the variable that has the greatest
+effect on the period, and that the relationship is of the
+form $T=cm^3$, then you have discovered something that is
+probably generally true for all pendula: that the period is
+proportional to the cube of the mass. The constant $c$ is
+just some boring number that's not worth extracting from your graphs;
+it's the exponent $p$ that's interesting and universally valid.

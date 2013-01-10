@@ -1,0 +1,89 @@
+\lab{Torque in Three Dimensions}\label{lab:torque-in-three-dimensions}
+
+\apparatus
+\equipn{metal hoop (baby buggy wheel)}{1/group}
+\equipn{posts with clamps}{3/group}
+\equip{spring scales}
+\equipn{vertical stand for use with plumb bob}{1/group}
+\equipn{meter stick}{1/group}
+\equipn{hooks}{3/group}
+\equip{string}
+\equipn{wooden spirit level}{1/group}
+\equipn{plumb bob}{1/group}
+\equipn{butcher paper}{1/group}
+\equip{protractors}
+\equip{compass}
+\equip{scissors}
+
+\goal{Test the hypothesis that the total torque and total force on an object are zero, for a system that cannot be analyzed within a plane.}
+
+\fig{me-t3d-setup}
+
+\observations
+
+The basic idea here is to reenact lab \ref{lab:torque} in three dimensions, so that the $\vc{r}$ and $\vc{F}$ vectors are not
+confined to a plane. To make things simple, you'll use a circular hoop as your object. By taking its center as the axis, and suspending it
+from three strings attached at its circumference, you can make the magnitudes of the $\vc{r}$ vectors all the same. Also, by leveling the
+hoop with a spirit level you can make all the $\vc{r}$ vectors lie in the horizontal plane. (This requires adjusting the knots
+so that the three forces are all applied at points in the mid-plane of the wheel.) The three strings, however, should not be
+vertical; they should point up and out at random angles. The whole arrangement should not have any symmetry.
+There will be three force vectors for the three strings, plus a downward force vector due to gravity.
+
+You can use whatever measuring techniques you need in order to completely determine all the $\vc{r}$ and $\vc{F}$ vectors in three
+dimensions, but the general approach that seemed to work well for me was to lay a large sheet of butcher paper on the tabletop underneath
+the apparatus, and project points on the apparatus down onto the paper using the plumb bob.
+For convenience of measurement, make sure each string is a single strand (not an oval loop), and that
+it's long enough so that its projection down onto the horizontal plane is fairly long, and can have its direction measured accurately.
+Note that the strings' horizontal projections will not necessarily pass through the center of the hoop; that's okay, and in fact
+there's no easy way to avoid it.
+
+To locate the projection of the ring, you can mark points on its circumference, then at the end of the lab cut a circle of the right
+size out of a piece of paper, lay it on the butcher paper, and trace its outline. It's not possible to trace the hoop itself, because
+it's a baby buggy wheel, and its axle prevents it from lying flat. The diameter is 22.1 cm, and you can construct the circle using
+a compass.
+
+\pagebreak
+
+\fig{me-t3d-spherical-coords}
+
+I found it convenient to work in spherical coordinates. Spherical coordinates $(r,\theta,\phi)$, illustrated in the figure above,\footnote{Wikimedia Commons user Andeggs, public domain} % http://commons.wikimedia.org/wiki/File:3D_Spherical.svg
+are a generalization of polar coordinates to three dimensions. The angle $\phi$ is like longitude on the earth's surface
+(or minus the longitude, actually, since it is conventionally measured counterclockwise from the $x$ axis).
+The angle $\theta$ correponds to 90 degrees minus the latitude; it equals zero for a point on the $z$ axis directly above the origin, 180 degrees
+for one directly below.
+
+The $\vc{r}$ vectors of the points
+at which the strings apply their forces have $r$ equal to the radius of the hoop, and $\theta=90 \degunit$. For the force vectors,
+you'll have $(F,\theta_F,\phi_F)$, where $F$ is the magnitude of the force in newtons, and, e.g., $\theta_F=180\degunit$ for the
+force of gravity, and $\theta_F<90\degunit$ for the forces of the strings.
+
+\selfcheck
+
+Make sure that the total force comes out close to zero.
+
+\analysis
+
+To make the error analysis manageable, you'll want to program your entire analysis as a single python program.
+
+Convert all four force vectors and all four $\vc{r}$ vectors into Cartesian coordinates. Find the total force by vector addition.
+Compute the four torque vectors using the vector cross product, and find the total torque by vector addition.
+Turn in a copy of your python code and its output with your writeup. 
+
+\prelab
+
+\prelabquestion For use in the analysis of this lab, write a python function \verb@cross_x(ax,ay,az,bx,by,bz)@ that
+takes the components of vectors $A$ and $B$ as input and calculates the $x$ component of their cross product as output.
+Turn in a printout showing both your program and the results of a few tests using unit vectors for $A$ and $B$,
+demonstrating correct results.
+
+\prelabquestion Given $r=2.0$ cm, $\theta=37$ degrees, and $\phi=16$ degrees in spherical coordinates, find $x$, $y$, and $z$
+in Cartesian coordinates. Answer: $x=1.2$ cm, $y=0.3$ cm, $z=1.6$ cm.
+
+\prelabquestion Write and test a python function \\
+\verb@cart_x(r,theta,phi)@
+that finds the x component of a vector given in spherical coordinates.
+To get the trig functions to work, (1) remember to put\\
+ \verb@import math@ at the top, (2) remember to do \verb@math.sin@
+and \verb@math.cos@ rather than just \verb@sin@ and \verb@cos@, and (3) include a conversion from degrees to radians, since
+your raw data will all be in degrees, but the python functions are defined in radians. Test your function on the example
+given in P2.

@@ -1,0 +1,160 @@
+\lab{The Loop and Junction Rules}\label{lab:kirchoff}
+
+\apparatus
+\equipn{DC power supply (Thornton)}{1/group}
+\equipn{multimeter (PRO-100, in lab benches)}{1/group}
+\equip{resistors}
+
+\goal{Test the loop and junction rules in two electrical circuits.}
+
+\introduction
+
+If you ask physicists what are the most fundamentally
+important principles of their science, almost all of them
+will start talking to you about conservation laws. A
+conservation law is a statement that a certain measurable
+quantity cannot be changed. A conservation law that is easy
+to understand is the conservation of mass. No matter what
+you do, you cannot create or destroy mass.
+
+The two conservation laws with which we will be concerned in
+this lab are conservation of energy and conservation of
+charge. Energy is related to voltage, because voltage is
+defined as $V=PE/q$. Charge is related to current, because
+current is defined as $I=\Delta q/\Delta t$.
+
+Conservation of charge has an important consequence for
+electrical circuits:
+
+When two or more wires come together at a point in a DC circuit,
+the total current entering that point equals the total current
+leaving it.
+
+Such a coming-together of wires in a circuit is called a
+junction. If the current leaving a junction was, say,
+greater than the current entering, then the junction would
+have to be creating electric charge out of nowhere. (Of
+course, charge could have been stored up at that point and
+released later, but then it wouldn't be a DC circuit --- the
+flow of current would change over time as the stored
+charge was used up.)
+
+Conservation of energy can also be applied to an electrical
+circuit. The charge carriers are typically electrons in
+copper wires, and an electron has a potential energy equal
+to $-eV$. Suppose the electron sets off on a journey through a
+circuit made of resistors. Passing through the first
+resistor, our subatomic protagonist passes through a voltage
+difference of $\Delta V_1$, so its potential 
+energy changes by $-e\Delta V_1$. To use
+a human analogy, this would be like going up a hill of a
+certain height and gaining some gravitational potential
+energy. Continuing on, it passes through more voltage
+differences, $-e\Delta V_2$, $-e\Delta V_3$, and so on. Finally, in a moment of
+religious transcendence, the electron realizes that life is
+one big circuit --- you always end up coming back where you
+started from. If it passed through $N$ resistors before
+getting back to its starting point, then the total change in
+its potential energy was 
+\begin{equation*}
+	-e\left(\Delta V_1+\ldots+\Delta V_N\right) \qquad .
+\end{equation*}
+But just as there is no such
+thing as a round-trip hike that is all downhill, it is not
+possible for the electron to have any net change in
+potential energy after passing through this loop --- if so,
+we would have created some energy out of nothing. Since the
+total change in the electron's potential energy must be
+zero, it must be true that $\Delta V_1+\ldots+\Delta V_N=0$.
+This is the loop rule:
+
+The sum of the voltage differences around any closed loop
+in a circuit must equal zero.
+
+When you are hiking, there is an important distinction
+between uphill and downhill, which depends entirely on which
+direction you happen to be traveling on the trail.
+Similarly, it is important when applying the loop rule to be
+consistent about the signs you give to the voltage
+differences, say positive if the electron sees an increase
+in voltage and negative if it sees a decrease along its
+direction of motion.
+
+\observations
+
+\labpart{ The junction rule}
+
+Construct a circuit like the one in the figure, using the Thornton power
+supply as your voltage source. To make things more
+interesting, don't use equal resistors. Use 
+resistors with values in the range of (say 1 $\zu{k}\Omega$ to 10 $\zu{M}\Omega$).
+If they're much higher than that, the currents will be too low for the PRO-100
+meters to measure accurately.
+If they're much smaller than that, 
+you could burn up the resistors, and the
+multimeter's internal resistance when used as an
+ammeter might not be negligible in comparison. Insert your multimeter
+in the circuit to measure all three currents that you need
+in order to test the junction rule.
+
+\fig{em-kir-circuit}
+
+\labpart{ The loop rule}
+
+Now come up with a circuit to test the loop rule. Since the
+loop rule is always supposed to be true, it's hard to go
+wrong here! Make sure that (1) you have at least three resistors in a
+loop, (2) the whole circuit is not just a single loop,
+and (3) you hook in the power supply in a way
+that creates non-zero voltage differences across all the
+resistors. Measure the voltage differences you need to
+measure to test the loop rule. Here it is best to use fairly
+small resistances, so that the multimeter's large internal
+resistance when used in parallel as a voltmeter will not
+significantly reduce the resistance of the circuit. Do not
+use resistances of less than about 100 $\Omega $, however,
+or you may blow a fuse or burn up a resistor.
+
+\prelab
+
+\prelabquestion  Draw a schematic showing where you will insert the
+multimeter in the circuit to measure the currents in part A.
+
+\prelabquestion  Invent a circuit for part B, and draw a schematic. You
+need not indicate actual resistor values, since you will
+have to choose from among the values actually available in lab.
+
+\prelabquestion  Pick a loop from your circuit, and
+draw a schematic showing how you will attach the
+multimeter in the circuit to measure the voltage differences in part B.
+
+\prelabquestion  Explain why the following statement is incorrect: ``We
+found that the loop rule was not quite true, but the small
+error could have been because the resistor's value was off
+by a few percent compared to the color-code value.''
+
+\selfcheck
+
+Do the analysis in lab.
+
+\analysis
+
+Discuss whether you think your observations agree with
+the loop and junction rules, taking into account systematic and random errors.
+
+\section*{Programmed Introduction to Practical Electrical Circuits}
+
+The following practical skills are developed in this lab:
+
+(1) Use a multimeter without being given an explicit
+schematic showing how to connect it to your circuit. This
+means connecting it in parallel in order to measure voltages
+and in series in order to measure currents.
+
+(2) Use your understanding of the loop and junction rules to simplify
+electrical measurements. These rules often guarantee
+that you can get the same current or voltage reading by
+measuring in more than one place in a circuit. In real life,
+it is often much easier to connect a meter to one place than
+another, and you can therefore save yourself a lot of
+trouble using the rules rules.

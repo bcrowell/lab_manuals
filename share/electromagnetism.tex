@@ -1,0 +1,393 @@
+
+\lab{Electromagnetism}\label{lab:electromagnetism}
+
+\apparatus
+\equipn{oscilloscope (Tektronix TDS 1001B)}{1/group}
+\equipn{microphone (RS 33-1067)}{for 6 groups}
+\equipn{microphone (Shure C606)}{for 1 group}
+\equipn{PI-9587C sine wave generator}{1/group}
+\equip{various tuning forks, mounted on wooden boxes}
+\equipn{solenoid (Heath)}{1/group}
+\equipn{2-meter wire with banana plugs}{1/group}
+\equipn{magnet (stack of 6 Nd)}{1/group}
+\equip{masking tape}
+\equip{string}
+
+\begin{goals}
+
+\item[] Learn to use an oscilloscope.
+
+\item[] Observe electric fields induced by changing magnetic fields.
+
+\item[] Build a generator.
+
+\item[] Discover Lenz's law.
+\end{goals}
+
+\introduction
+
+Physicists hate complication, and when physicist Mich\-ael
+Faraday was first learning physics in the early 19th
+century, an embarrassingly complex aspect of the science was
+the multiplicity of types of forces. Friction, normal
+forces, gravity, electric forces, magnetic forces, surface
+tension --- the list went on and on. Today, 200 years later,
+ask a physicist to enumerate the fundamental forces of
+nature and the most likely response will be ``four: gravity,
+electromagnetism, the strong nuclear force and the weak
+nuclear force.'' Part of the simplification came from the
+study of matter at the atomic level, which showed that
+apparently unrelated forces such as friction, normal forces,
+and surface tension were all manifestations of electrical
+forces among atoms. The other big simplification came from
+Faraday's experimental work showing that electric and
+magnetic forces were intimately related in previously
+unexpected ways, so intimately related in fact that we now
+refer to the two sets of force-phenomena under a single
+term, ``electromagnetism.''
+
+Even before Faraday, Oersted had shown that there was at
+least some relationship between electric and magnetic
+forces. An electrical current creates a magnetic field, and
+magnetic fields exert forces on an electrical current. In
+other words, electric forces are forces of charges acting on
+charges, and magnetic forces are forces of moving charges on
+moving charges. (Even the magnetic field of a bar magnet is
+due to currents, the currents created by the orbiting
+electrons in its atoms.)
+
+Faraday took Oersted's work a step further, and showed that
+the relationship between electricity and magnetism was even
+deeper. He showed that a changing electric field produces a
+magnetic field, and a changing magnetic field produces an
+electric field. Faraday's work forms the basis for such
+technologies as the transformer, the electric guitar, the
+transformer, and generator, and the electric motor. It also
+led to the understanding of light as an electromagnetic wave.
+
+\fig{em-osc-panel}
+
+\mysubsubsection{The Oscilloscope}
+
+An oscilloscope graphs an electrical signal that varies as
+a function of time.
+The graph is drawn from left to right across the screen,
+being painted in real time as the input signal varies.
+The purpose of the oscilloscope in this lab is to measure
+electromagnetic induction, but to get familiar with the oscillopscope, we'll start out by
+using the signal from a microphone as an input,
+allowing you to see sound waves. 
+
+The input signal is
+supplied in the form of a voltage.
+The input connector on the front of the oscilloscope
+accepts a type of cable
+known as a BNC cable.
+A BNC cable is a specific example of coaxial cable
+(``coax''), which is also used in cable TV, radio, and
+computer networks. The electric current flows in one direction
+through the central conductor, and returns in the opposite
+direction through the outside conductor, completing the
+circuit. The outside conductor is normally kept at ground,
+and also serves as shielding against radio interference. 
+The advantage of coaxial cable is that it is capable of
+transmitting rapidly varying signals without distortion.
+
+\fig{em-osc-coax}
+
+Most of the voltages we wish to measure are not big enough
+to use directly for the vertical deflection voltage, so the
+oscilloscope actually amplifies the input voltage, i.e., the
+small input voltage is used to control a much large voltage
+generated internally. The amount of amplification is
+controlled with a knob on the front of the scope. For
+instance, setting the knob on 1 mV selects an amplification
+such that 1 mV at the input deflects the electron beam by
+one square of the 1-cm grid. Each 1-cm division is referred
+to as a ``division.''
+
+\fig{em-osc-waveform} % \label{fig:em-osc-waveform} is much lower down, to force ref to be on the page where the fig actually lands
+
+\mysubsubsection{The Time Base and Triggering}
+
+Since the $X$ axis represents time, there also has to be a way
+to control the time scale, i.e., how fast the imaginary
+``penpoint'' sweeps across the screen. For instance, setting
+the knob on 10 ms causes it to sweep across one square
+in 10 ms. This is known as the time base.
+
+In the figure, suppose the time base is 10 ms.
+The scope has 10
+divisions, so the total time required for the beam to sweep
+from left to right would be 100 ms. This is far too short a
+time to allow the user to examine the graph.
+The oscilloscope has a built-in method of overcoming this
+problem, which works well for periodic (repeating)
+signals. The amount of
+time required for a periodic signal to perform its pattern
+once is called the period. With a periodic signal, all you
+really care about seeing what one period or a few periods in
+a row look like --- once you've seen one, you've seen them
+all. The scope displays one screenful of the
+signal, and then keeps on overlaying more and more copies of
+the wave on top of the original one. Each
+trace is erased when the next one starts, but is being overwritten
+continually by later, identical copies of the wave form. You
+simply see one persistent trace.\label{fig:em-osc-waveform} % label is much lower down than fig, to force ref to be on the page where the fig actually lands
+
+How does the scope know when to start a new trace? If the
+time for one sweep across the screen just happened to be
+exactly equal to, say, four periods of the signal, there
+would be no problem. But this is unlikely to happen in real
+life --- normally the second trace would start from a
+different point in the waveform, producing an offset copy of
+the wave. Thousands of traces per second would be superimposed
+on the screen, each shifted horizontally by a different
+amount, and you would only see a blurry band of light.
+
+To make sure that each trace starts from the same point in
+the waveform, the scope has a triggering circuit. You use a
+knob to set a certain voltage level, the trigger level, at
+which you want to start each trace. The scope waits for the
+input to move across the trigger level, and then begins a
+trace. Once that trace is complete, it pauses until the
+input crosses the trigger level again. To make extra sure
+that it is really starting over again from the same point in
+the waveform, you can also specify whether you want to start
+on an increasing voltage or a decreasing voltage ---
+otherwise there would always be at least two points in a
+period where the voltage crossed your trigger level.
+
+\section*{Setup}
+
+
+To start with, we'll use a sine wave generator, which makes
+a voltage that varies sinusoidally with time. This gives you
+a convenient signal to work with while you get the scope working.
+Use the black and white outputs on the PI-9587C.
+
+The figure on the last page is a simplified
+drawing of the front panel of a digital oscilloscope, showing
+only the most important controls you'll need for this lab.
+When you turn on the oscilloscope, it will take a while to start
+up.
+
+\mysubsubsection{Preliminaries:}
+
+\begin{itemize}
+\item[] Press DEFAULT SETUP.
+
+\item[] Use the SEC/DIV knob to
+put the time base on something reasonable compared to the
+period of the signal you're looking at. The time base is
+displayed on the screen, e.g., 10 ms/div, or 1 s/div.
+
+\item[] Use the VOLTS/DIV knob to
+put the voltage scale (Y axis) on a reasonable scale
+compared to the amplitude of the signal you're looking at.
+
+\item[] The scope has two channels, i.e., it can accept input
+through two BNC connectors and display both or either. You'll
+only be using channel 1, which is the only one represented in
+the simplified drawing. By default, the oscilloscope draws
+graphs of both channels' inputs; to get rid of ch. 2, hold
+down the CH 2 MENU button (not shown in the diagram) for a couple
+of seconds. You also want to make sure that the scope is triggering
+on CH 1, rather than CH 2. To do that, press the TRIG MENU
+button, and use an option button to select CH 1 as the source.
+Set the triggering mode to normal, which is the mode in which
+the triggering works as I've described above.
+If the trigger level is set to a level that the signal never
+actually reaches, you can play with the knob that sets the trigger
+level until you get something. A quick and easy way to do this
+without trial and error is to use the SET TO 50\%
+button, which
+automatically sets the trigger level to midway between the top
+and bottom peaks of the signal.
+
+\item[] You want to select AC, not DC or GND, on the channel you're using. You
+are looking at a voltage that is alternating, creating an
+alternating current, ``AC.'' The ``DC'' setting is only
+necessary when dealing with constant or very slowly varying
+voltages. The ``GND'' simply draws a graph using $y=0$,
+which is only useful in certain situations, such as when you
+can't find the trace. To select AC, press the CH 1 MENU
+button, and select AC coupling.
+
+\end{itemize}
+
+Observe the effect of changing the voltage scale and time
+base on the scope. Try changing the frequency and amplitude
+on the sine wave generator.
+
+You can freeze the display by pressing RUN/STOP, and then
+unfreeze it by pressing the button again.
+
+\section{Preliminary Observations}
+
+Now try observing signals from the microphone.
+
+Notes for the group that uses the Shure mic: As with the Radio Shack
+mics, polarity matters. The tip of the phono plug connector is the
+live connection, and the part farther back from the tip is the
+grounded part. You can connect onto the phono plug with alligator
+clips.
+
+Once you have your setup working, try measuring the period
+and frequency of the sound from a tuning fork, and make sure
+your result for the frequency is the same as what's
+written on the tuning fork.
+\section{Qualitative Observations}
+
+In this lab you will use a permanent magnet to produce
+changing magnetic fields. This causes an electric field to
+be induced, which you will detect using a solenoid (spool of
+wire) connected to an oscilloscope. The electric field
+drives electrons around the solenoid, producing a current
+which is detected by the oscilloscope.
+
+Note that although I've described the standard way of triggering
+a scope, when the time base is very long, triggering becomes unnecessary.
+These scopes are programmed so that when the time base is very long,
+they simply continuously display traces.
+
+\labpart{ A constant magnetic field}
+
+Do you detect any signal on the oscilloscope when the magnet
+is simply placed at rest inside the solenoid? Try the most
+sensitive voltage scale.
+
+\labpart{ A changing magnetic field}
+
+Do you detect any signal when you move the magnet or wiggle
+it inside the solenoid or near it? What happens if you
+change the speed at which you move the magnet?
+
+\labpart{ Moving the solenoid}
+
+What happens if you hold the magnet still and move the solenoid? 
+
+The poles of the magnet are its flat faces. In later parts
+of the lab you will need to know which is north. Determine
+this now by hanging it from a string and seeing how it aligns itself with the Earth's field.
+The pole that points north is called the north pole of the
+magnet. The field pattern funnels into the body of the magnet
+through its south pole, and reemerges at its north pole.
+
+\labpart{ A generator}
+
+Tape the magnet securely to the eraser end of a pencil so
+that its flat face (one of its two poles) is like the head
+of a hammer, and mark the north and south poles of the
+magnet for later reference. Spin the pencil near the
+solenoid and observe the induced signal. You have built a
+generator. (I have unfortunately not had any luck lighting a
+lightbulb with the setup, due to the relatively high
+internal resistance of the solenoid.)
+
+\section*{Trying Out Your Understanding}
+
+\labpart{ Changing the speed of the generator}
+
+If you change the speed at which you spin the pencil, you
+will of course cause the induced signal to have a longer or
+shorter period. Does it also have any effect on the
+\emph{amplitude} of the wave?
+
+\labpart{ A solenoid with fewer loops}
+
+Use the two-meter cable to make a second solenoid with the
+same diameter but fewer loops. Compare the strength of the
+induced signals.
+
+\labpart{Dependence on distance}
+
+How does the signal picked up by your generator change with distance?
+
+Try to explain what you have observed, and discuss your
+interpretations with your instructor.
+
+\section*{Lenz's Law}
+
+Lenz's law describes how the clockwise or counterclockwise
+direction of the induced electric field's whirl\-pool pattern
+relates to the changing magnetic field. The main result of
+this lab is a determination of how Lenz's law works. To
+focus your reasoning, here are four possible forms for Lenz's law:
+
+1. The electric field forms a pattern that is clockwise when
+viewed along the direction of the $B$ vector of the
+changing magnetic field.
+
+2. The electric field forms a pattern that is counterclockwise
+when viewed along the direction of the $B$ vector of the
+changing magnetic field.
+
+3. The electric field forms a pattern that is clockwise when
+viewed along the direction of the $\Delta B$ vector of the
+changing magnetic field.
+
+4. The electric field forms a pattern that is counterclockwise
+when viewed along the direction of the $\Delta B$ vector of
+the changing magnetic field.
+
+Your job is to figure out which is correct.
+
+The most direct way to figure out Lenz's law is to 
+make a tomahawk-chopping motion that ends up with the magnet in the solenoid,
+observing whether the pulse induced is positive or negative.
+What happens when you reverse the
+chopping motion, or when you reverse the north and south
+poles of the magnet? Try all four possible combinations and
+record your results.
+
+To set up the scope, press DEFAULT SETUP. This should have the
+effect of setting the scope on DC coupling, which is what you
+want. (If it's on AC coupling, it tries to filter out any DC
+part of the input signals, which distorts the results.) To check
+that you're on DC coupling, you can do CH 1 MENU, and check that
+Coupling says DC. Set the triggering mode ("Mode") to Auto.
+
+Make sure the scope is on DC coupling, not AC coupling, or your
+pulses will be distorted.
+
+\fig{em-len-scopepolarity}
+
+It can be tricky to make the connection between the polarity
+of the signal on the screen of the oscilloscope and the
+direction of the electric field pattern. The figure shows an
+example of how to interpret a positive pulse: the current
+must have flowed through the scope from the center conductor
+of the coax cable to its outer conductor (marked GND on the
+coax-to-banana converter). 
+
+\prelab
+
+\prelabquestion  In the sample oscilloscope trace shown on
+page \pageref{fig:em-osc-waveform}, what is
+the period of the waveform? What is its frequency? The time base is
+10 ms.
+
+\prelabquestion  In the same example, again assume the time base is 10
+ms/division. The voltage scale is 2 mV/div\-ision. Assume
+the zero voltage level is at the middle of the vertical
+scale. (The whole graph can actually be shifted up and down
+using a knob called ``position.'')  What is the trigger
+level currently set to? If the trigger level was changed to
+2 mV, what would happen to the trace?
+
+\prelabquestion  Referring to the chapter of your textbook on sound,
+which of the following would be a reasonable time base to
+use for an audio-frequency signal? 10 ns, 1$\mu$ s, 1 ms, 1 s
+
+\prelabquestion  Does the oscilloscope show you the signal's period,
+or its wavelength? Explain.
+
+\prelabquestion The time-scale for all the signals is determined
+by the fact that you're wiggling and waving the magnet by hand,
+so what's a reasonable order of magnitude to choose for the
+time base on the oscilloscope?
+
+\selfcheck
+
+Determine which version of Lenz's law is correct.

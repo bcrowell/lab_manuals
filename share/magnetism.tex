@@ -1,0 +1,129 @@
+\lab{Magnetism}\label{lab:magnetism}
+
+\widefigcaption{em-dip-fieldvsdistance}{Part B, measuring the variation of the
+bar magnet's field with respect to distance}\label{fig:dipbofr}
+
+\apparatus
+\equip{bar magnet (stack of 6 Nd)}
+\equip{compass}
+\equip{Hall effect magnetic field probes}
+\equip{LabPro interfaces, DC power supplies, and USB cables}
+\equip{2-meter stick}
+
+\goal{Find how the magnetic field of a bar magnet changes with
+distance along one of the magnet's lines of symmetry.}
+
+\introduction
+
+\labpart{Qualitative Mapping of the Magnet's Field}
+You can use a compass to map out part of the magnetic
+field of a bar magnet. The compass is affected by
+both the earth's field and the bar magnet's field, and
+points in the direction of their vector sum, but if you put the
+compass within a few cm of the bar magnet, you're seeing mostly
+its field, not the earth's. Investigate the bar magnet's field,
+and sketch it in your lab notebook.
+
+\labpart{Variation of Field With Distance: Deflection of a Magnetic Compass}
+You can infer the strength of the bar magnet's field at a
+given point by putting the compass there and seeing how
+much it is deflected from north.
+
+The task can be simplified quite a bit if you restrict
+yourself to measuring the magnetic field at points along one
+of the magnet's two lines of symmetry, shown in the figure two pages after this one.
+
+\fig{em-dip-symmetry}
+
+If the magnet is flipped across the vertical axis, the north
+and south poles remain just where they were, and the field
+is unchanged. That means the entire magnetic field is also
+unchanged, and the field at a point such as point b, along
+the line of symmetry, must therefore point straight up.
+
+If the magnet is flipped across the horizontal axis, then
+the north and south poles are swapped, and the field
+everywhere has to reverse its direction. Thus, the field at
+points along this axis, e.g., point a, must point straight up or down.
+
+Line up your magnet so it is pointing east-west. Choose one
+of the two symmetry axes of your magnet, and measure the
+deflection of the compass at two points along that axis,
+as shown in the second figure, at the end of the lab.
+As part of your prelab, you will use vector addition to find an equation
+for $B_m/B_e$, the magnet's field in units of the Earth's, in terms
+of the deflection angle $\theta$. For your first point, find the
+distance $r$ at which the deflection is 70 degrees; this angle is chosen because
+it's about as big as it can be without giving very poor relative precision 
+in the determination of the magnetic field. For your second data-point,
+use twice that distance. By what factor does the field decrease
+when you double $r$?
+
+The lab benches contain iron or steel parts that distort the magnetic field.
+You can easily observe this simply by putting a compass on the top of the bench and sliding it around
+to different places. To work around this problem, lay a 2-meter stick across the space between two
+lab benches, and carry out the experiment along the line formed by the stick.
+Even in the air between the lab benches, the magnetic field due to the building materials
+in the building is significant, and this field varies from place to place.
+Therefore you should move the magnet while keeping the compass in one place.
+Then the field from the building becomes a fixed part of the background
+experienced by the compass, just like the earth's field.
+
+Note that the measurements are very sensitive to the
+relative position and orientation of the bar magnet and
+compass. 
+
+Based on your two data-points, form a hypothesis about the variation
+of the magnet's field with distance according to a power law $B\propto r^p$.
+
+\labpart{Variation of Field With Distance: Hall Effect Magnetometer}
+
+In this part of the lab, you will test your hypothesis about the power
+law relationship $B\propto r^p$; you will find out whether the field really
+does obey such a law, and if it does, you will determine $p$ accurately.
+
+This part of the lab uses a device called a Hall effect magnetometer for
+measuring magnetic fields.  It works by sending an electric current through a
+substance, and measuring the force exerted on those moving charges by the surrounding
+magnetic field. The probe only measures the component of the
+magnetic field vector that is parallel to its own axis. Plug the probe into CH 1 of the
+LabPro interface, connect the interface to the computer's USB port, and
+plug the interface's DC power supply in to it. Start up version 3 of Logger Pro, and
+it will automatically recognize the probe and start displaying magnetic fields
+on the screen, in units of mT (millitesla). The probe has two ranges, one that can
+read fields up to 0.3 mT, and one that goes up to 6.4 mT. You can select either one using the
+switch on the probe. To test your hypothesis with good precision, you need to obtain
+data over the widest possible range of fields. Always use the more sensitive 0.3 mT scale
+whenever possible, because it will give better precision for low fields. Be careful,
+however, because if you expose the probe to a field that's beyond its maximum range, it
+will give incorrect readings. Although you have an expectation about the direction of the
+field (based both on symmetry arguments and on your qualitative results from part A),
+it's a good idea to try orienting the probe in different ways to see what happens.
+
+Two extra complications are that the Earth's field is adding on to the magnet's field, and the
+absolute calibration of the probe is very poor by default.  
+You can make the computer take care of both of these issues automatically, by zeroing the
+sensor (Experiment$>$Zero) when it is exposed only to the Earth's field. This causes the
+computer to impose a calibration such that the Earth's field is considered to be exactly zero. You may need
+to redo the calibration each time you switch scales. If you then carry out the whole measurement with the
+probe and the magnet's field both aligned east-west, the Earth's field has no effect.
+You may need to bend the tip of the probe 90 degrees.
+
+\prelab
+
+\prelabquestion  In part B, suppose that
+when the compass is 11.0 cm from the magnet, it is
+45 degrees away from north. What is
+the strength of the bar magnet's field at this location in space,
+in units of the Earth's field?
+
+\prelabquestion Find $B_m/B_e$ in terms of the deflection angle $\theta$ measured in part B. As a special
+case, you should be able to recover your answer to P1.
+
+\analysis
+
+Determine the magnetic
+field of the bar magnet as a function of distance. No error analysis is required. 
+Look for a power-law relationship using the log-log graphing technique described in 
+appendix \ref{appendix:powerlaws}. Does the power law hold for
+all the distances you investigated, or only at large distances?
