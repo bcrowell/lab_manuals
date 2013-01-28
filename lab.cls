@@ -7,13 +7,7 @@
 \RequirePackage{makeidx,wrapfig,fancyhdr,calc,titlesec,titletoc,amssymb,moreverb,ifthen,color,lmmath,mixmath}
 \RequirePackage[leqno]{amsmath}
 \RequirePackage[sf]{subfigure}%needs to be before caption2
-\usepackage[font=small,labelfont=bf,labelsep=none]{caption}
-%\RequirePackage[small,sf,nooneline]{caption2}
-%   ... This only seems to affect "Figure 1.1," etc., not the actual caption.
-%	If I change this style, I need to change my own macros for figures as well.
-%       Caption2 is obsolete, and caption is now v. 3, which is supposed to be backward-compatible.
-%       However, I get errors when I switch to caption.
-%           
+\usepackage[font=small,labelformat=empty,labelsep=none]{caption}
 
 \definecolor{shadecolor}{gray}{.85} % for framed.sty
 
