@@ -7,10 +7,13 @@
 \RequirePackage{makeidx,wrapfig,fancyhdr,calc,titlesec,titletoc,amssymb,moreverb,ifthen,color,lmmath,mixmath}
 \RequirePackage[leqno]{amsmath}
 \RequirePackage[sf]{subfigure}%needs to be before caption2
-\RequirePackage[small,sf,nooneline]{caption2}
+\usepackage[font=small,labelfont=bf,labelsep=none]{caption}
+%\RequirePackage[small,sf,nooneline]{caption2}
 %   ... This only seems to affect "Figure 1.1," etc., not the actual caption.
 %	If I change this style, I need to change my own macros for figures as well.
-
+%       Caption2 is obsolete, and caption is now v. 3, which is supposed to be backward-compatible.
+%       However, I get errors when I switch to caption.
+%           
 
 \definecolor{shadecolor}{gray}{.85} % for framed.sty
 
@@ -198,7 +201,8 @@ just setting yourself up for failure in lab.}
 % Letters for figure number, and no "Figure .." in caption:
   \renewcommand{\figurename}{}
     %...captionlabeldelim: see caption2.sty
-  \def\fnum@figure{\figurename\renewcommand{\captionlabeldelim}{}}
+%  \def\fnum@figure{\figurename\renewcommand{\captionlabeldelim}{}} %%%%%%%%% breaks caption v. 3
+%      http://www.latex-community.org/forum/viewtopic.php?f=45&t=4121&start=0
 \newcommand{\figinsidetext}[1]{%
   \includegraphics{../figs/#1}%
 }

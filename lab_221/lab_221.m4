@@ -5,6 +5,7 @@
 m4_changequote(`[:',`:]')m4_dnl
 m4_define(`m4_class',`221')m4_dnl
 \documentclass{lab}
+\let\ifpdf\relax % http://tex.stackexchange.com/questions/11414/package-ifpdf-error
 \begin{document}
 \myeqnspacing % Do this early and often, since it gets reset by \normalsize
 %========================= frontmatter =========================
