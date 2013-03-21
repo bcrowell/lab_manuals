@@ -8,3 +8,6 @@ all:
 interior_figures:
 	# The following requires Inkscape 0.47 or later.
 	perl -e 'foreach my $$f(<figs/*.svg>) {system("scripts/render_one_figure.pl $$f")}'
+
+preflight_figures:
+	perl -e 'foreach my $$f(<figs/*.svg>) {system("scripts/preflight_one_fig.pl $$f")}'
