@@ -1,7 +1,11 @@
 \lab{Magnetism}\label{lab:magnetism}
 
 \widefigcaption{em-dip-fieldvsdistance}{Part B, measuring the variation of the
-bar magnet's field with respect to distance}\label{fig:dipbofr}
+bar magnet's field with respect to distance.}\label{fig:dipbofr}
+
+\widefigcaption{em-dip-new-method}{Part C, a different method of measuring
+the variation of field with distance. The solenoids are shown in cross-section,
+with empty space on their interiors and their axes running right-left.}\label{fig:dipnew}
 
 \apparatus
 \equip{bar magnet (stack of 6 Nd)}
@@ -9,8 +13,15 @@ bar magnet's field with respect to distance}\label{fig:dipbofr}
 \equip{Hall effect magnetic field probes}
 \equip{LabPro interfaces, DC power supplies, and USB cables}
 \equip{2-meter stick}
+\equipn{Heath solenoids}{2/group}
+\equipn{Instek power supply}{1/group}
+\equipn{wood blocks}{2/group}
+\equipn{PRO-100 multimeter (in lab bench}{1/group}
+\equipn{another multimeter}{1/group}
+\equip{D-cell batteries and holders}
+\equipn{Cenco decade resistor box}{1/group}
 
-\goal{Find how the magnetic field of a bar magnet changes with
+\goal{Find how the magnetic field of a magnet changes with
 distance along one of the magnet's lines of symmetry.}
 
 \introduction
@@ -31,7 +42,8 @@ much it is deflected from north.
 
 The task can be simplified quite a bit if you restrict
 yourself to measuring the magnetic field at points along one
-of the magnet's two lines of symmetry, shown in the figure two pages after this one.
+of the magnet's two lines of symmetry, shown in the top figure on the
+page three pages after this one.
 
 \fig{em-dip-symmetry}
 
@@ -49,7 +61,7 @@ points along this axis, e.g., point a, must point straight up or down.
 Line up your magnet so it is pointing east-west. Choose one
 of the two symmetry axes of your magnet, and measure the
 deflection of the compass at two points along that axis,
-as shown in the second figure, at the end of the lab.
+as shown in the figure at the end of the lab.
 As part of your prelab, you will use vector addition to find an equation
 for $B_m/B_e$, the magnet's field in units of the Earth's, in terms
 of the deflection angle $\theta$. For your first point, find the
@@ -78,6 +90,9 @@ of the magnet's field with distance according to a power law $B\propto r^p$.
 
 \labpart{Variation of Field With Distance: Hall Effect Magnetometer}
 
+This technique, to be used in class in spring of 2014, replaces a different
+technique used previously.
+
 In this part of the lab, you will test your hypothesis about the power
 law relationship $B\propto r^p$; you will find out whether the field really
 does obey such a law, and if it does, you will determine $p$ accurately.
@@ -91,23 +106,55 @@ LabPro interface, connect the interface to the computer's USB port, and
 plug the interface's DC power supply in to it. Start up version 3 of Logger Pro, and
 it will automatically recognize the probe and start displaying magnetic fields
 on the screen, in units of mT (millitesla). The probe has two ranges, one that can
-read fields up to 0.3 mT, and one that goes up to 6.4 mT. You can select either one using the
-switch on the probe. To test your hypothesis with good precision, you need to obtain
-data over the widest possible range of fields. Always use the more sensitive 0.3 mT scale
-whenever possible, because it will give better precision for low fields. Be careful,
-however, because if you expose the probe to a field that's beyond its maximum range, it
-will give incorrect readings. Although you have an expectation about the direction of the
-field (based both on symmetry arguments and on your qualitative results from part A),
-it's a good idea to try orienting the probe in different ways to see what happens.
+read fields up to 0.3 mT, and one that goes up to 6.4 mT.
+Select the more sensitive 0.3 mT scale using the
+switch on the probe. 
 
-Two extra complications are that the Earth's field is adding on to the magnet's field, and the
-absolute calibration of the probe is very poor by default.  
-You can make the computer take care of both of these issues automatically, by zeroing the
-sensor (Experiment$>$Zero) when it is exposed only to the Earth's field. This causes the
-computer to impose a calibration such that the Earth's field is considered to be exactly zero. You may need
-to redo the calibration each time you switch scales. If you then carry out the whole measurement with the
-probe and the magnet's field both aligned east-west, the Earth's field has no effect.
-You may need to bend the tip of the probe 90 degrees.
+The technique is shown in the bottom figure on the last page of the lab. Identical solenoids
+(cylindrical coils of wire) are positioned with their axes coinciding, by lining up
+their edges with the edge of the lab bench. When an electrical current passes through
+a coil, it creates a magnetic field. At distances that are large compared to the size
+of the solenoid, we expect that this field will have the same universal pattern as with
+any magnetic dipole. The sensor is positioned on the axis, with wood blocks (not shown)
+to hold it up. One solenoid is fixed, while the other is moved to different positions
+along the axis, including positions (more distant than the one shown) at which we expect
+its contribution to the field at the sensor to be of the universal dipole form.
+
+The key to the high precision of the measurement is that in this configuration, the
+fields of the two solenoids can be made to cancel at the position of the probe. Because
+of the solenoids' unequal distances from the probe, this requires unequal currents.
+Because the fields cancel, the probe can be used on its most sensitive and accurate
+scale; it can also be zeroed when the circuits are open, so that the effect of any
+ambient field is removed. For example, suppose that at a certain distance $r_m$,
+the current $I_m$ through the moving coil has to be five times greater than the current
+$I_f$ through the fixed coil at the constant distance $r_f$. Then we have determined that
+the field pattern of these coils is such that increasing the distance along the axis
+from $r_f$ to $r_m$ causes the field to fall off by a factor of five.
+
+It's a good idea to take data all the way down to $r_m=0$, since this makes it possible
+to see on a graph where the field does and doesn't behave like a dipole. Note that the
+distances $r_f$ and $r_m$ can't be measured directly with good precision.
+
+The Instek power supply is capable of delivering a large amount of current, so it can
+be used to provide $I_m$, which needs to be high when $r_m$ is large.
+At large values of $r_m$, it can be difficult to get a power supply
+to give a \emph{small} enough $I_f$. Try using a battery, and further reducing
+the current by placing another resistance in series with the coil. The Cenco
+decade resistance boxes can be used for this purpose; they are variable resistors
+whose resistance can be dialed up as desired using decimal knobs.
+
+For every current measurement, make sure to use the most sensitive possible scale
+on the meter to get as many sig figs as possible. This is why the ammeter built into
+the Instek power supply is not useful here.
+I found it to be a hassle to measure $I_m$ with an ammeter, because the currents
+required were often quite large, and I kept inadvertently blowing the fuse on
+the milliamp scale. For this reason, you may actually want to measure $V_m$, the
+voltage difference across the moving solenoid. Conceptually, magnetic fields
+are caused by moving charges, current is a measure of moving charge, and therefore
+current is what is relevant here. But if the DC resistance of the coil is
+fixed, the current and voltage are proportional to one another, assuming that the
+voltage is measured directly across the coil and the resistance of the banana-plug
+connections is either negligible or constant.
 
 \prelab
 
