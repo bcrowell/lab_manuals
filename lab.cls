@@ -263,27 +263,11 @@ just setting yourself up for failure in lab.}
 	{\hspace*{-2.3em}}%
 	{\titlerule*[1pc]{.}\contentspage}%
 %========================= graphicx package=========================
-\newif\ifpdf
-\ifx\pdfoutput\undefined
-\pdffalse % we are not running PDFLaTeX
-\else
-\pdfoutput=1 % we are running PDFLaTeX
-\pdftrue
-\fi
-
-\ifpdf
-\usepackage[pdftex]{graphicx}
-\else
 \usepackage{graphicx}
-\fi
 %========================= AtBeginDocument stuff=========================
 \AtBeginDocument{
   %------------------------------- pdf stuff
-	\ifpdf
 	\DeclareGraphicsExtensions{.pdf,.jpg,.png}
-	\else
-	\DeclareGraphicsExtensions{.eps,.jpg,.png}
-	\fi
   \newcommand{\chapdir}{glub}
   %------------------------------- equation spacing 
   \myeqnspacing
