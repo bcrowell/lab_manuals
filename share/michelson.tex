@@ -6,7 +6,7 @@
 \equipn{tools inside drawer}{1 set/group}
 \equipn{$2\times4$ piece of wood}{3/group}
 \equipn{helium-neon laser}{3}
-\equip{various diverging leses}
+\equip{various diverging lenses}
 
 \begin{goals}
 
@@ -40,6 +40,10 @@ Thus if the mirror is moved by a distance $d$, and you see the light go through
 $n$ complete cycles of appearance and disappearance, you can conclude that the
 wavelength of the light was $\lambda=2d/n$.
 
+Classic uses of a small Michelson interferometer are to measure small differences
+in indices of refraction, compare physical length standards to atomic ones,
+and compare atomic standards to one another.
+
 \apparatus
 
 To make small and accurate adjustments
@@ -54,14 +58,17 @@ The path-length difference between the two waves can be thought of as the distan
 A and $\zu{B}'$.
 The field of view covers a certain small but finite range of angles, forming
 a narrow cone with its vertex at your eye. For rays forming a small angle
-$\alpha$ relative to the axis, the effect is to multiply the path-length distance
+$\alpha$ relative to the axis, the effect is to multiply the path-length difference
 by a factor of $\cos\alpha$. If the two arms of the interferometer are exactly
-equal, then the path-length distance between them is zero, and multiplying it
+equal, then the path-length difference between them is zero, and multiplying it
 by $\cos\alpha$ has no effect. But when the arms are unequal, the condition for
 constructive or destructive interference becomes dependent on $\alpha$, and the
 result is that you see a bull's-eye pattern of concentric circular fringes.
 When you turn the knob, these fringes expand or contract, appearing from or disappearing
 into the center. The more equal the two arms, the smaller the number of fringes.
+
+The setup also includes a compensating plate, described in the Wikipedia article on
+the Michelson interferometer.
 
 \setup
 
@@ -94,10 +101,14 @@ field of view.
 \labpart{Basic Operation}
 
 To get an idea of the basic operation of the instrument, you'll perform a rough
-measurement of the wavelength of the yellow line emitted by the sodium discharge tube.
-This is not really a task for which the spectrometer is well suited for giving high-precision
-results, but you should be able to approximately verify the known wavelength of
-about 589 nm.
+measurement of the wavelength of the light emitted by a discharge tube.
+We used to do this using a Na tube, but for the reasons described in part C,
+this involves some difficulties because the contrast fades in and out as you
+move mirror B. For that reason, I'd like to try a Hg discharge tube instead
+in spring 2014. The Hg tube has multiple wavelengths, but we have yellow and
+green filters that we can use to select just one of them.
+In any case this is not really a task for which the spectrometer is well suited for giving high-precision
+results, but you should be able to approximately verify the known wavelength.
 
 The micrometer has a millimeter scale running from 0 to 25 mm, with half-millimeter
 divisions on the bottom. To take a reading on it, first read the number of
@@ -114,37 +125,47 @@ while counting at least about 20 fringes (optimally 50 or 100), and record the t
 after. The difference between these is $D$. It helps if you prop your head on the table, and move the micrometer knob
 smoothly and continuously. Moving your head disturbs the pattern, and halting the
 micrometer knob tends to cause backlash that confuses the count of fringes by
-plus or minus one. 
+plus or minus one.
 
-Check that you get approximately the right wavelength for the yellow sodium line.
+Check that you get approximately the right wavelength (check on Wikipedia for the
+one you're using).
 
 \section*{Exploring Other Possibilities with the instrument}
 
-Up until fall 2012, I was having my students work on improving the technique
-used in part A to get high-precision data. This was time-consuming and fatiguing,
-and we never had much luck getting great results, since it was difficult to
-turn the micrometer knob smoothly enough to be sure whether we were miscounting
-the number of fringes due to hand twitches or backlash in the gears. Then, in
-a long-forgotten corner of the physics stockroom, guarded by jewel-eyed statues
-of demons and curses written in Egyptian hieroglyphics, I came across a lab manual
-from 1971 that discussed a variety of other things that could be done with these
-interferometers that might be more interesting and successful. My goal for spring
-2013 is to have each lab group try out one of the following possibilities and see
-how it goes.
+In spring and fall of 2013, I had my students try a variety of things with the interferometers.
+I want to find a measurement that isn't too difficult and that uses the instrument for a
+purpose that it's well suited to. The best prospects seem to be the following.
+Your group can pick either one, but I think B is easier and probably more of
+a classic application.
 
-Groups 1, 4, and 7 should do part B, groups 2 and 5 part C, and groups 3 and 6 part D.
+\labpart{Unknown index of refraction}
 
-\labpart{Use of laser light}
+The Michelson interferometer is unusual in its ability to work with white light.
+This is because it's possible to get into the position where the lengths of the
+two arms are equal, so that constructive interference occurs at the center of
+the bull's eye for all wavelengths. At any other position, we get
+a random mixture of constructive and destructive interference for all the different
+wavelengths that are present. In fact, this allows the equal-arm condition
+to be determined extremely accurately. It's hard to think of any other technique
+that allows two large distances to be made equal to within micrometers or nanometers!
 
-It is supposed to be possible to use a laser as a source of light and project the fringes onto a screen
-or the wall. This would be much more physically comfortable than hunching over and staring into the 
-interferometer, and in fact for safety you should never look into the interferometer while doing
-the laser version the experiment. I think the idea is to use the laser to produce a nearly
-pointlike source of light that is much brighter than what can be provided by a discharge tube,
-making the light bright enough to see when projected. By shining the laser beam onto a
-diverging lens, you can produce a spreading cone of monochromatic, coherent light.
-Adjust the cone so that it is about the right size to light up the whole diagonal mirror.
-If this works, you could try to measure the wavelength of the laser light.
+Using this technique, one can accurately determine the unknown index of refraction of an
+thin piece of some material such as a glass microscope slide. The idea is to equalize
+the arms, then insert the unknown and readjust the interferometer in order to
+restore the interference pattern. In the new condition, it's not the lengths of the
+two arms that are equal but their \emph{optical} lengths, i.e., the time it takes
+light to travel along them.
+
+In fall 2013 I had one group that tried this technique and
+seemed to succeed in measuring the index of refraction of a thin glass microscope slide;
+the index of refraction came out to be in a reasonable range for glass, although different
+types of glass cover a wide range. For spring 2014 I would like to see if most or all
+of the groups can get this to work, and reproduce each other's results for slides made
+of the same type of glass. If that works, then I would like to refine the technique to
+work with something else besides the microscope slides that would either have some
+intrinsic interest or allow a high-precision measurement. A possibility is to use
+cuvettes with distilled water and a salt solution, and measure the difference in
+index of refraction between the two.
 
 \labpart{Spacing of the sodium doublet}
 
@@ -160,7 +181,7 @@ in the sodium spectrum that you measured in part A is really a doublet whose mem
 in wavelength by a fraction of a nanometer.
 
 The Michelson interferometer
-is particularly well adapted to a certain sneaky trick for measuring the difference in wavelength
+is well adapted to a certain sneaky trick for measuring the difference in wavelength
 between two lines in a doublet, even when the difference is extremely small, as it is for
 sodium. The idea is that if the lines are roughly equal in intensity, then the bull's-eye pattern
 you see is actually two bull's-eye patterns superimposed on top of one another. If you move
@@ -189,21 +210,3 @@ Let $d_1$ and $d_2$ be two successive path-length differences at which there is 
            because $\Delta \lambda$ is very small.
 
 Attempt to measure $\Delta \lambda$ for the yellow sodium doublet.
-
-\labpart{Unknown index of refraction}
-
-The Michelson interferometer is unusual in its ability to work with white light.
-This is because it's possible to get into the position where the lengths of the
-two arms are equal, so that constructive interference occurs at the center of
-the bull's eye for all wavelengths. At any other position, we get
-a random mixture of constructive and destructive interference for all the different
-wavelengths that are present. In fact, this allows the equal-arm condition
-to be determined extremely accurately. It's hard to think of any other technique
-that allows two large distances to be made equal to within micrometers or nanometers!
-
-Using this technique, one can accurately determine the unknown index of refraction of an
-thin piece of some material such as a glass microscope slide. The idea is to equalize
-the arms, then insert the unknown and readjust the interferometer in order to
-restore the interference pattern. In the new condition, it's not the lengths of the
-two arms that are equal but their \emph{optical} lengths, i.e., the time it takes
-light to travel along them.

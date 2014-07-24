@@ -3,13 +3,15 @@
 \apparatus
 \equipn{magnetic balance}{1/group}
 \equipn{meter stick}{1/group}
-\equipn{multimeter (BK, not HP)}{1/group}
+\equipn{multimeter (BK or PRO-100, not HP)}{1/group}
 \equipn{laser}{1/group}
 \equipn{vernier calipers}{1/group}
-\equip{staples}
+\equip{photocopy paper, for use as a weight}
 \equip{DC power supply (Mastek, 30 A)}
 \equip{digital balance}
 \equip{box of special cables}
+
+Note: I think we checked in spring 2013 that the PRO-100 meters worked.
 
 \goal{Measure the speed of light.}
 
@@ -46,19 +48,32 @@ If you put a current through the wires, it will raise wire A. The
 torque made by the magnetic repulsion is now canceling the torque made
 by gravity directly on all the hardware, such as the masses C and D.
 This gravitational torque was zero before, but now you don't know what it
-is. The trick is to put a tiny weight (a staple) on top of wire A, and
+is. The trick is to put a tiny weight on top of wire A, and
 adjust the current so that the balance returns to the position it originally
 had, as determined by the laser dot on the wall. You now know that the
 gravitational torque acting on the original apparatus (everything except
-for the staple) is back to zero, so the only torques acting are the torque
+for the weight) is back to zero, so the only torques acting are the torque
 of gravity on the staple and the magnetic torque. Since both these torques
 are applied at the same distance from the axis, the forces creating these
-torques must be equal as well. By weighing a block of staples, you can
-determine the weight of one staple, and infer the magnetic force that was
+torques must be equal as well. You can therefore infer the magnetic force that was
 acting.
 
-It's very important to get the wires A and B perfectly parallel. You also
-need to minimize the resistance of the apparatus, or else you won't be
+For a weight, you can carefully and accurately cut a small rectangular piece
+out of a sheet of photocopy paper. In fall 2013, my students found that 500
+sheets of SolCopy 20 lb paper were 2307.0 g. About 1/200 of a sheet seemed to
+be a good weight to use.
+
+It's very important to get the wires A and B perfectly parallel. The result
+depends strongly on the small distance $R$ between their centers, and if the
+wires aren't straight and parallel, you won't even have a well defined value
+of $R$. In spring 2014 I would like to have my students try the following
+new technique for measuring $R$ accurately. The idea is to compare the position
+of the laser spot on the well when the balance is in its normal position, versus
+the position where the wires are touching. Using geometry and trig you can then
+find the air gap between the wires, and then add in twice the radius, which can
+be measured accurately with vernier calipers.
+
+You need to minimize the resistance of the apparatus, or else you won't be
 able to get enough current through it to cancel the weight of the staple.
 Most of the resistance is at the polished metal knife-edges that the
 moving part of the balance rests on. It may be necessary to clean the
@@ -73,8 +88,6 @@ fine voltage control, (4) coarse voltage control. Before turning the power
 supply on, turn knobs 1 and 2 all the way up, and knobs 3 and 4 all the way
 down. Turn the power supply on. Now use knobs 3 and 4 to control how much
 current flows.
-
-\pagebreak
 
 \analysis
 
@@ -145,6 +158,6 @@ Your final result is the speed of light, with error bars.
 
 \lasersafety
 
-\prelabquestion Show that  $kI^2\ell/c^2R$ has units of newtons.
+\prelabquestion Show that the equation for the force between the wires has units of newtons.
 
 \prelabquestion Do the algebra to solve for $c$ in terms of the measured quantities.

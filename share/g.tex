@@ -2,15 +2,14 @@
 \lab{The Local Gravitational Field}\label{lab:g}
 
 \emph{Note to the lab technician: The computers to use are the ones
-with labels on their sides saying Dug, Tock, and Mudge.}
+with labels on their sides saying Dug, Buck, and Mudge.}
 
 \apparatus
 \equip{(two stations):}
 \equip{vertical plank with electromagnets}
 \equip{steel balls (2/station)}
-\equip{Linux computers with Audacity installed (in 416T)}
+\equip{Linux computers with Audacity installed}
 \equip{spirit levels}
-\equip{256 Hz tuning fork with box}
 
 \goal{Make a high-precision measurement of the strength of the Earth's
 gravitational field, $g$, in Fullerton.}
@@ -125,21 +124,6 @@ new one, and on cheap sound hardware this causes little timing glitches.
 \analysis
 
 Extract a value of $g$ from your data.
-
-The consumer-grade sound cards in the computers we use for this lab do not always have a good absolute calibration.
-I have used a tuning fork to find a calibration for the three machines that we're currently using:
-
-\begin{tabular}{ll}
-computer & Multiply $t$ by \ldots \\
-\hline
-Mudge II & 1.0050 \\
-Dug II  & 1.0050 \\
-Tock II  & 1.0050
-\end{tabular}
-
-Because these three sound cards all match to five significant figures, I think they're actually right, and
-the 1.0050 is actually the factor by which the tuning fork is off. Therefore we shouldn't apply the
-calibration.
 
 m4_ifdef([:__sn:],[:%
 If you're turning in a formal writeup,

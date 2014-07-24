@@ -20,7 +20,7 @@ DO_PDFLATEX = echo "$(DO_PDFLATEX_RAW)" ; perl -e 'if (system("$(DO_PDFLATEX_RAW
 # Since book1 comes first, it's the default target --- you can just do ``make'' to make it.
 
 book1:
-	m4 -P -I ../share --define=__lm $(BOOK).m4 >$(BOOK).tex
+	m4 -P -I ../share $(BOOK).m4 >$(BOOK).tex
 	@cp ../lab.cls .
 	@cp ../*.sty .
 	@$(DO_PDFLATEX)
@@ -29,7 +29,7 @@ book1:
 	@echo "Do this at least three times, or do a 'make book'. (Three times is the minimum to get the appendix numbers right in the toc.)"
 
 book:
-	m4 -P -I ../share --define=__lm $(BOOK).m4 >$(BOOK).tex
+	m4 -P -I ../share $(BOOK).m4 >$(BOOK).tex
 	@cp ../lab.cls .
 	@cp ../*.sty .
 	@$(DO_PDFLATEX)
