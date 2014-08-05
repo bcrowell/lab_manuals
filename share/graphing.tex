@@ -1,6 +1,6 @@
 \myappendix{graphing}{Graphing}
 
-\section*{Review of Graphing}
+\section{Review of Graphing}
 Many of your analyses will involve making graphs. A graph
 can be an efficient way of presenting data visually,
 assuming you include all the information needed by the
@@ -16,7 +16,7 @@ equally spaced points in time.
 \fig{graph}
 
 
-\section*{Graphing on a Computer}
+\section{Graphing on a Computer}
 Making graphs by hand in your lab notebook is fine, but in
 some cases you may find it saves you time to do graphs on a
 computer. For computer graphing, I recommend LibreOffice, which
@@ -34,18 +34,18 @@ Here's a brief rundown on using LibreOffice:
   	y values in the second column. For scientific notation, do, e.g., 5.2e-7
         to represent $5.2\times10^{-7}$.
   \item[] Select those two columns using the mouse.
-  \item[] From the Insert menu, do Chart.
+  \item[] From the Insert menu, do Chart.\footnote{In LibreOffice 4.1.1 on Windows 7, do Insert:Object:Chart.}
   \item[] When it offers you various styles of graphs to choose from, choose
           the icon that shows a scatter plot, with dots on it  (XY Chart).
   \item[] Adjust the scales so the actual data on the plot is as big as possible,
-          eliminating wasted space. To do this, double-click on the graph\footnote{On Windows, single-click.} so that it's
+          eliminating wasted space. To do this, double-click on the graph so that it's
           surrounded by a gray border. Then do Format, Axis, X Axis or Y Axis, Scale.
 \end{itemize}
 If you want error bars on your graph you can either draw them in by hand or put them in a
 separate column of your spreadsheet and doing Insert, Y Error Bars, Cell Range.\footnote{This works in
 LibreOffice 3.6 and higher.}
 
-\section*{Fitting a Straight Line to a Graph by Hand}
+\section{Fitting a Straight Line to a Graph by Hand}
 
 Often in this course you will end up graphing some data
 points, fitting a straight line through them with a ruler,
@@ -73,7 +73,7 @@ in panel (d). The line in panel (d), with a very small
 slope, is just not believable compared to the data --- it is
 several standard deviations away from most of the data points.
 
-\section*{Fitting a Straight Line to a Graph on a Computer}
+\section{Fitting a Straight Line to a Graph on a Computer}
 It's also possible to fit a straight line to a graph using computer
 software such as LibreOffice. 
 
@@ -95,3 +95,32 @@ lab and the photoelectric effect lab, it's very hard to tell how accurate
 your raw data are \emph{a priori}; in these labs, you can use the typical
 amount of deviation of the points from the line as an estimate of their
 accuracy.
+
+\section{Comparing Theory and Experiment}
+
+Figures (e) through (h) are examples of how we would compare theory and experiment
+on a graph. The convention is that theory is a line and experiment is points; this
+is because the theory is usually a prediction in the form of an equation, which can
+in principle be evaluated at infinitely many points, filling in all the gaps. One way
+to accomplish this with computer software is to graph both theory and experiment as
+points, but then print out the graph and draw a smooth curve through the theoretical
+points by hand.
+
+\fig{graphing-experiment-and-theory}
+
+The point here is usually to compare theory and experiment, and arrive at a yes/no answer
+as to whether they agree. In (e), the theoretical curve goes through
+the error bars on four out of six of the data points. This is about what we expect statistically,
+since the probability of being within one standard deviation of the truth is about
+2/3 for a standard bell curve. Given these data, we would conclude that theory and experiment
+agreed.
+
+In graph (f), the points are exactly the same as in (e), but the conclusion is the opposite.
+The error bars are smaller, too small to explain the observed discrepancies between theory
+and experiment. The theoretical curve only goes through the error bars on two of the six
+points, and this is quite a bit less than we would expect statistically.
+
+Graph (g) also shows disagreement between theory and experiment, but now we have a clear systematic
+error. 
+In (h), the fifth data point looks like a mistake. Ideally you would notice during lab that
+something had gone wrong, and go back and check whether you could reproduce the result.
