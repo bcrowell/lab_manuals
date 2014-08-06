@@ -30,11 +30,18 @@ pattern of water waves depends on the distance between the sources.
 
 \observations
 
+m4_ifdef([:__lm:],[:%
 Light is really made of waves, not rays, so when we treated it as
 rays, we were making an approximation. You might think that when
 the time came to treat light as a wave, things would get very difficult,
 and it would be hard to predict or understand anything without doing
 complicated calculations.
+:],[:%
+A car or a pool ball travels along a well-defined path, but a wave doesn't.
+Not only that, but waves don't simply collide and bounce like pool balls.
+They overlap and add on to one another, so that they can reinforce or cancel.
+This seems like it would be extremely complicated to calculate.
+:])
 
 \fig{op-int-photo}
 
@@ -112,9 +119,6 @@ the experiment --- a fairly low speed works well. Measure
 the angular spacing of the resulting diffraction pattern for
 several values of the spacing, $d$, between the two sources of ripples.
 
-How do you think the angular spacing of the wave pattern
-seems to depend mathematically on $d$?
-Construct a graph to test whether this was really true.
-If you're not sure what mathematical rule to guess,
-you can use  the methods explained in Appendix \ref{appendix:powerlaws}
-and look for any kind of a power law relationship.
+Use  the methods explained in Appendix \ref{appendix:powerlaws}
+and look for any kind of a power law relationship
+for the dependence of the angular spacing on $d$.
