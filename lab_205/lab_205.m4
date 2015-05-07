@@ -21,7 +21,7 @@ m4_changequote(`[:',`:]')m4_dnl
 \mynormaltype
 
 \pagebreak[4]
-Copyright (c) 1999-2011 by B.~Crowell and V.~Roundy. This lab manual is
+Copyright (c) 1999-2015 by B.~Crowell and V.~Roundy. This lab manual is
 subject to the Open Publication License, opencontent.org. 
 
 \tableofcontents
@@ -134,6 +134,18 @@ m4_include(../share/errpropagation.tex)
 m4_include(../share/graphing.tex)
 
 m4_include(../share/powerlaws.tex)
+
+\afterpage{
+%\setlength{\parindent}{0pt}
+\addtolength{\textwidth}{-1in}
+%\setlength{\evensidemargin}{0in}
+\onecolumn
+%\setlength{\hoffset}{-1in}
+}
+
+m4_include(../share/comment-codes.tex)
+
+\twocolumn
 
 %===========================================================
 

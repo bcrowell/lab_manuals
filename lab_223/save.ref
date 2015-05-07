@@ -14,12 +14,12 @@ lab:relativity,10,40
 lab:polarization,11,44
 lab:radioactivity,12,48
 lab:photoelectric-effect,13,52
-hg-wavelengths,13,52
+hg-wavelengths,13,53
 lab:hydrogen,14,56
 bohr-equation,14,56
 appendix:format,1,60
 format-really-here,,62
-appendix:basicerranal,2,63
+appendix:basicerranal,2,62
 probability-of-deviations,,67
 eg:fine-structure,,67
 precision-of-average,,68

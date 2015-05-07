@@ -19,14 +19,14 @@ fig:telescope,12,48
 lab:wave-optics,13,52
 fig:fringes,13,52
 lab:photoelectric-effect,14,56
-hg-wavelengths,14,56
+hg-wavelengths,14,57
 lab:electron-diffraction,15,60
 fig:mo-edf-circuit,15.3,64
 lab:hydrogen,16,66
 bohr-equation,16,66
 appendix:format,1,70
 format-really-here,,72
-appendix:basicerranal,2,73
+appendix:basicerranal,2,72
 probability-of-deviations,,77
 eg:fine-structure,,77
 precision-of-average,,78

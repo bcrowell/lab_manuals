@@ -4,7 +4,7 @@
 \LoadClass[10pt]{book}
 
 
-\RequirePackage{makeidx,wrapfig,fancyhdr,calc,titlesec,titletoc,amssymb,moreverb,ifthen,color,lmmath,mixmath,url}
+\RequirePackage{makeidx,wrapfig,fancyhdr,calc,titlesec,titletoc,amssymb,moreverb,ifthen,color,lmmath,mixmath,url,multicol,afterpage}
 \RequirePackage[leqno]{amsmath}
 \RequirePackage[sf]{subfigure}%needs to be before caption2
 \usepackage[font=small,labelformat=empty,labelsep=none]{caption}

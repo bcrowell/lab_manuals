@@ -1,19 +1,18 @@
 \lab{The Photoelectric Effect}\label{lab:photoelectric-effect}
 
 \apparatus
-\equip{Hg gas discharge tube}
-\equip{light aperture assembly}
-\equip{lens/grating assembly}
-\equip{photodiode module, support base, and coupling rod}
-\equip{pieces of plywood}
-\equip{green and yellow filters}
+\equip{hand-held diffraction gratings}
+\equip{Hg gas discharge tube (Pasco SE-5509)}
+\equip{photodiode (Pasco SE-5509)}
+\equip{power supply for discharge tube (Pasco BEM-5007)}
+\equip{power supply (Pasco BEM-5001)}
+\equip{high-sensitivity ammeter (Pasco BEM-5004)}
 
 \begin{goals}
 
-\item[] Observe evidence that light has particle properties as
-well as wave properties.
+\item[] Use the photoelectric effect to test predictions of the wave
+and wave-particle models of light.
 
-\item[] Measure Planck's constant.
 \end{goals}
 
 \introduction
@@ -31,53 +30,75 @@ electric and magnetic fields, it made sense that when light
 encountered matter, it would tend to shake the electrons. It
 was only to be expected that something like the photoelectric
 effect could happen, with the light shaking the electrons
-vigorously enough to knock them out of the atom. The best
-theoretical estimates, however, were that light of ordinary
-intensity would take millions of years to do the trick ---
-it would take that long for the electron slowly to absorb
-enough energy to escape.
+vigorously enough to knock them out of the atom.
 
-The actual experimental observation of the photoelectric
-effect was therefore an embarrassment. It started up
-immediately, not after a million years. Albert Einstein,
+But once the effect was observed, physicists began running into
+trouble interpreting how it behaved. There were various variables
+they could adjust, such as:
+\begin{itemize}
+ \item the light's frequency (color), and
+ \item the light's intensity (brightness).
+\end{itemize}
+Given these input conditions, there were outputs
+they could look at, including
+\begin{itemize}
+  \item any time delay before electrons began to pop out,
+  \item the rate at which the electrons then flowed (measured as a current on an ammeter), and
+  \item the amount of kinetic energy they had.
+\end{itemize}
+
+At the time this was considered an obscure technical topic, but experimentalists
+began generating data, which theorists then had zero success in interpreting.
+Albert Einstein,
 better known today for the theory of relativity, was the
-first to come up with the radical, and correct, explanation.
-Einstein simply suggested that in the photoelectric effect,
-light was behaving as a particle, now called a photon. The
-beam of light could be visualized as a stream of machine-gun
-bullets. The electrons would be small targets, but when a
-``light bullet'' did score a hit, it packed enough of an
-individual wallop to knock the electron out immediately.
-Based on other experiments involving the spectrum of light
-emitted by hot, glowing objects, Einstein also proposed that
-each photon had an energy given by
-\begin{equation*}
-         E  =  hf  ,  
-\end{equation*}
-where $f$ is the frequency of the light and $h$ is Planck's constant.
-
-In this lab, you will perform the classic experiment used to
-test Einstein's theory. You should refer to the description
-of the experiment in your textbook. Briefly, you will expose
-the metal cathode of a vacuum tube to light of various
-frequencies, and determine the voltage applied between the
-cathode and anode that just barely suffices to cut off the
-photoelectric current completely. This is known as the
-stopping voltage, $V_s$. According to Einstein's theory, the
-stopping voltage should obey the equation
-\begin{equation*}
-         e V_s  =  hf - E_s   ,  
-\end{equation*}
-where $E_s$ is the amount of energy
-required by an electron to penetrate the surface of
-the cathode and escape.
-
-\figcaption{mo-pho-optics}{Optical setup.}
+first to come up with the radical, and correct, explanation,
+which involved a radical rewriting of the laws of physics.
 
 \setup
 
-You can use the Hg gas discharge tube to produce monochromatic
-light with the following wavelengths:\label{hg-wavelengths}
+The Hg gas discharge tube emits
+light with several different wavelengths.
+Turn on the discharge tube immediately, because it takes a long time to warm up.
+It has an external power supply, which is a black box.
+
+The photodiode is a vacuum tube housed inside another box, with a small hole
+to allow light to come in and hit one of the electrodes (the cathode) inside the vacuum tube.
+On the front of the box, covering the hole, are two rotating wheels.  The wheel
+that you can see has five colored filters. Each of these filters lets through only
+one of the five wavelengths of light emitted by the Hg tube, so that you can control
+the frequency.
+
+The hole through which the light enters is actually
+a hole in a second wheel, located behind the filter wheel. By clicking that wheel into different position we can
+select holes of different sizes, which lets in different amounts of light.
+Although this is convenient, it doesn't actually control the intensity of the light (watts per square meter)
+but only the total amount (watts). Therefore we'll just leave this set for the 2 mm hole.
+
+The setup does have a provision for controlling the actual intensity of the beam, which is that both
+the Hg tube and the photodiode are placed on a track, facing one another.  The light from the Hg tube
+spreads out in a cone, so that as you vary the distance to the photodiode, the intensity falls off as
+the inverse square of the distance.
+
+The photodiode has an output that can be connected to a extremely sensitive ammeter to measure the
+rate at which electrons are ejected from the cathode and absorbed at the anode. Before connecting the
+ammeter (labeled ``DC Current Amplifier'' on the front panel), set it to its most sensitive scale
+($10^{-13}$ A) and depress button labeled ``Calibration.'' Since the meter is not connected to anything,
+the current is truly zero. Use the knob to force the reading to zero, and then let the calibration button out.
+Now use a BNC cable to connect the photodiode to the ammeter.
+
+Once the discharge tube has warmed up, arrange things so that you can see a spot of its light, e.g., by
+letting it fall on a white piece of paper. Hold the diffraction grating up to your eye and look at the
+light. In the first-order ($m=\pm1$) fringes, you should be able to see that the light contains a
+mixture of four discrete wavelengths of visible light. There is also an ultraviolet wavelength,
+which you may be able to see as well if the paper fluoresces.
+
+Now suppose we were considering the following possible models of light: (1) pure particle model,
+(2) pure wave model, (3) a hybrid model in which light has both particle and
+wave properties. You have just observed diffraction of the light
+from your source. Which of the models are consistent with this observation, and which are immediately
+ruled out?
+
+The wavelengths are as follows:\label{hg-wavelengths}
 
 \begin{tabular}{ll}
 color   &wavelength (nm)\\
@@ -88,172 +109,164 @@ green  & 546\\
 yellow  & 578
 \end{tabular}
 
-The diffraction grating splits up the light into these
-lines, so you can make one line at a time enter the
-photodiode. Slit 1 slides into the slot in the front of the
-discharge tube. The lens serves to create focused images of slit 1 at
-the photodiode.  The lens and diffraction grating are housed
-in a single unit, which is attached to a pair of rods (not
-shown) projecting from slit 1. Do not drop the lens and
-diffraction grating --- I have already damaged one by
-dropping it, and they cost \$200 to replace. For measurements
-with the green and yellow lines, green and yellow filters
-are used to help eliminate stray light of other colors ---
-they stick magnetically on the front of the collimator tube.
-Slit 2 and the collimator tube keep stray light from getting in.
-
-The photodiode module is held on top of a post on a rotating
-arm.  The ultraviolet line is invisible, but the front of
-slit 2 is coated with a material that fluoresces in UV
-light, so you can see where the line is.
-
-\figcaption{mo-pho-circuit}{Circuit.}
+\figcaption{mo-pho-circuit-new}{Circuit.}
 
 \mysubsubsection{Circuit}
 
-The circuit in fig. (a) above is the one shown in textbooks
-for this type of experiment. Light comes in and knocks
+The figure above shows a circuit diagram of the setup. Light comes in and knocks
 electrons out of the curved cathode. If the voltage is
 turned off, there is no electric field, so the electrons
 travel in straight lines; some will hit the anode, creating
-a current referred to as the photocurrent. If the voltage is
+a current. If the voltage is
 turned on, the electric field repels the electrons from the
-wire electrode, and the current is reduced or eliminated.
-The stopping voltage would be measured by increasing the
-voltage until no more current was flowing. We used to use a
-setup very similar to this in this course, but it was
-difficult to get good data because it was hard to judge
-accurately when the current had reached zero.
-
-The circuit we now use, shown in fig. (b), uses a cute trick
-to determine the stopping voltage. The photocurrent
-transports electrons from the cathode to the anode, so a net
-positive charge builds up on the cathode, and a negative
-charge on the anode.  As the charge and the
-voltage increase, the photocurrent is reduced, until finally
-the voltage reaches the stopping voltage, and no more
-current can flow. You then read the voltage off of the
-voltmeter. When you have the next color of light shining on
-the cathode, you momentarily close the switch, discharging
-the photodiode, and then take your next measurement. The
-only disadvantage of this setup is that you cannot adjust
-the voltage yourself and see how the photocurrent varies with voltage.
-
-\setup
-
-Move the housing containing the grating and lens until you
-get a good focus at the front of the photodiode box. The
-square side needs to be facing away from the discharge tube.
-
-Diffraction patterns are supposed to be symmetric, i.e., the $m=1$
-and $m=-1$ maxima should be identical. In reality, there is something
-strange about this setup that can cause the shorter wavelength lines
-(especially the UV line) to be extremely dim on one side. Check which
-one is brighter on your apparatus.
-
-Just because the light gets in through slit 2 does not mean
-it is getting in to the photodiode. The original design of
-the apparatus allowed the photodiode module to twist around
-on its post, and it had to be adjusted carefully by trial and
-error. Because students were getting frustrated with this, I
-epoxied the photodiode modules onto their posts in the right
-orientation. This makes it impossible to disassemble the
-apparatus and put it in its storage box, but should get rid
-of the hassles with orienting it. However, you should still
-check that it's oriented correctly, because it's possible
-that your setup was a little different from mine,
-the epoxy can be cracked by rough handling, and the screw
-at the base of the post can also get loose. There
-are three things you should check to make sure the orientation
-is right: (1) Sighting along the tube like a gun, you should
-see that it looks like it's lined up with the center of the
-grating. (2) The tube can be lifted out on a hinge so that
-you can see the glass photodiode tube inside the box; check that light
-is actually falling on the opening on the side of the tube.
-(3) Take data using the UV line. If
-you don't get a bigger voltage for this line than for the
-others, then the light is not making it in to the photodiode.
+wire electrode, and the current is reduced or perhaps even completely eliminated.
 
 \observations
 
-You can now determine the stopping voltages corresponding to
-the five different colors of light.
+Although the photodiode box has filters on the front, no filter is perfect, and therefore these will
+all let in some stray light of wavelengths other than the intended one. Therefore
+the room should be very dark when you do your measurements.
 
-Hints:
+\labpart{Time delay}
 
-\begin{itemize}
-\item[] The biggest possible source of difficulty is stray light.
-The room should be dark when you do your measurements.
+As explored in the prelab, there may be some
+delay between the time when the light
+is allowed to hit the cathode and the time when electrons begin to be ejected.
+If so, then we lack even a rough a priori estimate of this time.
+Investigate this. If the time seems to be extremely short, do what you planned in the
+prelab to try to make it long enough to detect. If the time is much too long, do the
+opposite so that you can actually observe the photoelectric effect. If you're able to get the time
+delay into a range where it's measurable using eyeballs and a clock, do so. If not,
+then try to set an upper or lower limit on it.
 
-\item[] The shortest wavelengths of light (highest frequencies),
-for which the energy of the photons is the highest, readily
-produce photoelectrons. The photocurrent is much weaker for
-the longer wavelengths. Start with the short-wavelength
-line and graduate to the more difficult, lower frequencies.
-Don't forget the filters for the yellow and green lines!
+\labpart{Energy of the electrons}
 
-\item[] If the button to zero the voltage doesn't work, it is
-because the batteries are dead.
+Until you do the lab, it's not obvious how much energy the electrons would have
+as they pop out of the cathode. It could be some fixed number, or it could depend on the
+conditions you choose, and it could also have multiple values for the electrons produced
+under a given set of conditions. In fact, we may expect a range of values for two reasons.
 
-\item[] When you hit the button to zero the voltage, it may actually
-pop up high and then come back down. This is normal. (It's acting
-like an RC circuit with a long RC time constant).
+(1) As explored in a prelab question, the electrons will have random kinetic energies to start
+with, due to their thermal motion
 
-\item[] Check the batteries in your photodiode module before
-you start, using the two banana plugs designed for this purpose.
-If your batteries are dead, you need to replace them. I've also
-seen cases where the batteries are on the borderline at the beginning
-of the lab, and then die completely during the lab; in this
-situation, you'll notice that the stopping voltages you're
-measuring change over the course of the lab, and don't make
-sense. It won't hurt to check the batteries at the end of the
-lab as well as at the beginning.
+(2) The light penetrates to some depth in the cathode,
+and an electron that starts at some depth will lose some amount of energy as it then comes out
+to the surface. The electron's direction of motion of random. If it happens to be toward the
+surface, then the thickness of material that it traverses will depend both on its initial
+depth and on its random direction of motion.
 
-\item[] Where the lines hit the white front of slit 2, they should
-be sharp, and should not overlap. You can adjust the focus
-by moving the lens and grating in or out. If you can't get a
-good focus, check and make sure that the square side of the
-unit is away from the Hg tube.
+This range of energies may have an upper limit for a given set of experimental conditions.
+If so, then by applying a high enough voltage you should be able to eliminate the current
+completely. The minimum voltage required to do this would be called the stopping voltage.
 
-\item[] The photodiode module can be rotated on its post so that
-the light goes straight down the tube. If you don't line it
-up correctly, you'll be able to tell because the voltage
-will creep up slowly, rather than shooting up to a certain
-value and stopping. There is a screw that is supposed to
-allow you to lock the photodiode into position at the
-correct angle. Make sure to loosen the screw before trying
-to aim the photodiode, and lock it once it's aimed
-correctly. If your photodiode won't lock in place, you need
-to tighten the aluminum post that forms the base of the box.
-\end{itemize}
+Before you can apply a voltage, you need to  set up the DC power supply as follows. There is a button between the
+two LED readouts. Let this button out in order to select a range of voltages from 0 to -4.5 V.
+On the bottom right side of the power supply are two banana plugs. Connect these to the
+two plugs near the bottom of the photodiode. To get the polarity right, connect the 
+positive (red) output of the power supply to the anode (marked A).
 
-\prelab
+Find out whether there is a stopping voltage, and if so, measure it for the conditions you've chosen.
+If there is never a sharp cutoff, you should still be able to determine some quantitative measure
+of the voltage that corresponds to a \emph{typical} energy for the electrons, e.g., the voltage at
+which some fixed fraction of the current is eliminated. From now on in the lab manual, I'll
+just refer to this as ``the voltage'' for a given set of experimental conditions.
 
-The week before you are to do the lab, briefly familiarize
-yourself visually with the apparatus.
+Determine the voltage, and compare with the estimate in the prelab of what voltage would
+correspond to the thermal motion of the electrons. Based on this comparison, is the amount of
+energy involved in the photoelectric effect much less than, much more than, or on the same
+order of magnitude as the thermal energy?
 
-\prelabquestion  In the equation $eV_s= hf - E_s $, verify that
-all three terms have the same units.
+\labpart{Dependence of voltage on intensity}
 
-\prelabquestion  Plan how you will analyze your data to determine 
-Planck's constant. Note that you don't know $E_s$, so you can't
-just write down an equation solved for $h$, with $E_s$ in it.
+Vary the intensity of the light and determine whether and how the voltage depends on intensity.
+
+We have observed strange results sometimes, which seem to occur because when the discharge tube is
+very close to the photodiode, light gets in and hits the \emph{anode} (not just the cathode) and
+causes the photoelectric effect in the wrong direction. This seems to occur with the shorter wavelengths
+of light. You should be able to tell if this is happening because when you turn up the voltage high
+enough, you get a current in the opposite direction. Check for this behavior and avoid taking data
+under conditions that produce it.
+
+\labpart{Dependence of voltage on frequency}
+
+Do the same thing for the frequency.
 
 \analysis
 
-Extract Planck's constant 
-from your data, with error bars (see appendix \ref{appendix:graphing}).
-Excel has a bug that makes it impossible to graph the data from this
-lab (apparently because it involves very big and very small numbers),
-so use LibreOffice, not Excel. As with pretty much all computer software,
-the right way to enter scientific notation is, for example, 3.4e-12 for $3.4\times10^{-12}$.
+The point of the analysis is to try to compare the observed results with our expectations based
+on two models of light:
+the pure wave model, and a model in which light is both a particle and a wave --- we've seen
+above that a pure particle model is untenable. For conceptual simplicity, however, we may find
+it helpful to visualize the wave-particle model as if the light was purely particle-like, so
+that a beam of light would be like a stream of machine-gun bullets. This is essentially what
+Einstein does in his 1905 paper. He admits that this is not literally possible, but doesn't attempt
+a more detailed reconciliation of the particle and wave pictures, which he doesn't know how to
+achieve. For this reason, the title of the paper refers to the particle picture as a ``heuristic,''
+which means a kind of non-rigorous way of getting an answer without using correct fundamental principles.
 
-Is your result for Planck's constant consistent
-with the previously measured value?
+Time delay: You investigated the possible time delay in the wave model in some detail in the
+prelab and/or homework. In a particle model, what would be your expectations about a time
+delay? Compare with experiment.
 
-Every electron that absorbs a photon acquires a kinetic
-energy equal to $hf$. Thus it would seem that if the
-voltage is less than the stopping voltage, every electron
-should have enough energy to reach the other electrode. Give
-two reasons why many electrons do not reach the other
-electrode even when the voltage is less than the stopping voltage.
+Energy: Based on the particle model, we would expect one ``bullet'' of light to give its fixed
+amount of energy to one electron, so that under a given set of experimental conditions, there
+would be a maximum possible kinetic energy for the electrons, achieved when the electron originated
+very close to the surface of the cathode. In the wave model it is more difficult to make a definite
+prediction. Did you observe that there was a definite stopping voltage, or that there was no definite
+cut-off in the current? Does this allow you to test either model?
+
+Dependence of energy on intensity: In the particle model, a more intense beam of light would be
+one containing a larger number of particles (per unit of cross-sectional area). In the wave model,
+a more intense beam would be a higher-amplitude wave. Does either model lead you to predict anything
+specific about the dependence of voltage on intensity? Test against experiment. 
+
+Dependence of energy on frequency: Does the (typical or maximum) energy of the electrons $eV$
+depend on the light's frequency $f$? If so, then in the particle model this probably means that
+we're observing a change in the amount of energy per particle of light. We can't just equate the electron energy $eV$
+to the energy of the particles of light, because the electrons lose a fixed amount of energy (called the
+work function) as they emerge from the surface of the metal. We can get around the issue of this constant
+offset by finding the slope of $eV$ versus $f$; a constant offset on the $y$ axis doesn't affect the slope
+of a graph. Let's call this constant $h$. Estimate its numerical value. What units does it have?
+There is no such universal constant in any of the classical laws of physics, so if it pops up here,
+it indicates that some entirely new physical theory is being probed.
+
+\prelab
+
+\prelabquestion Under the hypothesis that light is purely a wave, the energy of a beam of
+light would be smoothly and continuously accumulated by whatever it hit. Therefore it should
+take some amount of time before an electron could accumulate enough energy to pop out of the metal.
+You may have estimated this time scale in a homework problem
+(%
+m4_ifdef([:__lm:],[:\emph{Light and Matter} problem 34-11:],[:\emph{Simple Nature} problem 13-18:])%
+),
+ but that calculation depends on many crude assumptions and rough
+estimates, so it's hard to know whether to trust it even as an order of magnitude estimate.
+Therefore if we want to try to observe this time delay in this experiment, it's impossible to
+know in advance what to look for, and it may be either too short (in which case we can't measure
+it) or too long (in which case it will look like the apparatus simply isn't working). Suppose
+that the time delay is too short to detect in the conditions you initially pick. How could
+you change the conditions in order to make it longer, and possibly detectable?
+
+\prelabquestion m4_ifdef([:__lm:],[:
+Heat is the random motion of the microscopic particles of which matter is composed. Depending on the
+level of detail in the treatment of thermodynamics in you first-semester course, you may know that the
+typical energy per particle can be calculated as $kT$, where $T$ is the absolute temperature and $k$ is
+a constant called Boltzmann's constant (not to be confused with the Coulomb constant). The result at
+room temperature is on the order of $10^{-20}$ joules per particle.
+:],[:
+Suppose that the cathode is at temperature $T$. Then the electrons inside the cathode
+already have some amount of kinetic energy, due to their thermal motion. Estimate the typical amount
+of kinetic energy.
+:])%
+In the photoelectric effect, an electron will absorb some additional amount of
+energy from the light, which is enough to pop it out of the cathode. Until doing the experiment,
+we do not know how much this additional amount is, but during the lab you will be able to probe this
+question by using a voltage $V$ to try to stop the electrons from making it across the gap. If
+this additional energy was on the \emph{same} order of magnitude as the thermal energy (which it may not
+be), estimate the voltage required.
+
+\prelabquestion In this experiment, the light comes out of the discharge tube in a spreading cone.
+Geometrically, how should the intensity $I$ of the light depend on the distance $r$? State a proportionality.
+
+\prelabquestion Look up the wavelength of visible light and the typical distance between atoms in a solid.
+How do they compare? In the wave model, should we expect a particular wave-train to hit one atom, or many?
