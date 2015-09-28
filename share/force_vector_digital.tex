@@ -3,12 +3,10 @@
 \lab{Vector Addition of Forces}\label{lab:force_vector_digital}
 
 \apparatus
-\equip{circular table with angle scales}
-\equip{spirit level}
 \equipn{force sensors}{4/group}
-\equipn{clamps for mounting sensors on table}{4/group}
-\equip{LabPro interface}
+\equip{LabPro interface (in lab benches in 415)}
 \equip{string}
+\equip{butcher paper}
 \equip{500 g hooked weight  (in lab benches in 415)}
 \equip{right-angle clamp}
 \equip{30-cm steel rod}
@@ -62,8 +60,10 @@ force vector.
 
 Set the force sensors on their 10 N scales using the switch on each
 sensor.
-Plug the sensors into channels 1 through 4 on the LabPro interface.
-When you start up the Logger Pro 3 software, it will automatically detect
+Plug the sensors into channels 1 through 4 on the LabPro interface, and connect the
+interface to the USB port of the Windows machine.
+From the Start menu, go to All Programs, Vernier Software, Logger Pro 3.8.
+When you start up the software, it will automatically detect
 the four sensors and start displaying their readings. 
 
 
@@ -98,52 +98,45 @@ it will make it look like your data don't even make sense. As a quick check, try
 pairs of sensors hooked together and pulling against each other, and make sure that
 they seem to at least approximately obey Newton's third law.
 
-\subsection*{Old method --- groups 2, 4, and 6}
-
-Level the table with the spirit level. The clamps are for mounting the sensors around
-the circumference of the table, but our clamps and our sensors are slightly incompatible;
-they position the strings so that they touch the table. To get around this, put
-nuts between the table and the top of the clamp.
-
-Avoid a symmetric arrangement of
-the strings (e.g., don't space them all 90 degrees apart), and
-don't make any forces collinear with each other. 
-
+Cut off a piece of butcher paper. Tie strings to the sensors in the arrangement shown in the diagram.
 After some trial and error, I've found the following technique to minimize the
 pain of tying the strings. Let the sensors be 1, 2, 3, and 4, in order around the
-circle, as in the first figure. The idea is to connect 1 and 2 with a string, and also
+circle, as in the figure. The idea is to connect 1 and 2 with a string, and also
 3 and 4, with the 1-2 string and 3-4 string wrapping around each other at an intersection-point at the 
 center.\footnote{Because of friction at the intersection, the four tensions can all be different.
 If the strings
 were frictionless, we would be guaranteed to have $T_1=T_2$ and $T_3=T_4$ with this arrangement, and
 that probably wouldn't allow us to get the right forces for equilibrium.}
-At hooks 1 and 3, tie an overhand knot on a bight; this knot is easy
-to tie and throw over a hook, and will not slip. At hooks 2 and 4, tie a square knot. Although the
-square knot isn't as secure or easy to tie, it has the advantage that it can be tied tightly,
-especially if your lab partner helps by putting a finger on it. Don't tie a granny knot, which will slip.
-In the correct square knot, you lay a strand on top coming from left to right (white arrow), and then
-in the second half of the knot you lay a strand on top coming from right to left.
+At each of the hooks, tie an overhand knot on a bight; this knot is easy
+to tie and throw over a hook, and will not slip.
+
+To keep the sensors in place and apply tension to the strings, stick a pencil or a skinny
+pen into the hole in each one, and grip the pencil. This allows the sensor to naturally swing
+into position so that its axis is parallel to the string. Holding the sensors' housings in your
+hands doesn't work, because it results in a misalignment.
+
+Avoid a symmetric arrangement of
+the strings (e.g., don't space them all 90 degrees apart), and
+don't make any forces collinear with each other. 
 
 \fig{me-vec-knots}
 
+The angles are the main source of random error. Once you have a setup that's adjusted
+approximately the way you want, you can draw lines on the paper
+with a ruler, then carefully locate the strings above the lines. The angles of the lines on
+the paper are easy to measure accurately.
 
-Getting the intersection-point of the strings
-in equilibrium in the center is like pitching a tent; at the end, you need
-to make small adjustments to the tension so that the ring is in the center.
-You can do this by
-ightening or loosening the screws that hold the force sensors in the clamps.
-
-Since the angles are the main source
-of random error, you may as well position the strings directly over the marks on the angle scale,
-e.g., at 37.0\degunit, rather than at some angle like 37.4\degunit where you have to estimate the tenths.
 Try to get the forces to be roughly 3 to 7 N.
 Although the sensors are labeled ``10 N,'' some of them actually max out at 9 or 9.5 N.
 The sensors will not give any
 error or warning if this limit is exceeded. They will simply max out at some
 reading, and this reading will be incorrect. When increasing the tension in a string, keep an eye
 on the reading on the screen; if it stops increasing, you've exceeded that sensor's limit.
-Once you think you have a good equilibrium, check that when you tug gently on each string, the
+Once you think you have a good equilibrium, check that when you increase the tension a little, the
 reading actually goes up.
+
+Before taking your final data, temporarily unhook the strings from the hooks and redo the zeroing of the
+sensors, which we have found will drift over time.
 
 Take all the data you will need in order to carry out the vector addition of the four forces.
 To decrease the random errors in the force measurements, you can tell the software to average
@@ -151,46 +144,18 @@ the data over a period of time. Click on the Collect button to make a graph.
 Then highlight part of the graph, and go to Analyze:Statistics.
 
 As a cross-check in case confusion arises later about how your angles were defined, which
-force was which, etc., slide a piece of paper underneath the strings and trace them onto it.
+force was which, etc., write down on the butcher paper which sensor was which.
+Also, 
+mark the clamps 1, 2, 3, and 4 with masking tape.
 
-After this, you will do some calibrations to eliminate systematic errors. These calibrations
-unfortunately require cutting the strings and removing the sensors from the clamps,
-which means that if something is wrong with your
-data, you can't easily put the setup back together. Therefore you should do a graphical
-addition of your forces \emph{before} cutting the strings, using the uncorrected data,
-and make sure that this comes out fairly well. Don't use this graphical addition in forming
-your final conclusions for the lab, since it's uncalibrated.
-
-Also, before taking the sensors out of the clamps,
-mark the clamps 1, 2, 3, and 4 with masking tape. Leave the clamps in position when you remove the
-sensors.
-
-Your readings will include two sources of systematic error, which you need
-to get rid of: (1) We have found that putting the
-sensors under strain for a while causes their readings to drift, and (2)
 I've also found that the sensors differ from each other quite a bit in their
 calibration, with four freshly zeroed sensors giving readings
 that covered a range of about 5\% when used to measure a 500 g weight.
-To eliminate error 1, unhook the strings and immediately record the readings (which
-will no longer be zero if the sensors have drifted), and subtract these
-numbers from your observed weights. To eliminate error 2, set up the 30-cm steel bar
+To eliminate this error, set up the 30-cm steel bar
 horizontally and mount all four sensors on it vertically, with their hooks pointing down.
-Zero the sensors by clicking on the blue zero icon, so that error 1 is eliminated and the weights of the hooks are tared out.
+Zero the sensors again so that the weights of the hooks are tared out.
 Hang the 500 g weight from each sensor, and use these readings to
 rescale each sensor's reading from the circular table setup by the proper amount.
-
-\subsection*{New method --- groups 1, 3, 5, and 7}
-
-Congratulations! Your group gets to try a new method of doing this lab, which I hope will be easier and
-better. In this method, we'll dispense with the circular table entirely. All four knots can be overhands
-on a bight. Use two pairs of hands to pull on the sensors and apply an appropriate amount of tension. If
-you stick a pencil through the hook, each sensor should automatically swing into position parallel to its
-string. Set this up on top of a piece of butcher paper and accurately mark lines under the strings.
-Once you have everything almost ready to go, temporarily release all the tension on the sensors, zero them
-using the software, reapply the tension, line up the strings accurately with the lines on the paper, and
-take readings. You don't need to carry out the additive calibration described above, because that should
-have been taken care of by zeroing the sensors. You will still need to do the multiplicative calibration
-using the 500 g weight hung from each sensor.
 
 \prelab
 
