@@ -7,6 +7,7 @@
 \equip{power supply for discharge tube (Pasco BEM-5007)}
 \equip{power supply (Pasco BEM-5001)}
 \equip{high-sensitivity ammeter (Pasco BEM-5004)}
+\equip{laser}
 
 \begin{goals}
 
@@ -79,11 +80,18 @@ the Hg tube and the photodiode are placed on a track, facing one another.  The l
 spreads out in a cone, so that as you vary the distance to the photodiode, the intensity falls off as
 the inverse square of the distance.
 
+There is a power supply used for applying an external voltage to the photodiode. Although you don't
+actually want to apply that external voltage during this part of the lab, it seems that the ammeter
+won't work until you hook up the power supply, so you need to do that now.
+On the bottom right side of the power supply are two banana plugs. Connect these to the
+two plugs near the bottom of the photodiode. To get the polarity right, connect the 
+positive (red) output of the power supply to the anode (marked A).
+
 The photodiode has an output that can be connected to a extremely sensitive ammeter to measure the
 rate at which electrons are ejected from the cathode and absorbed at the anode. Before connecting the
 ammeter (labeled ``DC Current Amplifier'' on the front panel), set it to its most sensitive scale
-($10^{-13}$ A) and depress button labeled ``Calibration.'' Since the meter is not connected to anything,
-the current is truly zero. Use the knob to force the reading to zero, and then let the calibration button out.
+($10^{-13}$ A) and depress the button labeled ``Calibration.'' Since the meter is not connected to anything,
+the current is truly zero. Use the knob to force the meter to read zero, and then let the calibration button out.
 Now use a BNC cable to connect the photodiode to the ammeter.
 
 Once the discharge tube has warmed up, arrange things so that you can see a spot of its light, e.g., by
@@ -106,7 +114,9 @@ ultraviolet &  365\\
 violet   &405\\
 blue   &436\\
 green  & 546\\
-yellow  & 578
+yellow  & 578 \\
+red (laser) & 633\footnote{This is the wavelength for a helium-neon laser. Pen-pointer lasers have a variety
+of wavelengths, but cheap ones are about the same as this.}
 \end{tabular}
 
 \figcaption{mo-pho-circuit-new}{Circuit.}
@@ -159,11 +169,10 @@ This range of energies may have an upper limit for a given set of experimental c
 If so, then by applying a high enough voltage you should be able to eliminate the current
 completely. The minimum voltage required to do this would be called the stopping voltage.
 
-Before you can apply a voltage, you need to  set up the DC power supply as follows. There is a button between the
+Now you want to apply a voltage to the photodiode using the DC power supply, which you previously
+connected but didn't use.
+There is a button between the
 two LED readouts. Let this button out in order to select a range of voltages from 0 to -4.5 V.
-On the bottom right side of the power supply are two banana plugs. Connect these to the
-two plugs near the bottom of the photodiode. To get the polarity right, connect the 
-positive (red) output of the power supply to the anode (marked A).
 
 Find out whether there is a stopping voltage, and if so, measure it for the conditions you've chosen.
 If there is never a sharp cutoff, you should still be able to determine some quantitative measure

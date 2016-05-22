@@ -70,10 +70,6 @@ clicking on ``e-mail.''
 
 m4_include(../share/rules.tex)
 
-%----------------------------------------------------------------------
-
-m4_include(../share/kinematics.tex)
-
 %-------------------------------------------------------------
 
 % The Earth's Gravitational Field
@@ -111,10 +107,6 @@ m4_include(../share/conservation-of-energy.tex)
 %-------------------------------------------------------------
 
 m4_include(../share/momentum.tex)
-
-%-------------------------------------------------------------
-
-m4_include(../share/momentum-vector.tex)
 
 %-------------------------------------------------------------
 

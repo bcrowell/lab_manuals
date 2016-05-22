@@ -11,3 +11,10 @@ interior_figures:
 
 preflight_figures:
 	perl -e 'foreach my $$f(<figs/*.svg>) {system("scripts/preflight_one_fig.pl $$f")}'
+
+clean:
+	cd lab_205 ; make clean ; cd -
+	cd lab_206 ; make clean ; cd -
+	cd lab_221 ; make clean ; cd -
+	cd lab_222 ; make clean ; cd -
+	cd lab_223 ; make clean ; cd -
