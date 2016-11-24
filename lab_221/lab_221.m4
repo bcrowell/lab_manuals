@@ -114,7 +114,7 @@ m4_include(../share/torque.tex)
 
 %-------------------------------------------------------------
 
-m4_include(../share/moment-of-inertia.tex)
+m4_include(../share/moment-of-inertia-brian.tex)
 
 %-------------------------------------------------------------
 

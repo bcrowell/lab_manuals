@@ -10,6 +10,7 @@
 \equip{500 g hooked weight  (in lab benches in 415)}
 \equip{right-angle clamp}
 \equip{30-cm steel rod}
+\equip{spirit level}
 
 \goal{Test whether the vector sum of the forces acting on an}
 object at rest is equal to zero.
@@ -135,7 +136,7 @@ on the reading on the screen; if it stops increasing, you've exceeded that senso
 Once you think you have a good equilibrium, check that when you increase the tension a little, the
 reading actually goes up.
 
-Before taking your final data, temporarily unhook the strings from the hooks and redo the zeroing of the
+Before taking your final data, temporarily relax the tension on the strings and redo the zeroing of the
 sensors, which we have found will drift over time.
 
 Take all the data you will need in order to carry out the vector addition of the four forces.
@@ -146,7 +147,7 @@ Then highlight part of the graph, and go to Analyze:Statistics.
 As a cross-check in case confusion arises later about how your angles were defined, which
 force was which, etc., write down on the butcher paper which sensor was which.
 Also, 
-mark the clamps 1, 2, 3, and 4 with masking tape.
+mark the sensors 1, 2, 3, and 4 with masking tape.
 
 The sensors differ from each other quite a bit in their
 calibration, with four freshly zeroed sensors giving readings
@@ -155,22 +156,14 @@ To eliminate this error, set up the 30-cm steel bar
 horizontally and mount all four sensors on it vertically, with their hooks pointing down.
 Zero the sensors again so that the weights of the hooks are tared out.
 Hang the 500 g weight from each sensor, and use these readings to
-rescale each sensor's reading from the circular table setup by the proper amount.
+rescale each sensor's reading from the vector addition setup by the proper amount.
+
+\selfcheck
+
+Do a preliminary rough analysis of your results using graphical addition.
 
 \prelab
 
-m4_ifdef([:__sn:],[:%
-%%%%%%%%%% 221
-\prelabquestion For use in the analysis of this lab, write a python function \verb@x_comp(magnitude,angle)@ that
-takes the magnitude and direction of a vector as its inputs and calculates the vector's $x$ component.
-(You will also need a \verb@y_comp@ function for the actual analysis.)
-Turn in a printout showing both your program and the results of a few tests demonstrating correct results
-using simple inputs for which you know the answer.
-To get the trig functions to work, (1) remember to put \verb@import math@ at the top, (2) remember to do \verb@math.sin@
-and \verb@math.cos@ rather than just \verb@sin@ and \verb@cos@, and (3) include a conversion from degrees to radians, since
-your raw data will all be in degrees, but the python functions are defined in radians.
-:],[:%
-%%%%%%%%%%%% 205
 \prelabquestion  Describe a typical scale that you might use for drawing
 force vectors on a piece of paper, e.g., how long might you
 choose to make a 1-N force?  Assume that your forces are
@@ -183,20 +176,9 @@ which of the following would be the most convenient form in which to have
 your angle measurements? --- (1) the angles of the four ``pie slices,''
 (2) the angle of each string measured clockwise around the table,
 or (3) the angle of each string measured counterclockwise around the table.
-:])
 
 \analysis
 
-m4_ifdef([:__sn:],[:%
-%%%%%%%%%% 221
-Calculate the magnitude of the vector sum of the forces on the
-ring. Automate this procedure by writing the analysis as a Python program.
-The reason for doing it as a Python program is that otherwise the propagation of errors
-is extremely tedious, because you have to redo the vector addition by hand eight times,
-once for each of the eight pieces of raw data (four angles and four sensor readings).
-Turn in a copy of your python code and its output with your writeup. 
-:],[:%
-%%%%%%%%%% 205
 Calculate the magnitude of vector sum of the forces on the
 ring both graphically and analytically, using the corrected data. Use the
 graphical result to check that the analytic calculations were correct.
@@ -208,7 +190,6 @@ To avoid this, take the following shortcuts: (1) Whichever is larger,
 $F_{total,x}$ or $F_{total,y}$, just do error analysis on that component.
 (2) The random errors in the result are dominated by the errors in the angles,
 so don't bother propagating the error from the magnitudes.
-:])
 
 Are your results consistent with theory, taking into account
 the random errors involved? Perform a statistical test like the

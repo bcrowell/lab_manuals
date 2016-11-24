@@ -1,0 +1,146 @@
+\lab{Moment of Inertia and Angular Momentum}\label{lab:moment-of-inertia-brian}
+
+\apparatus
+\equipn{rotating platform w/ heavy disc and ring}{1/group}
+\equipn{50g weight with hook}{1/group}
+\equipn{rotary motion sensor}{1/group}
+\equipn{calipers}{1/group}
+\equipn{digital balance, 4kg max}{1/class}
+\equipn{digital balance, 6kg max}{1/class}
+\equip{right-angle clamps and rods}
+
+\goal{Measure moments of inertia using kinematics; predicting / confirming conservation of angular momentum}
+
+\introduction
+
+The figure shows a method for determining an unknown moment of inertia.
+A rotating platform of radius $R$ has
+a string wrapped around it. The string is threaded over a pulley and
+down to a hanging weight of mass $m$. The mass is released from rest,
+and its acceleration $a$ is measured. From these data, the total moment
+of inertia of the platform plus the terrier can be determined (prelab question
+P1 or a homework problem).
+
+\fig{me-moi-terrier}
+
+Since we were unable to obtain a set of standard terriers from our
+suppliers, we will use a disk and a ring as unknowns. The moments of
+inertia of each unknown can be found by determining the total moment
+of inertia and then subtracting the moment of inertia of the bare platform.
+
+For part C of the lab, you will be using the rotary motion sensor to
+measure $\omega_i$ and $\omega_f$ for an inelastic collision (dropping
+one heavy object onto another that is initially rotating). Since there
+are no external torques on this system, angular momentum is conserved,
+and we have
+
+\begin{equation*}
+I_i \omega_i = I_f \omega_f.
+\end{equation*}
+
+You check this equation after measuring moments of
+inertia of objects that will appear $I_i$ and $I_f$
+
+\setup
+
+You will use the rotary motion sensor pulley for all parts of the
+experiment despite the fact that you won't need it connected to the
+computer until part C. 
+
+Place the rotating platform on the table. Have the string from the
+rotating platform pass over the pulley from the rotary motion sensor
+when connecting the hanging weight. Make sure the height of the top of
+the pulley is about level with the middle of the rotating platform
+drum, or else the string will tend to move off of the drum. 
+
+We will be able to ignore the mass / moment of inertia of the rotary
+motion sensor for this entire lab because it is so small compared to
+the moment of inertia of the rotating platform. 
+
+Weigh your hanging mass ($\pm0.1$g), heavy solid disc, and heavy ring
+using the digital balances. The heavy items are about 5 kg each, and
+so if you don't have a digital balance that can weigh such massive
+objects, you might have to get creative. One suggestion is to weigh a
+heavy item on two scales (at the same time) and add the readings from
+the two scales. 
+
+\observations
+
+\labpart{Measuring the moment of inertia of the platform}
+
+By measuring the time it takes for the mass to fall, calculate the
+moment of inertia of the rotating platform in kg$\,\cdot\,$m$^2$.
+Include error bars in your calculation, which are probably dominated
+by your uncertainty in the time it takes the mass to fall. 
+
+\labpart{Measuring the moments of inertia of the disk and ring}
+
+Using the mass and radii of the two heavy objects, calculate their
+moments of inertia. The ring has a finite thickness, but it's a good
+approximation to take the average of the inner radius and the outer
+radius. There is no need to calculate an error for these, since the
+error is dominated by systematic errors (the difference in these
+objects' shapes relative to the ideal case). 
+
+Your calculated values are predictions that you will test by measuring
+the moments of inertia using the expression for $I$ in the
+Introduction. Repeat part A, but this time placing the heavy ring and
+the heavy disc separately on the rotating platform. Measure each
+moment of inertia with error. Keep in mind that these values are
+$I_{RP} + I_\text{disc}$ and $I_{RP} + I_\text{ring}$, so you'll have
+to subtract off $I_{RP}$ to find the moment of inertia of each heavy
+object by itself. 
+
+Do your results agree with your calculated values?
+
+\labpart{Predicting and Measuring $\omega_f / \omega_i$}
+
+Connect the rotary motion sensor to the computer (Dig/Sonic port 1),
+and start LoggerPro using pendulum.cmbl which you can download from
+the instructor's website:\\
+staffwww.fullcoll.edu/bshotwell/pendulum.cmbl.zip\\ 
+You will ignore the ``force'' output in LoggerPro. 
+
+Place the disc on the platform. Get it rotating, and then drop the
+ring on top of the rotating disc. Predict what you will measure for
+$\omega_f / \omega_i$ by using your measured moments of inertia found
+in the previous parts. 
+
+Using the output from the rotary motion sensor, find $\omega_f /
+\omega_i$. Note that the graphs are not exactly linear, since there is
+a small torque on the rotating platform system from the dangling mass.
+However, so long as you look at the slopes \emph{just before} and
+\emph{just after} the sticky collision, then you can ignore the
+angular impulse from the small external torque since the collision
+happens so quickly. 
+
+Does your measured value for $\omega_f / \omega_i$ agree with your prediction? Discuss.
+
+\prelab
+
+\prelabquestion For the technique described for parts A and B, 
+find the total moment of inertia
+$I$ of the platform plus the object sitting on top of it, in terms
+of the acceleration $a$ of the hanging mass, its mass $m$, and the radius
+$r$ of the cylinder about which the string is wound. If you were assigned
+this calculation as a homework problem, skip this prelab question.
+
+\prelabquestion You will not actually measure the acceleration $a$
+of the falling weight directly, but rather the distance $h$ it travels
+in a time $t$. Find the acceleration in terms of the raw data.
+
+\prelabquestion In part C, we will be dropping the ring onto the solid
+disc, meaning that $I_i = I_{RP}+I_\text{disc}$ and $I_f =
+I_{RP}+I_\text{disc}+I_\text{ring}$. Assuming $I_{RP}$ is negligible
+compared to the other two, and assuming that the solid disc and the
+ring are the same mass and radius, what would you expect to be the
+ratio of $\omega_f / \omega_i$? 
+
+\analysis
+
+Give the moments of inertia of all three objects (with error bars),
+and compare the heavy objects to your calculated values. Discuss all
+of the predictions you made and whether they were confirmed or
+contradicted in the lab. If your predictions were not accurate, give
+possible reasons for why. What errors did you include in your error
+bars, and what effects were not included? 

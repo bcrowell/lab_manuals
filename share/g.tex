@@ -39,7 +39,7 @@ acceleration of an object in free fall, using electronic
 timing techniques. The idea of the method is that you'll
 have two steel balls hanging underneath electromagnets at
 different heights. You'll simultaneously turn off the two
-magnets using the same switch, causing the balls to drop at
+magnets by breaking the same electric circuit, causing the balls to drop at
 the same moment. The ball dropped from the lower height
 $(h_1)$ takes a smaller time $(\Delta t_1)$ to reach the floor, and
 the ball released from the greater height $(h_2)$ takes a
@@ -127,28 +127,6 @@ new one, and on cheap sound hardware this causes little timing glitches.
 \analysis
 
 Extract a value of $g$ from your data.
-
-m4_ifdef([:__sn:],[:%
-If you're turning in a formal writeup,
-apply the correction for air resistance found in homework problem 4-13, running the program with the actual mass and radius of
-the balls used in this lab. Incorporate your results into your lab writeup, not your homework.
-This correction is derived based on various approximations, which may or
-may not be valid, about things like the smoothness of the ball and
-the pattern formed by the air flowing over it. You should add in the
-correction, but you shouldn't necessarily believe in the correction
-as being perfectly correct. I'm interested in pinning down the correction
-better, and I'll give you extra credit if you want to try an independent
-project to work on this. Some possible ways of attacking this:
-\begin{itemize}
-\item[] Do the experiment with foam balls or balls of different sizes, and see if the
-         uncorrected results really are inconsistent, and the corrected
-         ones consistent. I've already tried this with small (9-mm diameter)
-         balls, but found that I was unable to get good data at all. It might
-         work better if we could find some larger balls.
-\item[] Vary the heights, and see if the effect on the (uncorrected) results
-         for $g$ is consistent with the calculation.
-\end{itemize}
-:])
 
 Derive error bars on your result, using the techniques in appendices \ref{appendix:basicerranal}
 and \ref{appendix:errpropagation}.
