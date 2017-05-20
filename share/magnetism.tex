@@ -125,6 +125,14 @@ distances $r_f$ and $r_m$ can't be measured directly with good precision.
 
 The Mastech power supply is capable of delivering a large amount of current, so it can
 be used to provide $I_m$, which needs to be high when $r_m$ is large.
+The power supply has some strange behavior that makes it not work unless
+you power it up in exactly the right way. It has four knobs, going from
+left to right: (1) current regulation, (2) over-voltage protection, (3)
+fine voltage control, (4) coarse voltage control. Before turning the power
+supply on, turn knobs 1 and 2 all the way up, and knobs 3 and 4 all the way
+down. Turn the power supply on. Now use knobs 3 and 4 to control how much
+current flows.
+
 At large values of $r_m$, it can be difficult to get a power supply
 to give a \emph{small} enough $I_f$. Try using a battery, and further reducing
 the current by placing another resistance in series with the coil. The Cenco
@@ -157,8 +165,9 @@ case, you should be able to recover your answer to P1.
 
 \analysis
 
-Determine the magnetic
-field of the bar magnet as a function of distance. No error analysis is required. 
+Determine the variation of the solenoid's magnetic
+field with distance. 
 Look for a power-law relationship using the log-log graphing technique described in 
 appendix \ref{appendix:powerlaws}. Does the power law hold for
 all the distances you investigated, or only at large distances?
+No error analysis is required.

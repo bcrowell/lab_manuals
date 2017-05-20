@@ -1,8 +1,9 @@
-\lab{The Hydrogen Atom}\label{lab:hydrogen}
+\lab{Spectroscopy}\label{lab:hydrogen}
 
 \apparatus
 \equipn{H gas discharge tube}{1/group}
-\equipn{Hg gas discharge tube (PASCO)}{1/group}
+\equipn{Hg gas discharge tube (PASCO OS-9286)}{1/group}
+\equipn{He gas discharge tube (in green carousel)}{1/group}
 \equipn{spectrometer}{1/group}
 \equipn{diffraction grating, 600 lines/mm}{1/group}
 \equipn{small screwdriver}{1}
@@ -12,12 +13,23 @@
 \equipn{penlight}{1/group}
 \equip{light block}
 
-\begin{goals}
+\section*{Goals}
 
-\item[] Observe the visible line spectrum of hydrogen.
+The lab has four parts. Each group will only do two parts.
 
-\item[] Determine the mass of the electron.
-\end{goals}
+\begin{description}
+
+\item[A] Set up the optics of the spectrometer. (Done once by the instructor. Never needs to be redone unless
+           something gets messed up.)
+
+\item[B] Calibrate the spectrometer. (Done by all groups.)
+
+\item[C] Observe the visible line spectrum of hydrogen, and determine the mass of the electron.
+             (Done by groups 1-3.)
+
+\item[D] Use an energy sum to test a hypothesis about the energy levels of the nitrogen molecule, $\zu{N}_2$.
+             (Done by groups 4-7.)
+\end{description}
 
 \introduction
 
@@ -43,22 +55,7 @@ specific wavelength. The process of emitting light always
 seemed to stop short of finally annihilating the atom ---
 why? Also, why were only those specific wavelengths emitted?
 
-In this lab, you will study the spectrum of light emitted by
-the hydrogen atom, the simplest of all atoms, with just one
-proton and one electron. In 1885, before electrons and
-protons had even been imagined, a Swiss schoolteacher named
-Johann Balmer discovered that the wavelengths emitted by
-hydrogen were related by mysterious ratios of small
-integers. For instance, the wavelengths of the red line and
-the blue-green line form a ratio of exactly 20/27. Balmer
-even found a mathematical rule that gave all the wavelengths
-of the hydrogen spectrum (both the visible ones and the
-invisible ones that lay in the infrared and ultraviolet).
-The formula was completely empirical, with no theoretical
-basis, but clearly there were patterns lurking in the
-seemingly mysterious atomic spectra.
-
-The first step toward understanding Balmer's numerology was
+The first step toward understanding the structure of the atom was
 Einstein's theory that light consisted of particles
 (photons), whose energy was related to their frequency by
 the equation $E_{photon}=hf$, or substituting
@@ -77,56 +74,13 @@ if the atom possessed a state of least energy (called a
 ``ground state''), then it would always end up in that
 state, and it could not collapse entirely. Knowing the
 differences between the energy levels of the atom, it was
-not too difficult to figure out the atomic energy levels
-themselves. Niels Bohr showed that they obey a relatively simple equation,\label{bohr-equation}
-\begin{equation*}
-	E_n = -\frac{mk^2e^4}{2\hbar^2}\cdot\frac{1}{n^2}
-\end{equation*}
-where $n$ is an integer labeling the level, $k$ is the
-Coulomb constant, $e$ is the fundamental unit of charge, $\hbar$
-is Planck's constant over $2\pi$, and $m_e$ is the mass of the electron.
-All the energies of the photons in the emission spectrum
-could now be explained as differences in energy between
-specific states of the atom. For instance the four visible
-wavelengths observed by Balmer all came from cases where the
-atom ended up in the $n=2$ state, dropping down from the
-$n=3,$ 4, 5, and 6 states.
+then possible to work backwards and figure out the atomic energy levels
+themselves. 
 
-Although the equation's sheer size may appear for\-mid\-ab\-le,
-keep in mind that the quantity $mk^2e^4/2\hbar^2$ in front is just a
-numerical constant, and the variation of energy from one
-level to the next is of the very simple mathematical form
-$1/n^2$. It was because of this basic simplicity that the
-wavelength ratios like 20/27 occurred. The minus sign occurs
-because the equation includes both the electron's potential
-energy and its kinetic energy, and the standard choice of a
-reference-level for the potential energy results in negative values. 
-
-Along with the nice formulas came a whole new set of
-subversive concepts: that nature is random in certain ways,
-that the building blocks of nature are both particles and
-waves, and that subatomic particles do not follow well-defined
-trajectories as they travel through space. Today these
-ridiculous-sounding ideas are taken for granted by working
-physicists, and we are so sure of the theory behind Bohr's
-equation that it is now used as one of the most accurate
-ways of determining the mass of the electron. In a previous
-lab, you measured the charge-to-mass ratio of the electron,
-but like the experiment by Thomson on which it was based,
-that technique was unable to give the charge and mass
-separately. Modern techniques allow us to measure wavelengths
-of light, and therefore energies of photons, with high
-precision, so if all the other fundamental constants in
-Bohr's equation are known, we can solve for the mass of the
-electron. This lab is really the only example of a
-high-precision experiment that you'll do in this course ---
-done correctly, it allows the determination of the
-electron's mass to five significant figures!
-
-\mysubsubsection{Method}
+\section*{Method}
 
 The apparatus you will use to observe the spectrum of
-hydrogen is shown in the first figure below. For a given wavelength, the
+hydrogen or nitrogen is shown in the first figure below. For a given wavelength, the
 grating produces diffracted light at many different angles:
 a central zeroth-order line at $\theta=0$, first-order lines on
 both the left and right, and so on through higher-order
@@ -140,7 +94,7 @@ angle. Note that the angular scale on the table of the
 spectroscope actually gives the angle labeled $\alpha$ in
 the figure, not $\theta$.
 
-\mysubsubsection{Sources of systematic errors}
+\subsection*{Sources of systematic errors}
 
 There are three sources of systematic error:
 
@@ -160,7 +114,7 @@ is not perpendicular to the beam from the collimator, or if the lines on the
 grating are not vertical (perpendicular to the plane of the circle).
 \end{itemize}
 
-\mysubsubsection{Eliminating systematic errors}
+\subsection*{Eliminating systematic errors}
 
 A trick to eliminate the error due to 
 misalignment of the angular scale is to observe the same line on both the
@@ -186,9 +140,15 @@ of any error due to misorientation of the grating, but they're not.
 They will get rid of any error of the form $\theta\rightarrow\theta+c$
 or $\sin\theta\rightarrow c\sin\theta$, but misorientation of the grating
 produces errors of the form $\sin\theta\rightarrow\sin\theta+c$.
-The adjustment of the orientation of the grating is described later.
+Part A below describes some additional adjustments that help
+to get rid of additional sources of error.
 
-\mysubsubsection{Optics}
+\observations
+
+Turn on the mercury discharge tube right away, to let it get warmed up.
+
+\setcounter{labpartctr}{0}
+
 
 The second figure below shows the optics from the side, with the
 telescope simply looking down the throat of the collimator
@@ -221,12 +181,13 @@ on top of the image.
 
 \setup
 
-Turn on both gas discharge tubes right away, to let them get warmed up.
+\labpart{Adjusting the optics}
 
-Adjusting the optics at the start of the experiment is
-vital. You do not want to fail to get the adjustments right
-and then spend several frustrating hours trying fruitlessly
-to make your observations.
+This part describes optical adjustments that
+should already have been done for you. You will want to skim it
+so that if someone has messed up your spectrometer, you will have
+some idea of what could be wrong. If this happens, ask your instructor
+for help in fixing the problem.
 
 First you must check that the cross-hairs are at the
 focal point of the objective. If they are, then the image
@@ -286,12 +247,14 @@ The crosshairs should be near the edge of the tape in the $m=0$ image. Move the 
 a large angle where you see one of the high-$m$ Hg lines, and adjust the tripod screws
 so that the crosshairs are at the same height relative to the edge of the tape.
 
-\observations
+\labpart{Calibration}
 
-Now put the Hg tube behind the collimator. Make sure the
+Groups doing part C (hydrogen) will use the blue line from mercury as a calibration.
+Groups doing part D (nitrogen) will use the yellow line from helium.
+
+Put the mercury or helium tube behind the collimator. Make sure the
 hottest part of the tube is directly in
-front of the slits; you will need to use the piece of
-plywood to raise the spectrometer to the right height.
+front of the slits. You will need to use pieces of wood to get the height right.
 You want the tube as close to the slits as possible, and
 lined up with the slits as well as possible; you can adjust
 this while looking through the telescope at an $m=1$ line,
@@ -303,27 +266,33 @@ bumps and scratches on the knife edges of the collimator,
 and there should be no parallax of the crosshairs relative
 to the image of the slits.
 
-Here is a list of the wavelengths of the visible Hg lines, in nm, to high precision:
+Here is a list of the wavelengths of the most prominent visible Hg and He lines, in nm, to high 
+precision.\footnote{The table gives the wavelengths in vacuum. Although we're doing the lab in air, our goal is to find
+what the hydrogen or nitrogen wavelengths would have been in vacuum; by calibrating using vacuum wavelengths
+for mercury, we end up getting vacuum wavelengths for our unknowns as well.}
 
-\begin{tabular}{llp{40mm}}
+Mercury:\\
+\noindent\begin{tabular}{llp{40mm}}
 404.656  & violet & There is a dimmer violet line nearby at 407.781 nm.\\
 435.833  & blue & \\
-491.604  & blue-green & dim \\
-546.074  & green & There is also a dimmer blue-green line.\\
-           & yellow & This is actually a complex set of lines, so it's not useful for calibration.
+491.604  & blue-green & Dim. You may also see another blue-green line that is even dimmer. \\
+546.074  & green & \\
+         & yellow & This is actually a complex set of lines, so it's not useful for calibration.
 \end{tabular}
 
-You've seen the mercury spectrum before, in the photoelectric effect lab, but you will
-notice some differences here. You will be able to see various dimmer lines as well as the bright ones,
-and you want to avoid mistaking those for the bright ones that we're using for calibration.
-Also, as noted above, some lines that appear to be single lines in a low-resolution spectrum 
-are actually mutliple lines.
-The table gives the wavelengths in vacuum. Although we're doing the lab in air, our goal is to find
-what the hydrogen wavelengths would have been in vacuum; by calibrating using vacuum wavelengths
-for mercury, we end up getting vacuum wavelengths for hydrogen as well.
+Helium:\\
+\noindent\begin{tabular}{llp{40mm}}
+447.148 & bright blue-purple & \\
+471.314 & dim blue & \\
+492.193 & dim green & \\
+501.567 & bright green & \\
+587.562 & yellow & \\
+667.815 & dim red (?) & \\
+706.5 & very dim red (?)
+\end{tabular}
 
 Start by making sure
-that you can find all of the mercury lines in the correct sequence --- if
+that you can find all of the lines lines in the correct sequence --- if
 not, then you have probably found some first-order
 lines and some second-order ones. If you can find some lines
 but not others, use your head and search for them in the
@@ -336,49 +305,19 @@ the discharge tube and the collimator, you can get rid of stray
 light that could cause problems for you or others. The discharge tubes also have
 holes in the back; to block the stray
 light from these holes, either put the two discharge tubes back
-to back or use one of the small ``light blocks'' that slide over the hole. Do
-a quick and rough check that the angles at which you observe the blue
-line are close to the approximate ones predicted in prelab question P1.
+to back or use one of the small ``light blocks'' that slide over the hole.
 
-Now try swapping in the hydrogen tube in place of the mercury tube, and go through
-a similar process of acquainting yourself with the four lines in its visible spectrum, which are as
-follows:
-
-\begin{tabular}{lp{50mm}}
-  violet & dim \\
-  purple & \\
-  blue-green & \\
-  red
-\end{tabular}
-
-Again you'll again have to make
-sure the hottest part of the tube is in front of the
-collimator; this requires putting
-books and/or blocks of wood under the discharge tube.
-
-By coincidence, three of the mercury lines lie very close to three of the hydrogen lines:
-violet next to violet, blue next to purple, and blue-green next to blue-green.
-We'll exploit this coincidence to reduce systematic errors.
-The idea is that if we have a hydrogen wavelength, $\lambda$, that we want to measure,
-and a nearby known line $\lambda_c$ from the mercury spectrum that we can use for calibration,
-then we can sidestep the determination of the grating's spacing entirely by using the relation
+We will use the wavelength $\lambda_c$ of the blue Hg or yellow He line as a calibration. Measure its two
+angles $\alpha_L$ and $\alpha_R$, and check that the resulting value of $\theta_c$ is
+close to the approximate ones predicted in prelab question P1. The nominal value of the
+spacing of the grating given in that prelab question is not very accurate.
+Having measured $\theta_c$,
+then we can sidestep the determination of the grating's spacing entirely 
+and determine an unknown wavelength $\lambda$
+by using the relation
 \begin{equation*}
   \lambda = \frac{\sin\theta}{\sin\theta_c} \lambda_c \qquad .
 \end{equation*}
-Although we've tried hard to eliminate systematic errors through careful adjustment of the optics,
-some errors will still remain. But these errors vary smooth\-ly with angle, so by calibrating against
-known lines that occur at nearly the same angle, we can minimize their effects.
-For each line, you'll need a total of four angles: $\alpha_L$ and $\alpha_R$ for the 
-calibration line at $m=\pm1$, and a similar pair of angles for the hydrogen line.
-Note that the knob that adjusts the width of the slit only moves the right-hand
-knife-edge, which appears to be on the left in the inverted image. 
-Therefore, adjusting the slit changes the location of the center of the slit,
-and such adjustments should not be done between the $\alpha_L$ and $\alpha_R$ measurements
-of the same line. My experience is that the dimness of the violet hydrogen line makes its
-wavelength difficult to measure accurately, so including the violet-violet pair actually
-worsens the quality of the final result. Therefore you end up just measuring two pairs
-(eight angles).
-
 The angles are measured using a vernier scale, which
 is similar to the one on the vernier calipers you have
 already used in the first-semester lab course. Your final
@@ -402,6 +341,120 @@ compare them. If they're consistent to within one or two minutes of
 arc, average them. If they're not consistent, figure out what went
 wrong.
 
+\labpart{Spectroscopy of Hydrogen}
+
+If your group is doing this part of the lab, you will study the spectrum of light emitted by
+the hydrogen atom, the simplest of all atoms, with just one
+proton and one electron. In 1885, before electrons and
+protons had even been imagined, a Swiss schoolteacher named
+Johann Balmer discovered that the wavelengths emitted by
+hydrogen were related by mysterious ratios of small
+integers. For instance, the wavelengths of the red line and
+the blue-green line form a ratio of exactly 20/27. Balmer
+even found a mathematical rule that gave all the wavelengths
+of the hydrogen spectrum (both the visible ones and the
+invisible ones that lay in the infrared and ultraviolet).
+The formula was completely empirical, with no theoretical
+basis, but clearly there were patterns lurking in the
+seemingly mysterious atomic spectra.
+
+Niels Bohr showed that the energy levels of hydrogen obey a relatively simple equation,\label{bohr-equation}
+\begin{equation*}
+	E_n = -\frac{mk^2e^4}{2\hbar^2}\cdot\frac{1}{n^2}
+\end{equation*}
+where $n$ is an integer labeling the level, $k$ is the
+Coulomb constant, $e$ is the fundamental unit of charge, $\hbar$
+is Planck's constant over $2\pi$, and $m_e$ is the mass of the electron.
+All the energies of the photons in the emission spectrum
+could now be explained as differences in energy between
+specific states of the atom. For instance the four visible
+wavelengths observed by Balmer all came from cases where the
+atom ended up in the $n=2$ state, dropping down from the
+$n=3,$ 4, 5, and 6 states.
+
+Although the equation's sheer size may appear for\-mid\-ab\-le,
+keep in mind that the quantity $mk^2e^4/2\hbar^2$ in front is just a
+numerical constant, and the variation of energy from one
+level to the next is of the very simple mathematical form
+$1/n^2$. It was because of this basic simplicity that the
+wavelength ratios like 20/27 occurred. The minus sign occurs
+because the equation includes both the electron's potential
+energy and its kinetic energy, and the standard choice of a
+reference-level for the potential energy results in negative values. 
+
+Now try swapping in the hydrogen tube in place of the mercury tube, and go through
+a similar process of acquainting yourself with the four lines in its visible spectrum, which are as
+follows:
+
+\begin{tabular}{lp{50mm}}
+  violet & dim \\
+  purple & \\
+  blue-green & \\
+  red
+\end{tabular}
+
+Again you'll again have to make
+sure the hottest part of the tube is in front of the
+collimator; this requires putting
+books and/or blocks of wood under the discharge tube.
+
+\labpart{Energy Sums}
+
+The nitrogen discharge tube is housed in a green plastic
+carousel. With the power off, rotate the carousel so that the nitrogen tube is
+the one that is in the active position, and then turn on the power.
+If you hold a diffraction grating up to your eye and look at the
+tube, you will see a remarkable spectrum, unlike the visible light
+spectrum of almost any other gas. This is because the $\zu{N}_2$ molecule has
+an extremely strong bond, requiring twice the energy to break compared to
+otherwise similar gases such as $\zu{H}_2$ or $\zu{O}_2$.
+Whereas these other gases would break up into individual atoms under the extreme
+conditions present in a discharge tube, the nitrogen molecule holds together, so
+that you are seeing the spectrum of the molecule, not the atom.
+For this reason, the spectrum of nitrogen contains a large number of lines.
+
+\fig{mo-hel-nitrogen}
+
+But these lines are not random. They occur in sets, each of which looks like
+a comb with an approximately equal spacing between the ``teeth.'' The figure
+shows a portion of the spectrum, including three sets of lines, which I have
+labeled r (red), o (orange to green), and g (green).
+
+I have spent some time
+trying to interpret the origin of these lines, and I believe the interpretation
+is something like this. Each of these lines is the emission of a photon as
+the molecule goes from an initial state to a final state that has less energy.
+The initial state has some energy because the electrons are in an excited state
+(labeled B by spectroscopists) and also some energy because the molecule is vibrating,
+like two masses connected by a spring. The final state has the electrons in
+a lower-energy state (labeled A), and is also vibrating. The initial and final
+electronic states B and A are the same in all cases, but the vibrational states
+differ. An idealized quantum-mechanical vibrator turns out to have a series of
+energy states like a ladder with nearly evenly spaced rungs. States higher on
+the ``ladder'' are vibrating more violently --- classically, they vibrate with
+greater amplitude. The rungs of the vibrational ladder are labeled $v=0,$ 1, 2, and so on.
+(Because of the Heisenberg uncertainty principle, some vibrational energy is present
+even in the $v=0$ state.) I think the states in the red set are from a state $v$ to
+a state $v-3$, i.e., a change of 3 units in the vibrational quantum number. The o
+set would be a change of 4, and g a change of 5.
+
+This hypothesis can be tested as follows. If it is true, we could pick out a set of
+energy levels like the following example:
+
+\fig{mo-hel-sum}
+
+The letters $e$, $f$, $g$, and $h$ are the energy differences that would be observed
+as the energies of the photons. In a set like this, we would have
+\begin{equation*}
+  h-g = f-e,
+\end{equation*}
+since each side of the equation would be equal to the energy difference between the
+$v=4$ and 5 states of ladder A. Try to find a set of lines that
+would be consistent with this interpretation. This may require some trial and
+error, but I think it may work if $e$ is one of the lines near the middle of the
+r set, $g$ is the orange line that is fourth from the short-wavelength end
+of the o set, $f$ is the fifth in that set, and $h$ is in the g set.
+
 \prelab
 
 The week before you are to do the lab, briefly familiarize
@@ -420,19 +473,21 @@ predict the angles $\alpha_L$ and $\alpha_R$ at which you will observe the blue 
 \prelabquestion  Make sure you understand the first three vernier
 readings in the fourth figure, and then interpret the fourth reading.
 
-\prelabquestion  In what sequence do you expect to see the Hg lines on
+\prelabquestion  In what sequence do you expect to see the mercury or helium lines on
 each side? Make a drawing showing the sequence of the angles
 as you go out from $\theta $=0.
 
-\prelabquestion  
+\prelabquestion
 The visible lines of hydrogen come from the $3\rightarrow2$,
 $4\rightarrow2$, $5\rightarrow2$, and $6\rightarrow2$
 transitions. Based on $E=hf$, which of these should
 correspond to which colors?
 
+\prelabquestion
+
 \selfcheck
 
-In homework problem
+If you're doing the hydrogen part, then the following is a useful self-check. In homework problem
 m4_ifdef([:__sn:],[:%
 13-41,%
 :])%
