@@ -8,7 +8,6 @@
 \equipn{meter stick}{1/group}
 \equipn{hooks}{3/group}
 \equip{string}
-\equipn{wooden spirit level}{1/group}
 \equipn{plumb bob}{1/group}
 \equipn{butcher paper}{1/group}
 \equip{protractors}
@@ -26,8 +25,10 @@ dimensions, so that the $\vc{r}$ and $\vc{F}$ vectors are not confined
 to a plane. To make things simple, you'll use a circular hoop as your
 object. By taking its center as the axis, and suspending it from three
 strings attached at its circumference, you can make the magnitudes of
-the $\vc{r}$ vectors all the same. Also, by leveling the hoop with a
-spirit level you can make all the $\vc{r}$ vectors lie in the
+the $\vc{r}$ vectors all the same.
+It's not easy to level the hop with a spirit level, because placing the
+spirit level on it tends to make it sag; instead, just eyeball it carefully.
+If you do this well, all the $\vc{r}$ vectors lie in the
 horizontal plane. (This requires adjusting the knots so that the three
 forces are all applied at points in the mid-plane of the wheel.) The
 three strings, however, should not be vertical; they should point up
@@ -82,21 +83,30 @@ Convert all four force vectors and all four $\vc{r}$ vectors into Cartesian coor
 Compute the four torque vectors using the vector cross product, and find the total torque by vector addition.
 Turn in a copy of your python code and its output with your writeup. 
 
-\prelab
+\section*{Using a computer program for analysis}
 
-\prelabquestion For use in the analysis of this lab, write a python function \verb@cross_x(ax,ay,az,bx,by,bz)@ that
-takes the components of vectors $A$ and $B$ as input and calculates the $x$ component of their cross product as output.
-Turn in a printout showing both your program and the results of a few tests using unit vectors for $A$ and $B$,
-demonstrating correct results.
+If you have coding skills, I think it's much easier to do the analysis for this
+lab, and especially the error analysis, by writing a computer program. A possible
+convenient way to do this is to write code in a web browser, in your favorite language,
+at the web site ideone.com. 
 
-\prelabquestion Given $r=2.0$ cm, $\theta=37$ degrees, and $\phi=16$ degrees in spherical coordinates, find $x$, $y$, and $z$
-in Cartesian coordinates. Answer: $x=1.2$ cm, $y=0.3$ cm, $z=1.6$ cm.
+If you haven't coded before but are interested in
+learning some basic coding for this lab, you can try the tutorial in the back of
+the textbook on the computer language Python.
+The way I would then start would be to  write the following two python functions:
 
-\prelabquestion Write and test a python function \\
-\verb@cart_x(r,theta,phi)@
-that finds the x component of a vector given in spherical coordinates.
+\verb@cross_x(ax,ay,az,bx,by,bz)@ --- 
+take the components of vectors $A$ and $B$ as input and calculates the $x$ component of their cross product as output.
+
+\verb@cart_x(r,theta,phi)@ ---
+find the x component of a vector given in spherical coordinates.
 To get the trig functions to work, (1) remember to put\\
  \verb@import math@ at the top, (2) remember to do \verb@math.sin@
 and \verb@math.cos@ rather than just \verb@sin@ and \verb@cos@, and (3) include a conversion from degrees to radians, since
 your raw data will all be in degrees, but the python functions are defined in radians. Test your function on the example
 given in P2.
+
+\prelab
+
+\prelabquestion Given $r=2.0$ cm, $\theta=37$ degrees, and $\phi=16$ degrees in spherical coordinates, find $x$, $y$, and $z$
+in Cartesian coordinates. Answer: $x=1.2$ cm, $y=0.3$ cm, $z=1.6$ cm.
