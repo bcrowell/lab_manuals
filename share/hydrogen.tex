@@ -1,36 +1,23 @@
-\lab{Spectroscopy}\label{lab:hydrogen}
+\addtocounter{chapter}{-1}
+\renewcommand\thechapter{\arabic{chapter}b}
+\lab{The Mass of the Electron}\label{lab:hydrogen}
+\renewcommand\thechapter{\arabic{chapter}}
 
 \apparatus
 \equipn{H gas discharge tube}{3}
-\equipn{He gas discharge tube}{3}
 \equipn{Hg gas discharge tube (PASCO OS-9286)}{3}
-\equipn{N2 gas discharge tube (in green carousel)}{3}
 \equipn{spectrometer}{1/group}
 \equipn{diffraction grating, 600 lines/mm}{1/group}
 \equipn{small screwdriver}{1}
 \equipn{black cloth}{1}
 \equipn{piece of plywood}{1}
 \equipn{block of wood}{1}
-\equipn{penlight}{1/group}
 \equip{light block}
 
 \section*{Goals}
 
-The lab has four parts. Each group will only do two parts.
-
-\begin{description}
-
-\item[A] Set up the optics of the spectrometer. (Done once by the instructor. Never needs to be redone unless
-           something gets messed up.)
-
-\item[B] Calibrate the spectrometer. (Done by all groups.)
-
-\item[C] Observe the visible line spectrum of hydrogen, and determine the mass of the electron.
-             (Done by groups 1-3.)
-
-\item[D] Use an energy sum to test a hypothesis about the energy levels of the nitrogen molecule, $\zu{N}_2$.
-             (Done by groups 4-6.)
-\end{description}
+The lab is split up into parts a, b, and c. Student lab groups will do
+either part b or part c. This part, b, is a measurement of the mass of the electron.
 
 \introduction
 
@@ -78,71 +65,7 @@ differences between the energy levels of the atom, it was
 then possible to work backwards and figure out the atomic energy levels
 themselves. 
 
-\section*{Method}
-
-The apparatus you will use to observe the spectrum of
-hydrogen or nitrogen is shown in the first figure below. For a given wavelength, the
-grating produces diffracted light at many different angles:
-a central zeroth-order line at $\theta=0$, first-order lines on
-both the left and right, and so on through higher-order
-lines at larger angles.  The line of order $m$ occurs at an
-angle satisfying the equation $m\lambda=d\sin\theta$.
-
-To measure a wavelength, you will move the telescope until
-the diffracted first-order image of the slit is lined up
-with the telescope's cross-hairs and then read off the
-angle. Note that the angular scale on the table of the
-spectroscope actually gives the angle labeled $\alpha$ in
-the figure, not $\theta$.
-
-\subsection*{Sources of systematic errors}
-
-There are three sources of systematic error:
-
-\begin{itemize}
-\item[] \emph{angular scale out of alignment:\/} If the angular scale is out
-of alignment, then all the angles will be off by a constant amount.
-
-\item[] \emph{factory's calibration of $d\/$:\/} The factory that made the
-grating labeled it with a certain spacing (in lines per
-millimeter) which can be converted to $d$ (center-to-center
-distance between lines). But their manufacturing process is
-not all that accurate, so the actual spacing of the lines is
-a little different from what the label says.
-
-\item[] \emph{orientation of the grating:\/} Errors will be caused if the grating
-is not perpendicular to the beam from the collimator, or if the lines on the
-grating are not vertical (perpendicular to the plane of the circle).
-\end{itemize}
-
-\subsection*{Eliminating systematic errors}
-
-A trick to eliminate the error due to 
-misalignment of the angular scale is to observe the same line on both the
-right and the left, and take $\theta$ to be half the difference
-between the two angles, i.e., $\theta=(\alpha_R-\alpha_L)/2$.
-Because you are subtracting two angles, any source of error
-that adds a constant offset onto the angles is eliminated.
-A few of the spectrometers have their angular scales out of alignment
-with the collimators by as much as a full degree, but that's of
-absolutely no consequence if this technique is used.
-
-Regarding the calibration of $d$, 
-the first person who ever did this type of experiment simply
-had to make a diffraction grating whose $d$ was very precisely
-constructed. But once someone
-has accurately measured at least one wavelength of one
-emission line of one element, one can simply
-determine the spacing, $d$, of any grating using a line
-whose wavelength is known.
-
-You might think that these two tricks would be enough to get rid
-of any error due to misorientation of the grating, but they're not.
-They will get rid of any error of the form $\theta\rightarrow\theta+c$
-or $\sin\theta\rightarrow c\sin\theta$, but misorientation of the grating
-produces errors of the form $\sin\theta\rightarrow\sin\theta+c$.
-Part A below describes some additional adjustments that help
-to get rid of additional sources of error.
+m4_include(basic-spectrometer.tex)
 
 \observations
 
@@ -182,81 +105,17 @@ on top of the image.
 
 \setup
 
-\labpart{Adjusting the optics}
-
-This part describes optical adjustments that
-should already have been done for you. You will want to skim it
-so that if someone has messed up your spectrometer, you will have
-some idea of what could be wrong. If this happens, ask your instructor
-for help in fixing the problem.
-
-First you must check that the cross-hairs are at the
-focal point of the objective. If they are, then the image
-of the slits formed by the objective will be at the same point
-in space as the crosshairs. You'll be able to focus your eye on both
-simultaneously, and there will be no parallax
-error depending on the exact position of your eye.
-The easiest way to check this is to look through the telescope
-at something far away ($\gtrsim$ 50 m), and move your head left
-and right to see if the crosshairs move relative to the image.
-Slide the eyepiece in and out to achieve a comfortable focus.
-If this adjustment is not correct, you may
-need to move the crosshairs in or out; this is done
-by sliding the tube that is just outside the eyepiece tube.
-(You need to use the small screwdriver to loosen the screw
-on the side, which is recessed inside a hole. The hole may
-have a dime-sized cover over it.)
-
-The white plastic pedestal should have already been adjusted
-properly to get the diffraction grating oriented correctly
-in three dimensions, but you should check it carefully.
-There are some clever features built into the apparatus to help in
-accomplishing this. As shown in the third figure, there are three
-axes about which the grating could be rotated. Rotation about axis 1 is
-like opening a door, and this is accomplished by rotating the entire pedestal like a lazy Susan. Rotation about
-axes 2 (like folding down a tailgate) and 3 are accomplished using the
-tripod of screws underneath the pedestal. 
-The eyepiece of the telescope is of a type called a Gauss eyepiece, with a diagonal piece of
-glass in it.  When the grating is oriented correctly about axes 1 and 2 and the telescope
-is at $\theta=0$, a beam
-of light that enters through the side of the eyepiece is partially reflected to
-the grating, and then reflected from the grating back to the eye. If these two axes
-are correctly adjusted, the reflected image of the crosshairs is superimposed on the
-crosshairs.
-
-First get a rough initial adjustment of the pedestal by moving the telescope to 90 degrees
-and sighting along it like a gun to line up the grating.
-Now loosen the screw (not shown in the diagram) that frees the rotation of the pedestal.
-Put a desk lamp behind the slits of the collimator, line up the telescope with
-the $m=0$ image (which may not be exactly at $\alpha=180$ degrees), remove the desk
-lamp, cover the whole apparatus with the black cloth, and position a penlight
-so that it shines in through the hole in the side of the eyepiece. Adjust axes
-1 and 2. If you're far out of adjustment, you may see part of a circle of light,
-which is the reflection of the penlight; start by bringing the circle of light
-into your field of view. When you're done, tighten the screw that keeps the pedestal
-from rotating. The pedestal is locked down to the tripod screws by the tension in
-a spring, which keeps the tips of two of the screws secure in dimples underneath the
-platform. Don't lower the screws too much, or the pedestal will no longer
-stay locked; make a habit of gently wiggling the pedestal after each adjustment
-to make sure it's not floating loose. Two of the spectrometers have the diagonal
-missing from their eyepieces, so if you have one of those, you'll have to borrow
-an eyepiece from another group to do this adjustment.
-
-For the adjustment of axis 3, place a piece of masking tape so that it covers exactly
-half of the slits of the collimator. Put the Hg discharge tube behind the slits.
-The crosshairs should be near the edge of the tape in the $m=0$ image. Move the telescope out to
-a large angle where you see one of the high-$m$ Hg lines, and adjust the tripod screws
-so that the crosshairs are at the same height relative to the edge of the tape.
+Skim lab \ref{lab:spectrometer} so you have some idea of the way the apparatus
+has been carefully aligned in advance by the instructor or lab technician.
 
 \labpart{Calibration}
 
-Groups doing part C (hydrogen) will use the blue line from mercury as a calibration.
-Groups doing part D (nitrogen) will use the yellow line from helium.
+You will use the blue line from mercury as a calibration.
 In theory it shouldn't matter what known line we use for calibration, but in practice
 there may be small aberrations in the spectrometer, and their effect is minimized by
 using calibration lines of nearly the same wavelength as the unknown lines to be measured.
 
-Put the mercury or helium tube behind the collimator. Make sure the
+Put the mercury tube behind the collimator. Make sure the
 hottest part of the tube is directly in
 front of the slits. You will need to use pieces of wood to get the height right.
 You want the tube as close to the slits as possible, and
@@ -270,7 +129,7 @@ bumps and scratches on the knife edges of the collimator,
 and there should be no parallax of the crosshairs relative
 to the image of the slits.
 
-Here is a list of the wavelengths of the most prominent visible Hg and He lines, in nm, to high 
+Here is a list of the wavelengths of the most prominent visible Hg lines, in nm, to high 
 precision.\footnote{The table gives the wavelengths in vacuum. Although we're doing the lab in air, our goal is to find
 what the hydrogen or nitrogen wavelengths would have been in vacuum; by calibrating using vacuum wavelengths
 for mercury, we end up getting vacuum wavelengths for our unknowns as well.}
@@ -282,17 +141,6 @@ Mercury:\\
 491.604  & blue-green & Dim. You may also see another blue-green line that is even dimmer. \\
 546.074  & green & \\
          & yellow & This is actually a complex set of lines, so it's not useful for calibration.
-\end{tabular}
-
-Helium:\\
-\noindent\begin{tabular}{llp{40mm}}
-447.148 & bright blue-purple & \\
-471.314 & dim blue & \\
-492.193 & dim green & \\
-501.567 & bright green & \\
-587.562 & yellow & \\
-667.815 & dim red & \\
-706.5 & very dim red
 \end{tabular}
 
 Start by making sure
@@ -311,7 +159,7 @@ holes in the back; to block the stray
 light from these holes, either put the two discharge tubes back
 to back or use one of the small ``light blocks'' that slide over the hole.
 
-We will use the wavelength $\lambda_c$ of the blue Hg or yellow He line as a calibration. Measure its two
+We will use the wavelength $\lambda_c$ of the blue Hg line as a calibration. Measure its two
 angles $\alpha_L$ and $\alpha_R$, and check that the resulting value of $\theta_c$ is
 close to the approximate ones predicted in prelab question P1. The nominal value of the
 spacing of the grating given in that prelab question is not very accurate.
@@ -347,7 +195,7 @@ wrong.
 
 \labpart{Spectroscopy of Hydrogen}
 
-If your group is doing this part of the lab, you will study the spectrum of light emitted by
+You will study the spectrum of light emitted by
 the hydrogen atom, the simplest of all atoms, with just one
 proton and one electron. In 1885, before electrons and
 protons had even been imagined, a Swiss schoolteacher named
@@ -402,68 +250,6 @@ sure the hottest part of the tube is in front of the
 collimator; this requires putting
 books and/or blocks of wood under the discharge tube.
 
-\labpart{Energy Sums}
-
-The nitrogen discharge tube is housed in a green plastic
-carousel. With the power off, rotate the carousel so that the nitrogen tube is
-the one that is in the active position, and then turn on the power.
-If you hold a diffraction grating up to your eye and look at the
-tube, you will see a remarkable spectrum, unlike the visible light
-spectrum of almost any other gas. This is because the $\zu{N}_2$ molecule has
-an extremely strong bond, requiring twice the energy to break compared to
-otherwise similar gases such as $\zu{H}_2$ or $\zu{O}_2$.
-Whereas these other gases would break up into individual atoms under the extreme
-conditions present in a discharge tube, the nitrogen molecule holds together, so
-that you are seeing the spectrum of the molecule, not the atom.
-For this reason, the spectrum of nitrogen contains a large number of lines.
-
-\fig{mo-hel-nitrogen}
-
-But these lines are not random. They occur in sets, each of which looks like
-a comb with an approximately equal spacing between the ``teeth.'' The figure
-shows a portion of the spectrum, including three sets of lines, which I have
-labeled r (red), o (orange to green), and g (green).
-
-I have spent some time
-trying to interpret the origin of these lines, and I believe the interpretation
-is something like this. Each of these lines is the emission of a photon as
-the molecule goes from an initial state to a final state that has less energy.
-The initial state has some energy because the electrons are in an excited state
-(labeled B by spectroscopists) and also some energy because the molecule is vibrating,
-like two masses connected by a spring. The final state has the electrons in
-a lower-energy state (labeled A), and is also vibrating. The initial and final
-electronic states B and A are the same in all cases, but the vibrational states
-differ. An idealized quantum-mechanical vibrator turns out to have a series of
-energy states like a ladder with nearly evenly spaced rungs. States higher on
-the ``ladder'' are vibrating more violently --- classically, they vibrate with
-greater amplitude. The rungs of the vibrational ladder are labeled $v=0,$ 1, 2, and so on.
-(Because of the Heisenberg uncertainty principle, some vibrational energy is present
-even in the $v=0$ state.) I think the states in the red set are from a state $v$ to
-a state $v-3$, i.e., a change of 3 units in the vibrational quantum number. The o
-set would be a change of 4, and g a change of 5.
-
-This hypothesis can be tested as follows. If it is true, we could pick out a set of
-energy levels like the following example:
-
-\fig{mo-hel-sum}
-
-The letters $e$, $f$, $g$, and $h$ are the energy differences that would be observed
-as the energies of the photons. In a set like this, we would have
-\begin{equation*}
-  h-g = f-e,
-\end{equation*}
-since each side of the equation would be equal to the energy difference between the
-$v=4$ and 5 states of ladder A. Try to find a set of lines that
-would be consistent with this interpretation. This may require some trial and
-error, but I think it may work if $e$ is one of the lines near the middle of the
-r set, $g$ is the orange line that is fourth from the short-wavelength end
-of the o set, $f$ is the fifth in that set, and $h$ is in the g set.
-
-\prelab
-
-The week before you are to do the lab, briefly familiarize
-yourself visually with the apparatus.
-
 \prelabquestion  
 The nominal (and not very accurate) spacing of the grating is stated
 as 600 lines per millimeter. From this information, find $d$, and
@@ -471,13 +257,13 @@ predict the angles $\alpha_L$ and $\alpha_R$ at which you will observe the blue 
 
 \widefigcaption{mo-hel-spectrometer}{The spectrometer}
 \widefigcaption{mo-hel-optics}{Optics.}
-\widefigcaption{mo-hel-orient}{Orienting the grating.}
 \widefigcaption{mo-hel-vernier}{Prelab question 2.}
 
 \prelabquestion  Make sure you understand the first three vernier
 readings in the fourth figure, and then interpret the fourth reading.
 
-\prelabquestion  In what sequence do you expect to see the mercury or helium lines on
+\prelabquestion  For the calibration with mercury,
+in what sequence do you expect to see the lines on
 each side? Make a drawing showing the sequence of the angles
 as you go out from $\theta $=0.
 
@@ -487,11 +273,9 @@ $4\rightarrow2$, $5\rightarrow2$, and $6\rightarrow2$
 transitions. Based on $E=hf$, which of these should
 correspond to which colors?
 
-\prelabquestion
-
 \selfcheck
 
-If you're doing the hydrogen part, then the following is a useful self-check. In homework problem
+In homework problem
 m4_ifdef([:__sn:],[:%
 13-41,%
 :])%

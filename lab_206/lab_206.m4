@@ -79,7 +79,9 @@ m4_include(../share/geometric-optics.tex)
 m4_include(../share/wave-optics.tex)
 m4_include(../share/photoelectric-effect.tex)
 m4_include(../share/electron-diffraction.tex)
+m4_include(../share/spectrometer.tex)
 m4_include(../share/hydrogen.tex)
+m4_include(../share/nitrogen.tex)
 
 %============================================================
 \formatappendixtoc

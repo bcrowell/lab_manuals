@@ -95,9 +95,11 @@ Troubleshooting:
 \item[] You may get this error message: ``Error while opening sound device. Please check the input device settings and the project sample rate.''
 Quit the program and restart it.
 
-\item[] Some of the computers have very low gain on their microphones, so it may be difficult to see the thumps. To work around
+\item[] Some of the computers have very low or very high gain on their microphones. To work around
 this, do the following after you've recorded a sound: type control-A to select the whole recording,
 and then do Effect$>$Amplify; the default is to amplify the sound by the maximum amount, which is what you want.
+If the gain is too high, it may be necessary to lower it using the operating system's gain control, but
+every OS update seems to change the location of this control.
 
 \item[] If sound input isn't working, it may be because the wrong sound input device is selected. Right-click on the volume icon
 in the menu bar. Under Edit:Preferences, check Mic select, and under Options do Mic Select:Mic 0.

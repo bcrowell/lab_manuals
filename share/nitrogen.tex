@@ -1,0 +1,225 @@
+\addtocounter{chapter}{-1}
+\renewcommand\thechapter{\arabic{chapter}c}
+\lab{The Nitrogen Molecule}\label{lab:nitrogen}
+\renewcommand\thechapter{\arabic{chapter}}
+
+\apparatus
+\equipn{He gas discharge tube}{3}
+\equipn{N2 gas discharge tube (in green carousel)}{3}
+\equipn{spectrometer}{1/group}
+\equipn{diffraction grating, 600 lines/mm}{1/group}
+\equipn{small screwdriver}{1}
+\equipn{black cloth}{1}
+\equipn{piece of plywood}{1}
+\equipn{block of wood}{1}
+\equipn{penlight}{1/group}
+\equip{light block}
+
+\section*{Goals}
+
+The lab has four parts. Each group will only do two parts.
+In this lab, part c, you will use an energy sum to test a hypothesis about the energy levels of the nitrogen molecule, $\zu{N}_2$.
+
+m4_include(basic-spectrometer.tex)
+\labpart{Energy Sums}
+
+The nitrogen discharge tube is housed in a green plastic
+carousel. With the power off, rotate the carousel so that the nitrogen tube is
+the one that is in the active position, and then turn on the power.
+If you hold a diffraction grating up to your eye and look at the
+tube, you will see a remarkable spectrum, unlike the visible light
+spectrum of almost any other gas. This is because the $\zu{N}_2$ molecule has
+an extremely strong bond, requiring twice the energy to break compared to
+otherwise similar gases such as $\zu{H}_2$ or $\zu{O}_2$.
+Whereas these other gases would break up into individual atoms under the extreme
+conditions present in a discharge tube, the nitrogen molecule holds together, so
+that you are seeing the spectrum of the molecule, not the atom.
+For this reason, the spectrum of nitrogen contains a large number of lines.
+
+\fig{mo-hel-nitrogen}
+
+But these lines are not random. They occur in sets, each of which looks like
+a comb with an approximately equal spacing between the ``teeth.'' The figure
+shows a portion of the spectrum, including three sets of lines, which I have
+labeled r (red), o (orange to green), and g (green).
+
+I have spent some time
+trying to interpret the origin of these lines, and I believe the interpretation
+is something like this. Each of these lines is the emission of a photon as
+the molecule goes from an initial state to a final state that has less energy.
+The initial state has some energy because the electrons are in an excited state
+(labeled B by spectroscopists) and also some energy because the molecule is vibrating,
+like two masses connected by a spring. The final state has the electrons in
+a lower-energy state (labeled A), and is also vibrating. The initial and final
+electronic states B and A are the same in all cases, but the vibrational states
+differ. An idealized quantum-mechanical vibrator turns out to have a series of
+energy states like a ladder with nearly evenly spaced rungs. States higher on
+the ``ladder'' are vibrating more violently --- classically, they vibrate with
+greater amplitude. The rungs of the vibrational ladder are labeled $v=0,$ 1, 2, and so on.
+(Because of the Heisenberg uncertainty principle, some vibrational energy is present
+even in the $v=0$ state.) I think the states in the red set are from a state $v$ to
+a state $v-3$, i.e., a change of 3 units in the vibrational quantum number. The o
+set would be a change of 4, and g a change of 5.
+
+This hypothesis can be tested as follows. If it is true, we could pick out a set of
+energy levels like the following example:
+
+\fig{mo-hel-sum}
+
+The letters $e$, $f$, $g$, and $h$ are the energy differences that would be observed
+as the energies of the photons. In a set like this, we would have
+\begin{equation*}
+  h-g = f-e,
+\end{equation*}
+since each side of the equation would be equal to the energy difference between the
+$v=4$ and 5 states of ladder A. Try to find a set of lines that
+would be consistent with this interpretation. This may require some trial and
+error, but I think it may work if $e$ is one of the lines near the middle of the
+r set, $g$ is the orange line that is fourth from the short-wavelength end
+of the o set, $f$ is the fifth in that set, and $h$ is in the g set.
+
+\labpart{Calibration}
+
+You will use the yellow line from helium as a calibration.
+In theory it shouldn't matter what known line we use for calibration, but in practice
+there may be small aberrations in the spectrometer, and their effect is minimized by
+using calibration lines of nearly the same wavelength as the unknown lines to be measured.
+
+Put the helium tube behind the collimator. Make sure the
+hottest part of the tube is directly in
+front of the slits. You will need to use pieces of wood to get the height right.
+You want the tube as close to the slits as possible, and
+lined up with the slits as well as possible; you can adjust
+this while looking through the telescope at an $m=1$ line,
+so as to make the line as bright as possible.
+
+If your optics are adjusted correctly,
+you should be able to see the microscopic
+bumps and scratches on the knife edges of the collimator,
+and there should be no parallax of the crosshairs relative
+to the image of the slits.
+
+Here is a list of the wavelengths of the most prominent visible He lines, in nm, to high 
+precision.\footnote{The table gives the wavelengths in vacuum. Although we're doing the lab in air, our goal is to find
+what the hydrogen or nitrogen wavelengths would have been in vacuum; by calibrating using vacuum wavelengths
+for mercury, we end up getting vacuum wavelengths for our unknowns as well.}
+
+Helium:\\
+\noindent\begin{tabular}{llp{40mm}}
+447.148 & bright blue-purple & \\
+471.314 & dim blue & \\
+492.193 & dim green & \\
+501.567 & bright green & \\
+587.562 & yellow & \\
+667.815 & dim red & \\
+706.5 & very dim red
+\end{tabular}
+
+Start by making sure
+that you can find all of the lines lines in the correct sequence --- if
+not, then you have probably found some first-order
+lines and some second-order ones. If you can find some lines
+but not others, use your head and search for them in the
+right area based on where you found the lines you did see.
+You may see various dim, fuzzy lights through the telescope
+--- don't waste time chasing these, which could be coming
+from other tubes or from reflections. The real lines will be
+bright, clear and well-defined. By draping the black cloth over
+the discharge tube and the collimator, you can get rid of stray
+light that could cause problems for you or others. The discharge tubes also have
+holes in the back; to block the stray
+light from these holes, either put the two discharge tubes back
+to back or use one of the small ``light blocks'' that slide over the hole.
+
+We will use the wavelength $\lambda_c$ of the hellow He line as a calibration. Measure its two
+angles $\alpha_L$ and $\alpha_R$, and check that the resulting value of $\theta_c$ is
+close to the approximate ones predicted in prelab question P1. The nominal value of the
+spacing of the grating given in that prelab question is not very accurate.
+Having measured $\theta_c$,
+then we can sidestep the determination of the grating's spacing entirely 
+and determine an unknown wavelength $\lambda$
+by using the relation
+\begin{equation*}
+  \lambda = \frac{\sin\theta}{\sin\theta_c} \lambda_c \qquad .
+\end{equation*}
+The angles are measured using a vernier scale, which
+is similar to the one on the vernier calipers you have
+already used in the first-semester lab course. Your final
+reading for an angle will consist of degrees plus minutes.
+(One minute of arc, abbreviated 1', is 1/60 of a degree.)
+The main scale is marked every 30 minutes. Your initial,
+rough reading is obtained by noting where the zero of the
+vernier scale falls on the main scale, and is of the form
+``xxx\degunit0' plus a little more'' or ``xxx\degunit30'
+plus a little more.'' Next, you should note which line on
+the vernier scale lines up most closely with one of the
+lines on the main scale. The corresponding number on the
+vernier scale tells you how many minutes of arc to add for
+the ``plus a little more.''
+
+As a check on your results,
+everybody in your group should take independent readings of every
+angle you measure in the lab, nudging the telescope to the side after
+each reading. Once you have independent results for a particular angle,
+compare them. If they're consistent to within one or two minutes of
+arc, average them. If they're not consistent, figure out what went
+wrong.
+
+\section*{Status as of August 2018}
+
+In spring of 2018, my students and I worked on measuring and
+interpreting this spectrum. A summary of our results is in a Google
+Docs spreadsheet at \url{goo.gl/akrbcY}.  Information about my
+interpretation of the lines is at\\
+\url{physics.stackexchange.com/a/334451/4552}.
+
+In the notation used in the material on stackexchange, the states are
+labeled with a quantum number $v$.  The energy sum based on our data
+come out quite nice for $v=9$ and 8 going to 5 and 4, accurate to
+about 0.3\%, which is reasonable for this technique.  The energy sum
+for $v=10$ and 9 going to 6 and 5 also works well, but with slightly
+higher error, maybe partly because 10-5 is a doublet.  There are two
+dim green lines that in my labeling system would be g0 and g-1.
+These may be the
+ones we would need in order to get a couple more energy sums.
+
+I experimented with doing the measurements photographically.  A
+student took a photo a diffraction grating using a cell phone.  I
+first did a rough calibration against student data, then improved this
+calibration by doing a linear fit to my own spectrometer data.
+This worked fairly well, but doesn't work without actual spectrometer
+data, which are needed for calibration.
+
+I couldn't resolve the green band. I asked a couple of students the
+next day, and they seemed to think that it was doable to resolve these
+lines. Possibly my tube was behaving differently than theirs, but I'm
+not sure I believe their data.  The red and orange bands came out
+nice, all wavelengths being within a few tenths of a nm of Lofthus's
+values.
+
+We have digital spectrometers which may be helpful here and are worth
+trying, but I don't know if they're any good for precision work.
+
+\prelab
+
+The week before you are to do the lab, briefly familiarize
+yourself visually with the apparatus.
+
+\prelabquestion  
+The nominal (and not very accurate) spacing of the grating is stated
+as 600 lines per millimeter. From this information, find $d$, and
+predict the angles $\alpha_L$ and $\alpha_R$ at which you will observe the yellow helium line.
+
+\widefigcaption{mo-hel-spectrometer}{The spectrometer}
+\widefigcaption{mo-hel-optics}{Optics.}
+\widefigcaption{mo-hel-orient}{Orienting the grating.}
+\widefigcaption{mo-hel-vernier}{Prelab question 2.}
+
+\prelabquestion  Make sure you understand the first three vernier
+readings in the fourth figure, and then interpret the fourth reading.
+
+\prelabquestion  For the calibration with helium,
+in what sequence do you expect to see the lines on
+each side? Make a drawing showing the sequence of the angles
+as you go out from $\theta $=0.
+

@@ -1,13 +1,23 @@
 \lab{The Photoelectric Effect}\label{lab:photoelectric-effect}
 
+Note to the lab technician: The Pasco SE-5509 Hg gas discharge tubes
+have too many ways of being destroyed by students,\footnote{The two main modes of
+destruction seem to be: (1) While the discharge tube is connected to the power
+supply, students monkey with the red 110V/220V switch on the power supply; and
+(2) they don't use the power supply and connect two AC connectors together in order
+to connect the discharge tube directly to the wall socket.} so let's use the
+OS-9286 tubes instead (the big black ones with the fins). That means
+we don't need the separate power supply for discharge tube (Pasco BEM-5007)
+or the track that comes with the photodiode. We need wood blocks to raise
+the photodiode to the same height as the discharge tube.
+
 \apparatus
 \equip{hand-held diffraction gratings}
-\equip{Hg gas discharge tube (Pasco SE-5509)}
+\equip{Hg gas discharge tube (Pasco OS-9286)}
 \equip{photodiode (Pasco SE-5509)}
-\equip{power supply for discharge tube (Pasco BEM-5007)}
 \equip{power supply (Pasco BEM-5001)}
 \equip{high-sensitivity ammeter (Pasco BEM-5004)}
-\equip{laser}
+\equipn{wood blocks}{3/group}
 
 \begin{goals}
 
@@ -60,7 +70,6 @@ which involved a fundamental rewriting of the laws of physics.
 The Hg gas discharge tube emits
 light with several different wavelengths.
 Turn on the discharge tube immediately, because it takes a long time to warm up.
-It has an external power supply, which is a black box.
 
 The photodiode is a vacuum tube housed inside another box, with a small hole
 to allow light to come in and hit one of the electrodes (the cathode) inside the vacuum tube.
@@ -75,8 +84,8 @@ select holes of different sizes, which lets in different amounts of light.
 Although this is convenient, it doesn't actually control the intensity of the light (watts per square meter)
 but only the total amount (watts). Therefore we'll just leave this set for the 2 mm hole.
 
-The setup does have a provision for controlling the actual intensity of the beam, which is that both
-the Hg tube and the photodiode are placed on a track, facing one another.  The light from the Hg tube
+There is an easier way to control the actual intensity of the beam, which is that you can simply
+change the distance between the discharge tube and the photodiode. The light from the discharge tube
 spreads out in a cone, so that as you vary the distance to the photodiode, the intensity falls off as
 the inverse square of the distance.
 
@@ -114,9 +123,7 @@ ultraviolet &  365\\
 violet   &405\\
 blue   &436\\
 green  & 546\\
-yellow  & 578 \\
-red (laser) & 633\footnote{This is the wavelength for a helium-neon laser. Pen-pointer lasers have a variety
-of wavelengths, but cheap ones are about the same as this.}
+yellow  & 578 
 \end{tabular}
 
 \figcaption{mo-pho-circuit-new}{Circuit.}
@@ -258,7 +265,7 @@ you change the conditions in order to make it longer, and possibly detectable?
 
 \prelabquestion m4_ifdef([:__lm:],[:
 Heat is the random motion of the microscopic particles of which matter is composed. Depending on the
-level of detail in the treatment of thermodynamics in you first-semester course, you may know that the
+level of detail in the treatment of thermodynamics in your first-semester course, you may know that the
 typical energy per particle can be calculated as $kT$, where $T$ is the absolute temperature and $k$ is
 a constant called Boltzmann's constant (not to be confused with the Coulomb constant). The result at
 room temperature is on the order of $10^{-20}$ joules per particle.

@@ -1,0 +1,188 @@
+\renewcommand\thechapter{\arabic{chapter}a}
+\lab{Setup of the Spectrometer}\label{lab:spectrometer}
+\renewcommand\thechapter{\arabic{chapter}}
+
+\apparatus
+\equipn{Hg gas discharge tube (PASCO OS-9286)}{3}
+\equipn{spectrometer}{1/group}
+\equipn{diffraction grating, 600 lines/mm}{1/group}
+\equipn{small screwdriver}{1}
+\equipn{black cloth}{1}
+\equipn{piece of plywood}{1}
+\equipn{block of wood}{1}
+\equipn{penlight}{1/group}
+\equip{light block}
+
+\section*{Goals}
+
+The lab has three parts. This one, part a, is about setting
+up the optics of the spectrometer. 
+This is to be done once by the instructor or lab technician. 
+It never needs to be redone unless something gets messed up.
+
+\introduction
+
+
+\section*{Method}
+
+The apparatus  is shown in the first figure below. For a given wavelength, the
+grating produces diffracted light at many different angles:
+a central zeroth-order line at $\theta=0$, first-order lines on
+both the left and right, and so on through higher-order
+lines at larger angles.  The line of order $m$ occurs at an
+angle satisfying the equation $m\lambda=d\sin\theta$.
+
+To measure a wavelength, students will move the telescope until
+the diffracted first-order image of the slit is lined up
+with the telescope's cross-hairs and then read off the
+angle. Note that the angular scale on the table of the
+spectroscope actually gives the angle labeled $\alpha$ in
+the figure, not $\theta$.
+
+\subsection*{Sources of systematic errors}
+
+There are three sources of systematic error:
+
+\begin{itemize}
+\item[] \emph{angular scale out of alignment:\/} If the angular scale is out
+of alignment, then all the angles will be off by a constant amount.
+
+\item[] \emph{factory's calibration of $d\/$:\/} The factory that made the
+grating labeled it with a certain spacing (in lines per
+millimeter) which can be converted to $d$ (center-to-center
+distance between lines). But their manufacturing process is
+not all that accurate, so the actual spacing of the lines is
+a little different from what the label says.
+
+\item[] \emph{orientation of the grating:\/} Errors will be caused if the grating
+is not perpendicular to the beam from the collimator, or if the lines on the
+grating are not vertical (perpendicular to the plane of the circle).
+\end{itemize}
+
+\subsection*{Eliminating systematic errors}
+
+A trick to eliminate the error due to 
+misalignment of the angular scale is to observe the same line on both the
+right and the left, and take $\theta$ to be half the difference
+between the two angles, i.e., $\theta=(\alpha_R-\alpha_L)/2$.
+Because you are subtracting two angles, any source of error
+that adds a constant offset onto the angles is eliminated.
+A few of the spectrometers have their angular scales out of alignment
+with the collimators by as much as a full degree, but that's of
+absolutely no consequence if this technique is used.
+
+Regarding the calibration of $d$, 
+the first person who ever did this type of experiment simply
+had to make a diffraction grating whose $d$ was very precisely
+constructed. But once someone
+has accurately measured at least one wavelength of one
+emission line of one element, one can simply
+determine the spacing, $d$, of any grating using a line
+whose wavelength is known.
+
+You might think that these two tricks would be enough to get rid
+of any error due to misorientation of the grating, but they're not.
+They will get rid of any error of the form $\theta\rightarrow\theta+c$
+or $\sin\theta\rightarrow c\sin\theta$, but misorientation of the grating
+produces errors of the form $\sin\theta\rightarrow\sin\theta+c$.
+Part A below describes some additional adjustments that help
+to get rid of additional sources of error.
+
+\section*{Theory of Operation}
+
+\setcounter{labpartctr}{0}
+
+
+The second figure below shows the optics from the side, with the
+telescope simply looking down the throat of the collimator
+at $\theta=0$. You are actually using the optics to let you
+see an image of the slit, not the tube itself. The point of
+using a telescope is that it provides angular magnification,
+so that a small change in angle can be seen visually.
+
+A lens is used inside the collimator to make the light from
+the slit into a parallel beam. This is important, because we
+are using $m\lambda =d\sin\theta$ to determine the
+wavelength, but this equation was derived under the
+assumption that the light was coming in as a parallel beam.
+To make a parallel beam, the slit must be located accurately
+at the focal point of the lens. This adjustment should have
+already been done, but you will check later and make sure. A
+further advantage of using a lens in the collimator is that
+a telescope only works for objects far away, not nearby
+objects from which the reflected light is diverging
+strongly.  The lens in the collimator forms a virtual image
+at infinity, on which the telescope can work.
+
+The objective lens of the telescope focuses the light,
+forming a real image inside the tube. The eyepiece then acts
+like a magnifying glass to let you see the image. In order
+to see the cross-hairs and the image of the slit both in
+focus at the same time, the cross-hairs must be located
+accurately at the focal point of the objective, right
+on top of the image.
+
+\section*{Adjustments}
+
+First you must check that the cross-hairs are at the
+focal point of the objective. If they are, then the image
+of the slits formed by the objective will be at the same point
+in space as the crosshairs. You'll be able to focus your eye on both
+simultaneously, and there will be no parallax
+error depending on the exact position of your eye.
+The easiest way to check this is to look through the telescope
+at something far away ($\gtrsim$ 50 m), and move your head left
+and right to see if the crosshairs move relative to the image.
+Slide the eyepiece in and out to achieve a comfortable focus.
+If this adjustment is not correct, you may
+need to move the crosshairs in or out; this is done
+by sliding the tube that is just outside the eyepiece tube.
+(You need to use the small screwdriver to loosen the screw
+on the side, which is recessed inside a hole. The hole may
+have a dime-sized cover over it.)
+
+The white plastic pedestal should have already been adjusted
+properly to get the diffraction grating oriented correctly
+in three dimensions, but you should check it carefully.
+There are some clever features built into the apparatus to help in
+accomplishing this. As shown in the third figure, there are three
+axes about which the grating could be rotated. Rotation about axis 1 is
+like opening a door, and this is accomplished by rotating the entire pedestal like a lazy Susan. Rotation about
+axes 2 (like folding down a tailgate) and 3 are accomplished using the
+tripod of screws underneath the pedestal. 
+The eyepiece of the telescope is of a type called a Gauss eyepiece, with a diagonal piece of
+glass in it.  When the grating is oriented correctly about axes 1 and 2 and the telescope
+is at $\theta=0$, a beam
+of light that enters through the side of the eyepiece is partially reflected to
+the grating, and then reflected from the grating back to the eye. If these two axes
+are correctly adjusted, the reflected image of the crosshairs is superimposed on the
+crosshairs.
+
+First get a rough initial adjustment of the pedestal by moving the telescope to 90 degrees
+and sighting along it like a gun to line up the grating.
+Now loosen the screw (not shown in the diagram) that frees the rotation of the pedestal.
+Put a desk lamp behind the slits of the collimator, line up the telescope with
+the $m=0$ image (which may not be exactly at $\alpha=180$ degrees), remove the desk
+lamp, cover the whole apparatus with the black cloth, and position a penlight
+so that it shines in through the hole in the side of the eyepiece. Adjust axes
+1 and 2. If you're far out of adjustment, you may see part of a circle of light,
+which is the reflection of the penlight; start by bringing the circle of light
+into your field of view. When you're done, tighten the screw that keeps the pedestal
+from rotating. The pedestal is locked down to the tripod screws by the tension in
+a spring, which keeps the tips of two of the screws secure in dimples underneath the
+platform. Don't lower the screws too much, or the pedestal will no longer
+stay locked; make a habit of gently wiggling the pedestal after each adjustment
+to make sure it's not floating loose. Two of the spectrometers have the diagonal
+missing from their eyepieces, so if you have one of those, you'll have to borrow
+an eyepiece from another group to do this adjustment.
+
+For the adjustment of axis 3, place a piece of masking tape so that it covers exactly
+half of the slits of the collimator. Put the Hg discharge tube behind the slits.
+The crosshairs should be near the edge of the tape in the $m=0$ image. Move the telescope out to
+a large angle where you see one of the high-$m$ Hg lines, and adjust the tripod screws
+so that the crosshairs are at the same height relative to the edge of the tape.
+
+\widefigcaption{mo-hel-spectrometer}{The spectrometer}
+\widefigcaption{mo-hel-optics}{Optics.}
+\widefigcaption{mo-hel-orient}{Orienting the grating.}
+

@@ -77,7 +77,9 @@ m4_include(../share/relativity.tex)
 m4_include(../share/polarization.tex)
 m4_include(../share/radioactivity.tex)
 m4_include(../share/photoelectric-effect.tex)
+m4_include(../share/spectrometer.tex)
 m4_include(../share/hydrogen.tex)
+m4_include(../share/nitrogen.tex)
 
 %============================================================
 \formatappendixtoc

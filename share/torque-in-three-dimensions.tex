@@ -100,9 +100,12 @@ take the components of vectors $A$ and $B$ as input and calculates the $x$ compo
 
 \verb@cart_x(r,theta,phi)@ ---
 find the x component of a vector given in spherical coordinates.
-To get the trig functions to work, (1) remember to put\\
- \verb@import math@ at the top, (2) remember to do \verb@math.sin@
-and \verb@math.cos@ rather than just \verb@sin@ and \verb@cos@, and (3) include a conversion from degrees to radians, since
+To get the trig functions to work, you need to put
+this line at the top of your program:
+
+\verb@from math import sin,cos@
+
+Include a conversion from degrees to radians, since
 your raw data will all be in degrees, but the python functions are defined in radians. Test your function on the example
 given in P2.
 
