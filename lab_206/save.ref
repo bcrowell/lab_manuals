@@ -24,9 +24,9 @@ lab:electron-diffraction,15,60
 fig:mo-edf-circuit,15.3,63
 lab:spectrometer,16a,64
 lab:hydrogen,16b,68
-bohr-equation,B,71
+bohr-equation,A,70
 lab:nitrogen,16c,74
-appendix:format,1,75
+appendix:format,1,76
 format-really-here,,78
 appendix:basicerranal,2,78
 probability-of-deviations,,83
