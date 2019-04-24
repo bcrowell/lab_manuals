@@ -17,7 +17,7 @@
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="op-geo-terrier.svg"
-   inkscape:export-filename="/home/bcrowell/Documents/teaching/lab/figs/op-geo-terrier.svg.png"
+   inkscape:export-filename="/home/bcrowell/Documents/teaching/lab/figs/op-geo-terrier.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <defs
@@ -30,8 +30,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.68603491"
-     inkscape:cx="335.59154"
-     inkscape:cy="545.74337"
+     inkscape:cx="80.50248"
+     inkscape:cy="547.20102"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -60,47 +60,47 @@
     <image
        sodipodi:absref="/home/bcrowell/Documents/teaching/lab/figs/op-geo-sources/z_both_sharp.jpg"
        xlink:href="op-geo-sources/z_both_sharp.jpg"
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       width="81.173912"
-       height="111.94572"
-       preserveAspectRatio="none"
-       id="image909"
+       y="5.8260808"
        x="9.7177238"
-       y="5.8260808" />
+       id="image909"
+       preserveAspectRatio="none"
+       height="111.94572"
+       width="81.173912"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <image
        sodipodi:absref="/home/bcrowell/Documents/teaching/lab/figs/op-geo-sources/z_misaligned.jpg"
        xlink:href="op-geo-sources/z_misaligned.jpg"
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       width="81.513626"
-       height="111.68427"
-       preserveAspectRatio="none"
-       id="image971"
+       y="5.9568133"
        x="94.660034"
-       y="5.9568133" />
+       id="image971"
+       preserveAspectRatio="none"
+       height="111.68427"
+       width="81.513626"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <image
        sodipodi:absref="/home/bcrowell/Documents/teaching/lab/figs/op-geo-sources/z_sharp_dog_blurry_tree.jpg"
        xlink:href="op-geo-sources/z_sharp_dog_blurry_tree.jpg"
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       width="81.173912"
-       height="111.94572"
-       preserveAspectRatio="none"
-       id="image1033"
+       y="126.76738"
        x="9.7177238"
-       y="126.76738" />
+       id="image1033"
+       preserveAspectRatio="none"
+       height="111.94572"
+       width="81.173912"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <image
        sodipodi:absref="/home/bcrowell/Documents/teaching/lab/figs/op-geo-sources/z_sharp_tree_blurry_dog.jpg"
        xlink:href="op-geo-sources/z_sharp_tree_blurry_dog.jpg"
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       width="81.173912"
-       height="111.94572"
-       preserveAspectRatio="none"
-       id="image1095"
+       y="126.76738"
        x="94.829887"
-       y="126.76738" />
+       id="image1095"
+       preserveAspectRatio="none"
+       height="111.94572"
+       width="81.173912"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot1121"
@@ -165,6 +165,11 @@
          id="tspan1149"
          x="9.2671242"
          y="251.46664"
-         style="stroke-width:0.22773276">These images can be viewed in a web browser at lightandmatter.com/lec/telescope .</tspan></text>
+         style="stroke-width:0.22773276">These images can be viewed in a web browser at lightandmatter.com/lec/telescope . See the file NOTES in the source</tspan><tspan
+         sodipodi:role="line"
+         x="9.2671242"
+         y="255.26219"
+         style="stroke-width:0.22773276"
+         id="tspan832">code for photo credits.</tspan></text>
   </g>
 </svg>
