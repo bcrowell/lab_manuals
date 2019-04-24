@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="op-geo-terrier.svg"
+   inkscape:export-filename="/home/bcrowell/Documents/teaching/lab/figs/op-geo-terrier.svg.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.68603491"
+     inkscape:cx="335.59154"
+     inkscape:cy="545.74337"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       sodipodi:absref="/home/bcrowell/Documents/teaching/lab/figs/op-geo-sources/z_both_sharp.jpg"
+       xlink:href="op-geo-sources/z_both_sharp.jpg"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="81.173912"
+       height="111.94572"
+       preserveAspectRatio="none"
+       id="image909"
+       x="9.7177238"
+       y="5.8260808" />
+    <image
+       sodipodi:absref="/home/bcrowell/Documents/teaching/lab/figs/op-geo-sources/z_misaligned.jpg"
+       xlink:href="op-geo-sources/z_misaligned.jpg"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="81.513626"
+       height="111.68427"
+       preserveAspectRatio="none"
+       id="image971"
+       x="94.660034"
+       y="5.9568133" />
+    <image
+       sodipodi:absref="/home/bcrowell/Documents/teaching/lab/figs/op-geo-sources/z_sharp_dog_blurry_tree.jpg"
+       xlink:href="op-geo-sources/z_sharp_dog_blurry_tree.jpg"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="81.173912"
+       height="111.94572"
+       preserveAspectRatio="none"
+       id="image1033"
+       x="9.7177238"
+       y="126.76738" />
+    <image
+       sodipodi:absref="/home/bcrowell/Documents/teaching/lab/figs/op-geo-sources/z_sharp_tree_blurry_dog.jpg"
+       xlink:href="op-geo-sources/z_sharp_tree_blurry_dog.jpg"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="81.173912"
+       height="111.94572"
+       preserveAspectRatio="none"
+       id="image1095"
+       x="94.829887"
+       y="126.76738" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1121"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       transform="matrix(0.22773278,0,0,0.22773278,1.3002025,-127.32322)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion1123"><rect
+           id="rect1125"
+           width="355.66702"
+           height="59.763721"
+           x="37.898945"
+           y="1078.7902" /></flowRegion><flowPara
+         id="flowPara1127">The goal: magnified and unmagnified images superimposed and in focus.</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.03643703px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.22773276;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="94.579582"
+       y="121.0083"
+       id="text1131"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan1129"
+         x="94.579582"
+         y="121.0083"
+         style="stroke-width:0.22773276">Your aim is wrong.</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1133"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       transform="matrix(0.22773278,0,0,0.22773278,1.3002025,-4.4998384)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion1135"><rect
+           id="rect1137"
+           width="355.66702"
+           height="43.729553"
+           x="37.898945"
+           y="1070.0442" /></flowRegion><flowPara
+         id="flowPara1139">The telescope's image is not at infinity. Your brain focuses your eye on the dog.</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1141"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       transform="matrix(0.22773278,0,0,0.22773278,1.3002025,-4.4998384)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion1143"><rect
+           id="rect1145"
+           width="349.83643"
+           height="43.729553"
+           x="412.51544"
+           y="1072.9595" /></flowRegion><flowPara
+         id="flowPara1147">The telescope's image is not at infinity. Your brain focuses your eye on the tree.</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.03643703px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.22773276;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="9.2671242"
+       y="251.46664"
+       id="text1151"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan1149"
+         x="9.2671242"
+         y="251.46664"
+         style="stroke-width:0.22773276">These images can be viewed in a web browser at lightandmatter.com/lec/telescope .</tspan></text>
+  </g>
+</svg>
