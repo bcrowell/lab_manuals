@@ -63,8 +63,6 @@ m4_include(../share/rules.tex)
 
 %-------------------------------------------------------------
 
-m4_include(../share/radioactivity.tex)
-
 m4_include(../share/resistance.tex)
 
 m4_include(../share/kirchoff.tex)
@@ -79,21 +77,7 @@ m4_include(../share/electromagnetism.tex)
 
 m4_include(../share/charge-to-mass.tex)
 
-m4_include(../share/refraction.tex)
-
-m4_include(../share/geometric-optics.tex)
-
-m4_include(../share/two-source-interference.tex)
-
-m4_include(../share/wave-optics.tex)
-
 m4_include(../share/relativity.tex)
-
-m4_include(../share/electron-diffraction.tex)
-
-m4_include(../share/photoelectric-effect.tex)
-
-m4_include(../share/hydrogen.tex)
 
 m4_include(../share/energy-in-fields.tex)
 
@@ -104,8 +88,6 @@ m4_include(../share/lrc.tex)
 m4_include(../share/faraday.tex)
 
 m4_include(../share/polarization.tex)
-
-m4_include(../share/michelson.tex)
 
 %============================================================
 \formatappendixtoc

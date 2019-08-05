@@ -1,5 +1,7 @@
 include whichbook.make
 
+# 222
+
 MODE = nonstopmode
 TERMINAL_OUTPUT = err
 MYSELF = Makefile
@@ -35,6 +37,7 @@ book:
 	@$(DO_PDFLATEX)
 	@$(DO_PDFLATEX)
 	@$(DO_PDFLATEX)
+	@../scripts/harvest_aux_files.rb
 	@rm -f $(TERMINAL_OUTPUT) # If pdflatex has a nonzero exit code, we don't get here, so the output file is available for inspection.
 	@rm -f $(BOOK).tex lab.cls lmmath.sty mixmath.sty
 
