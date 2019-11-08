@@ -1,5 +1,8 @@
 #!/usr/bin/perl
 
+use FindBin qw( $RealBin );
+use lib $RealBin;
+
 #$| = 1; # Set output to flush directly (for troubleshooting)
 require "cgi-lib.pl";
 use strict;
@@ -29,7 +32,7 @@ __HTML__
   print "</p>\n";
 
   print "<p><b>Next set of data:</b></p>\n";
-  print $co->startform(-method=>'POST',-action=>"http://lightandmatter.com/cgi-bin/lrc.cgi");
+  print $co->start_form(-method=>'POST',-action=>"http://lightandmatter.com/cgi-bin/lrc.cgi");
   print "<p>f=".$co->textfield(-name=>'f',-value=>'')," Hz</p>";
   print "<p>Vmax=".$co->textfield(-name=>'vmax',-value=>$vmax)," V</p>";
   print "<p>V=".$co->textfield(-name=>'v',-value=>'')," V</p>";
