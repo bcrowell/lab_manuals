@@ -83,7 +83,7 @@ m4_include(../share/energy-in-fields.tex)
 
 m4_include(../share/rc.tex)
 
-m4_include(../share/lrc.tex)
+m4_include(../share/ac.tex)
 
 m4_include(../share/faraday.tex)
 
