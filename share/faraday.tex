@@ -4,7 +4,7 @@
 \equipn{function generator}{1/group}
 \equip{solenoid (Heath)   1/group plus a few more}
 \equipn{oscilloscope}{1/group}
-\equipn{10-ohm power resistor}{1/group}
+\equipn{100 $\Omega$ resistor}{1/group}
 \equipn{4-meter wire}{1/group}
 \equip{palm-sized pieces of iron or steel}
 \equip{masking tape}
@@ -55,9 +55,9 @@ deeper. He showed that a changing electric field produces a
 magnetic field, and a changing magnetic field produces an
 electric field. Faraday's law,
 \begin{equation*}
-      \Gamma_E  =  -\der\Phi_B/\der t  
+      \int \vc{E}\cdot\bell  =  -\der\Phi_B/\der t  
 \end{equation*}
-relates the circulation of the electric field around a
+relates the integral of the electric field around a
 closed loop to the rate of change of the magnetic flux
 through the loop. It forms the basis for such technologies
 as the transformer, the electric guitar, the amplifier, and
@@ -95,17 +95,15 @@ in the solenoid is being driven not just by the emf from the
 function generator but also by this ``self-induced'' emf.
 Even though the solenoid is just a long piece of wire, it
 does not obey Ohm's law under these conditions. To get
-around this difficulty, you can insert the 10-ohm
-power resistor in the circuit in series with the function
-generator and the solenoid. (A power resistor is simply a
-resistor that can dissipate a large amount of power without
-burning up.) The power resistor does obey Ohm's law, so by
+around this difficulty, you can insert the 100 $\Omega$
+resistor in the circuit in series with the function
+generator and the solenoid. The resistor does obey Ohm's law, so by
 using the scope to observe the voltage drop across it you
 can infer the current flowing through it, which is the same
 as the current flowing through the solenoid.
 
 Create the solenoid circuit, and hook up one channel of the
-scope to observe the voltage drop across the power resistor.
+scope to observe the voltage drop across the  resistor.
 A sine wave with a frequency on the order of 1 kHz will work.
 
 Wind the 2-m wire into circular loops small enough to fit
@@ -155,7 +153,22 @@ more of the field lines through the second solenoid.
 This part of the lab is a quantitative test of Faraday's
 law. Going back to the setup for part A, measure the
 amplitude (peak-to-peak height) of the voltage across the
-power resistor. Choose a position for the loops of wire that
+resistor. Check against your prediction from prelab question 1.
+
+There is a feature of the scope that seems to come on by
+default and messes up this measurement, so you need to turn this
+feature off. Press CH 1 Menu, and you will see something that
+says Probe 10X Voltage. This means that all your voltage measurements
+will be off by this factor. Push the button and then set this to
+Attenuation 1X rather than 10X. Do this for channel 2 as well.
+
+Another thing that can cause some confusion is that the function generator
+will probably say ``0.00A rms,'' which will make you think that there is
+a blown fuse or an open circuit. Actually, the current that flows in the
+solenoid circuit is simply so small that it rounds off to 0.00 on this
+readout.
+
+Choose a position for the loops of wire that
 you think will make it as easy as possible to calculate $\der \Phi_B/\der t$
 accurately based on knowledge of the variation of the
 current in the solenoid as a function of time. Put the loops
@@ -176,12 +189,18 @@ them in terms of Faraday's law.
 Compare your observations in part C quantitatively with Faraday's law.
 The solenoid isn't very long, so the approximate expression for the
 interior field of a long solenoid isn't very accurate here. To correct
-for that, multiply the expression for the field by $(\cos\beta+\cos\gamma)/2$,
-which you derived in homework problem 11-30 in Simple Nature, where
-$\beta$ and $\gamma$ are angles between the axis and the lines connecting
+for that, multiply the expression for the field by $(\cos\theta_1-\cos\theta_2)/2$,
+(\emph{Fields and Circuits}, ch.~11, problem 13), where
+$\theta_1$ and $\theta_2$ are angles between the axis and the lines connecting
 the point of interest to the edges of the solenoid's mouths.
 
 \prelab
+
+\prelabquestion In the solenoid circuit, suppose we have $L\approx 0.8\ \zu{H}$,
+$f=1000$ Hz, $R=162\ \Omega$ (the sum of the resistor and the solenoid's
+internal resistance), and a driving voltage $|\tilde{V}|=10.0\ \zu{V}$.
+Find the impedance, and predict the amplitude $|\tilde{I}|$ of
+the current and the amplitude $|\tilde{V}|$ of the voltage across the $100\ \Omega$ resistor.
 
 \prelabquestion  Plan what raw data you'll need to collect for part C,
 and figure out the equation you'll use to test whether your
