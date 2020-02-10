@@ -111,11 +111,6 @@ at one time, one group in the main room, one in the small
 side room, and one in the physics stockroom.  Meanwhile, the
 other groups will be doing parts B and C.
 
-m4_ifdef([:__sn:],[:%
-\emph{Odd-numbered groups will do part A at the first meeting and parts B and C at the second.
-Even groups will do it the other way around.}
-:],[::])
-
 \labpart{ Direct Measurement of Resonances by Listening}
 
 Set up the graduated cylinder so its mouth is about 3 mm from the center of the speaker grille.
@@ -245,7 +240,12 @@ a node there, touching it should have no effect.
 
 \prelab
 
-\prelabquestion   Find an equation to predict the frequencies of the
+\prelabquestion
+m4_ifdef([:__mod:],[:%
+\emph{Skip this question if you were assigned problem 5-5 in \emph{Modern Physics}.}   
+:],[:%
+:])%
+   Find an equation to predict the frequencies of the
 resonances in parts A and B. Note that they will not be
 the same equations, since one tube is symmetric and the
 other is asymmetric. For the symmetric one, you could simply staple your prelab from 

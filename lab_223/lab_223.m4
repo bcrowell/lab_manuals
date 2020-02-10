@@ -98,6 +98,15 @@ m4_include(../share/high-voltage.tex)
 
 m4_include(../share/laser-safety.tex)
 
+\afterpage{
+%\setlength{\parindent}{0pt}
+\addtolength{\textwidth}{-1in}
+%\setlength{\evensidemargin}{0in}
+\onecolumn
+%\setlength{\hoffset}{-1in}
+}
+
+m4_include(../share/comment-codes.tex)
 
 \backmatter
 \end{document}
