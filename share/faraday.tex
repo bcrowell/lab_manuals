@@ -156,8 +156,11 @@ amplitude (peak-to-peak height) of the voltage across the
 resistor. Check against your prediction from prelab question 1.
 
 There is a feature of the scope that seems to come on by
-default and messes up this measurement, so you need to turn this
-feature off. Press CH 1 Menu, and you will see something that
+default and changes your voltages by a factor of 10. Since this
+occurs for both channels, it ends up not affecting your results
+if you express them as a ratio between the amplitudes measured
+on the two channels. However, if you want to turn this off, you can.
+Press CH 1 Menu, and you will see something that
 says Probe 10X Voltage. This means that all your voltage measurements
 will be off by this factor. Push the button and then set this to
 Attenuation 1X rather than 10X. Do this for channel 2 as well.
@@ -189,19 +192,31 @@ them in terms of Faraday's law.
 Compare your observations in part C quantitatively with Faraday's law.
 The solenoid isn't very long, so the approximate expression for the
 interior field of a long solenoid isn't very accurate here. To correct
-for that, multiply the expression for the field by $(\cos\theta_1-\cos\theta_2)/2$,
+for that, multiply the expression for the field by the correction
+factor $\zeta = (\cos\theta_1-\cos\theta_2)/2$,
 (\emph{Fields and Circuits}, ch.~11, problem 13), where
 $\theta_1$ and $\theta_2$ are angles between the axis and the lines connecting
 the point of interest to the edges of the solenoid's mouths.
 
+This analysis is horrible to do and to read if you do it all numerically.
+Let $V$ be the voltage across the resistor and $\mathcal{E}$ the emf measured
+on the secondary coil. It's nice to work with the unitless ratio $\mathcal{E}/V$.
+For your theoretical result, you should be
+able to express this ratio symbolically in terms of the following
+symbols:
+\begin{align*}
+ k  &= \text{Columb constant} \\
+ c  &= \text{speed of light} \\
+ N_1  &= \text{number of turns in the primary coil} \\
+ N_2  &= \text{number of turns in the secondary coil} \\
+ f  &= \text{frequency} \\
+ A  &= \text{area of the secondary coil} \\
+ \ell  &= \text{length of the primary coil} \\
+ R  &= \text{resistance of the resistor} \\
+ \zeta  &= \text{correction factor for the magnetic field}.
+\end{align*}
+Check that the units work. Only plug in numbers at the end.
+
 \prelab
 
-\prelabquestion In the solenoid circuit, suppose we have $L\approx 0.8\ \zu{H}$,
-$f=1000$ Hz, $R=162\ \Omega$ (the sum of the resistor and the solenoid's
-internal resistance), and a driving voltage $|\tilde{V}|=10.0\ \zu{V}$.
-Find the impedance, and predict the amplitude $|\tilde{I}|$ of
-the current and the amplitude $|\tilde{V}|$ of the voltage across the $100\ \Omega$ resistor.
-
-\prelabquestion  Plan what raw data you'll need to collect for part C,
-and figure out the equation you'll use to test whether your
-observations are consistent with Faraday's law.
+\prelabquestion Find the theoretical equation for $\mathcal{E}/V$.
