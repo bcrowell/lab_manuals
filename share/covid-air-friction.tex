@@ -1,0 +1,137 @@
+\addtocounter{chapter}{-1}
+\renewcommand\thechapter{c1.3a}
+\lab{Air friction}\label{lab:covid-air-friction}
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used during the third week in Physics 205, 210, or 221.
+It assumes knowledge of Newton's first law.
+
+\introduction
+
+Friction between solid objects occurs all the time in our
+daily lives. The frictional force exerted by the air on a
+solid object is not as often evident, but it is responsible
+for the wind blowing our hair, for the slow dropping of a
+feather, and for our cars' poorer gas mileage at freeway
+speeds compared to more moderate speeds.
+
+The latter effect suggests that air friction might increase
+with speed, unlike solid-solid friction, which is nearly
+independent of speed. By Newton's first law, a car or a jet
+plane cruising at constant speed must have zero total force
+on it, so if the air friction force gets stronger with
+speed, that would explain why a greater forward-pushing
+force would be needed to travel at high speeds. For
+instance, a car traveling at low speed might have a -10 kN
+air friction force pushing backward on it, so in order to
+have zero total force on it the road must be making a
+forward force of +10 kN. At a higher speed, air friction
+might increase to -30 kN, so the road would need to make a
+forward force of +30 kN. The car convinces the road to make
+the stronger force by pushing  backward on the road more
+strongly: by Newton's third law, the car's force on the road
+and the road's force on the car must be equal in magnitude
+and opposite in direction. The car burns more gas because it
+must push harder against the road.
+
+Your goal in this lab is to find a proportionality relating
+the force of air friction to the velocity at which the air
+rushes over the object. For instance, you may find the rule
+\begin{equation*}
+	F\propto v   \qquad ,
+\end{equation*}
+which is a shorthand for
+\begin{equation*}
+	F  = (\text{some number})(v)   \qquad   .
+\end{equation*}
+
+The numerical value of ``some number'' is not very
+interesting, because we would expect it to be different for
+different objects, which is why you would write your result
+as $F\propto v$. This proportionality would tell you for
+instance that anytime the speed was doubled, the result
+would be twice as much air friction.
+
+Suppose instead you find that doubling the speed makes the
+force eight times greater, multiplying the speed by 10 makes
+the force 1000 times greater, and so on. In each case, the
+force is being multiplied by the third power of the increase
+in the speed, i.e., $F\propto v^3$.
+
+\observations
+
+The method is shown in the figure below. We use coffee
+filters because they don't tumble or sway very much as they
+fall, and because they allow us to easily change the mass of
+our falling object by nesting more coffee filters inside the
+bottom one, without changing its aerodynamic properties.
+The filters will start speeding up when you release them
+near the ceiling, but as they speed up, the upward force of
+air friction on them increases, until they reach a speed at
+which the total force on them is zero. Once at this speed,
+they obey Newton's first law and continue at constant speed.
+If the number of coffee filters is small,
+they will have reached their maximum speed within the first
+half a meter or so. By the time they are even with the edge
+of the table, they are moving at essentially their full
+speed.
+
+You can then use one of the timing techniques described in labs \ref{lab:covid-measurement} and
+\ref{lab:covid-g} determine how long
+it takes them to cover the distance to the floor, which will
+allow you to find their speed. During this final part of the
+fall, you know the upward force of air friction must be as
+great as the downward force of gravity, so you can
+determine what it was.
+
+\fig{me-air-howto}
+
+Note that if the coffee filters get too flattened out,
+they'll flutter, giving lousy results.
+
+Take data with stacks of various numbers of coffee filters.
+You will get the most clearcut determination of the power
+law relationship if your data cover the largest possible
+range of values. It's a good idea to take some data with a
+large number of filters, dropping them from the balcony
+outside so they have time to get up to their final speed.
+This is also the only way you can tell for sure whether you're
+taking data at terminal velocity: the results at the two different
+heights (inside and outside) should be consistent.
+
+
+\analysis
+
+Determine $g$, with propagation of errors. Compare with the global average value of $9.8\ \munit/\sunit^2$,
+using a statistical test as described in the example in appendix 2 of the normal lab manual.
+
+\prelab
+
+\prelabquestion Suppose you tried to do this lab with stacks of coins
+instead of coffee filters. Assuming you had a sufficiently
+accurate timing device, would it work?
+
+\prelabquestion Criticize the following statement:
+
+``We found that bigger velocities gave bigger air drag
+forces, which demonstrates the proportionality $F\propto v$.''
+
+\prelabquestion Criticize the following statement:
+
+``We found $F\propto v^7$, which shows that you need more
+force to make things go faster.''
+
+\analysis
+
+Use your raw data to compile a list of $F$ and $v$ values.
+Use the methods explained in appendix 5 of the normal lab manual to see if you can
+find a power-law relationship between $F$ and $v$. This will
+require fitting a line to a set of data, as explained in
+appendix 4. Both fitting a line to data and finding power
+laws are techniques you will use several more times in this
+course, so it is worth your while to get help now if
+necessary in order to get confident with them.
+
+

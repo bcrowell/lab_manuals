@@ -46,6 +46,12 @@ m4_include(../share/covid-measurement.tex)
 
 m4_include(../share/covid-g.tex)
 
+m4_include(../share/covid-air-friction.tex)
+
+m4_include(../share/covid-mu-k.tex)
+
+m4_include(../share/covid-capstan.tex)
+
 
 \twocolumn
 
