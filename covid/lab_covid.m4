@@ -52,6 +52,12 @@ m4_include(../share/covid-mu-k.tex)
 
 m4_include(../share/covid-capstan.tex)
 
+m4_include(../share/covid-moi.tex)
+
+m4_include(../share/covid-optics.tex)
+
+m4_include(../share/covid-grating.tex)
+
 
 \twocolumn
 

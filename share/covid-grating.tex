@@ -1,0 +1,78 @@
+\addtocounter{chapter}{-1}
+\renewcommand\thechapter{c3.9a}
+\lab{Calibration of a diffraction grating}\label{lab:grating}
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used around the 9th week of Physics 206, 211, or 223.
+It assumes knowledge of wave optics.
+Each student will need an unknown diffraction grating. In April 2020, I mailed
+the necessary gratings to my Physics 223 students.
+
+\section{Introduction}
+
+In this lab you will observe the diffraction of visible light through a diffraction grating and determine the spacing $d$ of the grating,
+which is too small to be measured directly without a microscope.
+
+To get familiar with the grating, hold it in front of your eye. You should see rainbows. For example, if you orient the grating
+in a certain way, then when you look at a light source such as a lightbulb, you will see the white lightbulb itself, which is the
+$m=0$ diffraction of the light, and off to the right and left there will be rainbows which arise from the $m=1$ (``first order'') diffraction.
+If you rotate the grating 90 degrees from this orientation, you will see the rainbows above and below the source. You should
+also be able to easily see $m=2$, and if the rest of the room is dark enough $m=3$.
+
+The easiest way to determine $d$ is if you have a webcam or cell phone to take pictures. Below is a photo I took of a modern LED light
+in my house, using a webcam. The light fixture is at the top of the frame, and below it is a discrete spectrum, which is what the LED bulb emits.
+In my example, each discrete wavelength shows up as an oval with the same shape as the glowing part of the light fixture.
+I could have made the picture a little cleaner by rigging up a pair of collimators to narrow the light source down to a narrow
+rectangle. The diffracted images would then have appeared as lines, and by tradition spectroscopists refer to these things as ``lines,''
+even in contexts where the spectrum is being measured as a graph or in some other way.
+
+\fig{co-grating-photo1}
+
+If you use an incandescent light source such as a cigarette lighter or an old-fashioned incandescent lightbulb, you will see a continuous
+spectrum rather than a discrete one like mine. A fluorescent lightbulb has a more complex spectrum consisting mainly of a set of bands.
+
+Your camera may try to automatically adjust the brightness of the image, and it may not do what you want if the bright $m=0$ fringe
+is present. If this is a problem, you can try moving the grating so that its cardboard frame blocks the $m=0$ light from getting to the camera.
+
+To calibrate your grating, we will need a known wavelength $\lambda$. To do this, we take advantage of the physiology of the
+human eye. If you look at pictures of the visible-light rainbow, for example in the Wikipedia article ``Light,'' you will see
+that some colors, such as red, green, and blue, are actually very broad portions of the rainbow, i.e., the eye is insensitive
+to wavelength in these parts of the spectrum. However, other parts, especially yellow, are extremely narrow, meaning that
+the eye's sensitivity to wavelength is very good in these bands. My setup was not actually optimal, because my LED light
+had a discrete spectrum that doesn't include any emission in the yellow. You would do better to use a source that does include
+yellow. The best I could do with my source was to use the orange and try to estimate its color by comparison with the image
+in the Wikipedia article. This is not optimal because the color-faithfulness of computer displays is generally very poor and
+uncalibrated.
+
+Next you need a calibration of your image so that you can find the diffraction angle of the part of the spectrum you're using.
+Here I used a book at a known distance from the camera. By measuring the book and doing some trig, I was able to
+calibrate the angular scale of the image and find the unknown angle of the $m=1$ line I was using.
+
+\fig{co-grating-photo2}
+
+\section{Analysis}
+
+Determine the spacing of the grating. Check with the other members of your group to see if you get reasonable agreement.
+
+A mathematically complicated issue in this type of scientific photography is that the world around the camera is like an
+imaginary sphere (think of the bowl of the sky), and this sphere gets mapped onto the flat rectangular silicon chip that is
+the camera's sensor. This is similar to the way in which we represent the surface of the earth on a flat map. When we do
+this, there will always be distortions of one kind or another. We can pick a particular map projection that has properties
+that we want, such as preserving angles or areas, but we can never make everything exactly right. Taking this into account
+with your camera's image would be rather complicated and difficult to do accurately. If the angle $\theta$ you're dealing with
+(in units of radians) is small, then we only incur a small error by simply assuming that the image has a constant angular
+calibration of pixels to radians. The error is probably of relative size $\sim\theta^2$ (i.e., of order $\theta^3$ in absolute terms).
+
+Because we are ignoring errors of relative size $\theta^2$, it is also legitimate to make other approximations that simplify
+the analysis. There is no point in \emph{not} using the small-angle approximation $\sin\theta\approx\theta$ (for $\theta$ in
+radians) in the equation for the diffraction angle, and for example if the function $\tan\theta$ occurs in your determination
+of the angular size of a calibration object like the book, then you may as well take $\tan\theta\approx\theta$. To get a
+feel for this, you may want to try calculating things like $\sin 0.1$ and $\tan 0.1$ on your calculator and verifying that
+the relative error is on the order of $0.1^2$ (absolute error $\sim 0.1^3$).
+
+There is not much point in doing a propagation of random errors for this lab, since the main source of error is the set of
+geometrical systematic errors described above.
+
+

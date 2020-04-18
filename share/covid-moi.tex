@@ -1,0 +1,80 @@
+\addtocounter{chapter}{-1}
+\renewcommand\thechapter{c1.13a}
+\lab{The moment of inertia}\label{lab:covid-moi}
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used around the 13th week of Physics 221.
+It assumes knowledge of the moment of inertia. A few necessary facts about simple harmomic
+motion are introduced as needed, so that topic does not need to have been covered already
+in the lecture class.
+
+\section*{Theory}
+If you pick up a pen between your thumb and middle finger and wiggle it,
+you are sensing the pen's moment of inertia. By definition, the moment of
+inertia of an object is
+\begin{equation}
+  I = \int r^2 \der m,
+\end{equation}
+where $\der m$ is an infinitesimal element of mass, and $r$ is its distance
+from the axis of rotation. Convince yourself that this has units of $\kgunit\cdot\munit^2$.
+
+If we consider the pen as a rod with uniform mass per unit
+length $\mu$, then we have $\der m=(\der m/\der x)\der x=\mu \der x$, so if the length of the pen is $a$, then this
+integral becomes
+\begin{equation}
+  I = \int_{-a/2}^{a/2} x^2 \mu \der x = \frac{1}{12}\mu a^3,
+\end{equation}
+or, in terms of the total mass $M$,
+\begin{equation}
+  I = \frac{1}{12}Ma^2.
+\end{equation}
+Check that this has the right units, so that the only reason to do the integral was to find the unitless $1/12$ in front.
+
+In this lab, we will be rotating an index card, which is a rectangular sheet of mass. Let its dimensions be $a$ and $b$.
+Using iterated integrals, one can show that when such a sheet is rotated about a line passing through its center, the
+moment of inertia becomes
+\begin{equation}
+  I = \frac{1}{12}M\left(a^2+b^2\right).
+\end{equation}
+Check that this makes sense when $b=0$. Use the Pythagorean theorem to give a simple interpretation
+of the quantity $a^2+b^2$.
+
+\emph{Parallel axis theorem:} Suppose that a body has mass $M$ and moment of inertia $I_0$ for rotation about a certain axis passing
+through its center of mass. Now we define a second axis of rotation, parallel to the first, at a distance $d$ from it.
+Then the moment of inertia for rotation about this new axis is $I=I_0+Md^2$.
+Check that this equation has units that make sense.
+
+Suppose that a pendulum consists of a rigid body that rotates about a certain axis, and the variables $I$, $M$, and $d$ are
+as defined above. Then the period of the pendulum is
+\begin{equation}
+  T = 2\pi \sqrt{\frac{I}{Mgd}}.
+\end{equation}
+Check that the units of this equation make sense.
+
+To get good precision, it's important to make sure that the card is accurately rectangular, so it's a good
+idea to use a card that was accurately manufactured. To make the parallel axis theorem work, we need the
+axis of rotation to be parallel to the original one, i.e., in this case, perpendicular to the card. Therefore,
+you want to make sure that the card doesn't flutter as it swings.
+
+\section*{Experiment}
+Set up your index card as a pendulum, by sticking a pin through it at some off-center point and
+suspending it from a vertical surface such as a board or a piece of cardboard. Measure the period
+and the relevant dimensions.
+
+You will want to get friction as small as possible, so that you can let it swing for many cycles
+before stopping your stopwatch. For example, if you can get it to swing for 20 cycles before the
+oscillations stop or become too small to see, then the stopwatch timing errors get divided by 20.
+
+\section*{Analysis}
+Compare with theory. Do an error analysis including a propagation of errors, and use your
+error bars in comparing with theory, giving a probabilistic interpretation of the result.
+For reference on error analysis, see appendices 2 and 3 of the lab manual at
+\url{http://lightandmatter.com/lab_221.pdf}.
+
+Note: In principle, there is a correction to the period due to damping. For damping in which
+the frictional torque is proportional to the angular velocity, this correction is
+a factor of $(1-1/4Q^2)^{-1/2}$, where $Q$ is the ``quality factor'' (see the Wikipedia
+article ``Q factor.'') But friction is fairly weak in this experiment, so $Q$ is at least
+$\sim 10$, and therefore this correction is negligible.
