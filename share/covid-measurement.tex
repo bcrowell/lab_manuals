@@ -1,0 +1,93 @@
+\addtocounter{chapter}{-1}
+\renewcommand\thechapter{c1.1a}
+\lab{Measuring Motion}\label{lab:covid-measurement}
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used during the first week in Physics 205, 210, or 221.
+It assumes no previous knowledge of physics.
+
+\introduction
+
+In his 1638 book \emph{Discourses on Two New Sciences}, Galileo described a series
+of experiments in which he rolled balls down inclined planes, starting from rest.
+He used a crude water clock to determine how the time $t$ for the motion depended
+on the distance $x$. Two hypotheses that he tested were that $t \propto x$ or
+that $t \propto \sqrt{x}$. Both of these are of the form
+\begin{equation*}
+  t \propto x^p
+\end{equation*}
+for some exponent $p$. There were competing scientific theories that predicted
+$p=1$ and $p=1/2$. A proportionality like this can always be interpreted as a statement
+about ratios,
+\begin{equation*}
+  \left(\frac{t_1}{t_2}\right) = \left(\frac{x_1}{x_2}\right)^p.
+\end{equation*}
+
+
+\observations
+
+The idea of this lab is to test these hypotheses using materials from
+around the house. You don't have to build a wooden ramp or use a ball as Galileo did.
+Possibilities include releasing a Hot Wheels car on a sloping track, or going outside
+and riding a skateboard down a sloping driveway. The photo shows what I came up when
+when I tested the lab myself. I found a piece of an old bunk bed in the garage and
+leaned it against a couch. I marked two points on one of the wood slats with pieces
+of white tape, so that $x_1/x_2=2$. (Only the ratio $x_1/x_2$ matters here, so it
+wasn't necessary for me to scrounge up a tape measure and measure $x_1$ and $x_2$ in
+units of meters or feet.) I released a penny and let it slide from the two different
+heights, timing it with my cheapo digital watch's stopwatch function.
+
+\fig{co-measurement-couch}
+
+For timing, you may find it convenient to use a stopwatch app on a smartphone. If
+all you have is a computer with an internet connection, then you can google and find web pages
+with stopwatch applications. If you do have a smartphone and it's a relatively recent, fancy
+model, then it probably has the ability to take slow-motion video. These seem to slow down
+their video by 8 times, but you should verify that against a clock. When I've tried doing
+this kind of thing with a webcam, it didn't work very well, because there was a great deal
+of motion blurring, and cheap computer video uses progressive scanning, so that the entire
+picture is not actually updated all at once for each frame.
+
+As a general rule in science, set yourself up for success by choosing experimental conditions
+in which you can measure a \emph{big} thing. It's hard to measure a small thing with good
+precision. That's why, in my version of this lab, I went to the trouble of finding the nice
+long piece of wood. I could have done the lab on a tabletop using a book, for example, but
+the results would have been lousy, because it would have been impossible to measure the
+short times with good precision.
+
+\analysis
+
+We are testing two hypotheses, each of which is stated as an equation. For any real-world
+experiment in which we measure continuously varying quantities, we are guaranteed that the two sides of an equation will
+never actually equal one another. Therefore in order to test the hypothesis expressed by the
+equation, we need to estimate the uncertainties inherent in our measuring technique. In this
+lab, it's easy to measure the distances very precisely, but the short time intervals are
+hard to measure. That means that we need to get a numerical estimate of the range of uncertainty
+in the ratio $t_1/t_2$. This type of thing is discussed in appendices 2 and 3 in the
+normal lab manual. Appendix 2 describes how to find the uncertainty in your raw data. In this
+lab, that will involve taking multiple measurements of each time. Appendix 3 describes how
+to find the uncertainty in the result of a calculation, based on the uncertainty of each piece
+of raw data that went into the calculation. The result is a quantitative estimate of the expected
+uncertainty --- the ``error bars'' --- so you'll have something like $t_1/t_2=\_\_\_\_\_\_ \pm \_\_\_\_\_\_$.
+
+Finally,
+you will want to compare your result with the prediction of each hypothesis, and do a statistical test to see if the
+error bars are roughly big enough to account for the difference between the hypothesis and the actual results. This
+is described in appendix 2.
+The final result is a probability. For example, my own result for $t_1/t_2$ was off compared to one of
+the hypotheses by about 2 times my estimated uncertainty. The probability of being off by at least this much, if the
+hypothesis is true, is about 5\%. Since 5\% is a fairly big probability, my results were statistically consistent
+with the hypothesis.
+
+
+\prelab
+
+\prelabquestion  
+Suppose that $x_1/x_2=2$, as in the example I did with the penny. Predict $t_1/t_2$ in
+the cases $p=1$ and $p=1/2$. Interpret these numbers. In each case, is the object
+being described as speeding up?
+
+
+

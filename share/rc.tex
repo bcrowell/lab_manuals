@@ -2,10 +2,13 @@
 
 \apparatus
 \equip{oscilloscope}
-\equip{Pasco PI-9587C function generator}
+\equip{Pasco PI-8127 function generator (in lab benches in 415)}
 \equip{unknown capacitor}
 \equip{known capacitors, 0.05 $\mu$F }
 \equip{resistors of various values}
+
+Note: It is also possible to do this lab using the Pasco PI-9587C function
+generators.
 
 \begin{goals}
 
@@ -177,13 +180,15 @@ generator's voltage flips back and forth. Note that the
 oscilloscope is simply a fancy voltmeter, so you connect it
 to the circuit the same way you would a voltmeter, in
 parallel with the component you're interested in. Make sure the
-scope is set on DC, not AC, by doing CH 1$>$Coupling$>$DC. A
-complication is added by the fact that the scope and the
+scope is set on DC, not AC, by doing CH 1$>$Coupling$>$DC.\footnote{AC coupling filters the input to remove any DC
+component. However, this has the effect of distorting non-sinusoidal waveforms such as the ones we're using in this
+lab.}
+A complication is added by the fact that the scope and the
 function generator are fussy about having the grounded sides
 of their circuits connected to each other. The banana-to-BNC
 converter that goes on the input of the scope has a small
 tab on one side marked ``GND.'' This side of the scope's
-circuit must be connected to the ``LO'' terminal of the
+circuit must be connected to the grounded terminal black terminal of the
 function generator. This means that when you want to switch
 from measuring the capacitor's voltage to measuring the
 resistor's, you will need to rearrange the circuit a little.
@@ -193,6 +198,14 @@ shown above, it may be because the function generator is
 flip-flopping too rapidly or too slowly. The function
 generator's frequency has no effect on the RC time constant,
 which is just a property of the resistor and the capacitor. 
+
+With the Tektronix TDS1001B scopes, I have observed a problem
+in which internal interference occurs in the scope when the
+time base is set to 1 ms or shorter. This interference looks like
+a periodic spike superimposed on the signal. It becomes a problem
+if it makes triggering not work right. One possible solution is
+to use the run/stop button on the scope to get a frozen image of a single trace,
+so you don't need steady triggering.
 
 If you think you have a working setup, observe the effect of
 temporarily placing a second capacitor in parallel with the

@@ -103,6 +103,7 @@ something, don't initial that point, and ask your instructor for clarification b
 \newcommand{\setup}{\section*{Setup}}
 \newcommand{\observations}{\section*{Observations}}
 \newcommand{\analysis}{\section*{Analysis}}
+\newcommand{\covid}{This is a lab intended for studente to do at home during the Covid-19 epidemic.}
 \newcommand{\prelab}{\section*{Prelab} The point of the prelab questions is to make sure you understand what you're doing, why you're doing it,
 and how to avoid some common mistakes. If you don't know the answers, make sure to come to my office hours before lab and get help! Otherwise you're
 just setting yourself up for failure in lab.}
