@@ -1,0 +1,173 @@
+\lab{AC Circuits}\label{lab:ac}
+
+\apparatus
+\equipn{Heath coils}{2/group}
+\equipn{0.022 $\mu\zu{F}$ capacitor}{2/group}
+\equip{0.05 $\mu\zu{F}$ capacitor}
+\equip{470 $\Omega$ resistor}
+\equip{Pasco PI-8127 function generator (in lab benches in 415)}
+\equip{oscilloscope}
+\equip{banana to BNC converters}
+\equip{alligator clips}
+
+\begin{goals}
+
+\item[] Observe the resonant behavior of an LRC circuit.
+
+\item[] Predict and observe the behavior of capacitances and inductances in parallel and series.
+
+\item[] Observe phase relationships in capacitors and inductors.
+
+\item[] Predict and observe the complex impedance of a capacitor.
+\end{goals}
+
+\section*{Preliminary}
+
+For use later in the lab, summarize what you know about how resistances, capacitances, and inductances
+combine in parallel and series. An easy way to do this is to use the fact that the corresponding
+\emph{impedances} combine like resistances.
+
+\begin{tabular}{lp{30mm}p{30mm}}
+          & series & parallel \\
+resistances & & \\
+capacitances & & \\
+inductances & & 
+\end{tabular}
+
+%\vfill\pagebreak
+
+\newcommand{\predict}{\emph{Predict:\ }}
+\newcommand{\predictnocolon}{\emph{Predict\ }}
+\newcommand{\obs}{\emph{Observe:\ }}
+\newcommand{\obsnocolon}{\emph{Observe\ }}
+\newcommand{\explain}{\emph{Explain\ }}
+\newcommand{\measure}{\emph{Measure\ }}
+
+\labpart{Resonance}
+
+\predict
+The Heath coils are not intended to be used as inductors, and are not labeled with inductance values, but we
+expect them to have $L\sim1\ \zu{H}$ (\emph{Fields and Circuits}, ch.~13, problem 10). Make a rough estimate of the resonant frequency of this series LRC circuit:
+
+\figcaption{em-ac-resonance}{Observing the response of an LRC circuit to a driving voltage.}
+
+\pagebreak
+
+\obs Use the setup shown above to observe the current as a function of the driving frequency. Although the
+oscilloscope is a voltmeter, not an ammeter, by using it to measure $V_R$, we are getting a measure of $I_R$
+as well, by Ohm's law. Note the grounds, which have to coincide.
+
+For safety, put the function generator's voltage at zero while setting the circuit up, then always use it
+after that on the lowest practicable setting. The voltages $V_C$ and $V_L$ can be large, even when the function
+generator's voltage is small. When operating near resonance, reduce the voltage as much as possible. It should be
+possible to do the whole lab without ever exceeding $\sim 0.3\ \zu{V}$ on the function generator's output.
+
+Determine the actual resonant frequency, and compare with your prediction. (Afterward, turn off the voltage
+for safety when changing the circuit for the next part.)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\labpart{Effect of $C$ on the resonant frequency}
+
+\predict
+Predict the new resonant frequency when $C$ is changed to $0.05\ \mu\zu{F}$. Use ratios, not a plug-in.
+
+\obs
+Check your prediction. (Afterward, turn off the voltage.)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\labpart{Inductances in series and parallel}
+
+Switch back to the default value of $C$ from part A.
+Predict and observe the cases where the Heath coil is replaced by \emph{two} Heath coils (1) in series,
+and (2) in parallel.
+(Turn off the voltage when making changes to the circuit.)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+
+\labpart{Capacitances in series}
+
+\predict
+Predict the resonant frequency when the capacitance in the original circuit is provided by two $0.022\ \mu\zu{F}$
+capacitors in \emph{series}.
+
+\obs
+Check your prediction. (Afterward, turn off the voltage.)
+
+\labpart{Phase relationship between voltage and current for an inductor}
+
+At some point it becomes inconvenient to take detailed measurements on this circuit because of the grounding of
+both the function generator's output and the scope's inputs. For this reason, let's drive it this way:
+
+\figcaption{em-ac-isolated}{Driving the LRC circuit inductively, so that it is isolated from the function generator's ground.}
+
+The varying magnetic field made by the first coil induces a curly electric field, which is felt as a voltage on the second
+coil. This is a type of transformer, used in this case for electrical isolation. Now we can take any measurements we like
+on the LRC circuit, as long as the grounded sides of the scope's two channels are connected to the same point.
+
+But because of this constraint imposed by the grounds of the scope's inputs, we are forced to set things up in such
+a way  that the signs in our measurements of $V_L$ and $V_R$ are inconsistent. For example, if the electric field is
+to the right, then channel 1 will read positive, but channel 2 will read negative. To compensate for this, we will
+tell the scope to negate channel 1. Press CH 1 MENU and do Invert On.
+
+\obsnocolon the phase relationship between $V_L$ (channel 1) and $I_L$ (which is the same as $I_R$ and therefore has the
+same phase as $V_R$, measured on channel 2).
+
+\explain this phase relationship.
+
+\pagebreak
+
+\labpart{Measurement of a complex impedance}
+
+\predictnocolon the complex impedance of the capacitor at this frequency, including both the magnitude and the argument.
+
+For safety, turn the voltage on the function generator to zero before going on. Rearrange the connections to the scope
+so you can measure $V_C$ and $V_R$. Think carefully about grounds. It may be necessary to rearrange the order of the
+series circuit.
+
+\newcommand{\mytilde}[1]{\widetilde{#1}}
+\newcommand{\mytildewide}[1]{\stackrel{\sim}{\smash{#1}\rule{0pt}{1.1ex}}}
+%      ... for use with wide characters like W
+%      https://tex.stackexchange.com/questions/471312/large-tilde-over-math-symbol-with-appropriate-horizontal-positioning
+
+
+\measure the amplitudes and phases of these voltages, and use them to find
+\begin{equation*}
+  Z_C = \frac{\mytilde{V}_C}{\mytilde{I}} = \frac{\mytilde{V}_C}{\mytilde{V}_R} \cdot R.
+\end{equation*}
+
+\subsection*{Troubleshooting}
+
+In part E, touching the housings of the coils together may produce a zero signal. Leave some air.
+
+If the function generator won't turn on, check whether the AC power cable is firmly inserted in
+the connector for the DC power supply.
+
+Some capacitors are labeled in unclear ways, or the ink has faded. If necessary, use a multimeter
+to check their values.
+
+With the Tektronix TDS1001B scopes, I have observed a problem
+in which internal interference occurs in the scope when the
+time base is set to 1 ms or shorter. This interference looks like
+a periodic spike superimposed on the signal. It becomes a problem
+if it makes triggering not work right. One possible solution is
+to use the run/stop button on the scope to get a frozen image of a single trace,
+so you don't need steady triggering.
+
+We have sometimes observed signals that have strange waveforms rather than sine waves.
+This problem was fixed by pressing the default setup on the scope. It must result from
+some unfortunate interaction between the scope and the circuit.
+
+\subsection*{Additional notes for the instructor}
+
+An alternative technique for dealing with grounding in this lab is to connect all the grounded
+inputs and outputs to one point in the circuit, and then use the arithmetic functions on the
+scope to display the difference between inputs as necessary.
+
+The Heath coil has a DC resistance of about 62 ohms, and the signal generator
+may have an output impedance of several hundred ohms. All the parts of this lab
+are constructed so as to be essentially insensitive to this (except that the $Q$ of
+the circuit is affected).
