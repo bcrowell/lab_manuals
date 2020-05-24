@@ -54,6 +54,8 @@ m4_include(../share/covid-capstan.tex)
 
 m4_include(../share/covid-moi.tex)
 
+m4_include(../share/covid-dipole-and-superposition.tex)
+
 m4_include(../share/covid-optics.tex)
 
 m4_include(../share/covid-grating.tex)
