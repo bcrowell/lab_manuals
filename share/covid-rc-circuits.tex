@@ -1,0 +1,200 @@
+\renewcommand\thechapter{c2.13a}
+\lab{RC circuits}\label{lab:rc-circuits}
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used around the 13th week in Physics 222.
+
+\apparatus
+\equip{banana plug cables (8, soldered by the student)}
+\equip{1.5 V battery and holder}
+\equip{multimeter}
+\equip{330 $\mu\zu{F}$ bipolar electrolytic capacitor}
+\equip{100 $\zu{k}\Omega$ resistor (or similar value)}
+\equip{51 $\zu{k}\Omega$ resistor (or similar value)}
+\equip{alligator clips (6)}
+\equip{timing device (stopwatch, computer, or cell phone app)}
+
+\begin{goals}
+
+\item[] Observe the exponential curve of a discharging capacitor.
+
+\item[] Predict and test how the $RC$ time constant changes when the resistance is changed.
+\end{goals}
+
+\section*{About the equipment}
+
+The big capacitor used in this lab is an unusually large value compared to those usually found
+in most consumer electronics. It costs about \$2. It is an electrolytic capacitor, meaning that
+between the plates there is a substance whose electrical properties cause the capacitance to
+be much bigger than it would be with a capacitor having a vacuum or air between the plates.
+Most electrolytic capacitors are polar devices, and if you hook them up with the wrong polarity,
+they explode. This one works with either polarity.
+
+The purpose of using this unusual high-value capacitor is that we can make the RC time constant
+very long, and therefore we can use a multimeter rather than an oscilloscope to see what's going
+on.
+
+\introduction
+
+God bless the struggling high school math teacher, but some
+of them seem to have a talent for making interesting and
+useful ideas seem dull and useless. On certain topics such
+as the exponential function, $e^x$, the percentage of students
+who figure out from their teacher's explanation what it
+really means and why they should care approaches zero.
+That's a shame, because there are so many cases where it's
+useful. The graphs show just a few of the important
+situations in which this function shows up.
+
+\fig{em-rcc-exponentials}
+
+The credit card example is of the form
+\begin{equation*}
+    y=ae^{t/k}   \qquad   ,
+\end{equation*}
+while the Chernobyl graph is like
+\begin{equation*}
+    y=ae^{-t/k}    \qquad   ,
+\end{equation*}
+In both cases, $e$ is the constant $2.718\ldots$, and $k$ is a
+positive constant with units of time, referred to as the
+time constant. The first type of equation is referred to as
+exponential growth, and the second as exponential decay. The
+significance of $k$ is that it tells you how long it takes
+for $y$ to change by a factor of $e$. For instance, an 18\%
+interest rate on your credit card converts to $k=6.0$ years.
+That means that if your credit card balance is \$1000 in
+1996, by 2002 it will be \$2718, assuming you never really
+start paying down the principal.
+
+An important fact about the exponential function is that it
+never actually becomes zero --- it only gets closer and
+closer to zero. For instance, the radioactivity near
+Chernobyl will never ever become exactly zero. After a while
+it will just get too small to pose any health risk, and at
+some later time it will get too small to measure with
+practical measuring devices.
+
+Why is the exponential function so ubiquitous? Because it
+occurs whenever a variable's rate of change is proportional
+to the variable itself. In the credit card and Chernobyl examples,
+\begin{gather*}
+    (\text{rate of increase of credit card debt}) \\
+    \qquad	\propto(\text{present credit card debt})    \\
+    (\text{rate of decrease of the number of radioactive atoms}) \\
+    \qquad	\propto(\text{present number of radioactive atoms})    
+\end{gather*}
+
+For the credit card, the proportionality occurs because your
+interest payment is proportional to how much you currently
+owe. In the case of radioactive decay, there is a proportionality
+because fewer remaining atoms means fewer atoms available to
+decay and release radioactive particles. This line of thought
+leads to an explanation of what's so special about the
+constant $e$. If the rate of increase of a variable $y$ is
+proportional to $y$, then the time constant $k$ equals one
+over the proportionality constant, and this is true only if
+the base of the exponential is $e$, not 10 or some other number.
+
+Exponential growth or decay can occur in circuits containing
+resistors and capacitors. Resistors and capacitors are the
+most common, inexpensive, and simple electrical components.
+If you open up a cell phone or a stereo, the vast majority
+of the parts you see inside are resistors and capacitors.
+Indeed, many useful circuits, known as RC circuits, can be
+built out of nothing but resistors and capacitors. In this
+lab, you will study the exponential decay of the simplest
+possible RC circuit, shown below, consisting of one resistor
+and one capacitor in series.
+
+\fig{em-rcc-simplified}
+
+Suppose we initially charge up the capacitor, making an
+excess of positive charge on one plate and an excess of
+negative on the other. Since a capacitor behaves like
+$V=Q/C$, this creates a voltage difference across the
+capacitor, and by Kirchoff's loop rule there must be a
+voltage drop of equal magnitude across the resistor. By
+Ohm's law, a current $I=V/R=Q/RC$ will flow through
+the resistor, and we have therefore established a proportionality,
+\begin{gather*}
+    (\text{rate of decrease of charge on capacitor}) \\
+    \qquad	\propto(\text{present charge on capacitor})  \qquad .  \\
+\end{gather*}
+
+It follows that the charge on the capacitor will decay
+exponentially. Furthermore, since the proportionality
+constant is $1/RC$, we find that the time constant of the
+decay equals the product of $R$ and $C$. (It may not be
+immediately obvious that Ohms times Farads equals seconds, but it does.)
+
+Note that even if we put the charge on the capacitor very
+suddenly, the discharging process still occurs at the same
+rate, characterized by $RC$. Thus RC circuits can be used to
+filter out rapidly varying electrical signals while
+accepting more slowly varying ones. A classic example occurs
+in stereo speakers. If you pull the front panel off of the
+wooden box that we refer to as ``a speaker,'' you will find
+that there are actually \emph{two} speakers inside, a small
+one for reproducing high frequencies and a large one for the
+low notes. The small one, called the tweeter, not only
+cannot produce low frequencies but would actually be damaged
+by attempting to accept them. It therefore has a capacitor
+wired in series with its own resistance, forming an RC
+circuit that filters out the low frequencies while
+permitting the highs to go through. This is known as a
+high-pass filter. A slightly different arrangement of
+resistors and inductors is used to make a low-pass filter
+to protect the other speaker, the woofer, from high frequencies. 
+
+\observations
+
+\labpart{Predicting and measuring an RC time constant}
+
+Predict the RC time constant of the capacitor when used with
+the larger of the two resistance values. Hook up the resistor
+and capacitor as a single loop. Connect the voltmeter to measure
+the voltage across the capacitor. Finally, connect the battery
+across the capacitor in order to charge it up. The circuit should
+now be four elements, all in parallel.
+
+When I first did this experiment, I hadn't thought through what
+should happen when I connected the battery. I thought the capacitor
+might take a long time, like the time RC, to charge up. But in this
+setup, the circuit acts like an RC circuit containing the battery's
+internal resistance (which is much smaller than that of the resistor),
+so the charging-up process is very fast.
+
+Measure the voltage $V_0$ of the battery, and calculate $V_0/e$. When
+the circuit is discharged, the time required for the voltage to go from
+$V_0$ to $V_0/e$ should be $\tau=RC$, which you have already predicted.
+
+Disconnect the battery, and simultaneously start your timer.
+Watch the voltmeter until it reaches $V_0/e$, and stop your timer.
+This is the actual time constant, which can be compared with your
+prediction.
+
+\labpart{Changing the resistance}
+
+Predict the new RC time constant when the original resistance is
+replaced by the other, smaller value. Test your prediction.
+
+\labpart{The decay curve}
+
+Go back to the original resistance. Given the experimental value of
+the time constant $\tau$ that you previously measured, calculate
+$2\tau$, $3\tau$, $4\tau$, and $5\tau$ in units of minutes and seconds.
+Charge up the capacitor and then, as before, start the timer as you
+disconnect the battery. Record the voltage at the predetermined times.
+
+\analysis
+
+Compare your predictions with experiment for parts A and B.
+
+For part C, test the theoretical prediction that the decay is
+an exponential one. The nicest visual way to do this is to take
+logs in order to linearize a graph as a function of time. Your
+eye is a good judge of whether a line is a line.
+

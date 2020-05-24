@@ -41,6 +41,7 @@ subject to the Creative Commons CC-BY-SA license.
 %-------------------------------------------------------------
 
 
+%--------------------------- 221 -----------------------------
 
 m4_include(../share/covid-measurement.tex)
 
@@ -54,7 +55,13 @@ m4_include(../share/covid-capstan.tex)
 
 m4_include(../share/covid-moi.tex)
 
+%--------------------------- 222 -----------------------------
+
 m4_include(../share/covid-dipole-and-superposition.tex)
+
+m4_include(../share/covid-rc-circuits.tex)
+
+%--------------------------- 223 -----------------------------
 
 m4_include(../share/covid-optics.tex)
 
