@@ -59,6 +59,8 @@ m4_include(../share/covid-moi.tex)
 
 m4_include(../share/covid-dipole-and-superposition.tex)
 
+m4_include(../share/covid-oscilloscope.tex)
+
 m4_include(../share/covid-rc-circuits.tex)
 
 %--------------------------- 223 -----------------------------
