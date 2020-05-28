@@ -57,9 +57,13 @@ m4_include(../share/covid-moi.tex)
 
 %--------------------------- 222 -----------------------------
 
+m4_include(../share/covid-electric-field.tex)
+
 m4_include(../share/covid-dipole-and-superposition.tex)
 
 m4_include(../share/covid-oscilloscope.tex)
+
+m4_include(../share/covid-electromagnetism.tex)
 
 m4_include(../share/covid-rc-circuits.tex)
 
