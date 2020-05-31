@@ -67,6 +67,8 @@ m4_include(../share/covid-electromagnetism.tex)
 
 m4_include(../share/covid-rc-circuits.tex)
 
+m4_include(../share/covid-ac-circuits.tex)
+
 %--------------------------- 223 -----------------------------
 
 m4_include(../share/covid-optics.tex)
