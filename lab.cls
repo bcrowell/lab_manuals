@@ -248,19 +248,9 @@ just setting yourself up for failure in lab.}
 	\setlength{\belowdisplayshortskip}{2mm plus 1mm minus 1mm}
 }
 %==============================toc==================================
-% Had problems with hw section entries in toc. They get pushed to the left as a side-
-% effect of not numbering them. Decided just to leave them out of toc.
-%\newcommand{\formatchtoc}[3]{%
-%  \titlecontents{chapter}[0mm]{\addvspace{#3}\sffamily}%
-%	{\contentsmargin{0mm}#1\thecontentslabel\enspace#1}%
-%	{\contentsmargin{0mm}#1}{#2}[]%
-%}
-%  \titlecontents{chapter}[0mm]{}%
-%	{\contentsmargin{0mm}\large\thecontentslabel\enspace\large}%
-%	{\contentsmargin{0mm}\large}{\titlerule*[1pc]{.}\contentspage}[]%
-%\contentsmargin{6mm}
+% Below, 3.3em is to make the toc in lab_covid come out looking right. Can otherwise be 2.3em.
 \titlecontents{chapter}[1.5em]{}%
-	{\contentslabel{2.3em}}%
+	{\contentslabel{3.3em}}%
 	{\hspace*{-2.3em}}%
 	{\titlerule*[1pc]{.}\contentspage}%
 %========================= graphicx package=========================
