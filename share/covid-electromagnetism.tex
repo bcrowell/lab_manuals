@@ -1,0 +1,235 @@
+\renewcommand\thechapter{c2.8a}
+\lab{Electromagnetism}\label{lab:covid-electromagnetism}
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used during the eighth week in Physics 222.
+The use of the oscilloscope has been covered in lab \ref{lab:covid-oscilloscope}.
+
+\apparatus
+\equip{oscilloscope (Hantek 6022)}
+\equip{battery}
+\equip{desktop computer or Android phone}
+\equip{stack of 5 ferrite disk magnets}
+\equip{hand-made solenoid (reused, or a second newly built one, see below)}
+\equip{tape (not included in kit)}
+
+\begin{goals}
+
+\item[] Observe electric fields induced by changing magnetic fields.
+
+\item[] Discover Lenz's law.
+
+\end{goals}
+
+\section*{Preparation}
+
+You will need a solenoid to act as a passive receiving coil in this lab (not as a powered electromagnet).
+One option is to use the solenoid you built for lab \ref{lab:dipole-and-superposition}. I tested this
+and it worked well enough. However, the signals I got from it were relatively small, and the lab would
+be easier to do with a purpose-built coil having a lot of turns. You will also need two coils for
+a later lab, so I would suggest building the second one now. Use the 26 gauge magnet wire, and follow
+the directions in lab \ref{lab:dipole-and-superposition}. However, for this coil, it will be more
+convenient to use a somewhat different design than the one described there. Try winding 200 turns of
+wire onto a 2-inch cardboard core cut from of a toilet paper roll. Remember to count and record the
+exact number of turns for later use. This should use up about 30 meters of wire, and when you're
+done it should have a resistance of about 4 ohms.
+
+\introduction
+
+Physicists hate complication, and when physicist Mich\-ael
+Faraday was first learning physics in the early 19th
+century, an embarrassingly complex aspect of the science was
+the multiplicity of types of forces. Friction, normal
+forces, gravity, electric forces, magnetic forces, surface
+tension --- the list went on and on. Today, 200 years later,
+ask a physicist to enumerate the fundamental forces of
+nature and the most likely response will be ``four: gravity,
+electromagnetism, the strong nuclear force and the weak
+nuclear force.'' Part of the simplification came from the
+study of matter at the atomic level, which showed that
+apparently unrelated forces such as friction, normal forces,
+and surface tension were all manifestations of electrical
+forces among atoms. The other big simplification came from
+Faraday's experimental work showing that electric and
+magnetic forces were intimately related in previously
+unexpected ways, so intimately related in fact that we now
+refer to the two sets of force-phenomena under a single
+term, ``electromagnetism.''
+
+Even before Faraday, Oersted had shown that there was at
+least some relationship between electric and magnetic
+forces. An electrical current creates a magnetic field, and
+magnetic fields exert forces on an electrical current. In
+other words, electric forces are forces of charges acting on
+charges, and magnetic forces are forces of moving charges on
+moving charges. (Even the magnetic field of a bar magnet is
+due to currents, the currents created by the orbiting
+electrons in its atoms.)
+
+Faraday took Oersted's work a step further, and showed that
+the relationship between electricity and magnetism was even
+deeper. He showed that a changing electric field produces a
+magnetic field, and a changing magnetic field produces an
+electric field. Faraday's work forms the basis for such
+technologies as the transformer, the electric guitar, the
+transformer, and generator, and the electric motor. It also
+led to the understanding of light as an electromagnetic wave.
+
+\section{Qualitative Observations}
+
+In this lab you will use a permanent magnet to produce
+changing magnetic fields. This causes an electric field to
+be induced, which you will detect using the solenoid connected to the oscilloscope. The electric field
+drives electrons around the solenoid, producing a current
+which is detected by the oscilloscope.
+
+When using a standalone oscilloscope for this type of measurement, the
+nice setup is to put the time base on something very long like one
+second.  Triggering becomes unnecessary, and the scopes we use at
+school are programmed so that when the time base is very long, they
+simply continuously display traces.
+
+The USB oscilloscopes we're using are somewhat less convenient for
+this purpose, but still usable. They do not have a hardware trigger.
+They just continuously read in data, and the software simply doesn't
+display the data unless it satisfies the trigger condition.
+
+In the OpenHantek6022
+software, the longest time base that is enabled by default is 100 ms, which is
+shorter than I would have used for this lab. I asked the author to allow
+longer time bases, and he did that in the very latest version of the software.
+However, using these longer time bases tends to cause the scope to become
+unresponsive for long periods of time, and this is why he didn't enable long
+time bases by default. To enable them, go to Oscilloscope:Settings:Scope,
+and choose the appropriate option under ``Set slowest possible timebase.''
+
+I believe the Windows software that comes with the scope does allow longer
+timebases. I don't know about HScope, the android app.
+
+\labpart{ A changing magnetic field}
+
+\emph{Do not use a battery as in the previous lab.} Simply hook up
+the probes of the scope to the leads of the solenoid. Since the solenoid
+is not connected to ground, you will need to use both the minigrabber and
+the ground clip. If you removed the ground clip from the probe (as I suggested),
+you will need to snap it back on. Put the probe's switch to x1.
+
+Set the scope to the most sensitive voltage scale and a timebase of 100 ms.
+Set the trigger to automatic.
+
+Take a stack of 5 of the ferrite disk magnets and place them near one
+mouth of the solenoid, oriented so that their axes coincide. Shake the
+magnet back and forth in the axial direction as fast as possible.
+
+You should see an oscillating signal on the screen. This is the main phenomenon
+being explored in this lab.
+
+You can experiment with longer timebases and see if they're more convenient with
+your software setup. With the OpenHantek6022 on a 500 ms timebase, this will make the sofwtare take
+several seconds before drawing a trace.
+
+\labpart{ A constant magnetic field}
+
+Oscillate the magnet 5-10 times and then stop with the magnet close to the solenoid.
+You should see the signal stop and go to the same zero level it was at when the
+magnet was far away. A \emph{constant} magnetic field, even a strong one, produces no
+electric field.
+
+\labpart{ Moving the solenoid}
+
+What happens if you hold the magnet still and move the solenoid? 
+
+The poles of the magnet are its flat faces. In later parts
+of the lab you will need to know which is north. Determine
+this now by hanging it from a string and seeing how it aligns itself with the Earth's field.
+The pole that points north is called the north pole of the
+magnet. The field pattern funnels into the body of the magnet
+through its south pole, and reemerges at its north pole.
+
+\labpart{ A generator}
+
+Tape the magnet securely to the eraser end of a pencil so
+that its flat face (one of its two poles) is like the head
+of a hammer, and mark the north and south poles of the
+magnet for later reference. The axis of the magnet should be
+perpendicular to the pencil. Put the pencil between your palms and spin the pencil rapidly near the
+solenoid and observe the induced signal. You have built a
+generator. (I have unfortunately not had any luck lighting a
+lightbulb with the setup, due to the relatively high
+internal resistance of the solenoid.)
+
+\section*{Trying Out Your Understanding}
+
+\labpart{ Changing the speed of the generator}
+
+If you change the speed at which you spin the pencil, you
+will of course cause the induced signal to have a longer or
+shorter period. Does it also have any effect on the
+\emph{amplitude} of the wave?
+
+\labpart{Dependence on distance}
+
+How does the signal picked up by your generator change with distance?
+
+Try to explain what you have observed, and discuss your
+interpretations with your instructor.
+
+\section*{Lenz's Law}
+
+Lenz's law describes how the clockwise or counterclockwise
+direction of the induced electric field's whirl\-pool pattern
+relates to the changing magnetic field. The main result of
+this lab is a determination of how Lenz's law works. To
+focus your reasoning, here are four possible forms for Lenz's law:
+
+1. The electric field forms a pattern that is clockwise when
+viewed along the direction of the $B$ vector of the
+changing magnetic field.
+
+2. The electric field forms a pattern that is counterclockwise
+when viewed along the direction of the $B$ vector of the
+changing magnetic field.
+
+3. The electric field forms a pattern that is clockwise when
+viewed along the direction of the $\Delta B$ vector of the
+changing magnetic field.
+
+4. The electric field forms a pattern that is counterclockwise
+when viewed along the direction of the $\Delta B$ vector of
+the changing magnetic field.
+
+Your job is to figure out which is correct.
+
+The most direct way to figure out Lenz's law is to 
+make a tomahawk-chopping motion that ends up with the magnet at the mouth of the solenoid,
+observing whether the pulse induced is positive or negative.
+The idea of the ``chop'' is to bring the magnet rapidly closer
+to the solenoid, keeping their axes parallel.
+
+This doesn't work well in automatic triggering mode. Change to normal
+triggering and set the trigger level to just a lttle bit above or a little
+bit below the zero-signal level. Now depending on the polarity of the
+pulse you produce, you may or may not trigger the scope. For example,
+if you don't see anything when the trigger is set on a small positive
+value, it may be that you're producing negative pulses, so try changing
+the trigger to a small negative value.
+
+What happens when you reverse the
+chopping motion, or when you reverse the north and south
+poles of the magnet? Try all four possible combinations and
+record your results.
+
+\fig{em-len-covid-scopepolarity}
+
+It can be tricky to make the connection between the polarity
+of the signal on the screen of the oscilloscope and the
+direction of the electric field pattern. The figure shows an
+example of how to interpret a positive pulse: the current
+must have flowed from the minigrabber connector, into the
+scope, and then back out through the ground clip.
+
+
+
+

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 11 Build 196, SVG Export Plug-In . SVG Version: 6.0.0 Build 78)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="147.402"
+   height="390.47"
+   viewBox="0 0 147.402 390.47"
+   style="overflow:visible;enable-background:new 0 0 147.402 390.47"
+   xml:space="preserve"
+   id="svg2"
+   sodipodi:version="0.32"
+   sodipodi:docname="em-mea-covid-basic-circuit-schematic.svg"
+   version="1.1"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata79"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs198">
+			
+			
+			 
+			
+			
+				
+			 
+			
+			
+			
+			
+			
+			
+				
+			 
+			
+			
+			
+			
+			
+			
+			 
+		
+				
+					 
+				
+				
+				
+					
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+				
+					
+				
+				
+				
+				
+				
+					 
+				
+				
+				
+				
+				
+				
+					
+				
+			
+
+
+
+
+</defs><sodipodi:namedview
+   inkscape:cy="135.78576"
+   inkscape:cx="-23.775717"
+   inkscape:zoom="4.7491358"
+   inkscape:window-height="996"
+   inkscape:window-width="1278"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:current-layer="svg2"
+   showgrid="false"
+   inkscape:window-maximized="0" />
+
+	<line
+   id="line75"
+   y2="288.64069"
+   x2="-9.442275"
+   y1="298.64572"
+   x1="-9.442275"
+   style="fill:none;stroke:#000000;stroke-width:0.87000072;stroke-miterlimit:1" /><circle
+   d="m 91.334999,339.539 c 0,4.29567 -3.482329,7.778 -7.778,7.778 -4.295671,0 -7.778,-3.48233 -7.778,-7.778 0,-4.29567 3.482329,-7.778 7.778,-7.778 4.295671,0 7.778,3.48233 7.778,7.778 z"
+   sodipodi:ry="7.7779999"
+   sodipodi:rx="7.7779999"
+   sodipodi:cy="339.539"
+   sodipodi:cx="83.556999"
+   id="circle77"
+   r="7.7779999"
+   cy="339.539"
+   cx="83.556999"
+   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1"
+   transform="matrix(0,-1.7400013,-1.7400013,0,592.12315,409.07838)" /><path
+   id="path79"
+   d="m -9.4057473,289.20968 c 0,-33.93002 14.7900135,-31.02944 14.7900135,-25.5206 0,5.51059 -15.0805908,8.70001 -15.0805908,-27.54944 l 0.14442,-6.44148 -15.6600154,0"
+   style="fill:none;stroke:#000000;stroke-width:0.87000072;stroke-miterlimit:1"
+   inkscape:connector-curvature="0" /><line
+   id="line81"
+   y2="265.28467"
+   x2="-81.205147"
+   y1="265.28467"
+   x1="-69.025162"
+   style="fill:none;stroke:#000000;stroke-width:0.87000072;stroke-miterlimit:1" /><line
+   id="line83"
+   y2="260.06467"
+   x2="-87.295189"
+   y1="260.06467"
+   x1="-62.935169"
+   style="fill:none;stroke:#000000;stroke-width:0.87000072;stroke-miterlimit:1" /><polyline
+   id="polyline85"
+   points="103.092,373.914 103.092,383.47      85.592,383.47 "
+   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1"
+   transform="matrix(0,-1.7400013,-1.7400013,0,592.12315,409.07838)" /><polyline
+   id="polyline87"
+   points="82.092,383.47 63.842,383.47      63.842,354.456 "
+   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1"
+   transform="matrix(0,-1.7400013,-1.7400013,0,592.12315,409.07838)" /><line
+   id="line89"
+   y2="297.99323"
+   x2="-9.5501785"
+   y1="297.99323"
+   x1="-24.921322"
+   style="fill:none;stroke:#000000;stroke-width:0.87000072;stroke-miterlimit:1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<path
+   style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.93333334;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   d="m -58.487696,229.69817 h 34.272764"
+   id="path889"
+   inkscape:connector-curvature="0"
+   sodipodi:nodetypes="cc" /></svg>

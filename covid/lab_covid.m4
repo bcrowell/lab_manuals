@@ -65,6 +65,8 @@ m4_include(../share/covid-oscilloscope.tex)
 
 m4_include(../share/covid-electromagnetism.tex)
 
+m4_include(../share/covid-electrical-measurements.tex)
+
 m4_include(../share/covid-rc-circuits.tex)
 
 m4_include(../share/covid-ac-circuits.tex)

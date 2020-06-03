@@ -11,10 +11,12 @@ It is intended to be used around the 13th week in Physics 222.
 \equip{1.5 V battery and holder}
 \equip{multimeter}
 \equip{330 $\mu\zu{F}$ bipolar electrolytic capacitor}
+\equip{10 nF bipolar capacitor (or similar value)}
 \equip{100 $\zu{k}\Omega$ resistor (or similar value)}
 \equip{51 $\zu{k}\Omega$ resistor (or similar value)}
 \equip{alligator clips (6)}
 \equip{timing device (stopwatch, computer, or cell phone app)}
+\equip{oscilloscope}
 
 \begin{goals}
 
@@ -189,6 +191,27 @@ $2\tau$, $3\tau$, $4\tau$, and $5\tau$ in units of minutes and seconds.
 Charge up the capacitor and then, as before, start the timer as you
 disconnect the battery. Record the voltage at the predetermined times.
 
+\labpart{Oscilloscope}
+
+In lab \ref{lab:covid-oscilloscope}, we measured the internal resistance of
+the oscilloscope's calibration output by building a voltage divider. In this
+lab we will estimate that resistance by a different technique and see if the
+two results agree. The idea here is to use the scope's calibration output to
+drive a known capacitance $C=10\ \zu{nF}$ (or something similar), which means that
+we are effectively driving an RC circuit in which the resistance is the scope's
+internal resistance $R$. The calibration output's square wave output charges
+the capacitor up with one polarity, then charges it up with the other polarity.
+Use the scope's minigrabber connector to measure the
+voltage across the capacitor, just as you did in lab \ref{lab:covid-oscilloscope}
+with the external resistance.
+
+Since you have a previous measurement of $R$, you're not going blind here.
+Estimate the RC time constant, and set the calibration output so that its half-period
+is many times longer than this. Analyze the data as in homework problem 13-7
+in Fields and Circuits.
+
+
+
 \analysis
 
 Compare your predictions with experiment for parts A and B.
@@ -198,3 +221,4 @@ an exponential one. The nicest visual way to do this is to take
 logs in order to linearize a graph as a function of time. Your
 eye is a good judge of whether a line is a line.
 
+For part D, compare with the previous estimate of $R$ from lab \ref{lab:covid-oscilloscope}.

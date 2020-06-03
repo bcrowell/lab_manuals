@@ -1,0 +1,277 @@
+\renewcommand\thechapter{c2.4a}
+\lab{The electric potential}\label{lab:electric-field}
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used during the fourth week in Physics 222.
+
+\apparatus
+\equip{battery}
+\equip{multimeter}
+\equip{banana-plug cables (made by the student)}
+\equip{capacitors (bipolar electrolytic, 50-330 $\mu\zu{F}$)}
+
+\begin{goals}
+
+\item[] Construct a capacitive voltage divider.
+
+\item[] Test whether the electric field is nonconservative.
+
+\end{goals}
+
+\introduction
+
+Little kids easily manipulate magnetic fields using fridge magnets,
+but electric fields are harder to control and do experiments on.
+You can generate a static electric charge by scuffing your feet on
+a carpet or rubbing a balloon on your hair, but this doesn't lend itself
+to quantitative experiments, especially because the charge tends to
+leak off while you're trying to do the measurement. Let's think about
+what we would need to do in order to do something where we could really
+measure something. We have three facts of life to deal with: (1) charge
+can leak off; (2) what we can measure easily with a meter is the
+potential $\phi$, not the field $\vc{E}$, although the two are closely
+related; (3) we need to be able to deposit charge on objects in a controlled way.
+
+Because objects like hair and balloons are electrical insulators,
+charge can stick on them in a clumpy way, like a kindergartener's
+fingerpaints. For better control and reproducibility, we want to use
+an electrical conductor such as a metal. The first figure shows a realistic
+computer simulation of what happens if we release a finite number of
+charges onto a pear-shaped conductor. Because the charges  repel each
+other, they all end up on the surface. The distribution of charge is
+not uniform, but it is not random, either. With realistic numbers of
+charges, the equilibrium charge distribution is completely reproducible,
+and in this equilibrium arrangement the potential is constant throughout
+the entire conductor.
+
+\fig{em-fie-covid-pear}
+
+To get the charge on there in the first place, we need at least two
+conductors, which we can connect to the terminals of a battery.
+The battery is a device that (ideally) maintains a well-defined
+difference in potential between its terminals, and this leads to
+something like the idea shown below. The pear has a deficit of
+electrons and the tube an excess. Electric field lines run from
+the positive charges (nuclei of atoms that have lost some electrons)
+to the negative ones.
+
+\fig{em-fie-covid-two-conductors}
+
+This is all fine except that with only two objects, there is nothing
+of any interest to measure. We can only measure a difference in potential,
+using a voltmeter, and the voltmeter's two probes have to be connected
+to a conductor --- the device doesn't work if we just wave the probes
+in the air. In the experiment with two objects,
+all we have is one object at the potential of
+the battery's positive terminal and another at the potential of its
+negative terminal. If the battery is, say, 1.5 volts, then the only
+numbers we'll ever get are $+1.5$, 0, or $-1.5$ volts. So we will
+need to have at least three conductors.
+
+Finally, we have the issue of charge leaking off. In the setup shown
+above, the pear and tube would both hold an extremely tiny amount of
+charge, perhaps a picocoulomb. They would probably hold this charge just fine until
+we touched them with the probes of the meter, but then this tiny quantity of charge would
+flow back through the voltmeter in a fraction of a second. An ideal
+voltmeter would be a perfect electrical insulator, but real-life ones
+are not perfectly insulating.
+
+For this reason, we need to use a device that holds a much larger amount
+of charge than the Dr.~Seuss setup shown above. Such a device is called
+a capacitor, and although the setup above is a capacitor, it's a capacitor
+that doesn't store very much charge when we put a certain potential difference
+across it.
+
+The simplest capacitor to understand is a pair of parallel
+metal plates with air or a vacuum between them. The detailed
+physics of capacitance, its units of measurement, and so on, are topics
+for later in this course, but the figure below shows the general idea.
+
+\fig{em-fie-covid-capacitor-params}\label{fig:em-fie-covid-capacitor-params}
+
+If you count all the pieces of metal in the figure, you'll see that there are three,
+which is the minimum number, for the reasons described earlier.
+In this example we compare two capacitors that are similar
+except that the size of the plates is doubled in the bottom one. In order to make this
+a fair comparison, we connect up the two capacitors in series (end to end) and
+hook up the battery (not shown) externally between the very top and
+very bottom. To see how this makes for a fair comparison, look at the
+isolated piece of metal in the middle, which is shaped sort of like
+a capital ``I.'' This metal is surrounded by insulation such as air,
+so no charge can get in or out of it. It starts with zero total charge,
+so it will always have zero total charge. For this reason we are
+guaranteed to have equal amounts of charge on the top of
+the wide capacitor ($+6$ units) and the bottom of the narrow one ($-6$ units).
+(These charges also attract other, opposite charges from the outside world onto
+the outward-facing plates, so that the total charge on each capacitor is
+zero.)
+
+If we now compare the electric field lines that run from the positive
+charges to the negative ones, we see that both capacitors contain 6 field
+lines, but in the wider capacitor they are spaced twice as far apart.
+Since the electric field lines in the narrow capacitor are twice as dense,
+its internal electric field is twice as strong. If the capacitors were
+like rooms with gravitational fields in them, you would feel twice as
+heavy inside the narrow room, and gravitational potential energies
+inside that room would be doubled. In electrical terms, the thing we
+can actually measure is the electric potential $\phi$, which is the
+electric potential energy per unit charge. If you measured the potential
+difference across each of these capacitors using a voltmeter, you would
+find that even though you gave them each a fair chance and put the same
+amount of charge on it, the bottom one would display half as much of a potential
+difference.
+
+Summarizing these ideas, we say that every capacitor has a certain numerical
+rating, in units called farads (F) after Michael Faraday, which we will
+define more formally later in the course. The capacitors you will 
+use in this lab are not actually parallel-plate capacitors with vacuum
+between the plates, but that doesn't matter for our purposes. They can
+still be given ratings in units of farads.
+
+You will notice that the capacitors we use in this lab are fairly big
+and bulky, about the size of your thumb. The reason they're so physically
+big is that we need to use big capacitances in order to get a lot of charge and keep the charge
+from leaking off quickly when we take measurements. The ones in this lab are in the range of tens or hundreds
+of microfarads. ``Micro-'' may sound small, but it's actually a pretty
+big value for a capacitance. Most of the capacitors in a typical piece
+of electronics are in the nano- or picofarad range. For
+the capacitance values we use in this lab, the leaking off of charge through the meter will take place on time scales of a few
+minutes, so there is no problem with taking a measurement fast enough
+and then disconnecting the probes.\footnote{We'll go into the mathematical
+details later, but in case you're interested, the leakage time goes like
+the product $RC$, where $R$ is the resistance of the voltmeter and $C$ is
+the capacitance. The meter we're using does have a pretty big resistance,
+about a million ohms, but for example if we used a one-microfarad
+capacitor, the leakage time would be only one second.}
+
+\observations
+
+\labpart{A voltage divider}
+
+Your kit includes four capacitors with values in the range from 50 to 330 $\mu\zu{F}$.
+Pick two of these that are different in value but not by an order of magnitude.
+Physically small capacitors have their values labeled on them in very brief and
+not completely standardized ways, but for big ones like this there should simply
+be some printed value that's easy to interpret.
+
+Build the circuit shown in the diagram below. In this style of drawing, called
+a schematic, we don't realistically show the shapes and sizes of the capacitors.
+This is called a series circuit, meaning that it's a single loop like a necklace.
+
+\fig{em-fie-covid-voltage-divider}
+
+The symbol for the battery looks a little bit like the one for a capacitor, but
+it's actually a completely different device.
+The battery is a polar device, i.e., its two sides are different from each other.
+The higher potential is indicated by the longer line.
+Some capacitors are also polar, and need to be hooked up with the right polarity
+or they will not work or explode. The capacitors in your kit are nonpolar ones,
+so it doesn't matter which way you put them in. (Capacitors that are polar have
+stripes or other marks to indicate which way they have to be used.)
+
+The next figure, drawn in a mixture of schematic and realistic styles,
+shows how to measure the potential difference created by the
+battery. The details are drawn to resemble the meter I expect to send out with
+your kit, but in any case multimeters are pretty standardized. Turn on the
+meter by turning the rotary knob to the 2 volt scale, which reads in units of
+volts and is capable of handling voltages up to 2 V. If you connect the wires
+as shown, you should get a positive reading. The nominally 1.5 V alkaline batteries
+we're using are actually about 1.6 V.
+
+\fig{em-fie-covid-voltage-divider-meter-1}
+
+Note that a voltmeter is always connected to a circuit in parallel like this,
+because it measures the difference in potential between the two points touched
+by its probes. It isn't necessary to take apart the circuit in order to use
+a voltmeter like this, and normally just touching the wires together is good
+enough, although you can stick one banana plug into another if you like, for
+a more solid connection.
+
+Now reposition the probes of the meter to measure the potential difference
+$\Delta\phi_1$ across $C_1$ and the difference $\Delta\phi_2$ across $C_2$.
+You should find that, as in the  figure on p.~\pageref{fig:em-fie-covid-capacitor-params}, the potential
+differences are unequal. Test whether they are in proportion to the capacitances.
+
+This type of capacitive voltage divider is sometimes used in real life when
+one wants to use a meter to measure a large voltage. Imagine that instead of
+1.5 volts, we had 1500 volts. Hooking up a meter to check this voltage directly would probably cause
+the meter to explode in your face. But by using a voltage divider with two very
+unequal capacitances, we could make a scaled-down copy of the voltage, which we
+could then measure safely and interpret using an appropriate fudge factor determined from $C_1$ and $C_2$.
+Usually this application is used for AC circuits, not a DC circuit
+like the one in this lab, because of the leakage problems described above.
+
+\labpart{Constant potential on a conductor?}
+
+In a one-piece object made of a perfect conductor, the potential should be constant everywhere.
+The wires and alligator clips used in this lab are pretty good conductors (metals
+such as copper and aluminum), but not perfect ones. For this reason, when we do
+measurements like the ones in part A, we expect that it should
+not matter too much if we choose to touch a probe of the voltmeter to one spot or another
+on the same wire. But since these wires are pretty thin and made of real-world materials,
+this may not be a perfect approximation. See if you can detect any voltage differences
+between different parts of the same wire. 
+
+Tips for making this a sensitive test: (1) Make the connections by shoving a banana plug into
+the hole in another banana plug. Otherwise you may actually be measuring effects due to the
+resistance of the connection itself. (2) Rather than repeating the measurements of
+part A while varying the details of the connection, you can probably
+get a more sensitive test by putting the meter on the 200 mV scale and using it to measure
+the potential different between the connectors on the two ends of the same wire.
+
+\labpart{Conservative, or nonconservative?}
+
+Both magnetic and electric fields can be either conservative or nonconservative.
+A nonconservative field is ``swirly'' or ``curly,'' and may contain field lines
+that form closed loops. These concepts are discussed in your text at greater length and
+with more mathematical precision. Theory predicts that \emph{static} electric fields
+like the ones in this lab should be conservative. Only for a conservative field does
+it make sense to talk about a potential $\phi$, as we have been casually 
+doing.\footnote{For a nonconservative field, what a voltmeter measures is actually the work
+per unit charge needed to move a charge from point A to point B, through the meter, and this could
+change, for example, if you wiggled the meter so that the path became different.}
+
+Suppose that an electric charge is transported around a closed path from point A to B to C
+and back to A again. If the field is conservative, then the total work done by the field
+on the charge should be zero, $  W_{AB}+W_{BC}+W_{CA}=0$, and the work per unit charge,
+which is what is measured by the voltmeter, should also be zero,
+\begin{equation*}
+  V_{AB}+V_{BC}+V_{CA}=0.
+\end{equation*}
+
+Use all of your capacitors to build a more complicated version of part A.
+To make this fun, don't make your circuit all parallel or all series. Make it some
+combination of series and parallel parts. Make sure that all of your capacitors are
+connected at both ends --- if they have one end dangling in the air, then that branch
+is an open circuit, which might as well have not come to the party.
+
+If you draw the schematic for this circuit, you should find that it's possible to lay it
+out in such a way that no wires cross over other wires.\footnote{See \url{https://en.wikipedia.org/wiki/Planar_graph}.}
+Within this schematic, there should be various loops that you can trace out.
+Determine every such loop that encloses only air. (Because of the constraints
+imposed by the equipment and instructions, most of these will probably be
+three-component loops, consisting of either three capacitors or two capacitors plus
+the battery.) For each such loop, use the meter to check whether the sum of voltage
+drops around the loop is zero as predicted by theory.
+
+
+
+\analysis
+
+For each part of the lab, compare theory with experiment, including error analysis.
+
+For part A, the main source of error is the tolerances on
+the capacitances.
+The tolerances of the capacitors I intend to include in this kit are as
+follows:
+$330\ \mu\zu{F}\:\pm 20\%$,
+$220\ \mu\zu{F}\:\pm 20\%$? (not stated, so this is a guess),
+$68\ \mu\zu{F}\:\pm 10\%$,
+$50\ \mu\zu{F}\:\pm 10\%$. 
+
+For the other parts, it should be reasonable to estimate the error bars on the raw
+data by using either the meter's maximum rounding error or the size of any visually
+noticeable fluctions in the reading, whichever is bigger.
+

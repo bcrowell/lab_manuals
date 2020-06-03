@@ -1,0 +1,279 @@
+\renewcommand\thechapter{c2.7a}
+\lab{The oscilloscope}\label{lab:covid-oscilloscope}
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used during the seventh week in Physics 222.
+
+\apparatus
+\equip{oscilloscope (Hantek 6022)}
+\equip{battery}
+\equip{desktop computer or Android phone}
+
+\begin{goals}
+
+\item[] Learn to use an oscilloscope.
+
+\item[] Observe 60 Hz electric fields from household wiring, and verify the period.
+
+\end{goals}
+
+\introduction
+
+One of the main differences you will notice between your
+second semester of physics and the first is that many of the
+phenomena you will learn about are not directly accessible
+to your senses. For example, electric fields, the flow of
+electrons in wires, and the inner workings of the atom are
+all invisible.  The oscilloscope is a versatile laboratory
+instrument that can indirectly help you to see what's going on. 
+
+\mysubsubsection{The Oscilloscope}
+
+An oscilloscope graphs an electrical signal that varies as
+a function of time.
+The graph is drawn from left to right across the screen,
+being painted in real time as the input signal varies.
+
+The input signal is
+supplied in the form of a voltage, so an oscilloscope is
+basically a voltmeter that measures a voltage as a function of
+time.
+
+Traditionally, oscilloscopes were stand-alone benchtop instruments
+with their own built-in screens to display the graph of the signal.
+In this lab, we will use an inexpensive (\$60) oscilloscope that
+hooks up to a phone or computer through a USB cable.
+Don't try to connect through a USB hub, which won't work with this scope.
+
+\fig{em-osc-waveform-hantek}
+
+\mysubsubsection{The Time Base and Triggering}
+
+Since the $X$ axis represents time, there also has to be a way
+to control the time scale, i.e., how fast the imaginary
+``penpoint'' sweeps across the screen. For instance, setting
+the knob on 10 ms causes it to sweep across one square
+in 10 ms. This is known as the time base.
+
+In the figure, suppose the time base is 10 ms.
+The scope has 10
+divisions, so the total time required for the beam to sweep
+from left to right would be 100 ms. This is far too short a
+time to allow the user to examine the graph.
+The oscilloscope has a built-in method of overcoming this
+problem, which works well for periodic (repeating)
+signals. The amount of
+time required for a periodic signal to perform its pattern
+once is called the period. With a periodic signal, all you
+really care about seeing is what one period or a few periods in
+a row look like --- once you've seen one, you've seen them
+all. The scope displays one screenful of the
+signal, and then keeps on overlaying more and more copies of
+the wave on top of the original one. Each
+trace is erased when the next one starts, but is being overwritten
+continually by later, identical copies of the wave form. You
+simply see one persistent trace.
+
+How does the scope know when to start a new trace? If the
+time for one sweep across the screen just happened to be
+exactly equal to, say, four periods of the signal, there
+would be no problem. But this is unlikely to happen in real
+life --- normally the second trace would start from a
+different point in the waveform, producing an offset copy of
+the wave. Thousands of traces per second would be superimposed
+on the screen, each shifted horizontally by a different
+amount, and you would only see a blurry band of light.
+
+To make sure that each trace starts from the same point in
+the waveform, the scope has a trigger. You use a
+control in the software to set a certain voltage level, the trigger level, at
+which you want to start each trace. In the figure, this is the pointer
+on the right-hand side. The scope waits for the
+input to move across the trigger level, and then begins a
+trace. Once that trace is complete, it pauses until the
+input crosses the trigger level again. To make extra sure
+that it is really starting over again from the same point in
+the waveform, you can also specify whether you want to start
+on an increasing voltage or a decreasing voltage ---
+otherwise there would always be at least two points in a
+period where the voltage crossed your trigger level.
+
+On old-fashioned analog oscilloscopes, the trigger would start
+the sweep from the left edge of the screen, which is simpler
+conceptually and is what was described above. Modern oscilloscopes
+are usually ``storage'' scopes, which digitize the signal,
+store it in memory in a rolling buffer, and then display some
+segment of that memory when triggered. A storage scope is
+like a time machine that can go back in time and show you
+what happened before the trigger as well as after it. On
+the Hantek scope, with the software we'll be using, the default is
+that the time of the trigger is $t=0$ on the time axis, i.e., at
+the center of the screen. In the figure, you should be able to
+verify that the signal rises and crosses the trigger level at $t=0$.
+This is indicated by the pointer above the Y axis.
+
+\section*{Software}
+
+Because this is a USB oscilloscope rather than a standalone device,
+you need to run software in order to see the results. The manufacturer
+supplies Windows software on a CD, but since I don't own a Windows machine,
+I haven't tried it. The software I've been using is an open-source application
+called OpenHantek6022, which is available at \url{github.com/OpenHantek/OpenHantek6022}.
+It's multiplatform and runs on Windows, Mac, and Linux. It's worked fine for me
+on Linux, and I didn't find that I needed to install any drivers. The OpenHantek6022
+software is what I'll describe in this lab manual, but it seems to be a pretty close
+copy of the manufacturer's Windows software. If you have an Android phone, there is
+free software called Hscope that you can use. I've heard it's nice, but haven't tried it.
+As far as I know there is no iPhone software for this device.
+
+\section*{Observations}
+
+\labpart{Demo mode (optional)}
+
+If you're using the OpenHantek6022, there is a demo mode that lets you play with
+a fake signal. There doesn't seem to be any way to start up demo mode except from
+the command line. To do this, use the command \texttt{OpenHantek --demoMode}.
+To understand what you're seeing in demo mode, go to the Help menu and select
+User Manual, which pops up a PDF file.
+
+Try changing the timebase to 1 ms. Turn off channel 2 (blue) by unchecking the
+box. Set the voltage scale (next to CH 1) to something that looks appropriate.
+
+Try playing with the trigger using the three pop-up menus under Trigger.
+Set Source to CH 1, set the mode to normal, and, if necessary, adjust the
+pointer at the right edge of the graph so that you do get triggering and
+see a signal. You can use the pointer at the top of the graph to move the
+trace left and right. Under Slope, pick a downward slope to trigger on, so
+that it will trigger on the downward sloping piece of the sawtooth wave.
+Try moving the pointer on the right up and down, and make sure you understand
+the effect you're seeing.
+
+\labpart{Measuring DC voltages}
+
+If you did the optional part using demo mode, quit the software and restart it not
+in demo mode.
+Change the scope from normal triggering to automatic triggering (Trigger:Mode:Automatic).
+The scope comes with a cable and probe. At one end of the cable is a round BNC
+connector. Push this onto the yellow CH1 connector on the scope, and rotate it
+clockwise so that it clicks on. 
+At this point you should see a flat trace on the oscilloscope, probably with some
+noticeable noise superimposed.
+Although this is an open circuit, which is not the normal way of using a voltmeter,
+the voltage you are measuring should be zero, at least on the average. If it's
+not displayed as zero, click on the yellow CH1 text on the left side of the graph,
+and move the trace vertically so that it lies on the axis.
+
+At the other end of the cable are two
+connectors, because the oscilloscope is a voltmeter, and a voltmeter measures
+a voltage difference.
+
+One of these connectors is of a type called a minigrabber.  It
+contains a conducting hook, which is retracted behind a syringe-style
+insulating sheath. Pull back on the sheath, against the resistance of
+the spring inside, and you'll see the hook.  This acts like the V plug
+on a voltmeter.
+
+The other connector an alligator clip on its own removable little separate cable. The is called a ground
+clip. If you're using a desktop machine, the ground clip
+is connected to the household ground. If you're using a phone or laptop, it's not.
+This acts like the COM plug on a voltmeter, so that the scope measures the voltage
+difference between the minigrabber and the ground clip.
+
+The probe probably has a switch on it with two positions, labeled x1 and x10.
+Switch it to x1.
+
+Touch the minigrabber to the ground clip, and you should see the noise go
+away, because the voltage difference between the two terminals of the probe is now exactly zero.
+
+Set CH 1 to an appropriate voltage scale so that you can measure the voltage across
+a battery, and do that by connecting the ground clip and minigrabber to the terminals. Try flipping the battery around and verify that the sign flips.
+
+\labpart{60 Hz fields in your home}
+
+If you saw noise before when the scope's probe was an open circuit, that was probably
+mostly from electric fields originating from the power lines in your house, which oscillate
+at 60 Hz. We're now going to intentionally observe those signals.
+
+For this part of the lab, you don't need to connect the ground clip to anything.
+We can take all of our voltage measurements for this part of the lab
+with respect to your phone or computer's ground. 
+Use the ground clip if and only if you're taking measurements on a device such as the battery that's
+``floating'' rather than connected to ground.
+
+Put CH 1 on its most sensitive voltage scale. Pull back on the sheath of the minigrabber
+to expose the hook, and touch the hook with a finger. You should see a big, strong
+oscillating signal on the scope. What is happening here is that your body is acting
+as one plate of a capacitor, and the AC wiring in the walls is acting as the other
+plate.
+To get your right hand free, place a  paperclip or piece of in the minigrabber, so that you
+only have to use your left hand to touch the paperclip.
+
+The idea now is to verify that the signal has a frequency of 60 Hz. Fiddle with the time
+base to get something appropriate. At the upper left corner of the screen is a stop icon.
+Click it, and the oscilloscope trace will freeze so you can measure it easily. (On a storage
+scope, this is a useful trick that can be used when a signal has noise and isn't clean enough
+to trigger on very steadily.) Measure the period from the screen.
+
+\labpart{The scope's calibration output}
+
+You can also measure the scope's calibration output, which is a little
+contact labeled with a square wave symbol and ``1kHz 2Vp-p'' (p-p
+meaning peak-to-peak).  The frequency is actually selectable in the
+software, but defaults to 1 kHz.  Clip the hook of the minigrabber to
+the calibration output.
+
+You don't need to use the ground clip for this part of the lab, because the
+scope is grounded rather than ``floating.''
+
+There is another little connector next to it that
+is a ground, which you will never need to use in this course.
+The oscilloscope is a voltmeter, so it would be
+natural for you to think that you should connect its probes to \emph{two} points and measure a voltage
+difference. This is unnecessary, because the probe's ground is actually connected to USB ground anyway.
+
+If you now adjust the scales appropriately, you should see a nice clean square wave that you can trigger
+on very solidly. You can try triggering on rising and falling slopes and verify that you understand what
+happens. You can try using the menu to change the frequency of the square wave.
+
+\labpart{The internal resistance of the scope's calibration output}
+
+When I first saw the design of this scope's panel, I was very worried that I or
+my students would inadvertently destroy our scopes. The calibration output's contact is only
+a few millimeters away from the ground contact. I imagined that if we were to inadvertently
+short between these two contacts with a screwdriver or something, we would get lots of
+current flowing through USB power to USB ground, potentially destroying both the
+scope and the computer's USB bus. Actually, it turns out that the scope has an internal
+resistor hidden behind the calibration output. The value of this resistor turns out to
+be important for some of our later labs, but there is no documentation on its existence
+or what it is. Determining this unknown resistance is a nice little exercise in circuits.
+
+Set things up as in the earlier part of the lab so that you can observe the
+scope's calibration output. Very little current is flowing in this setup, because
+the probe has an internal resistance of 1 $\zu{M}\Omega$. This causes the scope to act,
+to a good approximation, as an ideal voltmeter that has an infinite resistance and
+doesn't disturb the circuit that it's being used to look at.
+
+Now find a resistor with a value of a few $\zu{k}\Omega$ and put it in parallel with
+the probe, by connecting from the calibration output to the ground clip. The calibration
+output is now driving perhaps a milliamp of current through the resistor. This is a little
+bit of a goofy thing to do, because the ground clip is not meant to be a current-carrying
+connection, but it's harmless because the current is small.
+
+When you added the resistor, you should have seen the voltage measured on the scope go
+down a little bit. This happens with any real-world voltage source: when you load it,
+its voltage gets dragged down. Your external resistor $R$ is now forming a voltage divider
+with the resistor $R_0$ inside the scope. Take measurements of the voltage $V_R$ when the external
+resistor is this value, infinity, and one or two other values going down to a few hundred
+ohms.
+
+\analysis
+
+Analyze the voltage divider in the final part of the lab purely symbolically, finding
+$R_0$ in terms of $R$, $V_R$, and $V_\infty$.
+Then, by plugging in to your equation, extract the internal resistor's value from each
+measurement of $V_R$. If it's roughly the same in all cases, then that supports the hypothesis that it
+really is a resistor, rather than some other current-limiting safety feature.
+
+
