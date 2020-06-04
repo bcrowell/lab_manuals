@@ -57,6 +57,8 @@ m4_include(../share/covid-moi.tex)
 
 %--------------------------- 222 -----------------------------
 
+m4_include(../share/covid-field-of-a-permanent-magnet.tex)
+
 m4_include(../share/covid-electric-field.tex)
 
 m4_include(../share/covid-dipole-and-superposition.tex)
