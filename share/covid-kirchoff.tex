@@ -1,9 +1,18 @@
-\lab{The Loop and Junction Rules}\label{lab:kirchoff}
+\renewcommand\thechapter{c2.10a}
+\lab{The loop and junction rules}\label{lab:kirchoff}
+
+\covid\ 
+It is intended to be used around the 10th week in Physics 222.
 
 \apparatus
-\equipn{DC power supply (Thornton)}{1/group}
-\equipn{multimeter (PRO-100, in lab benches)}{1/group}
-\equip{resistors}
+\equip{1.5 V battery}
+\equip{battery holder}
+\equip{multimeter}
+\equip{\#0 or \#1 Phillips screwdriver (for replacing a fuse if necessary)}
+\equip{replacement fuses for multimeter}
+\equip{banana-plug cables (made by the student)}
+\equip{2 resistors, 10-30 $\zu{k}\Omega$}
+\equip{3 or 4 resistors, 100 $\Omega$ to 600 $\Omega$}
 
 \goal{Test the loop and junction rules in two electrical circuits.}
 
@@ -82,22 +91,47 @@ direction of motion.
 
 \observations
 
+Because this lab uses a lot of different resistors, I found it helpful to
+fold a piece of scotch tape around each one and write the resistance
+value on it. The color codes are very small and hard to read.
+
 \labpart{ The junction rule}
 
-Construct a circuit like the one in the figure, using the Thornton power
-supply as your voltage source. To make things more
-interesting, don't use equal resistors. Use 
-resistors with values in the range of about 1 $\zu{k}\Omega$ to 10 $\zu{M}\Omega$.
-If they're much higher than that, the currents will be too low for the PRO-100
-meters to measure accurately.
-If they're much smaller than that, 
-you could burn up the resistors, and the
+Construct a circuit like the one in the figure, using the battery
+as your voltage source. To make things more
+interesting, don't use equal resistors, but do use resistances that
+are on the same order of magnitude as each other. Use 
+resistors with values in the range of about 10 to 30 $\zu{k}\Omega$.
+If they're much higher than that, the currents will be too low for the 
+meter to measure accurately.
+If they're much smaller than that, the
 multimeter's internal resistance when used as an
-ammeter might not be negligible in comparison. Insert your multimeter
-in the circuit to measure all three currents that you need
-in order to test the junction rule.
+ammeter becomes nonnegligible in comparison.
 
 \fig{em-kir-circuit}
+
+Insert your multimeter
+in the circuit to measure all three currents that you need
+in order to test the junction rule. Make sure that all three currents
+can be measured on the same voltage scale, which probably means either
+all of them on the 200 $\mu\zu{A}$ scale or all on the 2 mA scale.
+Switching scales causes very large errors ($\sim10$\%!) because
+the different scales are not well calibrated in any absolute sense.
+
+If you get a zero current measurement when it doesn't seem like you
+should, try the following debugging steps:
+
+\begin{enumerate}
+\item I find the WeePro's plugs confusing, because the mA plug is the same
+as the V plug, but different from the A plug. Make sure you're in the right
+plug for the current scale you've chosen.
+
+\item Take the meter out of the circuit, change it to voltmeter mode, and
+make sure there are voltage differences across each of the resistors. If not,
+then you probably have a bad connection somewhere.
+
+\item Check the fuse.
+\end{enumerate}
 
 \labpart{ The loop rule}
 
@@ -113,48 +147,21 @@ small resistances, so that the multimeter's large internal
 resistance when used in parallel as a voltmeter will not
 significantly reduce the resistance of the circuit. Do not
 use resistances of less than about 100 $\Omega $, however,
-or you may blow a fuse or burn up a resistor.
+or you may burn out the battery, burn up a resistor, or burn your fingers.
 
-\prelab
+\section*{Preparation}
 
-\prelabquestion  Draw a schematic showing where you will insert the
+Draw a schematic showing where you will insert the
 multimeter in the circuit to measure the currents in part A.
 
-\prelabquestion  Invent a circuit for part B, and draw a schematic. You
-need not indicate actual resistor values, since you will
-have to choose from among the values actually available in lab.
+Invent a circuit for part B, and draw a schematic.
 
-\prelabquestion  Pick a loop from your circuit, and
+Pick a loop from your circuit, and
 draw a schematic showing how you will attach the
 multimeter in the circuit to measure the voltage differences in part B.
-
-\prelabquestion  Explain why the following statement is incorrect: ``We
-found that the loop rule was not quite true, but the small
-error could have been because the resistor's value was off
-by a few percent compared to the color-code value.''
-
-\selfcheck
-
-Do the analysis in lab.
 
 \analysis
 
 Discuss whether you think your observations agree with
 the loop and junction rules, taking into account systematic and random errors.
 
-\section*{Programmed Introduction to Practical Electrical Circuits}
-
-The following practical skills are developed in this lab:
-
-(1) Use a multimeter without being given an explicit
-schematic showing how to connect it to your circuit. This
-means connecting it in parallel in order to measure voltages
-and in series in order to measure currents.
-
-(2) Use your understanding of the loop and junction rules to simplify
-electrical measurements. These rules often guarantee
-that you can get the same current or voltage reading by
-measuring in more than one place in a circuit. In real life,
-it is often much easier to connect a meter to one place than
-another, and you can therefore save yourself a lot of
-trouble using the rules rules.

@@ -14,6 +14,8 @@ It is intended to be used during the ninth week in Physics 222.
 \equip{flashlight bulb}
 \equip{bulb holder}
 \equip{multimeter}
+\equip{\#0 or \#1 Phillips screwdriver (for replacing a fuse if necessary)}
+
 
 \begin{goals}
 
@@ -142,12 +144,60 @@ power supply and the voltmeter are still going? Try it.
 Interpret your observation in terms of the breath-holding
 metaphor.
 
-\emph{Current}
+\emph{Measuring a current}
 
 The procedure for measuring the current differs only because
 you have to hook the meter up in series and because you have
-to use the ``A'' (amps) plug on the meter and select a current
+to use the ``A'' (amps) or ``mA'' (milliamps) plug on the meter and select a current
 scale.
+
+Because you don't know the bulb's resistance, you have no way of knowing
+in advance which current scale to use. The systematic way to approach this
+is as follows. Start with the scale that can measure the biggest current. In
+your case this is the 10 A scale, which is used with the 10 A plug. If this
+gives you a nonzero reading, and the reading would be too big for the next scale
+down (200 mA), then take the reading, and you're done. Otherwise, switch the
+rotary knob to the next scale down, and switch the wire to the mA plug. Continue
+until you're on the most sensitive scale that would be capable of measuring this
+current, which will give you a reading the the most possible sig figs.
+
+If you hook up the meter in parallel rather than in series, you can
+either burn out the fuse inside the meter (which is no big deal, but
+could be confusing) or potentially destroy the meter (if you're on the
+10 A scale, which doesn't have a fuse for protection). Whenever I
+teach this type of basic lab face to face, I do laps around the room handing out fuses
+like candy, and generally use up about a dozen of them. Sometimes the
+same group will blow several fuses in a row, because they keep putting
+their meter in parallel. Because there is no fuse in the 10 A circuit
+of the meter included in covid-19 kit, this could in theory be a
+recipe for disaster. The reality is that the battery has a little bit
+of internal resistance, and I think this is easily enough to prevent a
+current greater than 10 A from flowing. Therefore it should not be possible
+to turn your meter into a mushroom cloud, even if you try. But it could
+still create heat, burn your fingers, or burn out your battery. To guard
+against this, or against burning out the fuse on the mA plug, I would suggest
+that before you complete your circuit, you check and make sure that it
+contains \emph{no junctions}, i.e., no ``forks in the road'' where three different
+connections come together at one point. Your circuit should be a \emph{single loop},
+like a necklace.
+
+If you get a zero current measurement when it doesn't seem like you
+should, try the following debugging steps:
+
+\begin{enumerate}
+\item I find the WeePro's plugs confusing, because the mA plug is the same
+as the V plug, but different from the A plug. Make sure you're in the right
+plug for the current scale you've chosen.
+
+\item Take the meter out of the circuit, change it to voltmeter mode, and
+make sure there is a voltage difference across the screw terminals of the light bulb holder. If not,
+then you probably have a bad connection somewhere.
+
+\item Check the fuse. To do this, take the orange boot off of the meter, then use a \#0 or \#1 Phillips
+screwdriver to open the back of the case. Swap in another fuse, and use the meter in ohms mode to check
+whether the original fuse was blown or not. If it was not blown, it should have nearly zero resistance.
+\end{enumerate}
+
 
 In the breath-holding metaphor, the number you're measuring
 now is like the rate at which air flows 
