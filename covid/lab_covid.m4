@@ -63,6 +63,8 @@ m4_include(../share/covid-electric-field.tex)
 
 m4_include(../share/covid-dipole-and-superposition.tex)
 
+m4_include(../share/covid-polarization.tex)
+
 m4_include(../share/covid-oscilloscope.tex)
 
 m4_include(../share/covid-electromagnetism.tex)

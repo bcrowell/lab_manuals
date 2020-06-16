@@ -210,25 +210,37 @@ In this part of the lab, you will make numerical measurements
 of the transmission of initially unpolarized light
 transmitted through two polarizing films at an angle $\theta
 $ to each other. To measure the intensity of the light that
-gets through, you will use a photocell, which is a device
-that converts light energy into an electric current.
+gets through, you will use a photovoltaic cell, which is a device
+that converts light energy into an electric current. The ones we're
+using are of a type known as a silicon photodiode.
 
-You will use a voltmeter to measure the voltage across the
-photocell when light is shining on it. A photovoltaic cell is
+You will use an ammeter to measure the current flowing from the
+photocell when light is shining on it. This is known as the ``short-circuit current,''
+because the ammeter ideally has zero resistance, so it acts like a short. Normally when
+you create a short through an ammeter, it blows the fuse in the meter, but here there
+is about 40 $\zu{k}\Omega$ of internal resistance in the silicon, which is a semiconductor.
+A photovoltaic cell is
 a complicated nonlinear device, but I've found empirically
 that under the conditions we're using in this experiment,
-the voltage is proportional to the power of the light striking
-the cell: twice as much light results in twice the voltage.
+the current is proportional to the power of the light striking
+the cell: twice as much light results in twice 
+the current.\footnote{It's also possible to use the same cell with a voltmeter across it, in which case we'd be
+measuring the ``open-circuit voltage;'' but the open-circuit voltage varies in a much
+more nonlinear way with the intensity of the light. When rooftop photovoltaic cells are used
+to generate power, the resistance of the load is neither zero nor infinity, and is chosen
+to maximize the efficiency.}
 
 This measurement requires a source of light that is
-unpolarized, constant in intensity, and comes from a
+unpolarized, constant in intensity, has a wavelength that the polaroids work with, and comes from a
 specific direction so it can't get to the photocell without
 going through the polaroids. The ambient light in the room
 is nearly unpolarized, but varies randomly as people walk in
-front of the light fixtures, etc. The laser beam is constant
+front of the light fixtures, etc. An incandescent lightbulb doesn't work, because
+it puts out a huge amount of infrared light, which the silicon cell measures but the
+polaroids can't work with. A laser beam is constant
 in intensity, but as I was creating this lab I found to my
-surprise that it is partially polarized, with a polarization
-that varies over time. A more suitable source of light is the
+surprise that the light from the laser I tried was partially polarized, with a polarization
+that varied over time. A more suitable source of light is the
 sodium gas discharge tube, which makes a nearly monochromatic,
 unpolarized yellow light. Make sure you have allowed it to
 warm up for at least 15-20 minutes before using it; before

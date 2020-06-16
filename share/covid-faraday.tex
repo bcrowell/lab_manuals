@@ -155,12 +155,14 @@ the primary coil was uniform and parallel to the axis, and had the value
 calculated at a point (dot) at the center of the secondary coil. This is
 discussed further in the analysis section. By making this approximation,
 you will find a prediction based on Faraday's law of the form $\tilde{V}_2=\alpha \tilde{V}_1$,
-where $\alpha$ is a unitless constant. We'll ignore the sign of $\alpha$ because
+where $\alpha$ is a unitless constant. 
+
+\fig{em-faraday-geometry}
+
+We'll ignore the sign of $\alpha$ because
 it depends on how you hook up each coil, and it can be hard to tell on these hand-made
 coils which way the wires turn, especially if you end up using duct tape to hold the
 wires in place, as I did.
-
-\fig{em-faraday-geometry}
 
 \observations
 
@@ -171,7 +173,7 @@ slightly different. On channel 1 of the scope, you should see a series of
 alternating shark-fin pulses. This should be the response of an RL circuit
 to a square wave, which is basically a series of exponential curves, each
 of which should have the time constant $L/R$. In reality, I found poor
-agreement of this time constant (a factor of four discrepancy) with $L/R$ when I used the previously
+agreement (a factor of four discrepancy) of this time constant  with $L/R$ when I used the previously
 measured values of $L$ and $R$. This may have to do with nonideal behavior of
 the coil at high frequencies, such as stray capacitance.
 
@@ -182,7 +184,7 @@ that looks more or less like a sine wave. Try to make this happen by putting in
 different values for the filtering capacitor and possibly by playing with the
 frequency of the calibration output. I ended up using a capacitance of 33 nF,
 which with my coil gave reasonably sinusoidal-looking voltage with an amplitude
-$|\tilde{V}_1|$ of about half a volt.
+$|\tilde{V}_1|$ of about half a volt peak to peak.
 
 If you now connect channel 2 to the secondary coil, you should see a waveform
 that mimics the one on channel 1, but with a different amplitude. For my coils,
@@ -194,7 +196,19 @@ coils farther apart, and you should be able to flip the sign of $\alpha$
 by either turning one coil around physically or reversing the connections
 onto it.
 
-Measure $|\tilde{V}_1|$, $|\tilde{V}_2|$, and all the geometrical dimensions.;
+When you did the prep for the lab by calculating the theoretical expression for
+$\alpha$, you should have found that the frequency canceled out. This means
+that when the primary coil drives the secondary coil, there is no filtering
+of the signal. For this reason, what you see on channel 2 really should look
+like a copy of channel 1, just scaled and possibly inverted. Because of this,
+it was not even necessary in theory to go to the trouble of adding the capacitor
+to the primary circuit in order to get a more sinusoidal signal. However, the
+Fourier series of the original square wave contains some very high frequencies,
+and the behavior of these coils at these high frequencies is highly non-ideal,
+which can cause strange-looking behavior on channel 2 if channel 1 is not
+filtered at least somewhat.
+
+Measure $|\tilde{V}_1|$, $|\tilde{V}_2|$, and all the geometrical dimensions.
 
 \analysis
 
