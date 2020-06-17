@@ -22,7 +22,7 @@ m4_changequote(`[:',`:]')m4_dnl
 \mynormaltype
 
 \pagebreak[4]
-Copyright (c) 2020 by B.~Crowell. This lab manual is
+Copyright (c) 2020 by B.~Crowell and S.~Ji. This lab manual is
 subject to the Creative Commons CC-BY-SA license.
 
 \tableofcontents
@@ -54,6 +54,8 @@ m4_include(../share/covid-mu-k.tex)
 m4_include(../share/covid-capstan.tex)
 
 m4_include(../share/covid-2nd-law.tex)
+
+m4_include(../share/covid-vector-addition.tex)
 
 m4_include(../share/covid-calorimetry.tex)
 

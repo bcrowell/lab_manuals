@@ -1,0 +1,92 @@
+\renewcommand\thechapter{c1.5a}
+\lab{Vector addition of forces}\label{lab:covid-vector-addition}
+
+
+\section*{About this lab}
+
+\covid\ 
+It is intended to be used around the fifth week in Physics 222.
+
+\apparatus
+\equip{spring scales, 3}
+\equip{String}
+\equip{ruler}
+\equip{suction cup with a hook, 3}
+
+\begin{goals}
+
+\item[] Practice various methods of adding vectors.
+
+\item[] Verify that the net force is zero when a system is in equilibrium. 
+
+\end{goals}
+
+\introduction
+In class, we learned two methods to add vectors: graphical method and analytical method. 
+
+The graphical method is adding vectors by using vector diagrams. 
+\begin{itemize}
+\item[1]Draw two vectors with accurate scales and directions. 
+\item[2]Place them tip to tail. 
+\item[3]Draw a vector from the tail of the first vector to the head of the second vector.   
+\end{itemize}
+
+
+The analytical method is adding vectors by using x and y components of vectors.
+\begin{align*}
+\vec{A} &= A_x \hat{i}+A_y \hat{j} \\
+\vec{B} &= B_x \hat{i}+B_y \hat{j} \\
+\vec{A} +\vec{B} &= (A_x+B_x) \hat{i}+(A_y+B_y) \hat{j}
+\end{align*}
+
+In this lab, you will add three force vectors graphically and analytically. 
+\observations 
+The basic setup of this lab is similar to the physics 210 lab manual Lab 4: Vector Addition of Forces (\url{http://www.lightandmatter.com/area3lab.html}). Please read the manual before you start this lab. 
+
+By using three suction cups with a hook, place three spring scales on a table. Connect the three spring scales by strings and place the scales such that all three magnitudes are different, and the angles are not the same. 
+
+Measure the magnitudes and directions of forces for at least three different configurations. 
+
+\fig{me-vec-covid-setup}
+
+\analysis
+
+You need to do error analysis to determine if your result is
+consistent with theory. We will estimate the total error in
+the net force by the propagation of errors in either x or y component
+of the net force.
+
+Based on your error analysis, determine if the result is consistent with theory or not. 
+
+\subsection*{Propagation of error example}
+If you decide to calculate the total error in the x-component of the net force, You will do the following calculations. 
+\begin{itemize}
+\item[1] determine the errors in the raw data(Three angles and Three magnitudes). You can calculate the standard deviation of the raw data or estimate the error from the limit of the measurement device. 
+\item[2] Calculate the error in the x- or y- component of the net force due to the error in each angle measurement.
+\item[3] Calculate the error in the x- or y- component of the net force due to the error in each magnitude measurement.
+\item[4] Square all the error values(3 from the angles and 3 from the magnitudes) and add them and take the square root. 
+\end{itemize}
+There are six sources of errors: three magnitudes and three angles. 
+
+Error in the x-component due to the one of the angles is,
+\begin{equation*}
+\sigma_{F_x,\theta} = F_n \cos\theta_n-F_n \cos\left(\theta_n-\sigma_\theta\right)  
+\end{equation*} 
+where $\sigma_{F_x,\theta}$ the error in the x-component of the net force due to the error in one angle, $F_n$ is the nth force magnitude, $\theta_n$ is nth force angle from x-axis, and $\sigma_\theta$ is the uncertainty of an angle measurement. 
+
+Error in the x-component due to the one of the magnitudes is,
+\begin{equation*}
+\sigma_{F_x,F_n} = F_n \cos\theta_n-\left(F_1-\sigma_{F_n} \right)\cos\theta_n  
+\end{equation*} 
+where $\sigma_{F_n}$ is the uncertainty in a force measurement. 
+
+The total error is, 
+\begin{equation*}
+\sigma_{F_x} = \sqrt{\sigma_{F,F_1}^2+\sigma_{F,F_2}^2+\sigma_{F,F_3}^2+\sigma_{F,\theta_1}^2+\sigma_{F,\theta_2}^2+\sigma_{F,\theta_3}^2}
+\end{equation*}
+
+Compare your result with theory, using a statistical test as described in the example in appendix 2.
+
+\prelab
+
+\prelabquestion To add vectors analytically, we need to define a coordinate system and angles of the vectors. What angles do we have to use when we add vectors analytically?
