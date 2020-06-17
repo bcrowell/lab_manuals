@@ -91,7 +91,19 @@ points to reflect your estimate of how much it could have been off,
 and then redo the fit and find the new slope. The change in the slope
 tells you the error in the slope that results from the error in this
 data-point. You can then repeat this for the other points and
-proceed as in appendix \ref{appendix:errpropagation}. In some cases, such as the absolute zero
+proceed as in appendix \ref{appendix:errpropagation}.
+
+An alternative method is to use the LINEST function that is available
+in many spreadsheet programs. For a description, see \url{tinyurl.com/ya7wmdft}.
+Create the following formula in
+one cell of your spreadsheet: =Linest(y-values,x-value,
+True.True). Then, in excel, you need to press alt+ctrl+enter. In
+google sheets, press enter.  A table with two columns and five rows
+will appear. The first number in the first column is the slope of the
+graph, and the second number in the first column is the error in the
+slope.
+
+In some cases, such as the absolute zero
 lab and the photoelectric effect lab, it's very hard to tell how accurate
 your raw data are \emph{a priori}; in these labs, you can use the typical
 amount of deviation of the points from the line as an estimate of their

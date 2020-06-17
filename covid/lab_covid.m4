@@ -53,6 +53,8 @@ m4_include(../share/covid-mu-k.tex)
 
 m4_include(../share/covid-capstan.tex)
 
+m4_include(../share/covid-2nd-law.tex)
+
 m4_include(../share/covid-calorimetry.tex)
 
 m4_include(../share/covid-moi.tex)
@@ -92,6 +94,20 @@ m4_include(../share/covid-grating.tex)
 
 %===========================================================
 
+%============================================================
+\formatappendixtoc
+%============================================================
+m4_include(../share/format.tex)
+
+m4_include(../share/basicerranal.tex)
+
+m4_include(../share/errpropagation.tex)
+
+m4_include(../share/graphing.tex)
+
+m4_include(../share/powerlaws.tex)
+
+%===========================================================
 
 
 \backmatter
