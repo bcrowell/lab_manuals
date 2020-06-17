@@ -61,6 +61,8 @@ m4_include(../share/covid-calorimetry.tex)
 
 m4_include(../share/covid-moi.tex)
 
+m4_include(../share/covid-pulley.tex)
+
 %--------------------------- 222 -----------------------------
 
 m4_include(../share/covid-field-of-a-permanent-magnet.tex)
