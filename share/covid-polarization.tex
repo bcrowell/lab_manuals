@@ -257,7 +257,7 @@ is not a linear scale of brightness. For example, 200 on this scale is not twice
 much light as 100. These days the calibration of the scale is supposed to be standardized
 according to a standard called sRGB, but monitors are not usually terribly well calibrated
 to that standard, and the standard is not a linear one but rather something that has
-been chosen so that photos look pleasant on a monitor.
+been chosen so that photos look pleasant.
 
 To deal with this issue, the software has a second mode, which can be selected by
 clicking on the radio button that says ``Speckle.'' This mode is used without the
@@ -283,18 +283,19 @@ satisfied that they matched as well as possible.
 
 A final possible issue is that black on an LCD display is not in general totally black.
 Using electronic brightness measurements, I found that the blackest my monitor could go
-was about 5\% of its maximum brightness. This is actually one of the specs that you can
+was about 3\% of its maximum brightness. This is actually one of the specs that you can
 look at when you buy a monitor, and more expensive monitors will be blacker at their blackest.
 I found that with my monitor, this didn't affect the results enough to matter very much,
 but it did mean that for $\theta\gtrsim 80\degunit$, I was no longer sure if I could
-get the unfiltered black square to be the same brightness as the filtered white square.
+get the unfiltered dark square to be the same brightness as the filtered white square.
 
 Note that the filter is not 100\% efficient at passing the light of the desired polarization
 that it's supposed to let through. For this reason, you will want to divide each of your
 brightness measurements $P(\theta)$ by $P(0)$ in order to get a number that can be
 compared with the theoretical prediction of $P'/P$. This kind of calibration by
 some overall scaling factor is called a normalization. Your normalization will guarantee
-that theory and experiment agree perfectly at $\theta=0$.
+that theory and experiment agree perfectly at $\theta=0$, which is a cheat and doesn't
+actually help to test the theory.
 
 \prelab
 
@@ -311,18 +312,7 @@ a qualitative prediction of how it would change if the polaroids were not
 
 \analysis
 
-Discuss your qualitative results in terms of superposition
-and vector addition.
-
-Graph your results from part E, and superimpose a
+Graph your results from the quantitative part of the lab, and superimpose a
 theoretical curve for comparison. Discuss how your results
-compare with theory. Since your measurements of light
-intensity are relative, just scale the points so
-that their maximum matches that of the experimental data. (You
-might think of comparing the intensity transmitted through
-the two polaroids with the intensity that you get with no
-polaroids in the way at all. This doesn't really work,
-however, because in addition to acting as polarizers, the
-polaroids simply absorb a certain percentage of the light,
-just as any transparent material would.)
+compare with theory.
 

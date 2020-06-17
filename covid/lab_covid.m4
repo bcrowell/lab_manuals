@@ -53,6 +53,8 @@ m4_include(../share/covid-mu-k.tex)
 
 m4_include(../share/covid-capstan.tex)
 
+m4_include(../share/covid-calorimetry.tex)
+
 m4_include(../share/covid-moi.tex)
 
 %--------------------------- 222 -----------------------------
