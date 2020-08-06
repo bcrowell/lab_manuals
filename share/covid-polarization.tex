@@ -1,4 +1,4 @@
-\renewcommand\thechapter{c2.6a}
+\renewcommand\thechapter{c2.6}
 \lab{Polarization}\label{lab:polarization}
 
 \section*{About this lab}
@@ -281,14 +281,6 @@ vary depending on how you're viewing the lab manual right now.) So I would walk 
 computer, adjust the speckle pattern to a higher brightness, and try again until I was
 satisfied that they matched as well as possible.
 
-A final possible issue is that black on an LCD display is not in general totally black.
-Using electronic brightness measurements, I found that the blackest my monitor could go
-was about 3\% of its maximum brightness. This is actually one of the specs that you can
-look at when you buy a monitor, and more expensive monitors will be blacker at their blackest.
-I found that with my monitor, this didn't affect the results enough to matter very much,
-but it did mean that for $\theta\gtrsim 80\degunit$, I was no longer sure if I could
-get the unfiltered dark square to be the same brightness as the filtered white square.
-
 Note that the filter is not 100\% efficient at passing the light of the desired polarization
 that it's supposed to let through. For this reason, you will want to divide each of your
 brightness measurements $P(\theta)$ by $P(0)$ in order to get a number that can be
@@ -297,7 +289,65 @@ some overall scaling factor is called a normalization. Your normalization will g
 that theory and experiment agree perfectly at $\theta=0$, which is a cheat and doesn't
 actually help to test the theory.
 
-\prelab
+If possible, do these measurements in a dark room, or at least with dim lighting. Otherwise
+you will be affected by the reflection of ambient light from the screen.
+I found that with my monitor, in a room that I couldn't darken completely,
+this didn't affect the results enough to matter very much, and I think the limitation
+at low brightness levels had more to do with my vision.
+Whatever the reason, I found that for $\theta\gtrsim 80\degunit$, I was no longer sure if I could
+get the unfiltered dark square to be the same brightness as the filtered white square.
+
+\labpart{Optional: measuring how black is black}
+
+Black on an LCD display is not in general totally black. When a pixel is supposed to be black,
+what is actually happening is that light is being produced from behind the pixel, but the pixel
+is trying to filter it out completely. The monitor's ability to do this is called its contrast
+ratio. In addition, there may some reflection of ambient light from the screen. Monitors on
+desktop machines generally have a contrast ratio of $\sim10^3$, which means that there would
+be no effect on these measurements. Smartphones and tablets probably vary more. Some expensive
+smartphones have OLED displays, which have very high contrast ratios, but I imagine that cheaper
+devices might have poor contrast ratios. I would be interested, for example, if you could do
+measurements sensitive enough to tell me whether the contrast ratio on an iPad or a cheap
+smartphone is a factor in this lab.
+
+In this optional part of the lab, you can try to measure your device's contrast ratio,
+which is an interesting thing to know in its own right and also allows you to correct for
+a systematic error in the lab.
+To measure the intensity of the light from your screen,
+you will use a photovoltaic cell, which is a device
+that converts light energy into an electric current. The ones we're
+using are of a type known as a silicon photodiode.
+
+You will use an ammeter to measure the current flowing from the
+photocell when light is shining on it. This is known as the ``short-circuit current,''
+because the ammeter ideally has zero resistance, so it acts like a short. Normally when
+you create a short through an ammeter, it blows the fuse in the meter, but here there
+is about $\sim10\ \zu{k}\Omega$ of internal resistance in the silicon, which is a semiconductor.
+A photovoltaic cell is
+a complicated nonlinear device, but I've found empirically
+that under the conditions we're using in this experiment,
+the current is proportional to the power of the light striking
+the cell: twice as much light results in twice 
+the current.\footnote{It's also possible to use the same cell with a voltmeter across it, in which case we'd be
+measuring the ``open-circuit voltage;'' but the open-circuit voltage varies in a much
+more nonlinear way with the intensity of the light. When rooftop photovoltaic cells are used
+to generate power, the resistance of the load is neither zero nor infinity, and is chosen
+to maximize the efficiency.}
+
+The photovoltaic cell we got for this lab has bare copper contacts on the back, so you will
+need to solder leads onto it.
+
+To measure how black is black on your monitor, the idea is to press the PV cell against
+the screen and measure its current when the screen is white and when it's black.
+The ratio of these currents is your screen's contrast ratio. I didn't put a huge amount
+of effort into refining this into a high-precision measurement on my monitor. I did
+the measurement a couple of times using slightly different techniques, and got
+contrast ratios on the order of 30 to 100. This is quite a bit worse than the $\sim10^3$ that
+I've seen quoted by independent labs like \url{tomshardware.com} for desktop monitors,
+so I suspect that my measurements were too sloppy to probe the actual limits of my monitor.
+For example, I didn't take precautions to prevent light from getting in on the sides.
+
+\section*{Preparation}
 
 \prelabquestion Given the angle $\theta$ between the polarizing films, predict the 
 ratio $|\vc{E}'|/|\vc{E}|$ of the transmitted electric field to the incident

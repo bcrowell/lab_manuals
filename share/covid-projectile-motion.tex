@@ -1,0 +1,75 @@
+
+\lab{Projectile Motion}\label{lab:ProjectileMotion}
+
+\apparatus
+\equipn{Several sheets of 8.5x11 inch printer paper}
+\equipn{Two sheets of carbon Paper}
+\equipn{Masking Tape}
+\equipn{7 popsicle sticks}
+\equipn{2 rubber bands}
+\equipn{A 1/2 inch steel bearing ball}
+\equipn{A ruler, and a meter stick or measuring tape}
+\equipn{A protractor}
+\equipn{String}
+\equipn{A document clip, or other weight which can be used as a plumb for the protractor}
+\equipn{A cardboard box, table, or ofher object which can be used as a fixed height reference}
+
+\goal{After constructing a launcher made of a rolled up piece of paper, some popsicle sticks, and a few rubber bands, students can test the impact of the launch angle on the horizontal range of a projectile.}
+
+\introduction
+
+One of the most powerful aspects of Newton's laws of Motion is that, as long as we understand the net force acting on an object, where it is, and what its velocity is at a moment in time, we can predict its motion into the future. This same property also allows us to choose a location where we would \emph{like} an object to end up, and find the correct starting conditions to get it there.  One of the main historical applications of this has been in warfare, where Newton's Laws have allowed us to hurl things at each other with great precision.  Here we will test how well our theory of kinematics matches our home-made launcher.
+
+\observations
+
+\labpart{Setup}
+
+\begin{enumerate}
+    \item Construct the launcher: Detailed instructions with photos will be provided by your instructor.
+    \item Tie a piece of string through the hole in the protractor, and tie a weight to the other end of the string to it hangs down freely.
+    \item Line up the protractor along the side of the launcher barrel, and tape it in place.  The string can now be used to determine your angle of inclination.
+    \item Find an area where you have at least 3m of a relatively hard, flat, and level surface, preferably with no fragile objects around.
+    \item Set up a table, cardboard box, or other object which you can use as a reference for your launch position.  The only requirement is that it must be tall enough so that you can orient and fire the launcher.
+    \item Measure the height of your launch position (the height the ball will be at when it is released by the launcher), and use masking tape and a pen/marker to mark the place on the floor directly below your launch position.  You may find it helpful to use a plumb bob for this, which you can improvise by taping a quarter to the end of a string.
+    \item Load your bearing ball into the launcher, line it up carefully to you launch position at a $45\circ$ launch angle, and fire a few times, just to ensure you have enough space to work with.  You might want to block any ball traps, such as underneath your oven at this point.
+\end{enumerate}
+
+\figcaptionresize{Launcher_Assembled.jpg}{The fully assembled launcher}
+
+\labpart{Perform the Measurement}
+
+\begin{enumerate}
+    \item Line up your launcher at a launch angle of $15^\circ$ and fire your bearing ball. Note the location where the ball lands
+    \item Place two pieces of printer paper on the floor, centered where the ball landed, and fire the ball again at the same launch angle to confirm your range. You should consistently be able to hit your target twice in a row. If you have trouble, you should check to make sure your launcher isn't jamming up somewhere in its operation, or you may just need to practice.
+    \item Once you are satisfied that your target is in the right location, use masking tape to secure the printer paper on the floor, and place your two pieces of carbon paper on top.  NOTE: Do not put masking tape directly on the carbon paper. It is very fragile, and will tear when you go to remove the tape.  The carbon paper is one-sided, so be sure the shiny side is down (if you can't tell which side is which, you should test before you continue).
+    \item Fire your bearing ball from your launcher five times at the same launch angle. If you miss the target on one of your shots, just try again until you have hits.
+    \item Remove the carbon paper, and use your meter stick or measuring tape to measure the horizontal distance between your launch position and the center of the marks left by the carbon paper.  You should record these measurements directly on the paper, and label the paper before you remove it.
+    \item Remove the printer paper and repeat the measurement for launch angles of $30^\circ$, $40^\circ$, $45^\circ$, $50^\circ$, and $60^\circ$.
+\end{enumerate}
+
+\selfcheck
+
+Remember, ALL measured values should have uncertainties. Before you wrap up your data taking, make sure you have everything you need.
+
+\prelab
+
+\prelabquestion
+You launch a projectile from ground level with an initial launch speed of $v_0$. What launch angle do you choose to maximize the range?
+
+\prelabquestion
+If a projectile is launched from some initial height $h$, and lands at ground level, its range is given by 
+    \begin{equation}\label{eqn:Range}
+        R=\frac{v_0^2 sin(2\phi)}{2g}\left[ 1+\sqrt{1+\frac{2gh}{v_0^2 sin^2(\phi)}} \right]
+    \end{equation}
+    
+where $v_0$ is the launch speed and $\phi$ is the launch angle.  If you know that the height was $h=28.5$cm, the launch angle was $\phi=15^\circ$, and the range was $R=1.96$m, then what was the initial launch speed? Hint: This equation is tricky to solve algebraically, so you might want to use a computer and solve numerically.
+
+\analysis
+
+Calculate the mean and standard deviation of the mean to find the range of your launcher at each angle, with error bounds.
+
+You need a theoretical estimate to compare your experimental results to. Use Eqn \ref{eqn:Range} and your range at $\phi=15^\circ$ to find the initial launch speed.  Use this result to create a theoretical curve for the range of your launcher and plot it.
+
+On the same graph, you should plot your experimental data. Each data point should have error bars which represent the uncertainty of your measurement. Insert a quadratic trendline for your data (we know that the theoretical function is not quadratic, but this will give a reasonable approximation).
+
+For your theoretical and experimental results, find the angle which maximizes the range.  Are these results significantly different? If so, explain what systematic factors may cause such a difference.
