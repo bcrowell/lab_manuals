@@ -57,7 +57,15 @@ m4_include(../share/covid-2nd-law.tex)
 
 m4_include(../share/covid-vector-addition.tex)
 
+m4_include(../share/covid-projectile-motion.tex)
+
+m4_include(../share/covid-ball-bounce.tex)
+
 m4_include(../share/covid-calorimetry.tex)
+
+m4_include(../share/covid-ballistic-pendulum.tex)
+
+m4_include(../share/covid-buoyancy.tex)
 
 m4_include(../share/covid-moi.tex)
 
