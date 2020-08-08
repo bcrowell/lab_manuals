@@ -15,7 +15,7 @@ m4_changequote(`[:',`:]')m4_dnl
 \noindent\vspace{0mm}\\
 \noindent\vspace{10mm}\hspace{24mm}\textsf{\textbf{\Huge{Physics labs to be done at home}}}\\
 \noindent\vspace{10mm}\hspace{24mm}\textsf{\textbf{\Huge{during the Covid-19 quarantines}}}\\
-\noindent\vspace{0mm}\hspace{24mm}\textsf{\Large{Benjamin Crowell}}\\
+\noindent\vspace{0mm}\hspace{24mm}\textsf{\Large{Crowell, Persichilli, and Ji}}\\
 \noindent\vspace{16mm}\hspace{24mm}\textsf{\Large{Fullerton College}}\\
 \noindent\vspace{16mm}\hspace{24mm}\textsf{www.lightandmatter.com}
 \yesiwantarabic
