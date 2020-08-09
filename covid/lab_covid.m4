@@ -67,6 +67,8 @@ m4_include(../share/covid-ballistic-pendulum.tex)
 
 m4_include(../share/covid-buoyancy.tex)
 
+m4_include(../share/covid-mechanical-advantage.tex)
+
 m4_include(../share/covid-moi.tex)
 
 m4_include(../share/covid-pulley.tex)
