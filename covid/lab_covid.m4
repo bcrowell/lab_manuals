@@ -73,6 +73,9 @@ m4_include(../share/covid-moi.tex)
 
 m4_include(../share/covid-pulley.tex)
 
+m4_include(../share/covid-torque.tex)
+
+
 %--------------------------- 222 -----------------------------
 
 m4_include(../share/covid-field-of-a-permanent-magnet.tex)
