@@ -131,7 +131,10 @@ just setting yourself up for failure in lab.}
 \newcommand{\formatappendixtoc}{%
 	\renewcommand{\thechapter}{}
 }
-
+\newcommand{\makebanana}{%
+  You will need to have made at least four banana plug cables, using the method shown in the video that describes that,
+  \url{tinyurl.com/yy3x5c9z}.
+}
 
 %-------------------- page layout dimensions -------------------
 % standard stuff, see LaTeX companion, p. 85:

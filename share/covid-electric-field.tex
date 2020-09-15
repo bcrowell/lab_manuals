@@ -22,6 +22,9 @@ It is intended to be used during the fourth week in Physics 222.
 
 \end{goals}
 
+\section*{To build before lab}
+\makebanana
+
 \introduction
 
 Little kids easily manipulate magnetic fields using fridge magnets,
@@ -100,7 +103,7 @@ except that the size of the plates is doubled in the bottom one. In order to mak
 a fair comparison, we connect up the two capacitors in series (end to end) and
 hook up the battery (not shown) externally between the very top and
 very bottom. To see how this makes for a fair comparison, look at the
-isolated piece of metal in the middle, which is shaped sort of like
+isolated island of metal in the middle, which is shaped sort of like
 a capital ``I.'' This metal is surrounded by insulation such as air,
 so no charge can get in or out of it. It starts with zero total charge,
 so it will always have zero total charge. For this reason we are
@@ -126,11 +129,13 @@ amount of charge on it, the bottom one would display half as much of a potential
 difference.
 
 Summarizing these ideas, we say that every capacitor has a certain numerical
-rating, in units called farads (F) after Michael Faraday, which we will
-define more formally later in the course. The capacitors you will 
+rating called its capacitance, $C$, in units called farads (F), which we will
+define more formally later in the course. In the example above, the wide
+capacitor has twice the capacitance, and therefore it ends up with half as much potential difference across it. The capacitors you will 
 use in this lab are not actually parallel-plate capacitors with vacuum
 between the plates, but that doesn't matter for our purposes. They can
-still be given ratings in units of farads.
+still be given ratings in units of farads, and for the series circuit we're using
+we have the inverse proportionality $\Delta\phi\propto 1/C$, as in the visual example.
 
 You will notice that the capacitors we use in this lab are fairly big
 and bulky, about the size of your thumb. The reason they're so physically
@@ -177,8 +182,8 @@ The next figure, drawn in a mixture of schematic and realistic styles,
 shows how to measure the potential difference created by the
 battery. The details are drawn to resemble the meter I expect to send out with
 your kit, but in any case multimeters are pretty standardized. Turn on the
-meter by turning the rotary knob to the 2 volt scale, which reads in units of
-volts and is capable of handling voltages up to 2 V. If you connect the wires
+meter by turning the rotary knob to the 2000 mV (2000 millivolt) scale, which reads in units of
+volts and is capable of handling voltages up to two volts. If you connect the wires
 as shown, you should get a positive reading. The nominally 1.5 V alkaline batteries
 we're using are actually about 1.6 V.
 
@@ -194,7 +199,7 @@ a more solid connection.
 Now reposition the probes of the meter to measure the potential difference
 $\Delta\phi_1$ across $C_1$ and the difference $\Delta\phi_2$ across $C_2$.
 You should find that, as in the  figure on p.~\pageref{fig:em-fie-covid-capacitor-params}, the potential
-differences are unequal. Test whether they are in proportion to the capacitances.
+differences are unequal. Test whether they are in inverse proportion to the capacitances.
 
 This type of capacitive voltage divider is sometimes used in real life when
 one wants to use a meter to measure a large voltage. Imagine that instead of
@@ -204,6 +209,30 @@ unequal capacitances, we could make a scaled-down copy of the voltage, which we
 could then measure safely and interpret using an appropriate fudge factor determined from $C_1$ and $C_2$.
 Usually this application is used for AC circuits, not a DC circuit
 like the one in this lab, because of the leakage problems described above.
+
+It is possible to unknowingly get bad data for the following reason. The analysis above
+was predicated on the assumption that the ``island'' between the two capacitors would
+always have zero total charge. Now consider the setup shown below, which is what you
+would use to measure the voltage across one of the capacitors. The island is no longer
+isolated from the rest of the universe. Charge can flow in or out of it through the
+meter. If this starts to happen, then our analysis that proved $\Delta\phi \propto 1/C$ becomes
+completely invalid. I tested this with the AstroAI meter and the two black capacitors
+that came with the kit, and I found that after half an hour, the reading on the meter had
+changed by 15\%. If I left it like this overnight, the capacitor would discharge completely
+through the meter, and the reading would go to zero. This would not be a practical problem in 
+this lab, since the leakage is fairly slow. 
+
+\fig{em-fie-covid-voltage-divider-meter-discharge}
+
+However, imagine that as you were fiddling
+with your circuit, you inadvertently touched two of the wires together so that there was
+a discharge path for the capacitor that was just some wire. This is called ``shorting across''
+the capacitor. The discharging process would
+be almost instantaneus. Your circuit would then be in a messed-up state, with nonzero total charge on the ``island,'' and you would
+not necessarily have any idea of what was wrong. If your data aren't making sense, and
+you suspect that you may have a problem like this, then the following procedure will get
+you back into a known-good state. (1) Remove the battery from the holder. (2) Discharge each
+capacitor by shorting across it with a wire. (3) Put the battery back in the holder.
 
 \labpart{Constant potential on a conductor?}
 
