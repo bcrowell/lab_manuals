@@ -229,10 +229,20 @@ with your circuit, you inadvertently touched two of the wires together so that t
 a discharge path for the capacitor that was just some wire. This is called ``shorting across''
 the capacitor. The discharging process would
 be almost instantaneus. Your circuit would then be in a messed-up state, with nonzero total charge on the ``island,'' and you would
-not necessarily have any idea of what was wrong. If your data aren't making sense, and
-you suspect that you may have a problem like this, then the following procedure will get
-you back into a known-good state. (1) Remove the battery from the holder. (2) Discharge each
-capacitor by shorting across it with a wire. (3) Put the battery back in the holder.
+not necessarily have any idea of what was wrong. Similar problems can occur if you do things like
+disassembling and reassembling your circuit, or swapping in a different capacitor. These high-value capacitors
+can retain charge on their plates even when you toss them in a box overnight.
+
+For these reasons, it's a good idea to carry out the following procedure to completely discharge
+your capacitors before charging them up with the battery and taking data.
+(1) Remove the battery from the holder. (2) Take two wires and use them to simultaneously
+ short across the two capacitors, as in the figure below. (3) Remove the extra wires and then
+put the battery back in the holder.
+ After this process, the island is guaranteed to have zero
+total charge in it.
+
+\fig{em-fie-covid-voltage-divider-discharge}
+
 
 \labpart{Constant potential on a conductor?}
 
@@ -292,6 +302,7 @@ drops around the loop is zero as predicted by theory.
 \analysis
 
 For each part of the lab, compare theory with experiment, including error analysis.
+Give a probabilistic interpretation of the results, as in the examples at the end of appendix 2.
 
 For part A, the main source of error is the tolerances on
 the capacitances.
