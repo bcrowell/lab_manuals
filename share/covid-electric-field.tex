@@ -5,6 +5,10 @@
 
 \covid\ 
 It is intended to be used during the fourth week in Physics 222.
+It does not assume any previous knowledge of capacitors or
+capacitance, so it can be used as soon as students know about
+Gauss's law, electric field lines, and the electric potential
+(Young and Freedman ch.~23, or Fields and Circuits ch.~4).
 
 \apparatus
 \equip{1.5 V battery}
@@ -26,6 +30,8 @@ It is intended to be used during the fourth week in Physics 222.
 \makebanana
 
 \introduction
+
+\subsection*{A voltage divider}
 
 Little kids easily manipulate magnetic fields using fridge magnets,
 but electric fields are harder to control and do experiments on.
@@ -153,7 +159,48 @@ the capacitance. The meter we're using does have a pretty big resistance,
 about a million ohms, but for example if we used a one-microfarad
 capacitor, the leakage time would be only one second.}
 
+\fig{em-fie-europe}
+
+\subsection*{Conservative and nonconservative fields}
+
+The figure above shows a map of part of Europe.\footnote{\url{commons.wikimedia.org/wiki/File:Blank_map_of_Europe_in_1920.svg},
+CC-BY-SA license} Suppose you decide to walk all the way around the border of France,
+eventually returning to your starting point. Newtonian gravity, which is an excellent approximation for the earth's
+gravitational field, predicts that the gravitational field is conservative, so that along any such closed path,
+the work done on you by the gravitational field is zero. In other words, any climbing you do on this hike will be canceled
+out by the elevation losses from going downhill. If we break the route up into pieces, then for example the segment
+from A and B will have a significant change in elevation, because B is near the crest of the Alps. Hiking from A to B
+will be an elevation gain, whereas if you went the opposite way and hiked from B to A, the elevation gain would be
+negative. Thus if you wanted to check that the total elevation gain on this loop was zero, you would need to decide
+on a clockwise or counterclockwise orientation for your hike, and you would also need to make sure that when you
+measured elevation differences, you defined their signs in a way that was consistent with this orientation.
+
+In the second figure, we make the map into a circuit containing a bunch of capacitors and batteries. You will make
+up a circuit for this lab that is like this but simpler, with only five components.
+There are various loops we can trace in this circuit. There is one around the border of France, containing six circuit
+elements, one around the border of Switzerland that has three, and so on. There are also other loops we could draw.
+For instance, we could start from the west coast of France and ``hike'' clockwise around the outer perimeter of the whole
+figure, which would take us through 9 components.
+
+Both magnetic and electric fields can be either conservative or nonconservative.
+A nonconservative field is ``swirly'' or ``curly,'' and may contain field lines
+that form closed loops. These concepts are discussed in your text at greater length and
+with more mathematical precision. Theory predicts that \emph{static} electric fields
+like the ones in this lab should be conservative. Only for a conservative field does
+it make sense to talk about a potential $\phi$, as we have been casually 
+doing.\footnote{For a nonconservative field, what a voltmeter measures is actually the work
+per unit charge needed to move a charge from point A to point B, through the meter, and this could
+change, for example, if you wiggled the meter so that the path became different.}
+For a conservative field, the sum of the voltage changes around a closed loop will be zero. 
+
+It turns out that if we check only the \emph{inner} loops, i.e., the border of every country,
+then no more information is obtained by checking other loops such as the big outer loop. If we write down the four equations
+asserting that each inner loop adds up to zero, then it is possible to prove that every loop in the circuit adds up to
+zero. Therefore for the purpose of this lab, it is only necessary to do all the inner loops of whatever circuit you create.
+
 \observations
+
+\setcounter{labpartctr}{0}
 
 \labpart{A voltage divider}
 
@@ -264,24 +311,6 @@ the potential different between the connectors on the two ends of the same wire.
 
 \labpart{Conservative, or nonconservative?}
 
-Both magnetic and electric fields can be either conservative or nonconservative.
-A nonconservative field is ``swirly'' or ``curly,'' and may contain field lines
-that form closed loops. These concepts are discussed in your text at greater length and
-with more mathematical precision. Theory predicts that \emph{static} electric fields
-like the ones in this lab should be conservative. Only for a conservative field does
-it make sense to talk about a potential $\phi$, as we have been casually 
-doing.\footnote{For a nonconservative field, what a voltmeter measures is actually the work
-per unit charge needed to move a charge from point A to point B, through the meter, and this could
-change, for example, if you wiggled the meter so that the path became different.}
-
-Suppose that an electric charge is transported around a closed path from point A to B to C
-and back to A again. If the field is conservative, then the total work done by the field
-on the charge should be zero, $  W_{AB}+W_{BC}+W_{CA}=0$, and the work per unit charge,
-which is what is measured by the voltmeter, should also be zero,
-\begin{equation*}
-  V_{AB}+V_{BC}+V_{CA}=0.
-\end{equation*}
-
 Use all of your capacitors to build a more complicated version of part A.
 To make this fun, don't make your circuit all parallel or all series. Make it some
 combination of series and parallel parts. Make sure that all of your capacitors are
@@ -290,17 +319,36 @@ is an open circuit, which might as well have not come to the party.
 
 If you draw the schematic for this circuit, you should find that it's possible to lay it
 out in such a way that no wires cross over other wires.\footnote{See \url{https://en.wikipedia.org/wiki/Planar_graph}.}
-Within this schematic, there should be various loops that you can trace out.
-Determine every such loop that encloses only air. (Because of the constraints
-imposed by the equipment and instructions, most of these will probably be
-three-component loops, consisting of either three capacitors or two capacitors plus
-the battery.) For each such loop, use the meter to check whether the sum of voltage
+For each inner loop, use the meter to check whether the sum of voltage
 drops around the loop is zero as predicted by theory.
 
+As with the circuit from part A, this one has a possible state in which every ``island'' between capacitors
+has zero total charge, as well as other possible states in which this is not true. In theory, this makes
+no difference as to whether the field is conservative. However, it would be nicer to get the circuit into
+a known state so that, for example, if you need to rebuild it later to get a missing piece of data, you can
+do so. To do this, follow a procedure similar to the one used for discharging the capacitors in part A:
+(1) take the battery out of the holder, (2) lay a piece of aluminum foil down on the circuit and put it
+in electrical contact with every exposed contact at once, and (3) put the battery back in.
 
+\section*{Preparation}
+
+The figure on p.~\pageref{fig:terrier-conservative} shows a circuit
+that contains only static electric fields.
+Given the first two readings, we want to predict the third one.
+Is it $+1$, $-1$, $+5$, or $-5$ V? Explain your answer.
+
+Any of the four given possibilities can be obtained by adding the
+voltages, depending on the signs. It matters how the voltmeter is
+connected across each component (which side is COM and which is V),
+and it also matters that one meter reading is positive and the other
+negative. Without specifically discussing those details, there is no
+way to determine which answer is correct.
+
+\begin{figure*}
+  \includegraphics{../figs/em-fie-terrier-conservative}\label{fig:terrier-conservative}
+\end{figure*}
 
 \analysis
-
 
 For each part of the lab, compare theory with experiment, including error analysis.
 Propagation of errors is described in appendix 3.
