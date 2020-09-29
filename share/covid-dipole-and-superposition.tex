@@ -18,6 +18,10 @@ It is a modified version of Minilab 5 from \emph{Fields and Circuits}.
 \equip{alligator clips (6)}
 \equip{timing device (stopwatch, computer, or cell phone app)}
 
+There is an introductory video for this lab at
+\url{https://youtu.be/X5yhfo3QASs} .
+In the video I refer to Minilab 5 in \emph{Fields and Circuits}, but
+it applies equally well to this version of the lab.
 
 You will also need to build a solenoid like the one shown in the
 introductory video for this lab. This is the main purpose of the thin
@@ -77,6 +81,7 @@ the battery directly to the magnet, a large amount of current would flow. This w
 would also release a lot of heat (possibly enough to damage the wire if you used the 26 gauge magnet wire).
 To keep this from happening, we will add a resistor to your circuit. The smallest
 value supplied in the assortment of resistors we got from our supplier was 10 ohms, which worked reasonably well for me.
+Your kit should have a couple of small-value resistors in the range of abuot 8 to 22 ohms.
 The battery, solenoid, and resistor go in a series circuit, meaning that they form a single loop, like a necklace.
 To turn off the circuit, you can break it at any point so that it no longer forms a complete loop. It's a good idea
 not to leave it on all the time, because the resistor can get hot.
@@ -85,6 +90,7 @@ As demonstrated in the video, you will hang the ferrite disk magnet from a threa
 and coinciding with the axis of the solenoid. The magnet then has some period of oscillation $T$ as it twists.
 The oscillation of the magnet is simple harmonic motion, so the period and
 the magnetic field $B$ supplied by the solenoid are related by $T\propto B^{-1/2}$.
+This is simply the same relationship as for a pendulum except that the gravitational field $g$ is replaced by the magnetic field $B$.
 If superposition holds, then varying the current by some factor should change $B$ by the same factor, and therefore
 $T$ should change by one over the square root of that factor.
 
@@ -99,7 +105,7 @@ real numbers, taking into account plus and minus signs for direction.
 
 \observations
 
-We are not providing you with a variable power supply, the issue arises of how to vary the current.
+We are not providing you with a variable power supply, so the issue arises of how to vary the current.
 The simplest thing you can do is to create three different fields in the following way: (1) solenoid turned off;
 (2) solenoid on and reinforcing the earth's field; and (3) solenoid on and opposing the earth's field.
 If you do this, then you get currents $-I_0$, 0, and $I_0$. Then in its simplest incarnation,
@@ -112,6 +118,10 @@ The video demonstrates some optional, fancier things you can try.
 If you include the meter, then you can measure
 the current directly. This would let you know, for example, if the currents $\pm I_0$ were not quite the same
 because of small changes in the resistance of the alligator clip connections when you make and break those connections.
+If possible, try to make all your currents under 200 mA, because then you can do all your measurements on the 200 mA
+scale of the meter, which gives you four sig figs. This is a huge win over the 10 A scale, which will only give two
+sig figs. Don't do some of your measurements on one scale and some on the other, because there is probably quite a big
+discrepancy between their calibrations.
 
 You can double the current either by putting two resistors in parallel (as shown in the video) or by
 using a second battery (if you have one handy, and some way to rig up connections). 
@@ -121,7 +131,45 @@ quite a bit of heat will be generated in the double-current setup, as demonstrat
 burn my fingers. Turn the circuit on only for as long as necessary to get a measurement of the period,
 and then turn it off and let the resistor cool off.
 
+\analysis
 
+Make the graph and use its linearity to test whether superposition holds.
 
+Error analysis is extra credit for this lab, and only really makes sense to do if you use the meter,
+and use it on the 200 mA scale. If you do these things, then the four-sig-fig current measurements are
+probably not a significant source of error. The main source of error would instead be the times.
+Do multiple trials of each time measurement in order to estimate the error bars on the raw data.
+Use this to estimate error bars on the $T^{-2}$ values (propagation of errors, appendix 3).
+These error bars will probably be too small to see on the graph. Therefore, fit a line to the
+graph (appendix 4), subtract out the linear fit from the data, and get the differences from the
+line. Differences like these are called ``residuals.'' See if the error bars on the $T^{-2}$	values
+are big enough to explain the residuals.
 
+\section*{Preparation}
 
+Make your solenoid.
+
+I suggest that	you take all the resistors and small
+capacitors out of the little bubble envelope and sort them out
+in an egg carton or something similar. The resistors are labeled
+with color codes similar to the 4-band color codes described in \emph{Fields and Circuits} ch. 8, figs j and k.
+The ones we bought for fall 2020 actually had a slightly different 5-band color code instead.
+Because the bands are so tiny and hard to see, it may be easier to determine the values simply
+by hooking them up to your multimeter in resistance mode. To do this, connect the resistor
+to the COM plug and the $\Omega$ plug. The symbol $\Omega$ stands for ohms. Put the rotary
+dial on one of the ohm settings.
+
+If you do want to use the color codes, then here is how the 5-band code on these resistors
+seems to be defined. First note how four of the bands are closer together, and one is
+slightly set apart from them, with a slightly bigger gap in between. Orient the resistor so that as you go from left to right,
+the bands go color-color-color-color-gap-color. Then read the code as in the 4-band code illustrated
+in the book, but with an extra digit.
+
+Example: green blue black red (gap) brown\\
+ = 5-6-0-2-\ldots = $560\times10^2\ \Omega = 56\ \zu{k}\Omega$.
+
+(I think the rightmost band is always brown on these, and it indicates either a 1\% tolerance
+or a 100 ppm temperature coefficient.)
+For the power of 10, I think gold indicates $10^{-1}$, and silver is $10^{-2}$. (Gold and silver
+do not represent tolerances as in the 4-band color codes.) The small-value resistors you want
+for this lab are likely to be the ones with the gold and silver powers of 10.
