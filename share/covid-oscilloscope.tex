@@ -261,7 +261,17 @@ output is now driving perhaps a milliamp of current through the resistor. This i
 bit of a goofy thing to do, because the ground clip is not meant to be a current-carrying
 connection, but it's harmless because the current is small.
 
-When you added the resistor, you should have seen the voltage measured on the scope go
+\fig{em-osc-hantek-internal-r}
+
+The circuit in the diagram is not pure series or pure parallel, it's a mixture of both.
+But because the probe and input have such a high resistance, they don't interfere with
+the operation of the circuit at all. Therefore you can put your hand over the box in
+the diagram that says ``probe \& input,'' and think about the circuit as just the
+part that you haven't covered up. That means that the circuit can be approximated as acting like a purely
+\emph{series} circuit, consisting of the voltage source $V$ in series with the resistances
+$R_0$ and $R$.
+
+When you added the external resistor $R$, you should have seen the voltage measured on the scope go
 down a little bit. This happens with any real-world voltage source: when you load it,
 its voltage gets dragged down. Your external resistor $R$ is now forming a voltage divider
 with the resistor $R_0$ inside the scope. Take measurements of the voltage $V_R$ when the external
@@ -270,10 +280,14 @@ ohms.
 
 \analysis
 
-Analyze the voltage divider in the final part of the lab purely symbolically, finding
-$R_0$ in terms of $R$, $V_R$, and $V_\infty$.
+The only complicated analysis is for part E. Depending on the schedule of your class,
+you may actually start this lab before you know enough to analyze part E. For example, if
+your text is \emph{Fields and Circuits}, then you won't know how to analyze it until
+you've read ch.~9.
+Analyze the voltage divider purely symbolically, finding
+$R_0$ in terms of $R$, $V_R$, and $V$. (Note that when the resistor $R$ is not present,
+you effectively have $R=\infty$, which is a free data point. We could notate the
+voltage $V_R$ in this condition as $V_\infty$.)
 Then, by plugging in to your equation, extract the internal resistor's value from each
 measurement of $V_R$. If it's roughly the same in all cases, then that supports the hypothesis that it
 really is a resistor, rather than some other current-limiting safety feature.
-
-
