@@ -85,27 +85,9 @@ be induced, which you will detect using the solenoid connected to the oscillosco
 drives electrons around the solenoid, producing a current
 which is detected by the oscilloscope.
 
-When using a standalone oscilloscope for this type of measurement, the
-nice setup is to put the time base on something very long like one
-second.  Triggering becomes unnecessary, and the scopes we use at
-school are programmed so that when the time base is very long, they
-simply continuously display traces.
-
-The USB oscilloscopes we're using are somewhat less convenient for
-this purpose, but still usable. They do not have a hardware trigger.
-They just continuously read in data, and the software simply doesn't
-display the data unless it satisfies the trigger condition.
-
-In the OpenHantek6022
-software, the longest time base that is enabled by default is 100 ms, which is
-shorter than I would have used for this lab. I asked the author to allow
-longer time bases, and he did that in the very latest version of the software.
-Make sure the version you're using is 20200609 or later.
-Long time bases are still not enabled by default. To enable them, go to Oscilloscope:Settings:Scope,
-and choose the appropriate option under ``Set slowest possible timebase.''
-
-I believe the Windows software that comes with the scope does allow longer
-timebases. I don't know about HScope, the android app.
+Because the signals you're creating in this lab are varying on the time scale
+it takes for you to physically move a magnet around with your hand, set the
+time base on the scope to an appropriately long value.
 
 \labpart{ A changing magnetic field}
 
@@ -207,13 +189,15 @@ observing whether the pulse induced is positive or negative.
 The idea of the ``chop'' is to bring the magnet rapidly closer
 to the solenoid, keeping their axes parallel.
 
-This doesn't work well in automatic triggering mode. Change to normal
-triggering and set the trigger level to just a lttle bit above or a little
-bit below the zero-signal level. Now depending on the polarity of the
-pulse you produce, you may or may not trigger the scope. For example,
-if you don't see anything when the trigger is set on a small positive
-value, it may be that you're producing negative pulses, so try changing
-the trigger to a small negative value.
+This doesn't work well in automatic triggering mode. Roll mode works
+well for this purpose. (Or if you want to practice using normal
+triggering, choose that mode and set the trigger level to just a lttle
+bit above or a little bit below the zero-signal level. Now depending
+on the polarity of the pulse you produce, you may or may not trigger
+the scope. For example, if you don't see anything when the trigger is
+set on a small positive value, it may be that you're producing
+negative pulses, so try changing the trigger to a small negative
+value.)
 
 What happens when you reverse the
 chopping motion, or when you reverse the north and south

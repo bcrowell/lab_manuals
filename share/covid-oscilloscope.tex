@@ -178,6 +178,15 @@ away, because the voltage difference between the two terminals of the probe is n
 Set CH 1 to an appropriate voltage scale so that you can measure the voltage across
 a battery, and do that by connecting the ground clip and minigrabber to the terminals. Try flipping the battery around and verify that the sign flips.
 
+When you're using the oscilloscope to measure times and	voltages, use
+the graph itself, not the white text at the bottom of the window in
+the OpenHantek software. The numbers shown in white text are estimates made by some
+algorithm. The algorithm is not necessarily reliable or accurate. When
+reading heights and widths on the graph paper, use the scales you've
+selected in the Voltage and Horizontal menus. For example, if you've
+selected 200 mV in the Voltage menu, then 7.2 vertical divisions on
+the graph-paper grid would represent 1.44 V.
+
 \labpart{60 Hz fields in your home}
 
 If you saw noise before when the scope's probe was an open circuit, that was probably
@@ -225,6 +234,14 @@ If you now adjust the scales appropriately, you should see a nice clean square w
 on very solidly. You can try triggering on rising and falling slopes and verify that you understand what
 happens. You can try using the menu to change the frequency of the square wave.
 
+Try measuring the amplitude of the signal. Do this using the graph, not the white text at the bottom
+of the screen. You will need to set the scope's voltage scale appropriately, and some trial and error
+may be necessary in order to get it right. If you set the scale to an inappropriately high value,
+like 5 V/division, then you will not be able to get a high-precision measurement. If you set it to an
+inappropriately low value, like 100 mV/division, then the signals gets truncated because it goes outside
+the range of inputs that the scope expects. This can be deceptive because a truncated square wave still
+looks like a square wave. 
+
 \labpart{The internal resistance of the scope's calibration output}
 
 When I first saw the design of this scope's panel, I was very worried that I or
@@ -266,74 +283,21 @@ with the resistor $R_0$ inside the scope. Take measurements of the voltage $V_R$
 resistor is this value, infinity, and one or two other values going down to a few hundred
 ohms.
 
+
 \section*{Preparation}
 
-Because this is a USB oscilloscope rather than a standalone device,
-you need to run software in order to see the results. The manufacturer
-supplies Windows software on a CD, but since I don't own a Windows machine,
-I haven't tried it. The software I've been using is an open-source application
-called OpenHantek6022.
-It's multiplatform and runs on Windows, Mac, and Linux. It's worked fine for me
-on Linux, and I didn't find that I needed to install any drivers. The OpenHantek6022
-software is what I'll describe in this lab manual, but it seems to be a pretty close
-copy of the manufacturer's Windows software.
+1. Install the software as described below at the end of the lab manual for this lab.
 
-If you have an Android phone, there is
-free software called Hscope that you can use. I've heard it's nice, but haven't tried it.
-As far as I know there is no iPhone software for this device.
+2. What is the period, in milliseconds, of a 60 Hz signal?
 
-The scope comes with a funky USB cable shaped like a ``Y.'' One end goes to the
-scope, the other to the computer. At the computer end, use the black connector. The red
-one won't work, and I don't know what it's for.
-Don't try to connect through a USB hub, which won't work with this scope.
+3. The figure shows a signal on the oscilloscope.
 
-For the rest of this description, I'm going to assume you're installing the OpenHantek
-software. Go to 
-\url{github.com/OpenHantek/OpenHantek6022} . Scroll down to ``Install prebuilt binary,''
-and click through on the link that says, ``Download Linux, Raspberry Pi, Windows and MacOSX packages from the Releases page.''
-Scroll past the unstable releases to the first numbered release, which is the most recent.
-If you're on Windows, download the one with the filename beginning with {\tt OpenHantek-Win-x64-Release-}.
-For MacOS, look for the one ending in {\tt osx\_x86\_64.dmg}. For Linux, pick the appropriate file
-for your distribution.
-Install the software as usual for your OS.
+\fig{em-osc-sample-measurement-hantek}
 
-One Mac user reports that she gets ``connection failed,'' but if she quits
-the software and simply retries several times, it eventually works.
-
-If you're on Windows, you will also have to do the following.
-On the original github page, scroll down to
-``Windows USB access,'' and follow the instructions there about using Zadig
-to install a USB driver.
-
-When you run the software, it should now identify your oscilloscope as a 6022BE or
-6022BL. (You can tell which you have by looking on the lid of the box, where they
-checked one of the boxes with a sharpie.) If this fails and it doesn't want to run,
-it may be because you're using the red USB connector.
-
-If you're on Windows you may get an error when you start the software that says
-``connection failed.'' (It displays the correct model number of the scope, which shows
-that it is talking to it through USB.) In this situation, what seems to work is to
-uninstall the USB driver, reinstall it, and then run the software again. There may
-be some variable involved that we don't understand, because sometimes people are
-cycling through this process several times before it works. It may make a difference
-if you unpug the USB cable and plug it back in, plug it into a different USB port,
-or start the software, wait five seconds, and then plug it in.
-
-If you're on Windows and can't get the OpenHantek software to work,
-you can try the manufacturer's software. 
-They supply it on the CD, and you can also download it. It looks very different
-from OpenHantek, and I haven't been able to try it myself because I don't run Windows.
-Here are the manufacturer's URL's for the documentation and their software.\\
-6022BE:
-\begin{itemize}
-\item documentation: \url{http://hantek.com/products/detail/31}
-\item Windows software: \url{http://www.hantek.com/Product/Hantek6000/HT6022_Software.zip}
-\end{itemize}
-6022BL:
-\begin{itemize}
-\item documentation: \url{http://hantek.com/products/detail/153}
-\item Windows software: \url{http://www.hantek.com/Product/Hantek6000/HT6022BL_Software.zip}
-\end{itemize}
+Verify that the peak-to-peak amplitude is about 760 mV and that the period is about
+6.6 ms. You will need to zoom in on the figure. Note that for the frequency, it is
+more accurate to use the zero-crossing points rather than the ill-defined peaks,
+and to measure two periods and divide by two.
 
 \analysis
 
@@ -348,3 +312,69 @@ voltage $V_R$ in this condition as $V_\infty$.)
 Then, by plugging in to your equation, extract the internal resistor's value from each
 measurement of $V_R$. If it's roughly the same in all cases, then that supports the hypothesis that it
 really is a resistor, rather than some other current-limiting safety feature.
+
+\section*{Installing the software}
+
+Because this is a USB oscilloscope rather than a standalone device,
+you need to run software in order to see the results. The manufacturer
+supplies Windows software on a CD, but since I don't own a Windows machine,
+I haven't tried it. The software we will use in this class is an open-source application
+called OpenHantek6022.
+It's multiplatform and runs on Windows, Mac, and Linux.
+
+If you have an Android phone, there is
+free software called Hscope that you can use. I've heard it's nice, but haven't tried it.
+As far as I know there is no iPhone software for this device.
+
+The scope comes with a funky USB cable shaped like a ``Y.'' One end goes to the
+scope, the other to the computer. At the computer end, use the black connector. The red
+one won't work, and I don't know what it's for.
+Don't try to connect through a USB hub, which won't work with this scope.
+The Hantek scope cannot coexist peacefully on your computer's USB bus with other
+high-speed USB devices, so disconnect anything like a USB speaker or USB mic.
+
+Go to \url{github.com/OpenHantek/OpenHantek6022} . Scroll down to ``Install prebuilt binary,''
+and click through on the link that says, ``Download Linux, Raspberry Pi, Windows and MacOSX packages from the Releases page.''
+Scroll past the unstable releases to the first numbered release, which is the most recent.
+If you're on Windows, download the one with the filename beginning with {\tt OpenHantek-Win-x64-Release-}.
+For MacOS, look for the one ending in {\tt osx\_x86\_64.dmg}. For Linux, pick the appropriate file
+for your distribution.
+Install the software as usual for your OS.
+
+One Mac user reports that she gets ``connection failed,'' but if she quits
+the software and simply retries several times, it eventually works.
+
+If you're on Windows, you will also have to do some additional things
+described in a separate section below titled ``installing drivers on Windows.''
+
+
+When you run the software, it should now identify your oscilloscope as a 6022BE or
+6022BL. (You can tell which you have by looking on the lid of the box, where they
+checked one of the boxes with a sharpie.) If this fails and it doesn't want to run,
+it may be because you're using the red USB connector.
+
+The user interface's controls are broken up into four panels on the
+right.  You can make a panel go away if you don't need it. To get it
+back, right-click in the gray area below the panels.
+
+\section*{Installing drivers on Windows}
+
+If you're using Windows, you will need to go through some extra steps to install drivers.
+On the github page, scroll down to
+``Windows USB access,'' and follow the instructions there about downloading software called Zadig,
+which allows you to install the drivers. There is also a link to a detailed tutorial
+on how to do this, including pictures of windows. Below is my shorter summary:
+
+(1) Run Zadig. The pop-up menu will say ``Unknown Device \#1,'' and
+the USB ID will be displayed as 04b4 6022. Click on Install Driver.
+
+(2) Run OpenHantek. You will get a message saying ``connection failed,'' but OpenHantek
+will upload firmware to the oscilloscope. It should show the correct model number for
+the oscilloscope, which shows that it is actually talking to the oscilloscope.
+
+(3) Run Zadig again. The pop-up menu will now display the model number, and
+the USB ID will be 04b5 6022. Tell it to install a driver again. (This is a
+second, different driver.)
+
+
+
