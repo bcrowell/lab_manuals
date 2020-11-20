@@ -1,4 +1,4 @@
-\renewcommand\thechapter{c2.13}
+\renewcommand\thechapter{c2.13a}
 \lab{RC circuits}\label{lab:rc-circuits}
 
 \section*{About this lab}
@@ -11,12 +11,19 @@ It is intended to be used around the 13th week in Physics 222.
 \equip{1.5 V battery and holder}
 \equip{multimeter}
 \equip{330 $\mu\zu{F}$ bipolar electrolytic capacitor}
-\equip{10 nF bipolar capacitor (or similar value)}
+\equip{10 nF bipolar capacitor (or similar value)*}
 \equip{100 $\zu{k}\Omega$ resistor (or similar value)}
 \equip{51 $\zu{k}\Omega$ resistor (or similar value)}
 \equip{alligator clips (6)}
 \equip{timing device (stopwatch, computer, or cell phone app)}
 \equip{oscilloscope}
+
+*The capacitors in the microfarad range are about the size of
+your thumb, while the ones in the nanofarad range are smaller
+than a fingernail and yellow.
+If the small-value capacitors in your kit have three-digit labels,
+then the digits ABC are to be interpreted as $\zu{AB}\times10^\zu{C}$
+picofarads.
 
 \begin{goals}
 
@@ -130,7 +137,7 @@ It follows that the charge on the capacitor will decay
 exponentially. Furthermore, since the proportionality
 constant is $1/RC$, we find that the time constant of the
 decay equals the product of $R$ and $C$. (It may not be
-immediately obvious that Ohms times Farads equals seconds, but it does.)
+immediately obvious that ohms times farads equals seconds, but it does.)
 
 Note that even if we put the charge on the capacitor very
 suddenly, the discharging process still occurs at the same
@@ -199,11 +206,10 @@ lab we will estimate that resistance by a different technique and see if the
 two results agree. The idea here is to use the scope's calibration output to
 drive a known capacitance $C=10\ \zu{nF}$ (or something similar), which means that
 we are effectively driving an RC circuit in which the resistance is the scope's
-internal resistance $R$. The calibration output's square wave output charges
+internal resistance $R$. The setup is exactly the same as in lab \ref{lab:covid-oscilloscope},
+except that instead of the external resistor we have an external capacitor.
+The calibration output's square wave output charges
 the capacitor up with one polarity, then charges it up with the other polarity.
-Use the scope's minigrabber connector to measure the
-voltage across the capacitor, just as you did in lab \ref{lab:covid-oscilloscope}
-with the external resistance.
 
 Since you have a previous measurement of $R$, you're not going blind here.
 Estimate the RC time constant, and set the calibration output so that its half-period

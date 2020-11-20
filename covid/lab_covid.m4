@@ -96,6 +96,8 @@ m4_include(../share/covid-kirchoff.tex)
 
 m4_include(../share/covid-rc-circuits.tex)
 
+m4_include(../share/covid-rl-circuit.tex)
+
 m4_include(../share/covid-ac-circuits.tex)
 
 m4_include(../share/covid-faraday.tex)
