@@ -23,9 +23,6 @@ It is intended to be used around the 14th week in Physics 222.
 
 \introduction
 
-The lab is demonstrated in a video at
-\url{youtube.com/watch?v=7aBeVdZa0m0} .
-
 Earlier in the semester, for lab \ref{lab:dipole-and-superposition}, you 
 made a solenoid out of about 200 turns of magnet wire. The idea of this
 lab is to use this solenoid as the inductor of an LRC circuit, observe
@@ -35,7 +32,9 @@ to determine the inductance of the coil.
 \section*{Preparation}
 
 If you have only made one coil so far, you will need to make a second one
-for this lab. Another one of the same type will work well.
+for this lab. It works OK if you make the second one similar to the original,
+with about 200 turns, but it's probably slightly more optimal if you make it
+with fewer turns, maybe 100.
 
 While working on this lab, I found it convenient to organize my resistors
 and capcitors in an egg carton.
@@ -156,8 +155,22 @@ with the driver, rather than the other way around.
 
 \section*{Designing the LRC circuit}
 
+If you've built two coils with identical specs, then obviously it doesn't
+matter which you use as the primary and which as the secondary.
+If you have one with a smaller number of turns and one with more turns,
+you're probably better off using the one with more turns as the
+secondary coil.\footnote{This experiment tends to have a problem where the
+voltage $V_2$ observed in the secondary coil is too small to be easily measured.
+A calculation shows that this voltage
+should be proportional to $(N_2/N_1)/(1+R/Z_1)$, where $N_1$ is the number of turns
+in the primary coil, $N_2$ the number in the secondary, $R$ is the value of the
+internal resistor inside the calibration output, and $Z_1$ is the (imaginary) impedance of the primary.
+This expression makes it look like it would be optimal to have $N_1$ as \emph{small} as possible.
+However, there is another hidden dependence on $N_1$ because $Z_1\propto N_1^2$. Therefore it
+doesn't pay to make $N_1$ \emph{too} small.}
+
 You may need to vary the design somewhat based on the parameters of the secondary coil you're
-working with, but the setup used in the video used  a frequency of 20 kHz
+working with, but I used  a frequency of 20 kHz
 and a 47 ohm resistor in the LRC (secondary) circuit. Here is the thought
 process I went through in designing my circuit. I estimated the inductance
 of my coil, and I set a goal of making a circuit with $Q\approx 5$.
@@ -181,8 +194,7 @@ which didn't require an unreasonably high $R$.
 
 \labpart{Determination of the inductance}
 
-Build the driving circuit. The introductory video has some ideas on how to
-make the necessary connection conveniently.
+Build the driving circuit. 
 Use the ground clip on the scope's probe to complete the circuit.
 This is not designed to be a current-carrying connection, but the
 currents we will use are fairly small.
@@ -195,17 +207,17 @@ with numbers like 683, which is to be interpreted as $68\times10^3\ \zu{pF}$,
 or 68 nF. They are nonpolar capacitors.
 
 If your estimate of the coil's inductance was fairly good, then you
-may see a clear response right away, as in the video. For example,
+may see a clear response right away. For example,
 if your $Q$ is 5, then you will need to be within about 10\% of
 the right frequency in order to lie inside the FWHM of the resonance.
-If you think you're seeing the resonance, verify this as shown
-in the video by changing the distance between the primary and
-secondary coils.
+If you think you're seeing the signal, verify this 
+by changing the distance between the primary and
+secondary coils. You should see the signal get bigger and smaller.
 
 If you aren't initially close enough to resonance
 to see any response, vary the capacitance by a small amount. This
 can be done either by swapping in a different capacitor or by
-combining capacitors. Doing this in parallel, as shown in the video,
+combining capacitors. Doing this in parallel
 is pretty convenient. For example, if your initial guess for the
 capacitance was 68 nF, and you want to try increasing it a little,
 then putting a 10 nF capacitor in parallel with it would increase
@@ -219,14 +231,17 @@ For example, I obtained a response of 3.6 mV with 43 nF,
 5.0 mV with 47 nF, and 4 mV with 57 nF, which suggested that I
 had the resonance tuned in pretty well with the intermediate
 value.\footnote{This was with my initial setup, which gave pretty weak
-signals. Your amplitudes should be an order of magnitude greater,
-as shown in the video.}
+signals. Your amplitudes should be an order of magnitude greater.}
 
 \labpart{Response to a kick, measurement of $Q$}
 
 Change the frequency of the calibration output's square wave to something about an order
 of magnitude lower than the resonant frequency, such as 1 kHz. Zoom in and out using the
-time base so you can see what is going on. What you are seeing here is essentially the
+time base so you can see what is going on. If the signal is weak and there is a poor signal-to-noise
+ratio, it may help a little to reduce the sampling rate on the scope, which has the effect
+of averaging together several successive samples.
+
+What you are seeing here is essentially the
 \emph{free} response of the oscillator rather than its driven response. The period of the square wave is
 so long that we're essentially kicking the circuit, then waiting a long time for it to settle down,
 and then kicking it again in the opposite direction. People refer to this as ``ringing''
@@ -268,6 +283,13 @@ capacitance many times smaller, without changing $R$. Try decreasing $C$ by a fa
 You should see a waveform that is not a sine wave. Try to figure out why
 you're seeing what you're seeing. Take into account the fact that changing $C$
 has an effect on both the resonant frequency and $Q$.
+
+\section*{Video}
+
+The lab is demonstrated in a video at
+\url{youtube.com/watch?v=7aBeVdZa0m0} . It is not necessary to watch the video
+before doing the lab. It may help, but all the relevant information is meant to
+be in the lab manual.
 
 
 \analysis
