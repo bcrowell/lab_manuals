@@ -10,7 +10,7 @@ It is intended to be used around the 15th week in Physics 222.
 \equip{banana plug cables (8, soldered by the student)}
 \equip{USB oscilloscope (Hantek)}
 \equip{two oscilloscope probes with BNC connectors}
-\equip{assorted capacitors capacitors, 10-100 nF}
+\equip{assorted capacitors, 10-100 nF}
 \equip{alligator clips (5)}
 \equip{two hand-made coils}
 
@@ -58,7 +58,7 @@ deeper. He showed that a changing electric field produces a
 magnetic field, and a changing magnetic field produces an
 electric field. Faraday's law,
 \begin{equation*}
-      \int \vc{E}\cdot\bell  =  -\der\Phi_B/\der t  
+      \int \vc{E}\cdot\der\bell  =  -\der\Phi_B/\der t  
 \end{equation*}
 relates the integral of the electric field around a
 closed loop to the rate of change of the magnetic flux
@@ -172,10 +172,7 @@ a frequency of 50 kHz for the square wave, but you may end up doing something
 slightly different. On channel 1 of the scope, you should see a series of
 alternating shark-fin pulses. This should be the response of an RL circuit
 to a square wave, which is basically a series of exponential curves, each
-of which should have the time constant $L/R$. In reality, I found poor
-agreement (a factor of four discrepancy) of this time constant  with $L/R$ when I used the previously
-measured values of $L$ and $R$. This may have to do with nonideal behavior of
-the coil at high frequencies, such as stray capacitance.
+of which should have the time constant $L/R$, as in lab \ref{lab:lr-circuit}.
 
 It's actually not terribly
 important for our purposes to be able to predict or explain the waveform seen on channel
@@ -213,10 +210,12 @@ Measure $|\tilde{V}_1|$, $|\tilde{V}_2|$, and all the geometrical dimensions.
 \analysis
 
 Compare your observations quantitatively with Faraday's law.
-The primary isn't very long, so the approximate expression for the
-interior field of a long solenoid isn't very accurate here. To correct
-for that, multiply the expression for the field by the correction
-factor $\zeta = (\cos\theta_1-\cos\theta_2)/2$,
+Faraday's law involves the magnetic flux through the secondary coil.
+For the purpose of calculating this flux,  make the approximations discussed earlier in the lab
+manual, and use the fact that the on-axis field of a finite solenoid can be expressed as the
+field of an infinite solenoid multiplied by a unitless factor $\zeta$.
+This factor is given by
+$\zeta = (\cos\theta_1-\cos\theta_2)/2$,
 (\emph{Fields and Circuits}, ch.~11, problem 13), where
 $\theta_1$ and $\theta_2$ are angles between the axis and the lines connecting
 the point of interest to the edges of the solenoid's mouths.
