@@ -26,7 +26,16 @@ inductance of the inductor $L$ that you made. For a coil consisting of a couple 
 hundred turns of wire wound around a toilet paper roll, this result should be
 on the order of a millihenry.
 
-We expect this inductance value to be too high, because the equation was based on the magnetic
+We expect this inductance value to be too high,\footnote{The fudge factor that is needed in order to get the actual inductance from the
+result of problem 13-10, correcting for the short length of the solenoid and the resulting nonuniformity of its
+field, is called the Nagaoka coefficient. It is cumbersome to
+calculate exactly, but H.A.~Wheeler derived the convenient approximation
+$1/(1+0.9a/\ell)$, where $a$ is the radius of the solenoid and $\ell$ is
+its length. It is a rather good approximation ($\pm1\%$) when $a/\ell$ is less than about 1.2.
+At the 1\% level, we would in any case be more worried about other issues such as the fact that
+the bundle of wire is not a thin sheet of current but rather has some thickness to it. In general,
+it's good to cultivate a healthy skepticism about magic formulas that some unreliable source
+claims to be ``the'' formula for X.} because the equation was based on the magnetic
 field inside an infinitely long solenoid, which is an overestimate for a short solenoid
 like yours. The purpose of this lab is to refine the estimate by determining the
 inductance empirically. The resulting inductance value will be handy to know for
@@ -49,3 +58,4 @@ a capacitor, in this lab we will use an external inductor.
 
 Extract the actual inductance from the observed RL time constant and compare with
 your original estimate.
+
