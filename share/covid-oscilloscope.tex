@@ -175,8 +175,21 @@ Switch it to x1.
 Touch the minigrabber to the ground clip, and you should see the noise go
 away, because the voltage difference between the two terminals of the probe is now exactly zero.
 
-Set CH 1 to an appropriate voltage scale so that you can measure the voltage across
-a battery, and do that by connecting the ground clip and minigrabber to the terminals. Try flipping the battery around and verify that the sign flips.
+Set CH 1 to the 500 mV scale. On this scale, one square on the
+graph-paper grid equals 500 mV. Measure the voltage across a battery,
+by connecting the ground clip and minigrabber to the battery's
+terminals. Try flipping the battery around and verify that the sign
+flips.
+
+As with a multimeter, the normal procedure with the oscilloscope would be
+to go to the most sensitive possible scale, in order to get the best precision
+on the voltage reading. However, if you try this with the measurement of the battery's voltage,
+you will probably find that it doesn't work right. (This may depend on which model of scope
+you have, the 6022-BE or the 6022-BL.) On the 200 mV scale, you will probably find that
+you get a reading of just under one volt, which is not the battery's true voltage.
+What's happening here is that on each scale, there is some maximum voltage that the
+scope can read. On this scale, the maximum is a volt, which is too small, so you get
+an erroneous reading.
 
 When you're using the oscilloscope to measure times and	voltages, use
 the graph itself, not the white text at the bottom of the window in
@@ -281,7 +294,10 @@ down a little bit. This happens with any real-world voltage source: when you loa
 its voltage gets dragged down. Your external resistor $R$ is now forming a voltage divider
 with the resistor $R_0$ inside the scope. Take measurements of the voltage $V_R$ when the external
 resistor is this value, infinity, and one or two other values going down to a few hundred
-ohms.
+ohms. 
+
+Note that, as in earlier parts of the lab, you can get wrong results here if
+you're overloading the scale you're on.
 
 
 \section*{Preparation}
