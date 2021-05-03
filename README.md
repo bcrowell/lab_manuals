@@ -1,3 +1,2 @@
-lab manuals used in some physics classes at Fullerton College
-
-http://www.lightandmatter.com/area3lab.html
+This is the LaTeX source code for lab manuals used in some physics classes at Fullerton College.
+I retired in 2021 and am no longer maintaining these.
